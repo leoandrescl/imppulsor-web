@@ -2,7 +2,7 @@
 <?php
 /**
  * Template Name: Contacto
- * Description: Página Contacto — estructura base siguiendo Impulsor v2.
+ * Description: Contact page — base structure following Imppulsor v2.
  */
 get_header();
 ?>
@@ -16,9 +16,9 @@ get_header();
 <section class="section reveal reveal-up">
   <div class="container grid-2 grid-2--2fr-1fr">
 
-    <!-- Columna izquierda -->
+    <!-- Left column -->
     <div class="contacto__formulario text-dark">
-      <h2 class="heading-lg mb-10">Contáctanos</h2>
+      <h2 class="heading-lg mb-10">Contact us</h2>
       <div class="footer-middle__social mb-40">
         <a href="https://www.linkedin.com/company/imppulsor/" target="_blank" rel="noopener" aria-label="Compartir en LinkedIn" class="hero-social__link">
           <img src="/wp-content/uploads/icon-in.png" alt="LinkedIn" width="24" height="24" style="">
@@ -29,18 +29,18 @@ get_header();
     </div>
 
       <p class=" ">
-        En Imppulsor ayudamos a organizaciones de diversos países a comprender con claridad sus desafíos estructurales y tomar mejores decisiones de negocio. Nuestra propuesta combina dos líneas de productos: diagnósticos de madurez empresarial que revelan patrones críticos y soluciones de consultoría que habilitan mejoras sostenibles en gestión, desempeño y escalabilidad.
+        At Imppulsor, we help organizations across countries gain clear insight into their structural challenges and make better business decisions. Our offering combines two product lines: business maturity diagnostics that reveal critical patterns, and consulting solutions that enable sustainable improvements in management, performance, and scalability.
       </p>
 
       <p class=" ">
-        A través de un equipo global de consultores con experiencia multidisciplinar, diseñamos e implementamos intervenciones adaptadas al contexto y a los objetivos reales de cada cliente.
+        Through a global team of consultants with multidisciplinary experience, we design and implement interventions tailored to each client's context and real objectives.
       </p>
 
       <p class=" ">
-        Si estás enfrentando fricciones persistentes, desafíos de crecimiento o dudas sobre cómo optimizar tu arquitectura operativa, conversemos. Completa el formulario y uno de nuestros especialistas se pondrá en contacto para ayudarte a explorar, sin compromiso, cuál podría ser tu punto de partida.
+        If you're facing persistent friction, growth challenges, or questions about how to optimize your operating architecture, let's talk. Fill out the form and one of our specialists will reach out to help you explore — with no commitment — where your starting point could be.
       </p>
 
-      <!-- Formulario principal -->
+      <!-- Main form -->
       <div class="formulario-contacto cf7-clean mt-40">
         <?php echo do_shortcode('[contact-form-7 id="bb0babf" title="Formulario de contacto pagina contacto"]'); ?>
       </div>
@@ -48,53 +48,53 @@ get_header();
        <div class="separator-40y"></div>
        <!--  -->
       <p class="text-sm ">
-        Imppulsor Limited se compromete a proteger tu información. Tus datos serán tratados conforme a la legislación aplicable en materia de privacidad, nuestras políticas internas y nuestra política de protección de datos. Al ser una organización con presencia internacional, tu información podrá ser almacenada y procesada fuera de tu país de residencia, siempre bajo estrictos estándares de seguridad, confidencialidad y respeto por tu privacidad.
+        Imppulsor Limited is committed to protecting your information. Your data will be handled in accordance with applicable privacy legislation, our internal policies, and our data protection policy. As an international organization, your information may be stored and processed outside your country of residence, always under strict standards of security, confidentiality, and respect for your privacy.
       </p>
     </div>
     
 
-    <!-- Columna derecha -->
+    <!-- Right column -->
     <aside class="contacto__sidebar text-white bg-gradient-light-blue py-60 px-40">
 
       <div class=" ">
-        <h3 class="heading-sm  ">Política de privacidad</h3>
+        <h3 class="heading-sm  ">Privacy Policy</h3>
         <p class="text-sm  ">
-          Protegemos tu información de acuerdo con estrictos principios de confidencialidad, legalidad y respeto por tus datos personales.
+          We protect your information under strict principles of confidentiality, legality, and respect for your personal data.
         </p>
-        <a href="/politica-de-privacidad/" class="btn-arrow  mt-20-mob">Acceder</a>
+        <a href="/politica-de-privacidad/" class="btn-arrow  mt-20-mob">Read more</a>
       </div>
-      <!-- fin fila 1 -->
+      <!-- end row 1 -->
        <div class="separator-40y"></div> 
        <!--  -->
       <div class=" ">
-        <h3 class="heading-sm  ">Política de cookies</h3>
+        <h3 class="heading-sm  ">Cookie Policy</h3>
         <p class="text-sm  ">
-          Consulta cómo usamos cookies para mejorar tu experiencia y asegurar el funcionamiento adecuado de nuestro sitio web.
+          See how we use cookies to improve your experience and keep our website running properly.
         </p>
-        <a href="/politica-de-cookies/" class="btn-arrow  mt-20-mob">Acceder</a>
+        <a href="/politica-de-cookies/" class="btn-arrow  mt-20-mob">Read more</a>
       </div>
-      <!-- fin fila 2 -->
+      <!-- end row 2 -->
        <div class="separator-40y"></div> 
         <!--  -->
       <div class=" ">
-        <h3 class="heading-sm  ">Reproducciones</h3>
+        <h3 class="heading-sm  ">Reprints &amp; permissions</h3>
         <p class="text-sm  ">
-          Si deseas citar o republicar contenido de nuestro blog o casos de éxito, contáctanos para conocer condiciones de uso y autorizaciones.
+          If you'd like to quote or republish content from our blog or success stories, contact us for terms of use and permissions.
         </p>
       </div>
-        <!-- fin fila 3 -->
+        <!-- end row 3 -->
          <div class="separator-40y"></div> 
          <!--  -->
       <div>
-        <h3 class="heading-sm  ">Trabaja con nosotros</h3>
+        <h3 class="heading-sm  ">Work with us</h3>
         <p class="text-sm  ">
-          En Imppulsor trabajamos con líderes que enfrentan decisiones complejas y buscan generar impacto real. Si te apasiona transformar organizaciones desde la raíz, queremos conocerte.
+          At Imppulsor, we work with leaders facing complex decisions who want to drive real impact. If you're passionate about transforming organizations at the root, we want to meet you.
         </p>
         <div class="contacto-profesional__form cf7-clean">
             <?php echo do_shortcode('[contact-form-7 id="eae9bc5" title="Formulario de contacto trabaja con nosotros"]'); ?>
         </div>
       </div>
-      <!-- fin fila 4 -->
+      <!-- end row 4 -->
        <div class="separator-40y"></div> 
        <!--  -->
        <div class=""><img src="/wp-content/uploads/aside-contacto.jpg" alt=""></div>
@@ -187,12 +187,12 @@ get_header();
       background: #000;
     }
 
-    /* 4. Estilo de los enlaces del Nivel 3 */
+    /* 4. Level 3 link styling */
     .header-white .mega__col--menu .mega__menu .sub-menu a {
         color: #000 !important; 
     }
 
-    /* Hover en los enlaces del nivel 3 */
+    /* Hover on level 3 links */
     .header-white .mega__col--menu .mega__menu .sub-menu a:hover {
         color: #000 !important;
     }
