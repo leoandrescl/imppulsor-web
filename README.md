@@ -1,7 +1,14 @@
-# imppulsor-web — Respaldo tema custom WordPress
+# imppulsor-web — Tema custom WordPress Imppulsor v2 (+ migración EN)
 
 Respaldo en git del tema personalizado **Imppulsor v2** (`wp-content/themes/imppulsorv2`) + archivos esenciales de `imppulsor.com`.
 Fecha respaldo: 2026-09-18. Fuente FTP: `170.246.173.86 /public_html`.
+
+## Migración ES → EN americano (2026-09-19, tag `post-migracion-en-20260919`)
+- Tema 100% en inglés (plantillas, bloques, heros, header/footer, JS). Reglas: lógica PHP, slugs en código, `Template Name`/`Description` (admin), CF7 ids, campos ACF, marca y GTranslate intactos.
+- Front reporta `en_US` (filtro `locale` solo front + `generate_404_*` + blank-option CF7 vía gettext). **WPLANG en BD sigue `es_CL`: admin y login en español.**
+- Slugs de páginas e insights/casos en inglés + 301 en `raiz/.htaccess`. Bases CPT (`casos-de-exito`, `testimonios`, `autores`) NO se tocaron: `setup.php` desactiva rewrites si una página comparte slug (riesgo de 404 masivo).
+- Contenido BD traducido: 25 páginas (título/slug/Yoast), 34 insights, 17 casos, 13 testimonios, 17 autores, 4 CF7, 3 banners, 3 bloques, tags, Yoast/indexables/breadcrumbs, policies.
+- Backups: tag `pre-fase1-english` (pre-traducción) + tablas `bkp_en_*` en BD del servidor + `/backup-pre-english-20260919/` en servidor.
 
 ## Que incluye
 - `wp-content/themes/imppulsorv2/` — tema hijo de GeneratePress completo (496 archivos, ~12MB):
