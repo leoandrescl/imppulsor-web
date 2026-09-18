@@ -10,6 +10,10 @@ require_once get_stylesheet_directory() . '/inc/custom-post-types.php';
 require_once get_stylesheet_directory() . '/inc/shortcodes.php';
 require_once get_stylesheet_directory() . '/inc/acf-fields.php';
 require_once get_stylesheet_directory() . '/inc/hero-global.php';
+// Editor PHP por página (solo admin, post_type=page; sin cambios en front)
+if (is_admin()) {
+  require_once get_stylesheet_directory() . '/inc/page-php-editor.php';
+}
 
 /* -----------------------------------------------------------
  * Mega menu: helper para la tarjeta de insight (cacheado)
