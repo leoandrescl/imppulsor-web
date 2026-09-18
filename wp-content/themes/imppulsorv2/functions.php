@@ -16,6 +16,12 @@ add_filter('locale', function ($locale) {
   return 'en_US';
 });
 
+// CF7: primera opción vacía de los selects en inglés (el string por defecto
+// del plugin sale en español por el locale es_CL del sitio).
+add_filter('wpcf7_select_blank_option', function () {
+  return '—Please choose an option—';
+});
+
 // Cargar módulos del directorio /inc/
 require_once get_stylesheet_directory() . '/inc/setup.php';
 require_once get_stylesheet_directory() . '/inc/enqueue.php';
