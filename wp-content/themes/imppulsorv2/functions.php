@@ -16,6 +16,15 @@ add_filter('locale', function ($locale) {
   return 'en_US';
 });
 
+// GeneratePress (tema padre): título/texto del 404 en inglés.
+// (El <title> del 404 y de búsqueda se configuran en Yoast.)
+add_filter('generate_404_title', function () {
+  return 'Oops! That page can&rsquo;t be found.';
+});
+add_filter('generate_404_text', function () {
+  return 'It looks like nothing was found at this location. Maybe try searching?';
+});
+
 // CF7: primera opción vacía de los selects en inglés (CF7 6.x la genera con
 // __('—Please choose an option—') traducido al es_CL del sitio; no hay filtro
 // dedicado, se intercepta vía gettext del dominio contact-form-7).
