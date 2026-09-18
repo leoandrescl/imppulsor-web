@@ -328,14 +328,9 @@
   }
 }
 
-.searchfs__icon {
-  color: #fff;
-  font-size: clamp(22px, 2.6vw, 28px);
-  line-height: 1;
-}
-
 .searchfs__form input[type="search"] {
   flex: 1;
+  min-width: 0;
   background: transparent;
   border: 0;
   outline: none;
@@ -347,6 +342,49 @@
 
 .searchfs__form input::placeholder {
   color: rgba(255, 255, 255, .55);
+}
+
+/* Botón de búsqueda */
+.searchfs__submit {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex: 0 0 auto;
+  padding: 12px 26px;
+  border: 0;
+  border-radius: 50px;
+  background: var(--azul-claro, #126cfb);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: background .25s ease, color .25s ease, transform .2s ease;
+}
+
+.searchfs__submit svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+}
+
+.searchfs__submit:hover,
+.searchfs__submit:focus {
+  background: var(--gris, #f5f5f5);
+  color: #000;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 576px) {
+  .searchfs__form {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .searchfs__submit {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 /* Botón de cerrar */
@@ -374,6 +412,13 @@
   transform: scale(1.05);
   opacity: 1;
   background: transparent;
+}
+
+.searchfs__close svg {
+  width: 28px;
+  height: 28px;
+  stroke: currentColor;
+  pointer-events: none;
 }
 
 

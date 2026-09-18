@@ -95,11 +95,16 @@ if (!defined('ABSPATH')) exit;
   <div class="searchfs__backdrop" data-close="1"></div>
 
   <div class="searchfs__stage" role="dialog" aria-modal="true">
-    <button class="searchfs__close" type="button" aria-label="Close"><i data-lucide="x"></i></button>
+    <button class="searchfs__close" type="button" aria-label="Close" data-close="1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+    </button>
 
     <form class="searchfs__form" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-      <i data-lucide="search" class="searchfs__icon"></i>
-      <input type="search" name="s" placeholder="Type and press Enter…" autocomplete="off">
+      <input type="search" name="s" placeholder="Type and press Enter…" autocomplete="off" aria-label="Search">
+      <button type="submit" class="searchfs__submit" aria-label="Search">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+        <span>Search</span>
+      </button>
     </form>
   </div>
 </div>
