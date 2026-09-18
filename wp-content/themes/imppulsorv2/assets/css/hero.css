@@ -1,0 +1,158 @@
+/* ============================================================
+   ELLIPSE HERO (decorativo)
+   ============================================================ */
+.ellipse-hero {
+  position: absolute;
+  right: 5%;
+  z-index: 0;
+  top: 10%;
+}
+.no-ellipse .ellipse-hero {
+  display: none;
+}
+
+body.page-id-524 .ellipse-hero,
+body.page-id-521 .ellipse-hero {
+  display: none;
+}
+
+body.page-id-524,
+body.page-id-521 {
+  background: #fff !important;
+}
+
+/* Políticas (privacidad / cookies): sin padding de contenedores GP */
+body.page-id-524 .separate-containers .comments-area,
+body.page-id-524 .separate-containers .inside-article,
+body.page-id-524 .separate-containers .page-header,
+body.page-id-524 .separate-containers .paging-navigation,
+body.page-id-521 .separate-containers .comments-area,
+body.page-id-521 .separate-containers .inside-article,
+body.page-id-521 .separate-containers .page-header,
+body.page-id-521 .separate-containers .paging-navigation,
+body.page-id-524.separate-containers .comments-area,
+body.page-id-524.separate-containers .inside-article,
+body.page-id-524.separate-containers .page-header,
+body.page-id-524.separate-containers .paging-navigation,
+body.page-id-521.separate-containers .comments-area,
+body.page-id-521.separate-containers .inside-article,
+body.page-id-521.separate-containers .page-header,
+body.page-id-521.separate-containers .paging-navigation {
+  padding: 0 !important;
+}
+
+body.page-id-524 div.content-area#primary,
+body.page-id-521 div.content-area#primary {
+  padding-bottom: 40px;
+}
+
+/* ============================================================
+   HERO GLOBAL – Para todas las páginas con hero
+   ============================================================ */
+
+/* === CONTENEDOR GLOBAL === */
+.hero-wrap {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: block;  /* sin flex para que no achique el hero */
+}
+
+/* === HERO PRINCIPAL === */
+.hero-section {
+  position: relative;
+  width: 100%;            /* ocupa el ancho del sitio, sin recortes raros */
+  height: 475px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  z-index: 1;
+}
+.hero-section-no-border {
+  border-bottom-right-radius: 0 !important;
+}
+
+/* overlay oscuro */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* === CONTENIDO === */
+.hero-section .hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: grid;
+  align-items: center;
+  height: 100%;
+}
+
+.hero-section .hero-content h1 {
+  font-size: clamp(32px, 3.5vw, 48px);
+  line-height: 1.2;
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+  max-width: 95%;
+}
+
+/* === RRSS EN LA DERECHA, DENTRO DEL HERO === */
+.hero-social {
+  position: absolute;
+  top: 50%;
+  right: 8%;
+  transform: translateY(-50%);
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  z-index: 2;
+}
+
+.hero-social__link {
+  color: #fff;
+  font-size: 10px;
+  opacity: 0.7;
+  transition: opacity .1s ease;
+}
+.hero-social a.hero-social__link img {
+    filter: invert(1);
+}
+.hero-social__link:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 992px) {
+  .hero-section {
+    height: 380px;
+  }
+  .hero-section .hero-content {
+    padding: 0 20px;
+  }
+  .hero-social {
+    right: 20px;
+  }
+  body.page-id-524 .separate-containers .comments-area, body.page-id-524 .separate-containers .inside-article, body.page-id-524 .separate-containers .page-header, body.page-id-524 .separate-containers .paging-navigation, body.page-id-521 .separate-containers .comments-area, body.page-id-521 .separate-containers .inside-article, body.page-id-521 .separate-containers .page-header, body.page-id-521 .separate-containers .paging-navigation, body.page-id-524.separate-containers .comments-area, body.page-id-524.separate-containers .inside-article, body.page-id-524.separate-containers .page-header, body.page-id-524.separate-containers .paging-navigation, body.page-id-521.separate-containers .comments-area, body.page-id-521.separate-containers .inside-article, body.page-id-521.separate-containers .page-header, body.page-id-521.separate-containers .paging-navigation {
+    padding: 0 40px !important;
+  }
+  body.page-id-524 div.content-area#primary,
+body.page-id-521 div.content-area#primary {
+  padding-bottom: 20px;
+}
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+/* Hero global banners: estilos en template-parts/heros/hero-global-banners.php */

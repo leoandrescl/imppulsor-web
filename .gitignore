@@ -1,0 +1,23 @@
+# Secrets y credenciales - NO subir (repo PUBLICO)
+.env.local
+.env
+raiz/wp-config.php
+**/wp-config.php
+
+# Backups pesados - NO subir a git (GitHub limita 100MB/archivo)
+*.zip
+*.sql
+*.tar.gz
+bkp-*.zip
+*.log
+
+# WordPress
+**/error_log
+**/debug.log
+wp-content/uploads/
+wp-content/upgrade-temp-backup/
+wp-content/cache/
+
+# Sistema
+.DS_Store
+Thumbs.db

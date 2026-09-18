@@ -1,0 +1,1147 @@
+/* =========================================================
+   UTILIDADES TIPOGRÁFICAS — Impulsor v2
+========================================================= */
+.fs-12 {
+  font-size: 12px !important;
+}
+
+.fs-14 {
+  font-size: 14px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.fs-24 {
+  font-size: 24px !important;
+}
+
+.fs-28 {
+  font-size: 28px !important;
+}
+
+.fs-32 {
+  font-size: 32px !important;
+}
+
+.fs-40 {
+  font-size: 40px !important;
+}
+
+.fs-48 {
+  font-size: 48px !important;
+}
+
+/* Peso tipográfico */
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-900 {
+  font-weight: 900 !important;
+}
+
+/* Espaciado entre líneas */
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.lh-12 {
+  line-height: 1.2 !important;
+}
+
+.lh-14 {
+  line-height: 1.4 !important;
+}
+
+.lh-16 {
+  line-height: 1.6 !important;
+}
+
+.lh-18 {
+  line-height: 1.8 !important;
+}
+
+/* Responsive — reducción automática en móviles */
+@media (max-width: 768px) {
+  .fs-32 {
+    font-size: 26px !important;
+  }
+
+  .fs-40 {
+    font-size: 32px !important;
+  }
+
+  .fs-48 {
+    font-size: 36px !important;
+  }
+}
+
+/* -----------------------------
+   MARGEN SUPERIOR
+----------------------------- */
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mt-30 {
+  margin-top: 30px !important;
+}
+
+.mt-40 {
+  margin-top: 40px !important;
+}
+
+.mt-60 {
+  margin-top: 60px !important;
+}
+
+.mt-80 {
+  margin-top: 80px !important;
+}
+
+.mt-100 {
+  margin-top: 100px !important;
+}
+
+.mt-120 {
+  margin-top: 120px !important;
+}
+
+/* -----------------------------
+   MARGEN INFERIOR
+----------------------------- */
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+
+.mb-80 {
+  margin-bottom: 80px !important;
+}
+
+.mb-100 {
+  margin-bottom: 100px !important;
+}
+
+.mb-120 {
+  margin-bottom: 120px !important;
+}
+
+/* -----------------------------
+   PADDING SUPERIOR / INFERIOR
+----------------------------- */
+.pt-0 {
+  padding-top: 0 !important;
+}
+
+.pt-10 {
+  padding-top: 10px !important;
+}
+
+.pt-20 {
+  padding-top: 20px !important;
+}
+
+.pt-30 {
+  padding-top: 30px !important;
+}
+
+.pt-40 {
+  padding-top: 40px !important;
+}
+
+.pt-60 {
+  padding-top: 60px !important;
+}
+
+.pt-80 {
+  padding-top: 80px !important;
+}
+
+.pt-120 {
+  padding-top: 120px !important;
+}
+
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+
+.pb-60 {
+  padding-bottom: 60px !important;
+}
+
+.pb-80 {
+  padding-bottom: 80px !important;
+}
+
+.pb-120 {
+  padding-bottom: 120px !important;
+}
+
+/* -----------------------------
+   COMBINADAS (Atajos)
+----------------------------- */
+.my-10 {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.my-20 {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+
+.my-40 {
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+.my-60 {
+  margin-top: 60px !important;
+  margin-bottom: 60px !important;
+}
+
+.my-80 {
+  margin-top: 80px !important;
+  margin-bottom: 80px !important;
+}
+
+.my-100 {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+.my-120 {
+  margin-top: 120px !important;
+  margin-bottom: 120px !important;
+}
+
+.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.py-5 {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+}
+
+.py-10 {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.py-20 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.py-30 {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.py-40 {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+.py-60 {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+
+.py-80 {
+  padding-top: 80px !important;
+  padding-bottom: 80px !important;
+}
+
+.px-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.pl-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.pr-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.px-10 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.px-20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+.px-30 {
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+
+.px-40 {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+.px-60 {
+  padding-left: 60px !important;
+  padding-right: 60px !important;
+}
+
+.px-80 {
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+}
+
+.pl-30 {
+  padding-left: 30px !important;
+}
+
+.mx-10 {
+  margin-left: 10px !important;
+  margin-right: 10px !important;
+}
+
+.mx-20 {
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+.mx-40 {
+  margin-left: 40px !important;
+  margin-right: 40px !important;
+}
+
+.ml-20 {
+  margin-left: 20px !important;
+}
+
+.ml-40 {
+  margin-left: 40px !important;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+/*  */
+.max-width-550 {
+  max-width: 550px !important;
+  width: 100% !important;
+}
+
+/* =========================================================
+   VERSIÓN RESPONSIVA
+   Ajustes automáticos en dispositivos móviles
+========================================================= */
+@media (max-width: 768px) {
+  .mb-20-mob {
+    margin-bottom: 20px !important;
+  }
+
+  .mb-0-mob {
+    margin-bottom: 0 !important;
+  }
+
+  .separator.mb-60.separator-mob.mb-40-mob {
+    margin-bottom: 0px !important;
+  }
+
+  .separator.mb-60.separator-mob.mb-40-mob.my-40-mob {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .mt-20-mob {
+    margin-top: 20px !important;
+  }
+  .separator.separator-mob::after {
+    content: "";
+    width: 100%;
+    display: block;
+    padding-top: 0px;
+    border-bottom: 1px solid;
+  }
+
+  section.section.section-testimonio {
+    padding-bottom: 0 !important;
+  }
+
+  .py-60 {
+    padding-inline: 0px !important;
+  }
+
+  .py-60.p-0-mob {
+    padding-inline: 0px !important;
+  }
+
+  /* Reducimos márgenes grandes en pantallas pequeñas */
+  .mt-80,
+  .mt-100,
+  .mt-120 {
+    margin-top: 40px !important;
+  }
+
+  .mb-80,
+  .mb-100,
+  .mb-120 {
+    margin-bottom: 40px !important;
+  }
+
+  .my-80,
+  .my-100,
+  .my-120 {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+
+  /* Reducimos paddings grandes */
+  .pt-80,
+  .pb-80,
+  .py-80,
+  .pt-120 {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .pb-120 {
+    padding-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 1220px) {
+  .container {
+    width: 100%;
+    padding-inline: 40px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .py-60,
+  .px-60,
+  .px-0 {
+    padding-inline: 40px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+
+  .pb-120 {
+    padding-bottom: 60px !important;
+  }
+
+  .pl-0 {
+    padding-left: 0px !important;
+    padding-inline: 0px !important;
+  }
+
+  .pr-0 {
+    padding-right: 0px !important;
+    padding-inline: 0px !important;
+  }
+
+  .container .px-0 {
+    padding-inline: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+@media (max-width: 1220px) {
+  .container {
+    width: 100%;
+    padding-inline: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .section {
+    padding: 40px 0 !important;
+  }
+
+  .section.pb-0 {
+    padding-bottom: 0 !important; 
+  }
+
+  .section.pt-0 {
+    padding-top: 0 !important;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .px-60,
+  .px-0 {
+    padding-inline: 20px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .py-60 {
+    padding-inline: 20px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+
+  .container .p-x0 {
+    padding-inline: 0px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+/* =========================================================
+   FIN VERSIÓN RESPONSIVA
+   Ajustes automáticos en dispositivos móviles
+========================================================= */
+.single-insights ul.wp-block-list {
+  list-style: disc;
+  padding-left: 25px;
+}
+
+/* =========================================================
+   UTILIDADES VARIAS — Impulsor v2
+========================================================= */
+/* ===== Truncado multi-línea con altura fija ===== */
+.truncate-1,
+.truncate-2,
+.truncate-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2em;
+}
+
+/* 1 línea fija */
+.truncate-1 {
+  -webkit-line-clamp: 1 !important;
+  min-height: calc(1.2em * 1) !important;
+  max-height: calc(1.2m * 1) !important;
+}
+
+.truncate-1--no-min {
+  -webkit-line-clamp: 1;
+  max-height: calc(1.2em * 1) !important;
+}
+
+/* 2 líneas fijas */
+.truncate-2 {
+  -webkit-line-clamp: 2;
+  min-height: calc(1.2em * 2) !important;
+  max-height: calc(1.2em * 2) !important;
+}
+
+.truncate-2--no-min {
+  -webkit-line-clamp: 2;
+  max-height: calc(1.2em * 2) !important;
+}
+
+/* 3 líneas fijas */
+.truncate-3 {
+  -webkit-line-clamp: 3;
+  min-height: calc(1.2em * 3) !important;
+  max-height: calc(1.2em * 3) !important;
+}
+
+.truncate-3--no-min {
+  -webkit-line-clamp: 3;
+  max-height: calc(1.2em * 3) !important;
+}
+
+
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.text-bold {
+  font-weight: 700 !important;
+}
+
+.text-normal {
+  font-weight: 400 !important;
+}
+
+.text-light {
+  font-weight: 300 !important;
+}
+
+
+/* .rounded-diagonal, .rounded-diagonal img { border-radius: 50px 0 !important; } */
+.text-dark h1,
+.text-dark h2,
+.text-dark h3,
+.text-dark h4,
+.text-dark h5,
+.text-dark h6,
+.text-dark p,
+.text-dark span,
+.text-dark li,
+.text-dark a,
+.text-dark {
+  color: #000 !important;
+}
+
+.text-white h1,
+.text-white h2,
+.text-white h3,
+.text-white h4,
+.text-white h5,
+.text-white h6,
+.text-white p,
+.text-white span,
+.text-white li,
+.text-white a,
+.text-white,
+span.text-white {
+  color: #fff !important;
+}
+
+.bg-light .text-dark p {
+  color: #000 !important;
+}
+
+
+/* GAPS */
+.gap-0 {
+  gap: 0 !important;
+}
+
+.gap-10 {
+  gap: 10px !important;
+}
+
+.gap-20 {
+  gap: 20px !important;
+}
+
+.gap-30 {
+  gap: 30px !important;
+}
+
+.gap-40 {
+  gap: 40px !important;
+}
+
+.gap-60 {
+  gap: 60px !important;
+}
+
+.gap-80 {
+  gap: 80px !important;
+}
+
+
+/*  */
+.p-relative {
+  position: relative;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+
+.top-20x {
+  top: 20%;
+}
+
+
+
+.flex.items-center, 
+.pb-20 {
+  position: relative;
+}
+
+@media (max-width:992px) {
+
+  .h-100.h-420,
+  .h-420,
+  .h-100.h-420 img,
+  .h-420 img {
+    height: 420px !important;
+    object-position: top;
+    width: 100%;
+    object-fit: cover;
+  }
+  .gap-60 {
+    gap: 20px !important;
+  }
+}
+
+/* =========================================================
+   UTILIDADES DE DISPLAY Y FLEX
+========================================================= */
+.d-flex {
+  display: flex !important;
+}
+
+.d-inline-block {
+  display: inline-block !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+
+.flex-column {
+  flex-direction: column !important;
+}
+
+.flex-center {
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.justify-between {
+  justify-content: space-between !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+/* =========================================================
+   UTILIDADES DE TAMAÑO Y RADIO
+========================================================= */
+.max-width-100 {
+  max-width: 100%;
+}
+
+
+.w-auto {
+  width: auto !important;
+}
+
+.h-auto {
+  height: auto !important;
+}
+
+.max-w-100 {
+  max-width: 100% !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+
+.h-100 {
+  height: 100% !important;
+}
+
+/* .rounded-sm  { border-radius: 8px !important; }
+.rounded-md  { border-radius: 20px !important; }
+.rounded-lg  { border-radius: 40px !important; }
+.rounded-pill{ border-radius: 9999px !important; } */
+.rounded-diagonal {
+  object-fit: cover;
+}
+
+.rounded-diagonal-100 {
+  object-fit: cover;
+}
+
+.rounded-full {
+  border-radius: 100% !important;
+}
+
+.object-cover {
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.object-cover-150 {
+  object-fit: cover !important;
+  width: 150% !important;
+  height: 100% !important;
+  /* max-width: calc(50vw - 40px); */
+}
+
+.object-cover-200 {
+  object-fit: cover !important;
+  width: 400% !important;
+  height: 100% !important;
+  /* max-width: calc(50vw - 40px); */
+}
+
+/* Hueco ~1px bajo la imagen: img es replaced inline y deja espacio de baseline */
+.relative-left-50 {
+  line-height: 0;
+}
+
+.relative-left-50 img {
+  display: block;
+}
+
+@media (min-width:768px) {
+  .relative-left-50 {
+    position: relative;
+    left: -50%;
+  }
+
+}
+
+
+
+/* @media (max-width: 768px) {
+  .object-cover-150 { width: 100% !important; max-width: 100% !important; }
+} */
+@media (max-width: 992px) {
+  .object-cover-150 {
+    max-width: calc(100% + 40px) !important;
+    width: calc(100% + 40px) !important;
+    left: -20px;
+    position: relative;
+  }
+  .gap-20-mob {
+    gap: 20px !important;
+  }
+}
+
+/* =========================================================
+   UTILIDADES DE COLOR DE FONDO Y TEXTO
+   (opcional para maquetación rápida)
+========================================================= */
+
+
+.bg-light {
+  background-color: #fff !important;
+}
+
+.bg-light-gray {
+  background-color: #f7f7f7 !important;
+}
+
+.bg-dark {
+  background-color: #01224d !important;
+  color: #fff !important;
+}
+
+.bg-dark-blue {
+  background-color: #0e1d2c !important;
+  color: #fff !important;
+}
+
+.bg-gradient {
+  background: linear-gradient(130deg, #030F23, #006EFF) !important;
+  color: #fff !important;
+}
+
+.bg-deep-blue {
+  background-color: #061C2C !important;
+  color: #fff !important;
+}
+
+.bg-light-blue {
+  background-color: var(--azul-claro) !important;
+  color: #fff !important;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.text-dark {
+  color: #000 !important;
+}
+
+.text-blue {
+  color: var(--azul-claro) !important;
+}
+
+.text-light-blue {
+  color: var(--azul-claro) !important;
+}
+
+a .text-light-blue {
+  color: var(--azul-claro) !important;
+}
+
+span .text-light-blue {
+  color: var(--azul-claro) !important;
+}
+
+p .text-light-blue {
+  color: var(--azul-claro) !important;
+}
+
+.bg-gradiente-13 {
+  background-image: url('/wp-content/uploads/bg-gradiente-13.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-no-gradient .bg-gradient {
+  background: transparent !important;
+}
+
+/* =========================================================
+   UTILIDADES DE VISIBILIDAD
+========================================================= */
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+.visible-mobile {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .hidden-mobile {
+    display: none !important;
+  }
+
+  .visible-mobile {
+    display: block !important;
+  }
+}
+
+/* Bordes */
+.border-bottom-gray {
+  border-bottom: 1px solid #a5a5a5;
+}
+
+/*  */
+.header-search svg.lucide.lucide-search {
+  top: 2px;
+  position: relative;
+}
+
+/*  */
+@media (min-width:992px) {
+  .max-width-50vw-40 {
+    /* FLUID BREAKOUT (User Request)
+       1. Reset max-width constraints
+       2. Force width to 50vw (half viewport) to cover from grid line to edge (plus overshoot)
+       3. Negative margin-right to manage layout box size and prevent scrollbar issues */
+    max-width: none !important;
+    width: 50vw !important;
+    margin-right: calc(50% - 50vw);
+  }
+}
+
+
+/* navegacion circular */
+/* Contenedor de navegación (equivalente a .bloque-casos-exito__nav) */
+/* Navegación circular independiente del Swiper Reset */
+.nav-round-group {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-round {
+  position: static;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  color: var(--azul-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: .25s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  /* icono o flecha dentro */
+}
+
+/* Hover */
+.nav-round:hover {
+  background: #fff;
+  color: var(--azul-corporativo);
+}
+
+/* Variantes */
+.nav-round--prev::after,
+.nav-round--prev-casos::after {
+  content: "➜";
+  transform: rotate(180deg);
+}
+
+.nav-round--next::after,
+.nav-round--next-casos::after {
+  content: "➜";
+}
+
+/* fin navegacion circular */
+
+
+
+
+
+
+
+
+
+
+/* Reset general de Swiper */
+.swiper-button-prev,
+.swiper-button-next {
+  position: static;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50%;
+  background: #fff !important;
+  color: var(--azul-claro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); */
+  transition: background .25s ease, color .25s ease;
+}
+
+/* Reemplazo total del icono */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 22px !important;
+  color: var(--azul-claro);
+  transition: transform .2s ease, color .2s ease;
+}
+
+/* Izquierda */
+.swiper-button-prev::after {
+  content: '➜' !important;
+  transform: rotate(180deg);
+}
+
+/* Derecha */
+.swiper-button-next::after {
+  content: '➜' !important;
+}
+
+/* Hover */
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+  color: var(--azul-corporativo);
+  /* transform: scale(1.15) rotate(var(--r, 0)); */
+}
+
+/* Mantiene rotación al hover */
+.swiper-button-prev:hover::after {
+  --r: 180deg;
+}
+
+/* Posicionamiento opcional si el Swiper usa relative */
+.swiper {
+  position: relative;
+}
+
+.swiper-button-prev,
+
+/* -----------------------------
+   BACKGROUNDS UTILITARIOS
+----------------------------- */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}

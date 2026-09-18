@@ -1,0 +1,419 @@
+/* ===========================
+   MEGA MENU (desktop ≥ 992px)
+   =========================== */
+@media (min-width: 992px) {
+  /* Separador vertical */
+.mega__col--menu {
+    position: relative;
+}
+
+.mega__col--menu::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 180px;        /* alto máximo */
+    width: 1px;           /* grosor */
+    background: #ffffff;  /* color del borde */
+}
+  
+  /* --- Estructura Nav General --- */
+  .main-nav .menu-list { display:flex; gap:28px; }
+  .main-nav .menu-list > li { position: static; } /* Permite full-width */
+  
+  /* Estilo enlaces nivel 1 */
+  .main-nav .menu-link {
+    color:#fff; text-decoration:none; padding:16px 6px;
+    display:inline-block; font-size:14px; font-weight:400; transition:.3s;
+  }
+  a.menu-link.menu-link-level-1:hover { opacity:.8; }
+
+  /* --- Panel Desplegable (Contenedor Azul) --- */
+  .mega {
+    position:absolute; left:0; right:0; top:85%;
+    background:#030f23; padding:36px;
+    box-shadow:0 16px 40px rgba(0,0,0,.25);
+    
+    /* Efecto aparición */
+    opacity:0; visibility:hidden; transform:translateY(8px);
+    transition: opacity .18s ease, transform .18s ease, visibility 0s linear .18s;
+    z-index:50;
+    min-height: 284px;
+  }
+  
+  /* Mostrar menú al hacer hover */
+  .has-mega:hover > .mega,
+  .has-mega:focus-within > .mega {
+    opacity:1; visibility:visible; transform:none; transition-delay:0s;
+  }
+
+  /*
+   * Tras menú contextual (clic derecho), :hover puede quedar pegado en algunos
+   * navegadores. mega--pointer-out fuerza cierre solo cuando el puntero está
+   * fuera del área real (lo marca JS con coordenadas; no en el evento contextmenu).
+   */
+  .main-nav .has-mega.mega--pointer-out > .mega {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(8px);
+    pointer-events: none;
+    transition: opacity .18s ease, transform .18s ease, visibility 0s linear .18s;
+  }
+
+  /* Grid Principal: Menú (Izquierda) vs Insight (Derecha) */
+  .mega__inner {
+    display:grid; grid-template-columns:3fr 2fr;
+    gap:36px; align-items:stretch;
+  }
+
+
+  /* =========================================
+     COLUMNA MENÚ (ESTRUCTURA DIVIDIDA POR JS)
+     ========================================= */
+  
+  /* 1. Contenedor creado por el Script */
+  .mega-split-container {
+      display: flex;
+      gap: 30px; /* Espacio entre la columna Izq y Der */
+      align-items: flex-start; /* CRÍTICO: Esto hace que sean independientes */
+      width: 100%;
+  }
+
+  /* 2. Las listas individuales */
+  .mega__col--menu .mega__menu {
+      list-style: none; margin: 0; padding: 0;
+      flex: 1; /* Toman 50% cada una */
+  }
+
+  /* 3. Ítems de nivel 2 */
+  .mega__col--menu .mega__menu > li { 
+      margin-bottom: 8px;
+      width: 100%;
+      position: relative; /* Para referencias internas */
+  }
+
+  .mega__col--menu .mega__menu > li > a {
+    color:#fff; padding:6px 0; display:inline-block;
+    font-weight:600; transition:transform .2s ease;
+  }
+  .mega__col--menu .mega__menu > li > a:hover { transform:translateX(10px); }
+
+
+  /* --- SUB-MENÚ NIVEL 3 (ÁRBOL) --- */
+  .mega__col--menu .mega__menu .sub-menu {
+      position: static !important;
+      display: none; /* Oculto por defecto */
+      background: transparent !important;
+      box-shadow: none !important;
+      
+      /* Diseño de rama */
+      margin: 4px 0 8px 12px;
+      padding-left: 12px;
+      border-left: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  /* Mostrar al hacer hover en el padre */
+  .mega__col--menu .mega__menu > li.menu-item-has-children:hover .sub-menu {
+      display: block;
+      animation: slideInSoft 0.2s ease-out forwards;
+  }
+
+  .mega__col--menu .mega__menu > li.menu-item-has-children.mega-l3--pointer-out .sub-menu {
+      display: none !important;
+      animation: none !important;
+  }
+
+  /* Enlaces del Nivel 3 */
+  .mega__col--menu .mega__menu .sub-menu a {
+      font-size: 13px !important;
+      font-weight: 400 !important;
+      color: rgba(255, 255, 255, 0.7) !important;
+      padding: 3px 0 !important;
+      display: block;
+      text-transform: none;
+  }
+  .mega__col--menu .mega__menu .sub-menu a:hover {
+      color: #fff !important;
+      transform: translateX(5px);
+  }
+
+
+  /* --- Insight (Columna Derecha Global - Imagen) --- */
+  .mega__col--insight { display:flex; flex-direction:column; gap:16px; }
+  .mega-insight__thumb img {
+    width:100%; height:160px; object-fit:cover; display:block;
+  }
+  .mega-insight__thumb--ph { height:160px; background:linear-gradient(135deg,#16365f,#0b2141);}
+  .mega-insight__title { margin:8px 0 6px; font-size:18px; font-weight:700; }
+  .mega-insight__title a {
+    color:#fff; display:inline-block;
+    transition: transform .2s ease, color .2s ease;
+  }
+  .mega-insight__title a:hover { transform:translateX(10px); }
+
+  .btn.btn-borde {
+    border:1px solid rgba(255,255,255,.5);
+    color:#fff; background:transparent; padding:10px 16px;
+    display:inline-block; text-decoration:none;
+  }
+
+  @keyframes slideInSoft {
+      from { opacity: 0; transform: translateY(-5px); }
+      to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+
+
+
+
+
+
+
+/* ============================================================
+   MEGAMENU — Diseño profesional y responsivo (desktop)
+   ============================================================ */
+.mega-dropdown{
+  position:absolute; top:100%; left:0; width:100vw;
+  background:#01224D; color:#fff; padding:60px 80px;
+  display:none; z-index:99; border-top:2px solid var(--azul-claro);
+  box-shadow:0 12px 40px rgba(0,0,0,.25);
+}
+
+.menu-item-has-children:hover > .mega-dropdown{
+  display:block; animation:fadeSlide .25s ease forwards;
+}
+
+.mega-inner{
+  display:flex; justify-content:space-between; align-items:flex-start;
+  gap:60px; max-width:1300px; margin:0 auto;
+}
+
+/* .mega__col.mega__col--menu{ border-right:1px solid #fff; } */
+
+.mega-insight {
+    flex: 1;
+    display: grid;
+    flex-direction: row;
+    gap: 36px;
+    position: relative;
+    margin: 8px 0;
+    grid-template-columns: 130px auto;
+    max-height: 160px;
+}
+
+.mega-insight img{
+  width:100%; height:160px; object-fit:cover;
+  transition:transform .25s ease;
+}
+.mega-insight img:hover{ transform:scale(1.03); }
+
+.mega-insight-content{ display:flex; flex-direction:column; gap:10px; }
+
+.mega-insight h4 a{
+  color:#fff; font-size:14px; font-weight:600; margin:0;
+}
+.mega-insight p{
+  color:rgba(255,255,255,0.85); font-size:14px; line-height:1.5; margin:0;
+}
+
+.mega-insight .btn-borde{
+  border:1px solid #fff; color:#fff; padding:8px 20px;
+  font-size:14px; transition:.25s; position:absolute; bottom:0; right:0;
+}
+.mega-insight .btn-borde:hover{
+  background:#fff; color:#01224D;
+}
+
+@keyframes fadeSlide{
+  from{ opacity:0; transform:translateY(10px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+
+@media (max-width:992px){
+  .mega-dropdown{ display:none !important; }
+}
+
+.mega-dropdown{ display:none !important; }
+
+/* ===============================
+   MENÚ MÓVIL – Submenús colapsables (≤ 991px)
+   =============================== */
+@media (max-width: 992px) {
+
+  .has-mega > .mega{ display:none !important; }
+
+  .mobile-menu-list{
+    list-style:none; margin:0; padding:0; gap:0;
+  }
+  .mobile-menu-list > li{
+    position:relative;
+    border-bottom:1px solid rgba(255,255,255,.10);
+  }
+  .mobile-menu-list a{
+    color:#fff; text-decoration:none; display:block;
+    padding:14px 24px; font-weight:600;
+  }
+  .mobile-menu-list li.open > a{
+    background:rgba(255,255,255,.05);
+  }
+
+  /* ==========================
+       BOTÓN TOGGLE REAL (JS)
+     ========================== */
+  .submenu-toggle{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    background:var(--azul-claro);
+    color:#fff;
+    border:0;
+    cursor:pointer;
+    width:32px;
+    height:28px;
+    border-radius:5px;
+    font-size:18px;
+    font-weight:700;
+    line-height:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:20;
+  }
+
+  /* Evitar duplicación de íconos */
+  .submenu-toggle::before{
+    content:none !important;
+  }
+
+  /* Submenús */
+  .mobile-menu .sub-menu{
+    list-style:none; margin:0;
+    padding:0 0 0 16px;
+    border-left:1px solid rgba(255,255,255,.15);
+    display:none; opacity:0; max-height:0; overflow:hidden;
+    transition:opacity .25s ease,max-height .25s ease;
+  }
+  .mobile-menu li.open > .sub-menu{
+    display:block; opacity:1; max-height:1000px;
+    padding-top:8px; padding-bottom:8px;
+  }
+  .mobile-menu .sub-menu a{
+    padding:12px 24px 12px 14px; font-weight:500;
+  }
+
+  /* Idiomas (GTranslate): misma fila y líneas que el resto del menú */
+  .mobile-menu-list > li.menu-item-language {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0px 24px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    list-style: none;
+  }
+
+  .mobile-menu-list > li.menu-item-language .gtranslate_wrapper,
+  .mobile-menu-list > li.menu-item-language > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .mobile-menu-list > li.menu-item-language a {
+    display: inline-flex;
+    padding: 0;
+    line-height: 0;
+    font-weight: 400;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+
+  .mobile-menu-list > li.menu-item-language a:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+    text-decoration: none;
+  }
+
+  .mobile-menu-list > li.menu-item-language img {
+    width: 32px;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+
+    /* 1. Prevenir que el ítem padre se rompa entre columnas al abrirse */
+    .mega__col--menu .mega__menu > li.menu-item-has-children {
+        break-inside: avoid; /* Mantiene título y submenú juntos en la misma columna */
+    }
+
+    /* 2. Contenedor del Nivel 3 (El <ul> oculto) */
+    .mega__col--menu .mega__menu .sub-menu {
+        /* CRÍTICO: Static hace que ocupe espacio real y no flote */
+        position: static !important; 
+        box-shadow: none !important;
+        background: transparent !important;
+        width: 100%;
+        
+        /* Estado inicial: Oculto (colapsado) */
+        display: none; 
+        
+        /* Estética de "Rama" */
+        margin-top: 6px;
+        margin-bottom: 6px;
+        margin-left: 12px; /* Indentación */
+        padding-left: 12px; /* Espacio entre la línea y el texto */
+        border-left: 1px solid rgba(255, 255, 255, 0.3); /* Línea guía elegante */
+    }
+
+    /* 3. Acción de Hover: Mostrar el nivel 3 */
+    /* Cuando pasas el mouse sobre el padre (Nivel 2), mostramos el hijo (Nivel 3) */
+    .mega__col--menu .mega__menu > li.menu-item-has-children:hover .sub-menu {
+        display: block; 
+        animation: slideInSoft 0.2s ease-out forwards;
+    }
+
+    /* 4. Estilo de los enlaces del Nivel 3 */
+    .mega__col--menu .mega__menu .sub-menu a {
+        font-weight: 400 !important;
+        color: rgba(255, 255, 255, 0.7); /* Blanco suave */
+        padding: 3px 0 !important;
+        text-transform: none; /* Evitar mayúsculas forzadas si las hubiera */
+    }
+
+    /* Hover en los enlaces del nivel 3 */
+    .mega__col--menu .mega__menu .sub-menu a:hover {
+        color: #ffffff !important;
+        transform: translateX(5px); /* Pequeño desplazamiento a la derecha */
+        background: transparent !important;
+    }
+
+    /* Pequeña animación para que no sea un golpe seco */
+    @keyframes slideInSoft {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+}

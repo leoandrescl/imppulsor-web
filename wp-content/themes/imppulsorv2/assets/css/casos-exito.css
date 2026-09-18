@@ -1,0 +1,137 @@
+/* sin fondo en el slide ni en la info */
+.bg-ellipse .bloque-casos-exito {
+    background: url(/wp-content/uploads/ellipse-bg.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top right;
+}
+.bloque-casos-exito .swiper-slide {  box-shadow: none; }
+.caso-info {  padding: 18px 0 0; }
+
+
+
+/* tipografías/meta */
+
+.caso-imagen img {
+  height: 410px;
+  object-fit: cover;
+}
+
+/* responsive */
+@media (max-width:992px){
+  .caso-imagen img{ height:420px; }
+}
+/* Ajustes para el slider */
+.casos-slider {
+  height: 650px;
+}
+
+.caso-item {
+  height: 100%;
+}
+.caso-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+/* .caso-link:hover .btn-outline{
+    background:#fff; color:#001a3a !important;
+} */
+
+/* .caso-link .btn-outline {
+  display: inline-block;
+  pointer-events: none; 
+} */
+.caso-item .btn-outline:hover {
+  background: #fff;
+  color: #001a3a !important;
+  border-color: #fff;
+}
+/* ==========================================================
+   EFECTO HOVER SUAVE EN IMAGEN (zoom interno elegante)
+   ========================================================== */
+
+.caso-imagen {
+  overflow: hidden;              /* evita que se salga del borde */
+  position: relative;
+  height: 410px;
+}
+
+.caso-imagen img {
+  transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transform-origin: center center;
+}
+
+.caso-link:hover .caso-imagen img {
+  transform: scale(1.08);        /* zoom interno */
+  filter: brightness(1.05);      /* leve realce */
+}
+
+/* ==========================================================
+   NAV DEL SLIDER – Flechas arriba a la derecha
+   ========================================================== */
+.bloque-casos-exito__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 5;
+  margin-bottom: 30px;
+}
+
+.bloque-casos-exito__nav {
+  display: flex;
+  gap: 10px;
+}
+
+.bloque-casos-exito__nav .swiper-button-prev, 
+.bloque-casos-exito__nav .swiper-button-next {
+    position: static;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 50%;
+    background: #fff !important;
+    color: #001a3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: background .25s ease, color .25s ease;
+}
+.bloque-casos-exito__nav .swiper-button-prev:hover,
+.bloque-casos-exito__nav .swiper-button-next:hover {
+  background: #001a3a;
+  color: #fff;
+}
+
+.bloque-casos-exito__nav .swiper-button-prev::after,
+.bloque-casos-exito__nav .swiper-button-next::after {
+  font-size: 18px;
+}
+
+
+
+
+/* Avatar de autor (real y placeholder) */
+.autor-foto,
+.autor-foto--placeholder {
+  display: block;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* Imagen real */
+.autor-foto {
+  object-fit: cover;
+}
+
+/* Placeholder corporativo */
+.autor-foto--placeholder {
+  background-image: url('/wp-content/uploads/avatar-placeholder.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

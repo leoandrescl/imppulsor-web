@@ -1,0 +1,360 @@
+<?php
+/**
+ * Bloque: Insights
+ * - Estructura: 3 en slider (izquierda) + 1 destacado (derecha)
+ * - Muestra: Imagen + (Año | Tag) + Título + Autor + Botón
+ * - Usa taxonomía personalizada: tags_insight
+ * - Agregado: resumen en el destacado
+ */
+
+if (!defined('ABSPATH')) exit;
+
+$query = new WP_Query([
+  'post_type'      => 'insights',
+  'posts_per_page' => 6,
+  'post_status'    => 'publish',
+  'orderby'        => 'date',
+  'order'          => 'DESC',
+]);
+
+if (!$query->have_posts()) return;
+
+// Extraer el primero como destacado
+$destacado = null;
+if ($query->have_posts()) {
+  $query->the_post();
+  $destacado = get_post();
+}
+?>
+
+<section class="bloque-insights reveal reveal-up bg-light">
+  <div class="container py-60">
+    <h2 class="heading-lg mb-0">Insights</h2>
+
+    <div class="grid-2 grid-2--carousel-insights gap-20 text-dark">
+
+      <!-- ===============================
+           SLIDER (izquierda)
+      ================================ -->
+      <div class="insights-slider-wrapper">
+        <div class="insights-slider-header">
+          <div class="slider-arrows">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+
+        <div class="swiper insights-slider">
+          <div class="swiper-wrapper">
+            <?php while ($query->have_posts()) : $query->the_post(); ?>
+              <?php
+                // Autor relacionado (ACF)
+                $autor_rel = get_field('autor_relacionado');
+                $nombre_autor = '';
+                if (is_array($autor_rel) && !empty($autor_rel)) {
+                  $first = $autor_rel[0];
+                  $autor_id = is_object($first) ? $first->ID : (is_array($first) && isset($first['ID']) ? $first['ID'] : $first);
+                  $nombre_autor = get_the_title($autor_id);
+                } else {
+                  $nombre_autor = get_the_author();
+                }
+
+                // Año y Tag (taxonomía personalizada)
+                $anio = get_the_date('Y');
+                $tags = get_the_terms(get_the_ID(), 'tags_insight');
+                $tag_name = ($tags && !is_wp_error($tags)) ? esc_html($tags[0]->name) : '';
+              ?>
+              <div class="swiper-slide insight-item">
+                <a href="<?php the_permalink(); ?>" class="insight-card-link">
+                  <div class="insight-card">
+                    <?php if (has_post_thumbnail()) : ?>
+                      <div class="insight-card__image">
+                        <?php the_post_thumbnail('large', ['class' => 'w-100']); ?>
+                      </div>
+                    <?php endif; ?>
+
+                    <div class="insight-card__content">
+                      <?php if ($anio || $tag_name): ?>
+                        <p class="fs-14 mb-10 insight-meta">
+                          <?php echo esc_html($anio); ?>
+                          <?php if ($tag_name) echo ' | ' . esc_html($tag_name); ?>
+                        </p>
+                      <?php endif; ?>
+
+                      <h3 class="fs-18 mb-10"><?php the_title(); ?></h3>
+
+                      <?php if ($nombre_autor): ?>
+                        <p class="fs-14 mb-20 insight-author"><?php echo esc_html($nombre_autor); ?></p>
+                      <?php endif; ?>
+
+                      <span class="btn-outline--black">Leer artículo</span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            <?php endwhile; wp_reset_postdata(); ?>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===============================
+           DESTACADO (derecha)
+      ================================ -->
+      <?php if ($destacado): ?>
+        <?php
+          $autor_rel_d = get_field('autor_relacionado', $destacado->ID);
+          $nombre_autor_d = '';
+          if (is_array($autor_rel_d) && !empty($autor_rel_d)) {
+            $first = $autor_rel_d[0];
+            $autor_id = is_object($first) ? $first->ID : (is_array($first) && isset($first['ID']) ? $first['ID'] : $first);
+            $nombre_autor_d = get_the_title($autor_id);
+          } else {
+            $nombre_autor_d = get_the_author_meta('display_name', $destacado->post_author);
+          }
+
+          $anio_d = get_the_date('Y', $destacado->ID);
+          $tags_d = get_the_terms($destacado->ID, 'tags_insight');
+          $tag_name_d = ($tags_d && !is_wp_error($tags_d)) ? esc_html($tags_d[0]->name) : '';
+
+          $resumen_d = get_field('resumen_insight', $destacado->ID);
+          if (!$resumen_d) {
+            $resumen_d = wp_trim_words(get_the_excerpt($destacado->ID), 25, '…');
+          }
+        ?>
+        <div class="insight-destacado">
+          <a href="<?php echo get_permalink($destacado->ID); ?>" class="insight-card-link">
+            <div class="insight-card insight-card--destacado">
+              <?php if (has_post_thumbnail($destacado->ID)) : ?>
+                <div class="insight-card__image">
+                  <?php echo get_the_post_thumbnail($destacado->ID, 'large', ['class' => 'w-100']); ?>
+                </div>
+              <?php endif; ?>
+
+              <div class="insight-card__content">
+                <?php if ($anio_d || $tag_name_d): ?>
+                  <p class="fs-14 mb-10 insight-meta">
+                    <?php echo esc_html($anio_d); ?>
+                    <?php if ($tag_name_d) echo ' | ' . esc_html($tag_name_d); ?>
+                  </p>
+                <?php endif; ?>
+
+                <h3 class="fs-18 mb-10"><?php echo esc_html(get_the_title($destacado->ID)); ?></h3>
+
+                <?php if ($nombre_autor_d): ?>
+                  <p class="fs-14 mb-10 insight-author"><?php echo esc_html($nombre_autor_d); ?></p>
+                <?php endif; ?>
+
+                <?php if ($resumen_d): ?>
+                  <div class="fs-14 mb-20 insight-resumen">
+                    <?php echo esc_html($resumen_d); ?>
+                  </div>
+                <?php endif; ?>
+
+                <span class="btn-outline--black">Leer artículo</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      <?php endif; ?>
+
+    </div><!-- /.grid-2 -->
+  </div>
+</section>
+
+<?php wp_reset_postdata(); ?>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.insights-slider-wrapper').forEach(function (wrap) {
+    const sliderEl = wrap.querySelector('.insights-slider');
+    const nextEl   = wrap.querySelector('.swiper-button-next');
+    const prevEl   = wrap.querySelector('.swiper-button-prev');
+    if (!sliderEl || !nextEl || !prevEl) return;
+
+    // Evita doble init si ya existe
+    if (sliderEl.swiper) {
+      sliderEl.swiper.params.navigation.nextEl = nextEl;
+      sliderEl.swiper.params.navigation.prevEl = prevEl;
+      sliderEl.swiper.navigation.init();
+      sliderEl.swiper.navigation.update();
+      return;
+    }
+
+    new Swiper(sliderEl, {
+      slidesPerView: 2, // 👈 Cambiado de 3 a 2
+      spaceBetween: 24,
+      navigation: { nextEl: nextEl, prevEl: prevEl },
+      breakpoints: {
+        0:   { slidesPerView: 1.1, spaceBetween: 16 },
+        768: { slidesPerView: 1.5, spaceBetween: 20 },
+        1024:{ slidesPerView: 2,   spaceBetween: 24 } // 👈 Ajustado también aquí
+      }
+    });
+  });
+});
+</script>
+
+
+
+
+<style>
+
+@media (min-width:1024px) {
+  .insight-destacado {
+    margin-top: -50%;
+  }
+  .grid-2--carousel-insights {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* ===================================
+   WRAPPER SLIDER
+=================================== */
+.insights-slider-wrapper {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.grid-2--carousel-insights {
+    background: url(/wp-content/uploads/ellipse-bg.svg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: contain;
+}
+/* ===================================
+   TARJETAS INSIGHTS — Impulsor v2
+=================================== */
+.insight-card {
+  transition: transform .25s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.insight-card-link {
+  text-decoration: none;
+  color: inherit; 
+  display: block;
+}
+
+.insight-card__image {
+  overflow: hidden;
+  height: 290px;
+  width: 100%;
+  position: relative;
+}
+.insight-destacado .insight-card__image {
+    height: 420px;
+}
+.insight-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease, filter .6s ease, opacity .6s ease;
+  filter: brightness(1);
+  opacity: 1;
+}
+
+.insight-card:hover .insight-card__image img {
+  transform: scale(1.08);
+  filter: brightness(0.85);
+  opacity: 0.9;
+}
+
+/* Contenido */
+.insight-card__content {
+  padding: 10px 0;
+}
+
+.insight-card__content h3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  max-height: 4em;
+}
+.insight-card__content .insight-meta {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-height: 2em;
+    font-weight: 600;
+    text-align: left;
+}
+.insight-resumen {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  max-height: 4.5em;
+  text-align: justify;
+  color: #000;
+}
+
+/* Botón borde negro */
+.btn-outline--black {
+  display: inline-block;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: none;
+  transition: all .2s ease;
+}
+
+.btn-outline--black:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ===================================
+   FLECHAS DEL SLIDER INSIGHTS
+   Arriba a la derecha, sin fondo
+=================================== */
+/* --- INSIGHTS: flechas visibles y clickeables --- */
+.insights-slider-wrapper{ position: relative; }
+.insights-slider{ position: relative; z-index: 1; }
+
+.insights-slider-header{
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 20;            /* sobre las tarjetas */
+  padding: 20px 0 10px;
+  margin-bottom: 0;
+}
+
+.slider-arrows{ display:flex; gap:14px; }
+
+.slider-arrows .swiper-button-prev,
+.slider-arrows .swiper-button-next{
+  position: static !important;          /* saca el absolute de Swiper */
+  inset: auto !important;
+  width: 44px; height: 44px;
+  background: transparent !important;   /* sin fondo */
+  border: none !important;
+  color: var(--azul-corporativo);
+  display:flex; align-items:center; justify-content:center;
+  pointer-events: auto;                 /* aseguro click */
+  transition: color .25s ease, transform .25s ease;
+}
+
+.slider-arrows .swiper-button-prev:hover,
+.slider-arrows .swiper-button-next:hover{
+  color: var(--azul-claro);
+  transform: scale(1.1);
+}
+
+.slider-arrows .swiper-button-prev::after,
+.slider-arrows .swiper-button-next::after{
+  font-size: 20px; font-weight: 600;
+}
+
+
+
+</style>

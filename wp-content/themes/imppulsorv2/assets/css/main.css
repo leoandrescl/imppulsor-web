@@ -1,0 +1,1441 @@
+/* ============================================================
+   IMPPULSOR v2 — ESTILOS GLOBALES
+   ============================================================ */
+
+/* === FUENTE PRINCIPAL === */
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
+/* === RESETEO SIMPLE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+html,
+body {
+  font-family: "Jost", sans-serif;
+  background-color: #030f23;
+  color: #fff;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 300;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* varios globales */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+  background-color: transparent;
+}
+
+b,
+strong {
+  font-weight: 500;
+}
+/**/
+.grecaptcha-badge {
+    display: none !important;
+}
+/*  */
+.no-results.not-found .post-image {
+  display: none;
+}
+
+/* texto expandible */
+.texto-expandible--oculto {
+  display: none;
+  transition: opacity .3s ease;
+}
+
+
+.texto-expandible--oculto.visible {
+  display: block;
+  opacity: 1;
+}
+
+.texto-expandible__toggle {
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--azul-claro);
+  font-weight: 500;
+  transition: opacity .2s;
+}
+
+.texto-expandible__toggle:hover {
+  opacity: .7;
+}
+
+/* texto expandible fin */
+
+.entry-content h2 {
+  font-size: clamp(18px, 2.5vw, 22px);
+}
+
+li[aria-level="3"]::marker {
+  font-weight: bold;
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+  color: #000;
+}
+
+ol {
+  list-style: decimal;
+  margin: 0 0 1em 1em;
+}
+
+/*
+ * Listas numeradas Gutenberg (un <ol> por sección con start="N"):
+ * contador continuo + columna fija para alinear 1–9 y 10–16.
+ */
+.entry-content {
+  counter-reset: wp-block-section-num;
+}
+
+.entry-content ol.wp-block-list:has(> li:only-child) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entry-content ol.wp-block-list:has(> li:only-child) > li {
+  display: grid;
+  grid-template-columns: 3em minmax(0, 1fr);
+  column-gap: 0.5em;
+  align-items: start;
+  margin: 0 0 0.25em;
+  padding: 0;
+}
+
+.entry-content ol.wp-block-list:has(> li:only-child) > li::before {
+  counter-increment: wp-block-section-num;
+  content: counter(wp-block-section-num) ".";
+  text-align: right;
+  font-weight: 600;
+  line-height: inherit;
+}
+
+/* Listas <ol> normales (varios ítems en un solo bloque) */
+.entry-content ol.wp-block-list:not(:has(> li:only-child)) {
+  margin: 0 0 1em;
+  padding-left: 1.75em;
+  list-style: decimal;
+  list-style-position: outside;
+}
+
+/*  */
+.template-casos-insights blockquote {
+  border-left: 9px solid #006EFF;
+  padding: 0 20px;
+  font-size: 16px;
+  font-style: normal;
+  margin: 0 0 1.5em;
+  position: relative;
+}
+
+.template-casos-insights .wp-block-heading {
+  font-size: clamp(18px, 2vw, 26px);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.template-casos-insights .wp-block-heading::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 23px;
+  height: 23px;
+  background: #006EFF;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.template-casos-insights .wp-block-heading {
+  padding-left: 40px;
+  position: relative;
+}
+
+.template-casos-insights pre {
+  background: #F7F7F7;
+  padding: 30px 40px;
+}
+
+aside form input.w-100 {
+  background: #fff !important;
+  border: none;
+  color: #000 !important;
+}
+
+code,
+kbd,
+tt,
+var {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  font-family: 'Jost', sans-serif !important;
+}
+
+/* =========================================================
+   FADE IN – solo bloques principales (.fade-in--animate vía main.js)
+   Alias legacy: .reveal, .reveal-up, etc. (misma lógica)
+   Elementos con .fade-in anidados o secundarios no se ocultan
+========================================================= */
+
+:is(
+  .fade-in--animate,
+  .reveal--animate,
+  .reveal-up--animate,
+  .reveal-down--animate,
+  .reveal-left--animate,
+  .reveal-right--animate
+) {
+  opacity: 0;
+  transform: none !important;
+  filter: none;
+  transition: opacity 0.7s ease;
+  will-change: opacity;
+}
+
+:is(
+  .fade-in--animate,
+  .reveal--animate,
+  .reveal-up--animate,
+  .reveal-down--animate,
+  .reveal-left--animate,
+  .reveal-right--animate
+).visible {
+  opacity: 1;
+  transform: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(
+    .fade-in--animate,
+    .reveal--animate,
+    .reveal-up--animate,
+    .reveal-down--animate,
+    .reveal-left--animate,
+    .reveal-right--animate
+  ) {
+    transition: opacity 0.2s ease;
+  }
+}
+
+/* Hero social: visible sin animación propia (el hero principal anima el bloque) */
+.hero-social.fade-in.visible :is(a, svg) {
+  opacity: 0.7;
+  transform: none;
+  transition: opacity 0.3s ease;
+}
+
+.hero-social.fade-in.visible :is(a:hover, svg:hover) {
+  opacity: 1;
+}
+
+/* Productos destacados (animación manual en el bloque) */
+#bloque-productos-destacados.fade-in:not(.visible) {
+  opacity: 0;
+  transform: none;
+  transition: opacity 0.7s ease;
+}
+
+#bloque-productos-destacados.fade-in.visible {
+  opacity: 1;
+}
+
+
+/* ============================================================
+   VARIABLES Y PALETA
+   ============================================================ */
+:root {
+  /* --azul-corporativo: #01224d; */
+  --azul-corporativo: #061c2c;
+  --azul-claro: #126cfb;
+  --blanco: #FFFFFF;
+  --gris: #F5F5F5;
+  --negro: #000000;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ============================================================
+   CONTENEDORES Y SECCIONES
+   ============================================================ */
+.page-header,
+.sidebar .widget,
+.site-main>* {
+  margin-bottom: 0px;
+}
+
+main,
+section {
+  z-index: 1;
+  position: relative;
+}
+
+.container,
+.content-area {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto !important;
+  position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1220px) {
+  footer .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+
+
+.section {
+  padding: 80px 0;
+}
+
+@media (max-width:992px) {
+  .footer-bottom__address {
+    max-width: 100%;
+    text-align: left !important;
+  }
+
+}
+
+/* .swiper {
+    padding-inline: 2px !important;
+} */
+
+/* ============================================================
+   CONTENEDORES DE CONTENIDO (BLOQUES BLANCOS)
+   ============================================================ */
+.bloque-blanco,
+.contenedor-articulo {
+  background: var(--blanco);
+  color: var(--negro);
+  border-radius: var(--radius);
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+
+/* ============================================================
+   TIPOGRAFÍA Y TEXTOS
+   ============================================================ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--negro);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1,
+.titulo-principal {
+  font-size: clamp(28px, 3vw, 44px);
+  margin-bottom: 24px;
+}
+
+h2,
+.subtitulo-principal {
+  font-size: clamp(22px, 2.5vw, 30px);
+  margin-bottom: 16px;
+}
+
+h3,
+.subtitulo-secundario {
+  font-size: clamp(18px, 2vw, 26px);
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: var(--negro);
+  font-weight: 300;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+article ul {
+  list-style: disc;
+  margin: 0 0 1.5em 3em;
+}
+
+ul,
+li {
+  color: #000;
+}
+
+a {
+  color: var(--azul-claro);
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+/* ============================================================
+   BOTONES GLOBALES
+   ============================================================ */
+/* botón cuadrado */
+.btn-outline {
+  font-size: 14px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: .2s ease;
+}
+
+.btn-outline--square {
+  border-radius: 0;
+}
+
+/* <- cuadrado */
+.btn-outline:hover {
+  background: #fff;
+  color: #001a3a !important;
+}
+
+@media (max-width: 768px) {
+  /* .btn-outline { padding: 8px 12px; font-size: 13px; } */
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 12px 26px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.2s ease;
+}
+
+.btn-primario,
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"],
+a.button,
+a.wp-block-button__link:not(.has-background) {
+  background: var(--azul-corporativo);
+  color: var(--blanco);
+  transition: all 0.3s ease;
+}
+
+.btn-primario:hover {
+  background: var(--azul-claro);
+  color: var(--blanco);
+}
+
+.btn-secundario {
+  background: var(--gris);
+  color: var(--negro);
+  transition: all .3s ease;
+}
+
+.btn-secundario:hover {
+  background: var(--azul-claro);
+  color: #fff;
+}
+
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+a.button:hover,
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+a.button:focus,
+a.wp-block-button__link:not(.has-background):active,
+a.wp-block-button__link:not(.has-background):focus,
+a.wp-block-button__link:not(.has-background):hover {
+  color: #ffffff;
+  background-color: var(--azul-claro);
+}
+
+.header-buttons a.btn {
+  border-radius: 50px;
+  padding: 6px 32px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ============================================================
+   ACCIONES (descargar, compartir, etc.)
+   ============================================================ */
+.acciones {
+  margin-top: 50px;
+  padding-top: 35px;
+  border-top: 1px solid #000;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: start;
+}
+
+
+.acciones a {
+  color: #000;
+  text-decoration: none;
+}
+
+.acciones a:hover {
+  text-decoration: none;
+  color: var(--azul-claro) !important;
+}
+
+.acciones img {
+  position: relative;
+  top: 6px;
+}
+
+/* ============================================================
+   LAYOUT GLOBAL (SIDEBAR + CONTENIDO)
+   ============================================================ */
+.content-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 60px;
+  align-items: start;
+  background: #fff;
+  padding: 60px;
+}
+
+@media (max-width: 992px) {
+  .content-layout {
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* === SIDEBAR GLOBAL === */
+.sidebar {
+  line-height: 1.5;
+}
+
+.sidebar h4 {
+  margin: 24px 0 12px;
+}
+
+.sidebar p,
+.sidebar li,
+.sidebar a {
+  color: var(--negro);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 6px;
+}
+
+.sidebar a:hover {
+  color: var(--azul-claro);
+  text-decoration: none;
+}
+
+.sidebar ul li:hover a {
+  color: var(--azul-claro) !important;
+}
+
+.sidebar a.autor-linkedin:hover img {
+  transform: scale(1.15) !important;
+}
+
+.sidebar a.autor-linkedin:hover img {
+  transition: .3s;
+}
+
+.d-flex.align-center img.autor-foto.rounded-full {
+  height: 90px !important;
+}
+/* === TARJETA DE AUTOR (reutilizable) === */
+.autor-card {
+  background: var(--blanco);
+  color: var(--negro);
+  border-radius: var(--radius);
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.autor-card.block {
+  display: block;
+}
+
+.autor-card:hover {
+  cursor: pointer;
+}
+
+.autor-card img.autor-foto {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.autor-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.autor-card p {
+  margin: 4px 0;
+  color: #444;
+}
+
+.autor-linkedin {
+  color: var(--azul-claro);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.autor-linkedin:hover {
+  text-decoration: underline;
+}
+
+/* ============================================================
+   MODAL AUTOR (solo Insights)
+   ============================================================ */
+.autor-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+}
+
+.autor-modal.active {
+  display: block;
+}
+
+.autor-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .55);
+}
+
+.autor-modal__dialog {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  width: calc(100% - 40px);
+  margin: 60px auto;
+  background: #fff;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, .15);
+  top: 25%;
+}
+
+.autor-modal__close {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  border: 0;
+  background: none;
+  color: #000;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.autor-modal__header {
+  display: grid;
+  display: flex;
+  /* grid-template-columns: 96px 1fr; */
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.autor-foto.grande {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+/* ============================================================
+   CONTENIDO PRINCIPAL (MAIN)
+   ============================================================ */
+
+
+
+/* ============================================================
+   FIX DE ESTRUCTURA (GeneratePress)
+   ============================================================ */
+.site-content,
+.site-content #content {
+  display: block !important;
+}
+
+.site.grid-container.container.hfeed {
+  padding: 0 !important;
+}
+
+.separate-containers .site-main {
+  margin: 0;
+}
+
+/* ============================================================
+   RESPONSIVE GLOBAL
+   ============================================================ */
+
+
+/* === MODO IMPRESIÓN === */
+@media print {
+
+  header,
+  footer,
+  .hero-section,
+  .hero-insight,
+  .acciones,
+  .site-footer {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  .content-layout,
+  .contenedor-articulo,
+  article,
+  main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+}
+
+/* ============================================================
+    FORMULARIOS (Contact Form 7)
+   ============================================================ */
+.wpcf7 form.sent .wpcf7-response-output {
+  background: #fff;
+}
+
+span.wpcf7-spinner {
+  position: absolute;
+  top: 8px;
+  right: -8px;
+}
+
+.wpcf7 {
+  background-size: cover;
+  background-position: center right;
+  height: auto;
+}
+
+.wpcf7 form p {
+  text-align: left;
+}
+
+textarea.wpcf7-textarea {
+  height: 60px;
+}
+
+.wpcf7 input:not([type=submit]),
+.wpcf7 select,
+.wpcf7 textarea {
+  width: 100%;
+  padding: .75em;
+  background: transparent;
+  border: none;
+  /* border-bottom: 1px solid #01224D; */
+  border-bottom: 1px solid #000;
+  border-radius: 0;
+  padding: 5px 0;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: Jost, sans-serif;
+}
+
+form br {
+  display: none;
+}
+
+form.wpcf7-form {
+  padding: 40px 60px 40px 60px;
+}
+
+h2.h2-title-form {
+  color: var(--azul-claro);
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+p.p-header-form {
+  color: var(--azul-corporativo);
+  line-height: 27px;
+  font-weight: 300;
+  margin-bottom: 0 !important;
+}
+
+.form__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.wpcf7 input[type=checkbox],
+.wpcf7 input[type=radio] {
+  float: left;
+  text-align: left;
+  width: max-content !important;
+  top: 5px;
+  position: relative;
+  margin-right: 5px;
+}
+
+.wpcf7-list-item {
+  display: inline-grid;
+  margin: 0;
+  gap: 10px;
+}
+
+.form__submit {
+  justify-items: end;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+input.wpcf7-submit.form__button {
+  background: var(--azul-corporativo);
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 0;
+  min-width: 163px;
+}
+
+input.wpcf7-submit.form__button:hover {
+  background: var(--azul-claro);
+  color: #fff;
+}
+
+.wpcf7 form .wpcf7-response-output {
+  color: #000;
+}
+
+/*  */
+@media (max-width: 768px) {
+  form.wpcf7-form {
+    padding: 40px 20px 40px 20px;
+  }
+}
+
+/* ============================================================
+    FORMULARIOS (Contact Form 7) fin
+   ============================================================ */
+.page-contacto.bg-light textarea.wpcf7-form-control.wpcf7-textarea {
+  color: #000 !important;
+}
+
+/* ===========================================
+   BLOQUE CONTACTO PROFESIONAL – Imppulsor v2
+   =========================================== */
+.bloque-contacto-profesional {
+  background: url(/wp-content/uploads/bg-gradiente-contacto-profesional.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 90px;
+}
+
+section.bloque-contacto-profesional .bloque-contacto-profesional__grid,
+section.bloque-contacto-profesional .grid-2 {
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 100%;
+  align-items: stretch !important;
+}
+
+.bloque-contacto-profesional__media {
+  min-width: 0;
+  display: flex;
+  align-self: stretch;
+  min-height: 100%;
+}
+
+.bloque-contacto-profesional__media .bloque-contacto-profesional__img,
+.bloque-contacto-profesional__media img,
+.contacto-profesional__img img {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  display: block;
+}
+
+/* Variante clara (Nosotros, Equipo) */
+.bloque-contacto-profesional--light {
+  background: #fff !important;
+  padding-bottom: 60px;
+}
+
+.bloque-contacto-profesional--light .contacto-profesional__contenido {
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.bloque-contacto-profesional--light .contacto-profesional__contenido :is(h1, h2, h3, h4, h5, h6, p, label, span, a, .wpcf7-list-item-label, .p-header-form) {
+  color: #000 !important;
+}
+
+.bloque-contacto-profesional--light .contacto-profesional__contenido .wpcf7 input:not([type="submit"]),
+.bloque-contacto-profesional--light .contacto-profesional__contenido .wpcf7 select,
+.bloque-contacto-profesional--light .contacto-profesional__contenido .wpcf7 textarea {
+  background: #fff !important;
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+.bloque-contacto-profesional--light .contacto-profesional__contenido .wpcf7 input::placeholder,
+.bloque-contacto-profesional--light .contacto-profesional__contenido .wpcf7 textarea::placeholder {
+  color: #000 !important;
+  opacity: 0.7;
+}
+
+.bloque-contacto-profesional--light .contacto-profesional__form select.wpcf7-form-control.wpcf7-select {
+  color: #000 !important;
+  border-bottom-color: #000 !important;
+}
+
+.bloque-contacto-profesional--light .contacto-profesional__form input:not([type="submit"]),
+.bloque-contacto-profesional--light .contacto-profesional__form textarea {
+  color: #000 !important;
+  border-bottom-color: #000 !important;
+}
+
+.bloque-contacto-profesional--light .contacto-profesional__form input[type="submit"],
+.bloque-contacto-profesional--light .contacto-profesional__form .wpcf7-submit.form__button {
+  color: #fff !important;
+  background: var(--azul-claro) !important;
+  border-bottom: none !important;
+}
+
+.bloque-contacto-profesional--light .contacto-profesional__form input[type="submit"]:hover,
+.bloque-contacto-profesional--light .contacto-profesional__form .wpcf7-submit.form__button:hover {
+  color: #fff !important;
+  background: #0056d6 !important;
+}
+
+.bloque-contacto-profesional--light .contacto-profesional__form input::placeholder,
+.bloque-contacto-profesional--light .contacto-profesional__form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.55) !important;
+}
+
+
+.contacto-profesional__contenido {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  min-height: 100%;
+}
+
+.contacto-profesional__form {
+  max-width: 650px;
+}
+
+.contacto-profesional__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+}
+
+.contacto-profesional__form select.wpcf7-form-control.wpcf7-select {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.contacto-profesional__form input,
+.contacto-profesional__form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff !important;
+  color: #fff !important;
+  padding: 10px 0;
+  font-size: 15px;
+  width: 100%;
+}
+
+.contacto-profesional__form option {
+  color: #000 !important;
+}
+
+.contacto-profesional__form input::placeholder,
+.contacto-profesional__form textarea::placeholder {
+  color: rgba(255, 255, 255, .6);
+}
+
+.contacto-profesional__form input[type="submit"],
+.contacto-profesional__form button {
+  background: var(--azul-claro);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: background .2s;
+  cursor: pointer;
+  align-self: flex-end;
+  border-bottom: none !important;
+}
+
+.contacto-profesional__form input[type="submit"]:hover {
+  background: #0056d6;
+}
+
+.contacto-profesional__form .wpcf7-list-item {
+  margin-left: 0;
+}
+
+@media (max-width: 992px) {
+  .bloque-contacto-profesional__media {
+    min-height: auto;
+  }
+
+  .bloque-contacto-profesional__media .bloque-contacto-profesional__img,
+  .bloque-contacto-profesional__media img,
+  .contacto-profesional__img img {
+    min-height: 280px;
+    height: auto;
+    flex: none;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  section.bloque-contacto-profesional .bloque-contacto-profesional__grid,
+  section.bloque-contacto-profesional .grid-2 {
+    width: 100%;
+    grid-template-columns: 100%;
+  }
+
+  .bloque-contacto-profesional {
+    padding-bottom: 0;
+  }
+
+  .bloque-contacto-profesional--light {
+    padding-bottom: 40px;
+  }
+
+  .contacto-profesional__form {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .contacto-profesional__contenido {
+    padding: 0 !important;
+  }
+
+
+
+  .contacto-profesional__img {
+    order: -1;
+    height: 400px;
+  }
+  
+}
+
+/* ===========================================
+   BLOQUE CONTACTO PROFESIONAL – Imppulsor v2 - fin
+   =========================================== */
+
+/* ============================================================
+   SPECIAL PARALLAX (SPP) - Mobile Optimized
+   ============================================================ */
+.spp-section {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.spp-bg-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  transform: translateZ(0);
+  /* Force isolated layer */
+}
+
+.spp-bg-image {
+  position: absolute;
+  top: -20%;
+  left: 0;
+  width: 100%;
+  height: 140%;
+  /* Increased buffer to prevent overscroll gaps */
+  object-fit: cover;
+  pointer-events: none;
+  will-change: transform;
+  transition: none !important;
+  /* Disable conflicting transitions */
+  transform: translate3d(0, 0, 0);
+  /* Init HW acceleration */
+  opacity: 1 !important;
+  /* Override fade-in if needed */
+}
+
+/* Bandas parallax solo imagen (sin panel en .container): más altas en mobile */
+@media (max-width: 992px) {
+  .spp-section:not(:has(> .container)) {
+    aspect-ratio: 4 / 3 !important;
+    width: 100% !important;
+  }
+}
+
+/* ============================================================
+   HOME PAGE: MOBILE LAYOUT ADJUSTMENTS
+   ============================================================ */
+@media (max-width: 768px) {
+
+  /* Updated Robust Fix: Use last-of-type and expanded selectors for Home/Grid */
+  .bloque-blanco p:last-of-type,
+  .contenedor-articulo p:last-of-type,
+  .entry-content p:last-of-type,
+  .bloque-home p:last-of-type,
+  .bloque-home div>p:last-of-type,
+  .grid-2--2fr-3fr>div>p:last-of-type,
+  .grid-2>div>p:last-of-type,
+  .bloque-blanco ul:last-of-type,
+  .bloque-blanco ol:last-of-type {
+    margin-bottom: 0;
+  }
+
+  /* Fallback for generic containers if needed */
+  .bloque-blanco>*:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .desktop-only-cta {
+    display: none !important;
+  }
+
+  .mobile-only-cta {
+    display: inline-flex !important;
+    margin-top: 25px;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Remove margin-top from stacked mobile CTAs to prevent excessive spacing */
+  .mobile-only-cta+.mobile-only-cta {
+    margin-top: 0 !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only-cta {
+    display: none !important;
+  }
+}
+
+/* ============================================================
+   FOOTER REDESIGN (GRID LAYOUT)
+   ============================================================ */
+   footer.bg-dark {
+    background: #030f23 !important;
+}
+
+
+@media (min-width:993px) {
+  .footer-col.branding {
+    height: 100%;
+    position: relative;
+  }
+
+  .footer-social.d-flex.gap-10 {
+    position: absolute;
+    bottom: 30px;
+  }
+}
+
+.footer-copyright {
+  border-top: 1px solid #fff;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-heading {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.footer-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 12px;
+}
+
+.footer-menu a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 15px;
+}
+
+.footer-menu a:hover {
+  color: #fff;
+}
+
+.footer-address-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.footer-address-list li {
+  min-height: 90px;
+}
+
+.footer-address-list strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+.footer-social img,
+.footer-social svg {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.footer-social img:hover,
+.footer-social svg:hover {
+  opacity: 1;
+}
+
+.border-top-opacity {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.opacity-70 {
+  opacity: 0.7;
+}
+
+/* -------------------------------
+   RESPONSIVE
+--------------------------------*/
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .pt-40-mob {
+    padding-top: 40px !important;
+  }
+
+  .footer .pt-60 {
+    padding-top: 60px !important;
+  }
+
+  .footer .footer-copyright.mt-20 {
+    margin-top: 0 !important;
+  }
+
+  .branding {
+    grid-column: span 2;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .branding {
+    grid-column: span 1;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+}
+
+/* ============================================================
+   OVERRIDES FOR CONTACT PAGE (White Background)
+   ============================================================ */
+.text-dark .footer-heading {
+  color: #000 !important;
+}
+
+.text-dark .footer-menu a {
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.text-dark .footer-menu a:hover {
+  color: #000 !important;
+}
+
+.text-dark .footer-address-list {
+  color: rgba(0, 0, 0, 0.85) !important;
+}
+
+.text-dark .footer-address-list strong {
+  color: #000 !important;
+}
+
+.border-top-000 {
+  border-top: 1px solid #000;
+}
+
+.border-top-fff {
+  border-top: 1px solid #fff;
+}
+
+.border-top {
+  border-top: 1px solid;
+}
+
+.no-border-top .border-top {
+  border-top: none !important;
+}
+
+/**/
+
+div.badge.bg-light-blue {
+  text-align: center;
+  min-width: 189px;
+  width: 189px;
+  max-width: 189px;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  text-transform: uppercase;
+}
+
+a.btn.btn-terciario {
+  background: var(--azul-claro);
+  color: #fff;
+  transition: all .3s ease;
+}
+
+a.btn.btn-terciario:hover {
+  background: var(--gris);
+  color: #000;
+}
+
+/**/
+.hero-social.fade-in.visible {
+  display: none !important;
+  opacity: 0 !important;
+}
+.page-id-52 .hero-social,
+.page-id-58 .hero-social, 
+.page-id-80 .hero-social {
+  display: flex !important;
+}
+
+/**/
+.bg-gradiente-insights-casos {
+  background: linear-gradient(131deg, #030F23, #006EFF);
+  background: url(/wp-content/uploads/bg-gradiente-1.svg) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+/**/
+.bg-dark-solid,
+.bg-dark-blue,
+.bg-dark-blue.pb-60 {
+  background: #030f23 !important;
+}

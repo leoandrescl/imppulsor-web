@@ -1,0 +1,1265 @@
+/* =========================================================
+   SISTEMA DE SECCIONES – IMPPULSOR
+   Estructura adaptable para contenido institucional
+========================================================= */
+.grecaptcha-badge {
+  z-index: 1;
+}
+
+/* ----- Contenedores principales ----- */
+.section {
+  padding: 60px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.section--light {
+  background: #fff;
+  color: #000;
+  padding: 60px;
+
+}
+
+.section--dark {
+  background: #03132b;
+  color: #fff;
+  padding: 60px;
+}
+
+.section--p-60 {
+  padding: 60px;
+}
+
+.separator::after {
+  content: "";
+  width: 100%;
+  display: block;
+  padding-top: 50px;
+  border-bottom: 1px solid;
+}
+
+.separator-40y::after {
+  content: "";
+  width: 100%;
+  display: block;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid;
+}
+
+/* Separador línea negra: max 1200px, 20px laterales, 60/40px vertical */
+.section.sep-linea {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+  background: #fff !important;
+}
+
+.section.sep-linea .sep-linea__inner {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  box-sizing: border-box;
+  border: 0;
+}
+
+.section.sep-linea .sep-linea__inner::before {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 1px solid #000;
+}
+
+@media (max-width: 992px) {
+  .section.sep-linea {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+/* ----- Grillas y columnas ----- */
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  align-items: start;
+}
+
+.grid-2--35-65 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 0px;
+}
+
+.grid-2--75-25 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.grid-2--25-75 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.grid-2--2fr-3fr {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.grid-2--2fr-1fr {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 60px;
+  align-items: start;
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Responsive: tablet y mobile */
+@media (max-width: 992px) {
+
+  .py-0-mob {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .px-0-mob {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .mb-0-mob {
+    margin-bottom: 0 !important;
+  }
+
+  .grid-2,
+  .grid-2--75-25,
+  .grid-2--2fr-3fr,
+  .grid-4,
+  .grid-2--35-65 {
+    gap: 40px;
+    grid-template-columns: 100% !important;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .grid-2,
+  .grid-2--75-25,
+  .grid-2--2fr-3fr,
+  .grid-4,
+  .grid-2--35-65 {
+    grid-template-columns: 100% !important;
+    gap: 20px;
+  }
+}
+
+/* =========================================================
+   TITULOS Y TEXTOS
+========================================================= */
+
+.heading-lg {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.heading-md {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 30px;
+}
+
+.heading-sm {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+/* Activa la línea azul solo cuando se usa .line-left */
+.line-left {
+  padding-left: 18px;
+  position: relative;
+}
+
+.line-left::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 6px;
+  min-height: 1em;
+  height: 90%;
+  background: #006eff;
+  border-radius: 2px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   IMÁGENES Y UTILIDADES
+========================================================= */
+.image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text img {
+  max-width: 100%;
+}
+
+.text-body+.text-body {
+  margin-top: 18px;
+}
+
+.text strong {
+  font-weight: 600;
+}
+
+/* =========================================================
+   BOTONES REUTILIZABLES
+========================================================= */
+.botones-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all .25s ease;
+  color: #000;
+  margin-bottom: 10px;
+  gap: 12px;
+}
+
+.btn-arrow::after {
+  content: '➜';
+  font-size: 22px;
+  transition: transform .2s;
+  color: var(--azul-claro);
+}
+
+.btn-arrow.btn-arrow-dark::after {
+  color: var(--azul-corporativo);
+}
+
+.btn-arrow:hover {
+  text-decoration: none;
+}
+
+.btn-arrow:hover::after {
+  transform: translateX(4px);
+}
+
+
+.btn-arrow:last-child {
+  margin-bottom: 0;
+}
+
+/* DIAGNOSTICO DE MADUREZ COMERCIAL */
+.page-diagnostico .section:not(.section-diagnostico-parallax) {
+  padding: 0;
+}
+
+/* section--light / section--p-60: solo ritmo vertical; el .container define el ancho */
+.page-diagnostico:not(.page-diagnostico-2) .container.section--light,
+.page-diagnostico:not(.page-diagnostico-2) .container.section--p-60 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Diagnóstico DMC 2 (page-diagnostico-2): padding lateral en secciones de plantilla.
+   Los bloques .php (testimonios, insights, experiencia, etc.) gestionan su propio container. */
+.page-diagnostico.page-diagnostico-2 > .section > .container,
+.page-diagnostico.page-diagnostico-2 > .section .container.section--light,
+.page-diagnostico.page-diagnostico-2 > .section .container.section--p-60,
+.page-diagnostico.page-diagnostico-2 > .section > .container.text-dark,
+.page-diagnostico.page-diagnostico-2 .section-dimensiones-de-analisis .section.separator > .container {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+@media (min-width: 768px) and (max-width: 1220px) {
+  .page-diagnostico.page-diagnostico-2 > .section > .container,
+  .page-diagnostico.page-diagnostico-2 > .section .container.section--light,
+  .page-diagnostico.page-diagnostico-2 > .section .container.section--p-60,
+  .page-diagnostico.page-diagnostico-2 > .section > .container.text-dark,
+  .page-diagnostico.page-diagnostico-2 .section-dimensiones-de-analisis .section.separator > .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media (min-width: 1221px) {
+  .page-diagnostico.page-diagnostico-2 > .section > .container,
+  .page-diagnostico.page-diagnostico-2 > .section .container.section--light,
+  .page-diagnostico.page-diagnostico-2 > .section .container.section--p-60,
+  .page-diagnostico.page-diagnostico-2 > .section > .container.text-dark,
+  .page-diagnostico.page-diagnostico-2 .section-dimensiones-de-analisis .section.separator > .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+/* OCHO ÁREAS DE GESTIÓN */
+.ocho-areas__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.ocho-areas__texto {
+  flex: 1;
+  max-width: 520px;
+}
+
+.ocho-areas__imagen {
+  flex: 1;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+
+/* --- Tipografía --- */
+
+.section-title span {
+  display: block;
+}
+
+
+/* --- Lista de áreas --- */
+.ocho-areas__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+
+
+.ocho-areas__list li a::after {
+  content: "→";
+  margin-left: 8px;
+  color: #3b82f6;
+  transition: transform .25s ease;
+}
+
+.ocho-areas__list li a:hover {
+  color: #3b82f6;
+}
+
+.ocho-areas__list li a:hover::after {
+  transform: translateX(4px);
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .ocho-areas__inner {
+    flex-direction: column;
+    text-align: left;
+    gap: 40px;
+  }
+
+  .ocho-areas__imagen {
+    justify-content: center;
+  }
+
+  .ocho-areas__texto {
+    max-width: 100%;
+  }
+
+  .ocho-areas__list {
+    justify-items: center;
+  }
+}
+
+/* =========================================================
+   BLOQUE 9 – Dimensiones de análisis
+========================================================= */
+.section-dimensiones {
+  padding-top: 120px;
+}
+
+.dimensiones-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+}
+
+.accordion-item {
+  border: 1px solid #bdcde3;
+  background: #D1E5FF;
+  overflow: hidden;
+  transition: box-shadow .2s ease;
+  margin-bottom: 10px;
+}
+
+.accordion-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 24px;
+  font-weight: 600;
+  background: #D1E5FF;
+  transition: background .25s ease;
+  color: #000;
+}
+
+.accordion-header:hover {
+  background: #bfd6f5;
+}
+
+.accordion-title {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.accordion-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #006EFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform .25s ease, background .25s ease;
+}
+
+.accordion-icon::before {
+  content: '+';
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  transition: transform .3s ease;
+  top: 5px;
+  position: absolute;
+}
+
+.accordion-header.active .accordion-icon {
+  background: #005BCC;
+  transform: rotate(180deg);
+}
+
+.accordion-header.active .accordion-icon::before {
+  content: '\2212';
+  top: 4px;
+  position: absolute;
+}
+
+.accordion-header.active h4.dimension-subtitulo::after {
+  border-bottom: 1px solid;
+  display: block;
+  content: "";
+  width: calc(100% - 60px);
+  margin-top: 10px;
+}
+
+.accordion-content {
+  height: 0;
+  overflow: hidden;
+  background: #D1E5FF;
+  transition: height .35s ease;
+}
+
+.accordion-content-inner {
+  padding: 0 24px 24px;
+  opacity: 0;
+  transform: translateY(-5px);
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+.accordion-header.active+.accordion-content .accordion-content-inner {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Estado activo: fondo uniforme en header + contenido */
+.accordion-header.active,
+.accordion-header.active+.accordion-content {
+  background-color: #D1E5FF;
+}
+
+/* También el fondo interno del contenido para continuidad visual */
+.accordion-header.active+.accordion-content .accordion-content-inner {
+  background-color: #D1E5FF;
+}
+
+
+@media (max-width: 992px) {
+  .dimensiones-grid {
+    display: block;
+  }
+}
+
+/* Dimensiones de análisis DMC v2 (tres focos; ids dimension-v2-N) */
+.dmc-analisis-foco {
+  margin-top: 20px;
+}
+
+.dmc-analisis-foco:first-child {
+  margin-top: 0;
+}
+
+.dmc-analisis-foco__titulo {
+  color: #000;
+  text-align: left;
+  margin: 0 0 20px;
+}
+
+.dimensiones-grid--dmc-v2 {
+  margin-top: 0;
+}
+
+.section-dimensiones-analisis-dmc-v2 span.dimension-num,
+.dimensiones-grid--dmc-v2 span.dimension-num {
+  font-weight: 300;
+}
+
+.section-dimensiones-analisis-dmc-v2 .dmc-dimension-descripcion,
+.dimensiones-grid--dmc-v2 .dmc-dimension-descripcion {
+  margin: 0 0 20px;
+  line-height: 1.6;
+}
+
+.section-dimensiones-analisis-dmc-v2 .dmc-subdimensiones-list,
+.dimensiones-grid--dmc-v2 .dmc-subdimensiones-list {
+  margin-top: 0;
+}
+
+.section-dimensiones-analisis-dmc-v2 .dmc-subdimensiones-list li,
+.dimensiones-grid--dmc-v2 .dmc-subdimensiones-list li {
+  gap: 10px;
+  margin-bottom: 8px;
+  transform: translateX(0);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.section-dimensiones-analisis-dmc-v2 .dmc-subdimensiones-list li:hover,
+.dimensiones-grid--dmc-v2 .dmc-subdimensiones-list li:hover {
+  transform: translateX(10px);
+}
+
+.section-dimensiones-analisis-dmc-v2 .dmc-subdimensiones-list li:last-child,
+.dimensiones-grid--dmc-v2 .dmc-subdimensiones-list li:last-child {
+  margin-bottom: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-dimensiones-analisis-dmc-v2 .dmc-subdimensiones-list li,
+  .dimensiones-grid--dmc-v2 .dmc-subdimensiones-list li {
+    transition: none;
+  }
+
+  .section-dimensiones-analisis-dmc-v2 .dmc-subdimensiones-list li:hover,
+  .dimensiones-grid--dmc-v2 .dmc-subdimensiones-list li:hover {
+    transform: none;
+  }
+}
+
+
+/* =========================================================
+   Animación de aparición para items del acordeón
+========================================================= */
+
+.accordion-item {
+  border: 1px solid #bdcde3;
+  background: #D1E5FF;
+  overflow: hidden;
+  margin-bottom: 10px;
+
+  transition: box-shadow .2s ease, opacity 0.7s ease;
+  opacity: 0;
+  transform: none;
+  will-change: opacity;
+}
+
+/* Visible (cuando entra al viewport) */
+.accordion-item.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Delay progresivo dentro de cada columna */
+.accordion-item:nth-child(1) {
+  transition-delay: .2s;
+}
+
+.accordion-item:nth-child(2) {
+  transition-delay: .4s;
+}
+
+.accordion-item:nth-child(3) {
+  transition-delay: .6s;
+}
+
+.accordion-item:nth-child(4) {
+  transition-delay: .8s;
+}
+
+.accordion-item:nth-child(5) {
+  transition-delay: 1s;
+}
+
+.accordion-item:nth-child(6) {
+  transition-delay: 1.2s;
+}
+
+
+/* =========================================================
+   LISTA DIAGNÓSTICO (Bloque 10)
+========================================================= */
+.diagnostico-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.diagnostico-list li {
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid rgb(112 112 112);
+  padding-bottom: 20px;
+  line-height: 1.6;
+}
+
+.diagnostico-list li p {
+  margin: 0;
+  line-height: 1.6;
+  position: relative;
+  padding-top: 20px;
+  margin-left: -50px;
+}
+
+.diagnostico-list li:last-child {
+  border-bottom: none;
+}
+
+/* Variante: sin líneas entre ítems (p. ej. Diagnóstico 2) */
+.diagnostico-list--no-separators li {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 14px;
+  padding-left: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+}
+
+.diagnostico-list--no-separators li:last-child {
+  margin-bottom: 0;
+}
+
+.diagnostico-list--no-separators li .num {
+  position: static;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.diagnostico-list--no-separators li p {
+  flex: 1;
+  min-width: 0;
+  padding-top: 0;
+  margin-left: 0;
+}
+
+/* Numeración de los ítems */
+
+span.num {
+  position: absolute;
+  left: 0;
+  top: -15px;
+  width: 28px;
+  height: 28px;
+  background: #006EFF;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width:991px) {
+  span.num {
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+  }
+}
+
+/* ================================
+   Estilo para listas con ícono check
+   ================================ */
+.list-check {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.list-check li:hover {
+  transform: translateX(10px);
+}
+
+.list-check li {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+  transform: translateX(0);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .list-check li {
+    transition: none;
+  }
+
+  .list-check li:hover {
+    transform: none;
+  }
+}
+
+.list-check li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background: #006EFF;
+  /* azul ticket */
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .list-check li {
+    padding-left: 34px;
+  }
+
+  .list-check li::before {
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+  }
+}
+
+/* ===================================
+   Check circular azul 
+   =================================== */
+.check-icon {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 10px;
+  background: #007BFF;
+  /* azul principal */
+  color: #fff !important;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.check-icon::before {
+  content: "✓";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff !important;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .check-icon {
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   VARIOS
+========================================================= */
+@media (min-width:1024px) {
+  .insight-destacado {
+    margin-top: -50%;
+  }
+
+  .grid-2--carousel-insights {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+/* ===================================
+   WRAPPER SLIDER
+=================================== */
+.insights-slider-wrapper {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.grid-2--carousel-insights {
+  background: url(/wp-content/uploads/ellipse-bg.svg);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+}
+
+/* ===================================
+   TARJETAS INSIGHTS — Impulsor v2
+=================================== */
+.insight-card {
+  transition: transform .25s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.insight-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.insight-card__image,
+.caso-card__image {
+  overflow: hidden;
+  height: 290px;
+  width: 100%;
+  position: relative;
+}
+
+.insight-destacado .insight-card__image {
+  height: 420px;
+}
+
+.insight-card__image img,
+.caso-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .6s ease, filter .6s ease, opacity .6s ease;
+  filter: brightness(1);
+  opacity: 1;
+}
+
+.insight-card:hover .insight-card__image img,
+.caso-card:hover .caso-card__image img {
+  transform: scale(1.08);
+  filter: brightness(0.85);
+  opacity: 0.9;
+}
+
+/* Héroes Insights / Casos de éxito — zoom interno (clip; no crece el contenedor) */
+.hero-insights .bloque-hero-img,
+.hero-insights .mobile-hero-img,
+.hero-casos-exito .bloque-hero-img,
+.hero-casos-exito .mobile-hero-img {
+  overflow: hidden;
+  position: relative;
+  min-width: 0;
+}
+
+.hero-insights .bloque-hero-img:hover .hero-img-zoom-clip img,
+.hero-insights .mobile-hero-img:hover .hero-img-zoom-clip img,
+.hero-casos-exito .bloque-hero-img:hover .hero-img-zoom-clip img,
+.hero-casos-exito .mobile-hero-img:hover .hero-img-zoom-clip img {
+  transform: scale(1.08);
+  filter: brightness(0.85);
+  opacity: 0.9;
+}
+
+/* Contenido */
+.insight-card__content,
+.caso-card__content {
+  padding: 15px 0;
+}
+
+
+
+/* Botón borde negro */
+.btn-outline--black {
+  display: inline-block;
+  border: 1px solid #000 !important;
+  color: #000 !important;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: none;
+  transition: all .2s ease;
+}
+
+.btn-outline--black:hover {
+  background: #000;
+  color: #fff !important;
+}
+
+.btn-outline--white {
+  display: inline-block;
+  border: 1px solid #fff !important;
+  color: #fff !important;
+  text-decoration: none;
+  padding: 10px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: none;
+  transition: all .2s ease;
+}
+
+.btn-outline--white:hover {
+  background: #fff;
+  color: #000 !important;
+}
+
+/* ===================================
+   FLECHAS DEL SLIDER INSIGHTS
+   Arriba a la derecha, sin fondo
+=================================== */
+/* --- INSIGHTS: flechas visibles y clickeables --- */
+.insights-slider-wrapper {
+  position: relative;
+}
+
+.insights-slider {
+  position: relative;
+  z-index: 1;
+}
+
+.insights-slider-header {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 20;
+  /* sobre las tarjetas */
+  padding: 20px 0 10px;
+  margin-bottom: 0;
+}
+
+.slider-arrows {
+  display: flex;
+  gap: 14px;
+}
+
+.slider-arrows .swiper-button-prev,
+.slider-arrows .swiper-button-next {
+  position: static !important;
+  /* saca el absolute de Swiper */
+  inset: auto !important;
+  width: 44px;
+  height: 44px;
+  background: transparent !important;
+  /* sin fondo */
+  border: none !important;
+  color: var(--azul-corporativo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  /* aseguro click */
+  transition: color .25s ease, transform .25s ease;
+}
+
+.slider-arrows .swiper-button-prev:hover,
+.slider-arrows .swiper-button-next:hover {
+  color: var(--azul-claro);
+  transform: scale(1.1);
+}
+
+.slider-arrows .swiper-button-prev::after,
+.slider-arrows .swiper-button-next::after {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   AJUSTES VARIOS GLOBALES
+========================================================= */
+
+
+
+.text-center img {
+  margin: 0 auto;
+}
+
+.text-center .heading-md::before {
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  /* Los títulos centrados no usan línea azul */
+}
+
+.section--dark .heading-md::before {
+  background: #00B6FF;
+}
+
+/* pagina home */
+.hero-slider__bloque-1 {
+  background: linear-gradient(131deg, #030F23, #006EFF);
+  background: url(/wp-content/uploads/bg-gradiente-1.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.page-home .bloque-1 h2.heading-lg {
+  max-width: 465px;
+}
+
+.page-home .bloque-casos-exito {
+  background: none;
+}
+
+.bloque-intro-home__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 992px) {
+  .bloque-intro-home__grid {
+    grid-template-columns: 1fr;
+    gap: 20px !important;
+  }
+  .heading-lg {
+    margin-bottom: 20px;
+  }
+  .mt-20-mob {
+    margin-top: 20px !important;
+  }
+  .mb-0-mob {
+    margin-bottom: 0 !important;
+  }
+  .pb-0-mob {
+    padding-bottom: 0 !important;
+  }
+  .mb-40-mob {
+    margin-bottom: 40px !important;
+  }
+  .py-40-mob {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+  .pb-40-mob {
+    padding-bottom: 40px !important;
+  }
+  .pt-40-mob {
+    padding-top: 40px !important;
+  }
+  .grid-gap-0-mob {
+    gap: 0 !important;
+  }
+  .my-40-mob {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+  }
+  .mt-40-mob {
+    margin-top: 40px !important;
+  }
+}
+
+/* pagina comercial y clientes */
+body.page-template-page-comercial-clientes {
+  background: #fff;
+}
+
+.bg-gradient-13 {
+  background: linear-gradient(131deg, #030F23, #006EFF);
+  background: url(/wp-content/uploads/bg-gradiente-13.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* pagina soluciones */
+main.page-soluciones {
+  background: #fff;
+}
+
+
+
+/*  */
+.grid-4 div p {
+  position: relative;
+  left: 0px;
+  transition: .3s;
+}
+
+.grid-4 div:hover p {
+  position: relative;
+  left: 12px;
+}
+
+
+
+/*  */
+@media (min-width:992px) {
+
+  .page-areas-gestion section.section.section-1,
+  .page-soluciones section.section.section-1 {
+    padding: 120px 0;
+  }
+}
+
+/*  */
+section.section.py-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.entry-content li::marker {
+  font-weight: 600;
+}
+
+/*  */
+@media (max-width:1220px) {
+  .page-diagnostico .section:not(.section-diagnostico-parallax) {
+    padding: 0 !important;
+  }
+}
+
+/* Diagnóstico 2: parallax + panel (mobile = Nosotros, desktop = overlay centrado) */
+.page-diagnostico.page-diagnostico-2 .section-diagnostico-parallax.section {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .page-diagnostico.page-diagnostico-2 .section-diagnostico-parallax.section {
+    padding: 40px 0 !important;
+  }
+
+  .page-diagnostico.page-diagnostico-2 .section-diagnostico-parallax .container {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media (min-width: 1025px) {
+  .page-diagnostico.page-diagnostico-2 .section-diagnostico-parallax.section {
+    aspect-ratio: 1728 / 503;
+    width: 100%;
+    padding: 0 !important;
+  }
+
+  .page-diagnostico.page-diagnostico-2 .section-diagnostico-parallax .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(1200px, calc(100% - 80px));
+    max-width: calc(100% - 80px);
+    margin: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    z-index: 2;
+  }
+
+  .page-diagnostico.page-diagnostico-2 .section-diagnostico-parallax__panel {
+    background: linear-gradient(180deg, #061834, #042e67) !important;
+  }
+}
+
+
+
+
+/* insights mobile */
+@media (max-width:992px) {
+  main.container.template-casos-insights {
+    padding: 0 !important;
+  }
+
+  .insight-destacado {
+    display: none;
+  }
+
+  .insight-card__image,
+  .caso-card__image {
+    height: 420px;
+  }
+}
+
+/* Sección "¿Qué cambia?" — páginas de área (section-11) */
+.area-que-cambia__media,
+.area-que-cambia__content {
+  min-width: 0;
+}
+
+.area-que-cambia__img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 992px) {
+  .area-que-cambia__img {
+    aspect-ratio: 16 / 10;
+  }
+}
