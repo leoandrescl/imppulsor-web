@@ -207,7 +207,7 @@ function imppulsor_random_insight()
     wp_reset_postdata();
     return $output;
   }
-  return '<p>No hay insights disponibles.</p>';
+    return '<p>No insights available.</p>';
 }
 
 // lucide
@@ -348,9 +348,9 @@ add_action('template_redirect', function () {
     $bg_url = imppulsor_fallback_hero_background_url($post_id);
 
     if (is_search()) {
-      $titulo = 'Resultados de búsqueda para: ' . get_search_query();
+      $titulo = 'Search results for: ' . get_search_query();
     } elseif (is_404()) {
-      $titulo = 'Página no encontrada';
+      $titulo = 'Page not found';
     } elseif (is_archive()) {
       $titulo = get_the_archive_title();
     } elseif ($post_id) {

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // === Casos de Éxito ===
+  // === Success Stories ===
   if (document.querySelector('.casos-slider')) {
     new Swiper('.casos-slider', {
       slidesPerView: 3,

@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   overlay?.addEventListener('click', closeMenu);
 });
 
-// modal buscador header
+// Header search modal
 (function(){
   const modal   = document.getElementById('searchModal');
   const openBtn = document.querySelector('.mobile-search-toggle');
@@ -47,24 +47,24 @@ document.addEventListener('DOMContentLoaded', () => {
   backdrop.addEventListener('click', close);
   document.addEventListener('keydown', e => { if(e.key === 'Escape') close(); });
 
-  // Evita que clicks dentro del formulario cierren el modal
+  // Prevent clicks inside the form from closing the modal
   modal.querySelector('.searchfs__stage').addEventListener('click', e => e.stopPropagation());
 })();
-// modal buscador header fin
+ // Header search modal end
 
 
-// Cierra mega cuando se sale del header con el teclado (accesibilidad)
+// Close mega when leaving the header with the keyboard (accessibility)
 document.addEventListener('keydown', (e)=>{
   if (e.key !== 'Escape') return;
   document.querySelectorAll('.has-mega .mega').forEach(p=>{
-    // el hover se maneja por CSS, aquí solo quitamos focus
+    // hover is handled by CSS, here we only remove focus
     const focused = p.querySelector('a:focus');
     if (focused) focused.blur();
   });
 });
 
-// Megamenú desktop: :hover pegado tras menú contextual (clic derecho).
-// No ocultamos en "contextmenu": solo alineamos con la posición real del puntero.
+// Desktop megamenu: sticky :hover after context menu (right click).
+// We do not hide on "contextmenu": we only align with the real pointer position.
 (function megaMenuPointerGeometry() {
   const mq = window.matchMedia('(min-width:992px)');
   const nav = document.querySelector('.main-nav');
@@ -92,7 +92,7 @@ document.addEventListener('keydown', (e)=>{
     return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
   }
 
-  /** Tras clic derecho el foco puede quedar en el <a>; :focus-within + esto impedía mega--pointer-out. */
+  /** After right click, focus may stay on the <a>; :focus-within + this blocked mega--pointer-out. */
   function blurFocusInContainer(container) {
     const ae = document.activeElement;
     if (!ae || !container.contains(ae)) return;
@@ -125,9 +125,9 @@ document.addEventListener('keydown', (e)=>{
     const x = typeof ev.clientX === 'number' ? ev.clientX : lastX;
     const y = typeof ev.clientY === 'number' ? ev.clientY : lastY;
 
-    // Tras clic derecho evitamos tocar el estado mientras el puntero siga dentro
-    // del área mega+panel (el menú nativo suele estar ahí). Si ya salió de esa
-    // zona, reactivamos la sync y cerramos por geometría sin exigir otro clic.
+    // After right click we avoid touching state while the pointer is still inside
+    // the mega+panel area (the native menu is usually there). Once it has left that
+    // zone, we re-enable sync and close by geometry without requiring another click.
     if (ctxMenuOpen) {
       let insideAnyMegaZone = false;
       nav.querySelectorAll('.has-mega').forEach((li) => {
@@ -218,40 +218,40 @@ document.addEventListener('keydown', (e)=>{
   });
 })();
 
-// Evitar que el click en la raíz navegue si solo se quiere abrir el mega (opcional):
+// Prevent the root click from navigating if the intent is only to open the mega (optional):
 document.querySelectorAll('.main-nav .has-mega > .menu-link').forEach(a=>{
   a.addEventListener('click', (ev)=>{
     if (window.matchMedia('(min-width:992px)').matches) {
-      // Si el link es solo "#", evitamos navegación
+      // If the link is just "#", prevent navigation
       if (a.getAttribute('href') === '#') ev.preventDefault();
     }
   });
 });
 
 // ================================================
-// Submenús desplegables en el menú móvil
+// Expandable submenus in the mobile menu
 // ================================================
 document.addEventListener('DOMContentLoaded', () => {
-  // Seleccionar TODOS los niveles del menú móvil
+  // Select ALL mobile menu levels
   const menuItems = document.querySelectorAll('.mobile-menu li.menu-item-has-children');
 
   menuItems.forEach(item => {
 
-    // Evitar duplicados
+    // Avoid duplicates
     if (item.querySelector('.submenu-toggle')) return;
 
     const link = item.querySelector('a');
 
-    // Crear botón toggle
+    // Create toggle button
     const toggle = document.createElement('button');
     toggle.classList.add('submenu-toggle');
-    toggle.setAttribute('aria-label', 'Mostrar submenú');
+    toggle.setAttribute('aria-label', 'Show submenu');
     toggle.innerHTML = '+';
 
-    // Insertar justo después del link
+    // Insert right after the link
     link.insertAdjacentElement('afterend', toggle);
 
-    // Activar toggle
+    // Enable toggle
     toggle.addEventListener('click', (e) => {
       e.preventDefault();
       const isOpen = item.classList.toggle('open');
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Cambiar fondo del header al hacer scroll
+// Change header background on scroll
 document.addEventListener('scroll', function() {
   const header = document.querySelector('.site-header');
   if (!header) return;
@@ -283,41 +283,41 @@ document.addEventListener('scroll', function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    // 1. Buscamos todas las columnas de menú
+    // 1. Find all menu columns
     const menuColumns = document.querySelectorAll('.mega__col--menu');
 
     menuColumns.forEach(column => {
         const originalList = column.querySelector('.mega__menu');
         if (!originalList) return;
 
-        // Evitar duplicados si ya se ejecutó
+        // Avoid duplicates if already executed
         if (column.querySelector('.mega-split-container')) return;
 
         const items = Array.from(originalList.children);
         const totalItems = items.length;
         
-        // 2. CALCULAMOS LA MITAD EXACTA
-        // Math.ceil asegura que si son impares (ej: 9), 
-        // queden 5 a la izquierda y 4 a la derecha.
+        // 2. CALCULATE THE EXACT HALF
+        // Math.ceil ensures that if odd (e.g.: 9), 
+        // 5 stay on the left and 4 on the right.
         const splitPoint = Math.ceil(totalItems / 2);
 
-        // 3. Creamos las listas nuevas
+        // 3. Create the new lists
         const leftList = document.createElement('ul');
         leftList.className = 'mega__menu mega-split-left';
         
         const rightList = document.createElement('ul');
         rightList.className = 'mega__menu mega-split-right';
 
-        // 4. Repartimos: Primera mitad a la IZQ, resto a la DER
+        // 4. Distribute: first half LEFT, rest RIGHT
         items.forEach((item, index) => {
             if (index < splitPoint) {
-                leftList.appendChild(item); // Del 0 al punto medio
+                leftList.appendChild(item); // From 0 to the midpoint
             } else {
-                rightList.appendChild(item); // Del punto medio al final
+                rightList.appendChild(item); // From the midpoint to the end
             }
         });
 
-        // 5. Creamos el contenedor y reemplazamos
+        // 5. Create the container and replace
         const container = document.createElement('div');
         container.className = 'mega-split-container';
         

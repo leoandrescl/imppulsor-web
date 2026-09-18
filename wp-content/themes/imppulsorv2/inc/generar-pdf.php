@@ -1,7 +1,7 @@
 <?php
 /**
- * Generar PDF — versión definitiva (contenido real visible sin sidebar)
- * Compatible con campo ACF 'contenido_caso'
+ * Generate PDF — final version (real visible content, no sidebar)
+ * Compatible with ACF field 'contenido_caso'
  */
 require_once($_SERVER['DOCUMENT_ROOT'] . '/wp-load.php');
 require_once(ABSPATH . 'wp-admin/includes/file.php');
@@ -11,14 +11,14 @@ require_once(ABSPATH . 'wp-admin/includes/template.php');
 // 1. Validar ID
 // ===============================
 if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
-    wp_die('ID no válido.');
+    wp_die('Invalid ID.');
 }
 
 $post_id = intval($_GET['id']);
 $post = get_post($post_id);
 
 if (!$post) {
-    wp_die('Entrada no encontrada.');
+    wp_die('Entry not found.');
 }
 
 // ===============================
@@ -26,7 +26,7 @@ if (!$post) {
 // ===============================
 $dompdf_path = get_stylesheet_directory() . '/dompdf/autoload.inc.php';
 if (!file_exists($dompdf_path)) {
-    wp_die('❌ No se encontró la librería Dompdf en: ' . esc_html($dompdf_path));
+    wp_die('❌ Dompdf library not found at: ' . esc_html($dompdf_path));
 }
 require_once $dompdf_path;
 
@@ -50,7 +50,7 @@ if (empty($contenido)) {
 // 4. Construir HTML completo
 // ===============================
 $html = '
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <style>
@@ -93,7 +93,7 @@ blockquote {
   <h1>' . esc_html($titulo) . '</h1>
   <div class="content-body">' . $contenido . '</div>
   <div class="acciones">
-    <span>Fuente: ' . esc_url(get_permalink($post)) . '</span>
+    <span>Source: ' . esc_url(get_permalink($post)) . '</span>
   </div>
 </section>
 </body>

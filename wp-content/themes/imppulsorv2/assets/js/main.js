@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-// texto expandible
+// Expandable text
 document.addEventListener('DOMContentLoaded', () => {
   const toggles = document.querySelectorAll('.texto-expandible__toggle');
 
@@ -124,8 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
       if (hiddenText) {
         hiddenText.classList.toggle('visible');
         toggle.textContent = hiddenText.classList.contains('visible')
-          ? 'Leer menos …'
-          : 'Leer más …';
+          ? 'Read less …'
+          : 'Read more …';
       }
     });
   });

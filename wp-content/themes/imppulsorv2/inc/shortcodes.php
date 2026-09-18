@@ -26,7 +26,7 @@ add_shortcode('bloque_testimonios', function() {
     if ($testimonios->have_posts()) {
         get_template_part('template-parts/blocks/bloque', 'testimonios', ['query' => $testimonios]);
     } else {
-        echo '<p>No hay testimonios cargados.</p>';
+        echo '<p>No testimonials available.</p>';
     }
 
     wp_reset_postdata();
@@ -54,7 +54,7 @@ add_shortcode('bloque_casos_exito', function() {
     if ($casos->have_posts()) {
         get_template_part('template-parts/blocks/bloque', 'casos-exito', ['query' => $casos]);
     } else {
-        echo '<p>No hay casos de éxito cargados.</p>';
+        echo '<p>No success stories available.</p>';
     }
 
     wp_reset_postdata();
@@ -82,7 +82,7 @@ add_shortcode('bloque_insights', function() {
     if ($insights->have_posts()) {
         get_template_part('template-parts/blocks/bloque', 'insights', ['query' => $insights]);
     } else {
-        echo '<p>No hay insights disponibles.</p>';
+        echo '<p>No insights available.</p>';
     }
 
     wp_reset_postdata();
