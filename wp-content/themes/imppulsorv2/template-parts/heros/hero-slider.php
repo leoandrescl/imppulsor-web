@@ -48,7 +48,7 @@ if (empty($slides)) return;
               </div>
             </div>
 
-            <!-- RRSS dentro del hero -->
+            <!-- Social links inside the hero -->
             <div class="hero-social reveal reveal-up">
               <a href="https://www.linkedin.com/company/imppulsor/"
                 target="_blank" rel="noopener" aria-label="LinkedIn" class="hero-social__link ">
@@ -66,7 +66,7 @@ if (empty($slides)) return;
 
     </div>
 
-    <!-- Paginación numerada -->
+    <!-- Numbered pagination -->
     <div id="hero-pagination" class="hero-pagination"></div>
   </div>
 </section>

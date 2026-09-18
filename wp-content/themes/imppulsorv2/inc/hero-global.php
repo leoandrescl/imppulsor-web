@@ -15,7 +15,7 @@ if (!defined('ABSPATH')) {
  */
 function imppulsor_get_hero_title($post_id = 0) {
     if (is_singular('casos_exito')) {
-        return 'Casos de éxito';
+        return 'Success stories';
     }
     if (is_singular('insights')) {
         return 'Insights';

@@ -62,14 +62,14 @@ $url = rawurlencode($current_url);
       </div>
     </div>
 
-    <!-- RRSS DENTRO del hero -->
+    <!-- Social links INSIDE the hero -->
     <div class="hero-social fade-in">
       <a href="https://www.linkedin.com/company/imppulsor/"
-        target="_blank" rel="noopener" aria-label="Compartir en LinkedIn" class="hero-social__link">
+        target="_blank" rel="noopener" aria-label="Share on LinkedIn" class="hero-social__link">
         <img src="/wp-content/uploads/icon-in.png" alt="LinkedIn" width="24" height="24" style="filter: invert(1);">
       </a>
       <a href="https://x.com/imppulsor"
-        target="_blank" rel="noopener" aria-label="Compartir en X" class="hero-social__link">
+        target="_blank" rel="noopener" aria-label="Share on X" class="hero-social__link">
         <img src="/wp-content/uploads/icon-x.png" alt="X (Twitter)" width="24" height="24" style="filter: invert(1);">
       </a>
     </div>

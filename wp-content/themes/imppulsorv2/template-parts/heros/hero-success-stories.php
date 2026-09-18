@@ -30,7 +30,7 @@ foreach ($all_cases as $post) {
     $empresa_autor = $autor_obj ? get_field('empresa_autor', $autor_obj->ID) : '';
     
     $empresa_final = $empresa_case ?: $empresa_autor;
-    if (!$empresa_final) $empresa_final = 'Sin empresa';
+    if (!$empresa_final) $empresa_final = 'No company';
     
     $empresa_map[$empresa_final][] = $post;
 }
@@ -94,7 +94,7 @@ $slides = array_slice($ordenados, 0, 4);
 
                   <div class="bloque-hero-text top-20x p-relative">
 
-                    <div class="badge bg-light-blue px-40 text-bold">Casos de éxito</div>
+                    <div class="badge bg-light-blue px-40 text-bold">Success stories</div>
 
                     <p class="my-10 text-bold">
                       <?php echo esc_html($anio_final); ?>
@@ -116,7 +116,7 @@ $slides = array_slice($ordenados, 0, 4);
                     <?php endif; ?>
 
                     <a href="<?php the_permalink(); ?>" class="btn-outline btn-outline--square">
-                      Ver caso completo
+                      View full case
                     </a>
                   </div>
 

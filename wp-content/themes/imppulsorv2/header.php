@@ -31,7 +31,7 @@ if (!defined('ABSPATH')) exit;
       </a>
     </div>
 
-    <!-- MENÚ PRINCIPAL -->
+    <!-- MAIN MENU -->
     <nav class="main-nav">
       <?php
         wp_nav_menu([

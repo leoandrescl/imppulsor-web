@@ -91,7 +91,7 @@ get_header();
 
                     $empresa_final = $empresa_case ?: $empresa_autor;
                     if (!$empresa_final)
-                        $empresa_final = 'Sin empresa';
+                        $empresa_final = 'No company';
 
                     $empresa_map[$empresa_final][] = $post;
                 }

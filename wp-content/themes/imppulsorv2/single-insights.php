@@ -104,7 +104,7 @@
 
                 <?php if (!empty($empresa)): ?>
                   <p class="mb-0" style="display: none !important;">
-                    <span class="text-bold">Empresa</span>
+                    <span class="text-bold">Company</span>
                     <span><?php echo esc_html($empresa); ?></span>
                   </p>
                 <?php endif; ?>
@@ -119,7 +119,7 @@
               <div class="autor-modal__overlay" data-close-autor></div>
 
               <div class="autor-modal__dialog" role="dialog" aria-modal="true">
-                <button class="autor-modal__close" type="button" aria-label="Cerrar" data-close-autor>×</button>
+                <button class="autor-modal__close" type="button" aria-label="Close" data-close-autor>×</button>
 
                 <div class="autor-modal__header">
                   <?php if ($foto): ?>
@@ -168,22 +168,22 @@
         <div class="acciones mt-40 d-flex align-center">
           <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(get_permalink()); ?>"
             target="_blank" rel="noopener">
-            <img src="/wp-content/uploads/icon-compartir.svg" alt="Compartir" width="21" height="21"> Compartir
+            <img src="/wp-content/uploads/icon-compartir.svg" alt="Share" width="21" height="21"> Share
           </a>
 
           <a href="javascript:void(0)" onclick="window.print()">
-            <img src="/wp-content/uploads/icon-imprimir.svg" alt="imprimir" width="17" height="21"> Imprimir
+            <img src="/wp-content/uploads/icon-imprimir.svg" alt="Print" width="17" height="21"> Print
           </a>
 
           <a href="<?php echo esc_url(get_stylesheet_directory_uri() . '/inc/generar-pdf.php?id=' . get_the_ID()); ?>">
-            <img src="/wp-content/uploads/icon-descargar.svg" alt="descargar" width="25" height="21"> Descargar PDF
+            <img src="/wp-content/uploads/icon-descargar.svg" alt="Download" width="25" height="21"> Download PDF
           </a>
         </div>
 
-        <!-- Formulario de contacto integrado -->
+        <!-- Integrated contact form -->
         <div class="contacto-post mt-40 pt-40 border-top reveal reveal-up" style="display: none !important;">
-          <h3 class="heading-md mb-20">Contáctanos</h3>
-          <p class="mb-20">Si este contenido conectó con tus desafíos actuales, conversemos.</p>
+          <h3 class="heading-md mb-20">Contact us</h3>
+          <p class="mb-20">If this content resonates with your current challenges, let's talk.</p>
           <div class="formulario-contacto cf7-clean text-dark">
             <?php echo do_shortcode('[contact-form-7 id="bb0babf" title="Formulario de contacto pagina contacto"]'); ?>
           </div>
@@ -194,15 +194,15 @@
       <aside class="sidebar reveal reveal-left">
 
         <div class="sidebar-block bg-light-gray mb-20 py-20 px-30">
-          <h3 class="heading-sm mb-15">Buscador</h3>
+          <h3 class="heading-sm mb-15">Search</h3>
           <form method="get" action="<?php echo esc_url(home_url('/')); ?>">
             <input type="hidden" name="post_type" value="insights">
-            <input type="search" name="s" placeholder="Ingrese palabra clave…" class="w-100">
+            <input type="search" name="s" placeholder="Enter keyword…" class="w-100">
           </form>
         </div>
 
         <div class="sidebar-block mb-20 bg-light-gray py-20 px-30">
-          <h3 class="heading-sm mb-15">Áreas de gestión</h3>
+          <h3 class="heading-sm mb-15">Management areas</h3>
           <ul class="list-unstyled">
             <?php
             $tags_sidebar = get_terms([
@@ -231,7 +231,7 @@
         </div>
 
         <div class="sidebar-block bg-light-gray py-30 px-30">
-          <h3 class="heading-sm mb-20">Autores recientes</h3>
+          <h3 class="heading-sm mb-20">Recent authors</h3>
 
           <?php
           $autores_rec = [];
@@ -324,7 +324,7 @@ if (!empty($autor)):
         <div class="grid-2--35-65">
 
           <div>
-            <h2 class="heading-lg mb-40">Otros insights relacionados del autor</h2>
+            <h2 class="heading-lg mb-40">More insights from this author</h2>
 
             <div class="nav-round-group">
               <button class="nav-round nav-round--prev"></button>
@@ -366,19 +366,19 @@ if (!empty($autor)):
 
                       <div class="py-10 text-white">
 
-                        <!-- Año | Tag -->
+                        <!-- Year | Tag -->
                         <p class="mb-10 truncate-1 text-left">
                           <?php echo esc_html($anio_r); ?>
                           <?php if ($tag_name_r): ?> | <?php echo $tag_name_r; ?><?php endif; ?>
                         </p>
 
-                        <!-- Título -->
+                        <!-- Title -->
                         <h3 class="heading-sm truncate-2"><?php the_title(); ?></h3>
 
-                        <!-- Autor -->
+                        <!-- Author -->
                         <p class="mt-10 mb-30"><?php echo esc_html($nombre_autor_r); ?></p>
 
-                        <span class="btn-outline">Leer más</span>
+                        <span class="btn-outline">Read more</span>
                       </div>
 
                     </a>

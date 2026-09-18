@@ -13,16 +13,16 @@
 <div id="universalLightbox" class="universal-modal">
     <div class="universal-modal-overlay"></div>
     <div class="universal-modal-content">
-        <button class="universal-modal-close" aria-label="Cerrar">&times;</button>
+        <button class="universal-modal-close" aria-label="Close">&times;</button>
 
         <div id="lightboxLoader" class="lightbox-loader">
             <div class="spinner"></div>
-            <p>Generando imagen de alta resolución...</p>
+            <p>Generating high-resolution image...</p>
         </div>
 
         <div class="lightbox-image-container">
             <!-- The snapshot image will be injected here -->
-            <img id="lightboxImage" src="" alt="Gráfico Ampliado">
+            <img id="lightboxImage" src="" alt="Enlarged chart">
         </div>
 
         <div class="lightbox-actions">
@@ -32,7 +32,7 @@
                     <polyline points="7 10 12 15 17 10"></polyline>
                     <line x1="12" y1="15" x2="12" y2="3"></line>
                 </svg>
-                Descargar PNG
+                Download PNG
             </button>
         </div>
     </div>
@@ -280,7 +280,7 @@
 
                     const btn = document.createElement('button');
                     btn.className = 'chart-zoom-btn';
-                    btn.title = "Ampliar y Descargar";
+                    btn.title = "Enlarge and download";
                     btn.innerHTML = `
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                         <polyline points="15 3 21 3 21 9"></polyline>
@@ -437,7 +437,7 @@
 
                 } catch (error) {
                     console.error("Lightbox Error:", error);
-                    alert("Error generando la imagen.");
+                    alert("Error generating the image.");
                     loader.style.display = 'none';
                     closeModal();
                     const sb = document.querySelector('div[style*="top: -10000px"]');
@@ -450,7 +450,7 @@
             downloadBtn.addEventListener('click', () => {
                 if (modalImg.src) {
                     const a = document.createElement('a');
-                    a.download = 'imppulsor-grafico.png';
+                    a.download = 'imppulsor-chart.png';
                     a.href = modalImg.src;
                     a.click();
                 }

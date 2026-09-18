@@ -1,5 +1,5 @@
 <?php
-echo "<!-- TEMPLATE: archive-insights.php CARGADO -->";
+echo "<!-- TEMPLATE: archive-insights.php LOADED -->";
 get_header();
 ?>
 
@@ -7,7 +7,7 @@ get_header();
 <section class="bloque-insights mt-60 reveal reveal-up">
   <div class="container section--light grid-2">
     <div>
-      <h2 class="heading-lg mb-40">Insights recientes</h2>
+      <h2 class="heading-lg mb-40">Recent insights</h2>
 
       <div class="insights-grid grid-2">
         <?php if (have_posts()):
@@ -60,13 +60,13 @@ get_header();
                       <p class="fs-14 mb-20 insight-author"><?php echo esc_html($nombre_autor); ?></p>
                     <?php endif; ?>
 
-                    <span class="btn-outline--black">Leer artículo</span>
+                    <span class="btn-outline--black">Read article</span>
                   </div>
                 </div>
               </a>
             </div>
           <?php endwhile; else: ?>
-          <p>No hay insights disponibles por ahora.</p>
+          <p>No insights available right now.</p>
         <?php endif; ?>
       </div>
 
@@ -76,8 +76,8 @@ get_header();
         echo paginate_links([
           'total' => $wp_query->max_num_pages,
           'current' => max(1, get_query_var('paged')),
-          'prev_text' => __('« Anterior'),
-          'next_text' => __('Siguiente »'),
+          'prev_text' => __('« Previous'),
+          'next_text' => __('Next »'),
         ]);
         ?>
       </div>
@@ -85,15 +85,15 @@ get_header();
 
     <aside class="sidebar">
       <div class="sidebar-block mb-40">
-        <h3 class="heading-md mb-15">Buscador</h3>
+        <h3 class="heading-md mb-15">Search</h3>
         <form method="get" action="<?php echo esc_url(home_url('/')); ?>" class="search-form">
           <input type="hidden" name="post_type" value="insights">
-          <input type="search" name="s" placeholder="Ingrese palabra clave…" class="w-100">
+          <input type="search" name="s" placeholder="Enter keyword…" class="w-100">
         </form>
       </div>
 
       <div class="sidebar-block mb-40">
-        <h3 class="heading-md mb-15">Áreas de gestión</h3>
+        <h3 class="heading-md mb-15">Management areas</h3>
         <ul class="list-unstyled">
           <?php
           $terms = get_terms([
@@ -121,7 +121,7 @@ get_header();
       </div>
 
       <div class="sidebar-block">
-        <h3 class="heading-md mb-15">Autores recientes</h3>
+        <h3 class="heading-md mb-15">Recent authors</h3>
         <?php
         $q_aut = new WP_Query([
           'post_type' => 'insights',

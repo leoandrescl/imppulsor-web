@@ -73,7 +73,7 @@ if (!$query->have_posts()) return;
                     <?php endif; ?>
 
                     <a href="<?php the_permalink(); ?>" class="btn-outline btn-outline--square">
-                      Ir a la publicación
+                      Read article
                     </a>
                   </div>
 

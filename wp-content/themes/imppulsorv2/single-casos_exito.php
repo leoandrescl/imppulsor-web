@@ -70,7 +70,7 @@
       ?>
 
       <!-- ======================================================
-       CONTENIDO PRINCIPAL
+       MAIN CONTENT
   ======================================================= -->
       <section class="main-content reveal reveal-right">
 
@@ -87,7 +87,7 @@
 
         ?>
 
-        <!-- ETIQUETA + PAÍSES + AÑO -->
+        <!-- TAG + COUNTRIES + YEAR -->
         <div class="d-inline-flex gap-10 align-center mb-20">
 
           <?php foreach ($tags_list as $tag_item): ?>
@@ -111,17 +111,17 @@
 
         </div>
 
-        <!-- TÍTULO -->
+        <!-- TITLE -->
         <h2 class="heading-lg mt-20 mb-20"><?php the_title(); ?></h2>
 
 
-        <!-- BLOQUE AUTOR -->
+        <!-- AUTHOR BLOCK -->
         <?php if ($autor): ?>
           <div class="d-flex align-center justify-between text-dark" data-open-autor>
 
             <div class="d-flex align-center">
 
-              <!-- FOTO -->
+              <!-- PHOTO -->
               <?php if ($foto): ?>
                 <img class="autor-foto rounded-full" src="<?php echo esc_url($foto['url']); ?>"
                   alt="<?php echo esc_attr($autor->post_title); ?>" width="90" height="90">
@@ -131,7 +131,7 @@
 
               <div class="mx-40">
 
-                <!-- NOMBRE + ROL -->
+                <!-- NAME + ROLE -->
                 <p class="mb-0">
                   <span class="text-dark"><?php echo esc_html($autor->post_title); ?></span>
                   <?php if ($rol_final): ?>
@@ -139,7 +139,7 @@
                   <?php endif; ?>
                 </p>
 
-                <!-- EMPRESA (Debe ir debajo, con "Empresa" en negrita) -->
+                <!-- COMPANY (goes below, with "Company" in bold) -->
                 <?php if ($empresa_final): ?>
                   <p class="mb-0">
                     <span class="text-bold"><?php echo esc_html($empresa_final); ?></span>
@@ -159,13 +159,13 @@
           </div>
 
 
-          <!-- MODAL AUTOR -->
+          <!-- AUTHOR MODAL -->
           <?php if ($bio): ?>
             <div class="autor-modal" id="autorModal" aria-hidden="true">
               <div class="autor-modal__overlay" data-close-autor></div>
 
               <div class="autor-modal__dialog" role="dialog" aria-modal="true">
-                <button class="autor-modal__close" type="button" aria-label="Cerrar" data-close-autor>×</button>
+                <button class="autor-modal__close" type="button" aria-label="Close" data-close-autor>×</button>
 
                 <div class="autor-modal__header">
 
@@ -177,7 +177,7 @@
                   <div>
                     <h3><?php echo esc_html($autor->post_title); ?></h3>
 
-                    <!-- Rol y empresa -->
+                    <!-- Role and company -->
                     <?php if ($rol_final || $empresa_final): ?>
                       <p class="autor-cargo-empresa">
                         <?php echo esc_html($rol_final); ?>
@@ -187,7 +187,7 @@
                       </p>
                     <?php endif; ?>
 
-                    <!-- SIN PAÍS AQUÍ -->
+                    <!-- NO COUNTRY HERE -->
 
                     <!-- LinkedIn -->
                     <?php if ($linkedin): ?>
@@ -212,31 +212,31 @@
 
         <div class="separator-40y"></div>
 
-        <!-- CONTENIDO PRINCIPAL -->
+        <!-- MAIN CONTENT -->
         <div class="content-body">
           <?php echo wp_kses_post($contenido ?: get_the_content()); ?>
         </div>
 
-        <!-- BOTONES DE ACCIÓN -->
+        <!-- ACTION BUTTONS -->
         <div class="acciones mt-40 d-flex align-center">
           <a href="https://www.linkedin.com/sharing/share-offsite/?url=<?php echo urlencode(get_permalink()); ?>"
             target="_blank" rel="noopener">
-            <img src="/wp-content/uploads/icon-compartir.svg" alt="Compartir" width="21" height="21"> Compartir
+            <img src="/wp-content/uploads/icon-compartir.svg" alt="Share" width="21" height="21"> Share
           </a>
 
           <a href="javascript:void(0)" onclick="window.print()">
-            <img src="/wp-content/uploads/icon-imprimir.svg" alt="imprimir" width="17" height="21"> Imprimir
+            <img src="/wp-content/uploads/icon-imprimir.svg" alt="Print" width="17" height="21"> Print
           </a>
 
           <a href="<?php echo esc_url(get_stylesheet_directory_uri() . '/inc/generar-pdf.php?id=' . get_the_ID()); ?>">
-            <img src="/wp-content/uploads/icon-descargar.svg" alt="descargar" width="25" height="21"> Descargar PDF
+            <img src="/wp-content/uploads/icon-descargar.svg" alt="Download" width="25" height="21"> Download PDF
           </a>
         </div>
 
-        <!-- Formulario de contacto integrado -->
+        <!-- Integrated contact form -->
         <div class="contacto-post pt-40 mt-40 border-top reveal reveal-up" style="display: none !important;">
-          <h3 class="heading-md mb-20">Contáctanos</h3>
-          <p class="mb-20">Si este contenido conectó con tus desafíos actuales, conversemos.</p>
+          <h3 class="heading-md mb-20">Contact us</h3>
+          <p class="mb-20">If this content resonates with your current challenges, let's talk.</p>
           <div class="formulario-contacto cf7-clean text-dark">
             <?php echo do_shortcode('[contact-form-7 id="bb0babf" title="Formulario de contacto pagina contacto"]'); ?>
           </div>
@@ -249,18 +249,18 @@
   ======================================================= -->
       <aside class="sidebar reveal reveal-left">
 
-        <!-- Buscador -->
+        <!-- Search -->
         <div class="sidebar-block bg-light-gray mb-20 py-20 px-30">
-          <h3 class="heading-sm mb-15">Buscador</h3>
+          <h3 class="heading-sm mb-15">Search</h3>
           <form method="get" action="<?php echo esc_url(home_url('/')); ?>" class="search-form">
             <input type="hidden" name="post_type" value="casos_exito">
-            <input type="search" name="s" placeholder="Ingrese palabra clave…" class="w-100">
+            <input type="search" name="s" placeholder="Enter keyword…" class="w-100">
           </form>
         </div>
 
-        <!-- Áreas de gestión -->
+        <!-- Management areas -->
         <div class="sidebar-block mb-20 bg-light-gray  py-20 px-30">
-          <h3 class="heading-sm mb-15">Áreas de gestión</h3>
+          <h3 class="heading-sm mb-15">Management areas</h3>
           <ul class="list-unstyled">
             <?php
             $tags = get_terms([
@@ -288,9 +288,9 @@
           </ul>
         </div>
 
-        <!-- Territorios recientes (solo países específicos) -->
+        <!-- Recent territories (specific countries only) -->
         <div class="sidebar-block bg-light-gray py-30 px-30">
-          <h3 class="heading-sm mb-15">Territorios recientes</h3>
+          <h3 class="heading-sm mb-15">Recent territories</h3>
           <ul class="list-unstyled">
             <?php
 
@@ -405,9 +405,9 @@ if ($relacionados->have_posts()):
 
       <div class="grid-2--35-65">
 
-        <!-- Columna izquierda -->
+        <!-- Left column -->
         <div>
-          <h2 class="heading-lg mb-40">Otros casos relacionados <br> en el territorio</h2>
+          <h2 class="heading-lg mb-40">More related cases <br> in the region</h2>
 
           <div class="nav-round-group">
             <button class="nav-round nav-round--prev-casos"></button>
@@ -415,7 +415,7 @@ if ($relacionados->have_posts()):
           </div>
         </div>
 
-        <!-- Columna derecha -->
+        <!-- Right column -->
         <div>
           <div class="swiper casos-relacionados-slider">
             <div class="swiper-wrapper">
@@ -464,19 +464,19 @@ if ($relacionados->have_posts()):
 
                     <div class="py-10 text-white">
 
-                      <!-- Año | Empresa/Tag -->
+                      <!-- Year | Company/Tag -->
                       <p class="mb-10 truncate-1 text-left">
                         <?php echo esc_html($anio_rel); ?>
                         <?php if ($tag_name_rel): ?> | <?php echo $tag_name_rel; ?><?php endif; ?>
                       </p>
 
-                      <!-- Título -->
+                      <!-- Title -->
                       <h3 class="heading-sm truncate-2"><?php the_title(); ?></h3>
 
-                      <!-- Autor -->
+                      <!-- Author -->
                       <p class="mt-10 mb-30"><?php echo esc_html($nombre_autor_rel); ?></p>
 
-                      <span class="btn-outline">Leer más</span>
+                      <span class="btn-outline">Read more</span>
                     </div>
 
                   </a>

@@ -50,7 +50,7 @@ function imppulsor_megamenu_insight_col_html()
           <a href="<?php the_permalink(); ?>"><?php echo wp_trim_words(get_the_title(), 16); ?></a>
         </h4>
 
-        <a class="btn btn-borde" href="<?php the_permalink(); ?>">Leer más</a>
+        <a class="btn btn-borde" href="<?php the_permalink(); ?>">Read more</a>
       </article>
       <?php wp_reset_postdata(); endif; ?>
 
@@ -58,7 +58,7 @@ function imppulsor_megamenu_insight_col_html()
     $archive = get_post_type_archive_link('insights');
     if ($archive): ?>
       <a class="mega-insight__all btn btn-borde" href="<?php echo esc_url($archive); ?>">
-        Ver todos los insights
+        View all insights
       </a>
     <?php endif; ?>
   </div>
@@ -110,7 +110,7 @@ class Imppulsor_MegaWalker extends Walker_Nav_Menu
 
     if ($depth === 0) {
       // Primer nivel: estructura del mega
-      $output .= '<div class="mega" role="region" aria-label="Submenú ampliado"><div class="mega__inner container">';
+      $output .= '<div class="mega" role="region" aria-label="Expanded submenu"><div class="mega__inner container">';
       $output .= '<div class="mega__col mega__col--menu"><ul class="mega__menu ' . $level_class . '">';
     } else {
       // Subniveles normales
@@ -201,7 +201,7 @@ function imppulsor_random_insight()
               ' . ($img ? '<img src="' . esc_url($img) . '" alt="' . esc_attr($title) . '">' : '') . '
               <h4>' . esc_html($title) . '</h4>
               <p>' . esc_html($excerpt) . '</p>
-              <a href="' . esc_url($link) . '" class="btn-outline">Leer más</a>
+              <a href="' . esc_url($link) . '" class="btn-outline">Read more</a>
             </div>';
     }
     wp_reset_postdata();
@@ -372,11 +372,11 @@ add_action('template_redirect', function () {
 
       <div class="hero-social fade-in">
     <a href="https://www.linkedin.com/company/imppulsor/"
-      target="_blank" rel="noopener" aria-label="Compartir en LinkedIn" class="hero-social__link">
+      target="_blank" rel="noopener" aria-label="Share on LinkedIn" class="hero-social__link">
       <img src="/wp-content/uploads/icon-in.png" alt="LinkedIn" width="24" height="24" style="filter: invert(1);">
     </a>
     <a href="https://x.com/imppulsor"
-      target="_blank" rel="noopener" aria-label="Compartir en X" class="hero-social__link">
+      target="_blank" rel="noopener" aria-label="Share on X" class="hero-social__link">
       <img src="/wp-content/uploads/icon-x.png" alt="X (Twitter)" width="24" height="24" style="filter: invert(1);">
     </a>
   </div>

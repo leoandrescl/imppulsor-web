@@ -24,7 +24,7 @@ $total_banners = count($banner_posts);
           $linea_superior = function_exists('get_field') ? (string) get_field('linea_superior', $bid) : '';
           $titulo_hero = function_exists('get_field') ? trim((string) get_field('titulo_hero', $bid)) : '';
           if (is_singular('casos_exito')) {
-              $titulo = 'Casos de éxito';
+              $titulo = 'Success stories';
           } elseif (is_singular('insights')) {
               $titulo = 'Insights';
           } else {
