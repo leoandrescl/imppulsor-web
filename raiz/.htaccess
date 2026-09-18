@@ -86,3 +86,22 @@ RedirectMatch 301 ^/insights/datos-v-s-intuicion-la-delgada-linea-entre-el-caos-
 RedirectMatch 301 ^/insights/decisiones-lentas-caos-interno-y-ventas-estancadas-felicidades-tienes-una-gobernanza-debil/?$ /insights/slow-decisions-stalled-sales-weak-governance/
 RedirectMatch 301 ^/insights/implementando-estructuras-solidas-para-la-toma-de-decisiones-estrategicas-deja-de-improvisar-y-empieza-a-liderar/?$ /insights/solid-structures-strategic-decision-making-stop-improvising/
 RedirectMatch 301 ^/insights/tu-equipo-esta-vendiendo-o-solo-ocupando-espacio-las-claves-del-alto-rendimiento-en-ventas/?$ /insights/team-selling-or-taking-up-space-high-performance/
+
+# 301 casos ES->EN 2026-09-19 (base casos-de-exito se mantiene)
+RedirectMatch 301 ^/casos-de-exito/planificacion-comercial-y-financiera/?$ /casos-de-exito/sales-and-financial-planning/
+RedirectMatch 301 ^/casos-de-exito/plan-de-negocios/?$ /casos-de-exito/business-plan/
+RedirectMatch 301 ^/casos-de-exito/desarrollo-de-metodologias-comerciales-para-nbm-y-am/?$ /casos-de-exito/development-sales-methodologies-nbm-am/
+RedirectMatch 301 ^/casos-de-exito/arquitectura-de-procesos/?$ /casos-de-exito/process-architecture/
+RedirectMatch 301 ^/casos-de-exito/programa-de-productividad-comercial/?$ /casos-de-exito/sales-productivity-program/
+RedirectMatch 301 ^/casos-de-exito/best-practices-en-gestion-comercial/?$ /casos-de-exito/best-practices-sales-management/
+RedirectMatch 301 ^/casos-de-exito/desarrollo-de-metodologias-comerciales-para-am/?$ /casos-de-exito/development-sales-methodologies-am/
+RedirectMatch 301 ^/casos-de-exito/bpo-planificacion-monitoreo-y-desarrollo-operacional/?$ /casos-de-exito/bpo-planning-monitoring-operational-development/
+RedirectMatch 301 ^/casos-de-exito/diagnostico-de-madurez-comercial/?$ /casos-de-exito/commercial-maturity-diagnostic-case/
+RedirectMatch 301 ^/casos-de-exito/transformacion-empresarial/?$ /casos-de-exito/business-transformation/
+RedirectMatch 301 ^/casos-de-exito/diseno-e-implementacion-de-modelo-de-experiencia-de-cliente/?$ /casos-de-exito/design-implementation-customer-experience-model/
+RedirectMatch 301 ^/casos-de-exito/diseno-e-implementacion-de-la-unidad-de-customer-success/?$ /casos-de-exito/design-implementation-customer-success-unit/
+RedirectMatch 301 ^/casos-de-exito/buenas-practicas-en-crm/?$ /casos-de-exito/crm-best-practices/
+RedirectMatch 301 ^/casos-de-exito/gestion-del-cambio/?$ /casos-de-exito/change-management/
+RedirectMatch 301 ^/casos-de-exito/arquitectura-de-procesos-sap/?$ /casos-de-exito/sap-process-architecture/
+RedirectMatch 301 ^/casos-de-exito/diagnostico-de-madurez-comercial-wbuild/?$ /casos-de-exito/wbuild-commercial-maturity-diagnostic/
+RedirectMatch 301 ^/casos-de-exito/desarrollo-de-metodologias-comerciales-para-nbm-y-am-h-co-cloud/?$ /casos-de-exito/development-sales-methodologies-nbm-am-hco-cloud/
