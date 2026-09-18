@@ -50,3 +50,39 @@ RewriteRule . /index.php [L]
   AddHandler application/x-httpd-ea-php80 .php .php8 .phtml
 </IfModule>
 # php -- END cPanel-generated handler, do not edit
+
+# 301 insights ES->EN 2026-09-19
+RedirectMatch 301 ^/insights/y-si-el-problema-no-es-vender-sino-no-saber-como-se-esta-vendiendo/?$ /insights/what-if-the-problem-isnt-selling-but-not-knowing-how-you-sell/
+RedirectMatch 301 ^/insights/prosperar-en-el-cambio-el-poder-de-la-innovacion-del-modelo-de-negocios-para-lograr-el-exito-en-el-futuro/?$ /insights/thriving-through-change-business-model-innovation-future-success/
+RedirectMatch 301 ^/insights/la-infraestructura-invisible-tecnologia-y-soporte-operativo-como-catalizadores-de-la-efectividad-comercial/?$ /insights/invisible-infrastructure-technology-operational-support-sales-effectiveness/
+RedirectMatch 301 ^/insights/la-paradoja-del-esfuerzo-improductivo-y-la-gestion-de-la-productividad-individual-como-ventaja-estructural/?$ /insights/unproductive-effort-paradox-individual-productivity-structural-advantage/
+RedirectMatch 301 ^/insights/mas-alla-del-volumen-una-mirada-estructural-a-la-productividad-y-efectividad-comercial-y-su-potencial-no-gestionado/?$ /insights/beyond-volume-structural-view-sales-productivity-effectiveness/
+RedirectMatch 301 ^/insights/no-no-estas-vendiendo-mal-estas-vendiendo-sin-sistema/?$ /insights/not-selling-wrong-selling-without-a-system/
+RedirectMatch 301 ^/insights/el-arte-de-perder-oportunidades-todos-los-dias-y-no-darte-cuenta/?$ /insights/art-of-losing-opportunities-every-day/
+RedirectMatch 301 ^/insights/si-tu-equipo-comercial-cambia-cada-ano-no-es-rotacion-es-un-sintoma/?$ /insights/sales-team-changes-every-year-not-turnover-symptom/
+RedirectMatch 301 ^/insights/lo-llaman-crecimiento-pero-es-supervivencia-con-excel/?$ /insights/called-growth-but-survival-with-excel/
+RedirectMatch 301 ^/insights/trump-aranceles-y-caos-tu-estrategia-comercial-es-a-prueba-de-crisis/?$ /insights/trump-tariffs-chaos-sales-strategy-crisis-proof/
+RedirectMatch 301 ^/insights/vender-en-guerra-por-que-tu-equipo-no-esta-preparado-y-lo-sabes/?$ /insights/selling-in-wartime-team-not-ready/
+RedirectMatch 301 ^/insights/diagnostico-o-epitafio-vas-a-redisenar-tu-sistema-comercial-o-escribir-su-obituario/?$ /insights/diagnostic-or-epitaph-redesign-sales-system-or-obituary/
+RedirectMatch 301 ^/insights/sobrevivir-no-es-suerte-asi-operan-los-equipos-comerciales-que-resisten-la-tormenta/?$ /insights/surviving-no-accident-sales-teams-weather-storm/
+RedirectMatch 301 ^/insights/exito-sin-cimientos-la-fragilidad-operativa-detras-de-las-cifras-que-aparentan-solidez/?$ /insights/success-without-foundations-operational-fragility/
+RedirectMatch 301 ^/insights/cuando-escalar-no-es-crecer-el-dilema-estructural-de-las-empresas-que-quieren-mas-sin-redisenar/?$ /insights/scaling-isnt-growing-structural-dilemma/
+RedirectMatch 301 ^/insights/estrategias-sin-conexion-practica-ejecucion-sin-una-orientacion-superior-la-fractura-silenciosa-que-impide-escalar-con-solidez-a-la-mediana-empresa/?$ /insights/strategies-without-practical-connection-silent-fracture/
+RedirectMatch 301 ^/insights/el-poder-invisible-la-gobernanza-comercial-como-eje-estructural-del-crecimiento-sostenible/?$ /insights/invisible-power-sales-governance-sustainable-growth/
+RedirectMatch 301 ^/insights/la-ausencia-que-cuesta-millones-como-la-falta-de-una-metodologia-comercial-estructurada-erosiona-la-productividad-debilita-la-estrategia-y-frena-el-crecimiento/?$ /insights/million-dollar-absence-missing-sales-methodology/
+RedirectMatch 301 ^/insights/cuando-los-datos-no-bastan-por-que-el-futuro-comercial-se-juega-en-la-madurez-del-monitoreo-estrategico/?$ /insights/when-data-isnt-enough-strategic-monitoring-maturity/
+RedirectMatch 301 ^/insights/cuando-el-liderazgo-comercial-libera-valor-en-lugar-de-sostener-carencias/?$ /insights/sales-leadership-unlocks-value/
+RedirectMatch 301 ^/insights/lo-que-ocurre-cuando-vender-se-convierte-en-una-tarea-sin-alma-y-el-compromiso-deja-de-ser-una-prioridad-organizacional/?$ /insights/selling-becomes-soulless-task-engagement/
+RedirectMatch 301 ^/insights/el-precio-oculto-de-las-decisiones-aplazadas-como-la-postergacion-estrategica-erosiona-el-valor-de-tu-empresa-sin-que-te-des-cuenta/?$ /insights/hidden-price-postponed-decisions-erodes-value/
+RedirectMatch 301 ^/insights/mas-alla-del-control-el-rol-clave-de-la-gobernanza-corporativa-en-la-maduracion-de-empresas-medianas/?$ /insights/beyond-control-corporate-governance-mid-sized-companies/
+RedirectMatch 301 ^/insights/cuando-la-herencia-pesa-mas-que-la-estrategia-el-costo-de-no-redisenar-el-funcionamiento-empresarial-en-companias-familiares-en-consolidacion/?$ /insights/legacy-outweighs-strategy-family-companies/
+RedirectMatch 301 ^/insights/el-espejismo-del-control-como-la-ilusion-de-tener-todo-bajo-supervision-puede-estar-bloqueando-el-verdadero-crecimiento-de-tu-empresa/?$ /insights/control-mirage-illusion-oversight-blocks-growth/
+RedirectMatch 301 ^/insights/como-los-diagnosticos-empresariales-impulsan-el-crecimiento-y-la-sostenibilidad-guia-para-lideres-empresariales/?$ /insights/business-diagnostics-drive-growth-sustainability-guide/
+RedirectMatch 301 ^/insights/empresas-familiares-en-latam-es-la-falta-de-gobernanza-su-mayor-enemigo/?$ /insights/family-businesses-latam-weak-governance-biggest-enemy/
+RedirectMatch 301 ^/insights/que-es-la-madurez-comercial-y-por-que-es-clave-para-tu-negocio/?$ /insights/what-is-commercial-maturity-why-key-business/
+RedirectMatch 301 ^/insights/identificando-brechas-criticas-como-un-diagnostico-puede-transformar-tu-desempeno-comercial/?$ /insights/spotting-critical-gaps-diagnostic-transform-sales-performance/
+RedirectMatch 301 ^/insights/la-importancia-de-alinear-estrategia-y-ejecucion-en-ventas-y-marketing-un-desafio-critico-para-las-empresas/?$ /insights/aligning-strategy-execution-sales-marketing/
+RedirectMatch 301 ^/insights/datos-v-s-intuicion-la-delgada-linea-entre-el-caos-y-una-operacion-comercial-inteligente/?$ /insights/data-vs-gut-feel-chaos-smart-sales-operations/
+RedirectMatch 301 ^/insights/decisiones-lentas-caos-interno-y-ventas-estancadas-felicidades-tienes-una-gobernanza-debil/?$ /insights/slow-decisions-stalled-sales-weak-governance/
+RedirectMatch 301 ^/insights/implementando-estructuras-solidas-para-la-toma-de-decisiones-estrategicas-deja-de-improvisar-y-empieza-a-liderar/?$ /insights/solid-structures-strategic-decision-making-stop-improvising/
+RedirectMatch 301 ^/insights/tu-equipo-esta-vendiendo-o-solo-ocupando-espacio-las-claves-del-alto-rendimiento-en-ventas/?$ /insights/team-selling-or-taking-up-space-high-performance/
