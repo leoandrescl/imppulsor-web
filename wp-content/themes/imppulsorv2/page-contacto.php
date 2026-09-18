@@ -2,7 +2,7 @@
 <?php
 /**
  * Template Name: Contacto
- * Description: Contact page — base structure following Imppulsor v2.
+ * Description: Página Contacto — estructura base siguiendo Imppulsor v2.
  */
 get_header();
 ?>

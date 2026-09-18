@@ -18,28 +18,28 @@ get_header();
   </div>
 
   <!-- =========================================
-     SECCIÓN 2: Diagnósticos + Cómo funciona
+      SECTION 2: Diagnostics + How it works
      ========================================= -->
   <section class="section section-2 pb-0 fade-in">
     <div class="container">
 
-      <!-- Bloque principal -->
+      <!-- MAIN block -->
       <div class="grid-2">
         <div>
-          <h2 class="heading-lg mb-20 text-dark">Soluciones de consultoría</h2>
+          <h2 class="heading-lg mb-20 text-dark">Consulting solutions</h2>
 
           <p>
-          Algunas organizaciones acumulan ideas, planes y buenas intenciones, pero se enfrentan a un problema recurrente: la brecha entre la estrategia y la capacidad real de ejecución. Esto conlleva iniciativas que no avanzan, proyectos que se diluyen, esfuerzos de cambio que consumen recursos sin generar impacto sostenible.
+          Some organizations accumulate ideas, plans, and good intentions, yet run into a recurring problem: the gap between strategy and real execution capacity. The result is stalled initiatives, diluted projects, and change efforts that consume resources without delivering sustainable impact.
           </p>
 
           <p>
-          En Imppulsor ayudamos a cerrar esa brecha con soluciones de consultoría en gestión empresarial diseñadas para convertir el conocimiento y las ideas estratégicas en decisiones accionables, adaptando nuestras propuestas a las capacidades de cada organización, evitando soluciones genéricas que ignoran el contexto operativo y cultural.
+          At Imppulsor, we close that gap with business management consulting solutions designed to turn knowledge and strategic ideas into actionable decisions, tailoring our engagements to each organization's capabilities and avoiding generic solutions that ignore operational and cultural context.
           </p>
 
         </div>
 
         <div class="h-420">
-          <img src="/wp-content/uploads/Soluciones-Consultoria-2.jpg" alt="Diagnósticos de madurez empresarial" class="w-100  object-cover">
+          <img src="/wp-content/uploads/Soluciones-Consultoria-2.jpg" alt="Business maturity diagnostics" class="w-100  object-cover">
         </div>
       </div>
       
@@ -49,45 +49,45 @@ get_header();
   <!-- ========================================= -->
 
   <!-- =========================================
-     SECCIÓN 4: El resultado
+      SECTION 4: The outcome
      ========================================= -->
 
-  <!-- Soluciones de consultoría -->
+  <!-- Consulting solutions -->
   <section class="section section-8 pt-0 fade-in text-dark">
     <div class="container">
 
       <div class="text-dark separator mb-40"></div>
 
-      <h2 class="heading-lg mb-20 text-dark mb-40">Cómo trabajamos</h2>
+      <h2 class="heading-lg mb-20 text-dark mb-40">How we work</h2>
 
       <div class="grid-2">
 
         <div class="  pb-20">
-          <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Discovery empresarial</h3>
+          <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Business discovery</h3>
           <p class="mt-30">
-          Investigamos su modelo de negocio, desafíos prioritarios, restricciones operativas y capacidades clave para definir el alcance correcto de intervención y evitar soluciones mal enfocadas.
+          We investigate your business model, priority challenges, operational constraints, and key capabilities to define the right scope of intervention and avoid misdirected solutions.
 
           </p>
         </div>
 
         <div class="  pb-20">
-          <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Adherencia organizacional</h3>
+          <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Organizational fit</h3>
           <p class="mt-30">
-          Diseñamos soluciones con fit organizacional, alineadas a la estrategia y ajustadas a las capacidades, restricciones y condiciones reales de implementación de cada empresa.
+          We design solutions with organizational fit, aligned to strategy and tailored to each company's real implementation capabilities, constraints, and conditions.
           </p>
         </div>
 
         <div class="  pb-20">
-          <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Acompañamiento inicial</h3>
+          <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Early execution support</h3>
           <p class="mt-30">
-          Acompañamos la ejecución inicial para transformar decisiones en acciones concretas, instalando planificación, seguimiento y retroalimentación que sostengan avances visibles y medibles.
+          We support early execution to turn decisions into concrete actions, putting in place planning, follow-up, and feedback that sustain visible, measurable progress.
           </p>
         </div>
 
         <div class="  pb-20 pb-0-mob">
-          <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Visión holística</h3>
+          <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Holistic view</h3>
           <p class="mt-30">
-          Integramos una mirada sistémica sobre funciones, procesos, personas, tecnología y datos para conectar los puntos críticos que condicionan el desempeño empresarial.
+          We bring a systemic lens across functions, processes, people, technology, and data to connect the critical dots that shape business performance.
           </p>
         </div>
 
@@ -99,7 +99,7 @@ get_header();
 
 
 
-  <!-- SECCIÓN Imagen parallax -->
+  <!-- Parallax image SECTION -->
   <section class="section section-9 bg-light fade-in spp-section" style="aspect-ratio: 1728 / 503; width: 100%;">
     <div class="spp-bg-container">
       <img src="/wp-content/uploads/section-9-parallax.jpg" alt="" class="spp-bg-image">
@@ -107,37 +107,37 @@ get_header();
   </section>
 
   <!-- =========================================
-     SECCIÓN 4: El resultado
+     SECTION 4: The outcome
      ========================================= -->
      <section class="section bg-white text-dark section-4 pb-0 fade-in">
     <div class="container grid-2">
 
-      <!-- Columna izquierda -->
+      <!-- Left column -->
       <div>
-        <h2 class="heading-lg mb-20 mb-0-mob">El resultado</h2>
+        <h2 class="heading-lg mb-20 mb-0-mob">The outcome</h2>
         
       </div>
 
-      <!-- Columna derecha -->
+      <!-- Right column -->
       <div>
         <p class="mb-20">
-        Una solución de consultoría práctica y accionable que permite a los directivos avanzar con claridad sobre preguntas críticas:
+        A practical, actionable consulting solution that gives executives clarity on critical questions:
         </p>
 
         <ul class="list-check mb-20">
-          <li>¿Qué debe rediseñarse para mejorar la ejecución y capturar valor real?</li>
-          <li>¿Cómo convertir prioridades estratégicas en capacidades, procesos y estructuras viables?</li>
-          <li>¿Qué cambios deben implementarse primero para generar impacto con menor riesgo?</li>
+          <li>What must be redesigned to improve execution and capture real value?</li>
+          <li>How can strategic priorities be turned into viable capabilities, processes, and structures?</li>
+          <li>Which changes should be implemented first to drive impact with the least risk?</li>
         </ul>
 
         <p>
-        Las organizaciones que trabajan con nuestras soluciones logran transformar desafíos específicos en intervenciones concretas, ajustadas a su realidad operativa, nivel de madurez y capacidad de implementación.
+        Organizations that work with our solutions turn specific challenges into concrete interventions, tailored to their operational reality, maturity level, and implementation capacity.
         </p>
 
-        <a href="/contacto/" class="btn-arrow  mobile-only-cta mt-20-mob">Solicite una reunión con nuestros especialistas</a>
+        <a href="/contacto/" class="btn-arrow  mobile-only-cta mt-20-mob">Request a meeting with our specialists</a>
 
-        <a href="/contacto/" class="btn-arrow  desktop-only-cta">Solicite una reunión con nuestros
-          especialistas</a>
+        <a href="/contacto/" class="btn-arrow  desktop-only-cta">Request a meeting with our
+          specialists</a>
           
       </div>
 
@@ -152,26 +152,26 @@ get_header();
     <div class="separator mb-60 separator-mob mb-40-mob mt-20-mob"></div>
   </div>
 
-  <!-- bloque ocho areas gestion -->
+  <!-- eight management areas block -->
   <div class="py-40-mob">
     <?php get_template_part('template-parts/blocks/bloque-ocho-areas-gestion'); ?>
   </div>
 
 
-  <!-- Bloque: Casos de éxito -->
+  <!-- Block: Success stories -->
   <div class="bg-dark-blue pb-60 pb-0-mob">
     <?php get_template_part('template-parts/blocks/bloque-casos-exito'); ?>
   </div>
   <!-- ========================================= -->
 
-  <!-- bloque con un marco que conecta todos los puntos -->
+  <!-- block with a framework that connects all the dots -->
   <section class="section py-60 bg-light-blue text-white fade-in">
     <div class="container grid-2 align-center px-0-mob">
 
       <div class="soluciones-marco__media">
         <img
           src="/wp-content/uploads/marco-conecta-todos-los-puntos.jpg"
-          alt="Con un marco que conecta todos los puntos"
+          alt="A framework that connects all the dots"
           class="soluciones-marco__img w-100 object-cover"
           loading="lazy"
           decoding="async"
@@ -179,11 +179,11 @@ get_header();
       </div>
 
       <div class="soluciones-marco__content">
-        <h3 class="heading-sm mb-10">¿Cómo lo hacemos?</h3>
-        <h2 class="heading-lg mb-20">Con un marco que conecta todos los puntos</h2>
+        <h3 class="heading-sm mb-10">How do we do it?</h3>
+        <h2 class="heading-lg mb-20">With a framework that connects all the dots</h2>
 
         <p>
-        De esta forma diseñamos soluciones de gestión empresarial con una visión integral de la operación y centrados en aquello que realmente impacta el desempeño.
+        This is how we design business management solutions with a comprehensive view of operations, focused on what truly drives performance.
         </p>
       </div>
 
@@ -216,41 +216,41 @@ get_header();
 
 
 
-  <!-- Bloque: Tome acción, vaya a la raíz de sus desafíos -->
+  <!-- Block: Take action, get to the root of your challenges -->
   <section class="section pb-0 fade-in">
     <div class="container grid-2">
 
-      <!-- Columna izquierda -->
+      <!-- Left column -->
       <div>
         <h2 class="heading-lg mb-20 text-dark mb-0-mob">
-          Tome acción, vaya a la raíz de sus desafíos
+          Take action, get to the root of your challenges
         </h2>
         
       </div>
 
-      <!-- Columna derecha -->
+      <!-- Right column -->
       <div>
       <p class="mb-20">
-          La granularidad de nuestra propuesta de valor permite que nuestros clientes diagnóstiquen el estado de sus
-          capacidades de gestión, desarrollen una mejora crítica o aborden la necesidad de gobernar un cambio
-          estructural en función de sus capacidades y objetivos.
+          The granularity of our value proposition lets our clients assess the state of their
+          management capabilities, pursue a critical improvement, or take on the need to govern a
+          structural change based on their capabilities and goals.
         </p>
         <ul class="list-check">
           <li>
-            Nuestros diagnósticos le permiten acceder a una comprensión más clara y profunda de su organización, revelar
-            conexiones causales entre variables clave y facilitar decisiones informadas con mayor enfoque estratégico.
+            Our diagnostics give you a clearer, deeper understanding of your organization, reveal
+            causal connections between key variables, and enable informed decisions with sharper strategic focus.
           </li>
           <li>
-            Diseñamos soluciones ajustadas a la realidad operativa y nivel de madurez de cada organización, combinando
-            relevancia analítica con viabilidad práctica.
+            We design solutions tailored to each organization's operational reality and maturity level, combining
+            analytical relevance with practical viability.
           </li>
           <li>
-            Acompañamos la ejecución con modelos de gobernanza estructurados y seguimiento riguroso, asegurando
-            coherencia, trazabilidad y resultados sostenibles en el tiempo.
+            We support execution with structured governance models and rigorous follow-up, ensuring
+            consistency, traceability, and results that last over time.
           </li>
           <li>
-            Actuamos bajo una lógica sistémica que conecta funciones, personas, tecnología y procesos, generando impacto
-            integral y alineado con los objetivos estratégicos del negocio.
+            We operate under a systemic logic that connects functions, people, technology, and processes, generating
+            comprehensive impact aligned with the business's strategic goals.
           </li>
         </ul>
       </div>
@@ -264,30 +264,30 @@ get_header();
   </section>
 
 
- <!-- Bloque: Nuestro perfil de clientes -->
+ <!-- Block: Who we work with -->
  <section class="section pt-0 pb-60 bg-white text-dark fade-in">
     <div class="container grid-2">
 
-      <!-- Columna izquierda -->
+      <!-- Left column -->
       <div>
-        <h2 class="heading-lg mb-0-mob">Nuestro perfil de clientes</h2>
+        <h2 class="heading-lg mb-0-mob">Who we work with</h2>
         
       </div>
 
-      <!-- Columna derecha -->
+      <!-- Right column -->
       <div>
         <p>
-          Colaboramos con empresas en etapas tempranas, de consolidación o en fases avanzadas de escalabilidad que
-          enfrentan desafíos complejos y requieren un abordaje sistémico para tomar decisiones transformadoras.
+          We partner with early-stage, consolidating, or advanced-scaling companies that
+          face complex challenges and call for a systemic approach to transformative decisions.
         </p>
-        <p>Nos enfocamos en organizaciones que presentan síntomas estructurales como bajo aprovechamiento de su
-          potencial de crecimiento, debilidad en sus capacidades organizacionales o desconexión entre estrategia y
-          ejecución. Lo que define a nuestros clientes no es su industria, sino su disposición a verse con claridad, medirse
-          frente a estándares exigentes y actuar en consecuencia. </p>
+        <p>We focus on organizations showing structural symptoms such as underused
+          growth potential, weak organizational capabilities, or a disconnect between strategy and
+          execution. What defines our clients is not their industry, but their willingness to see themselves clearly, measure up
+          against demanding standards, and act accordingly. </p>
         
 
           <a href="/clientes-y-socios-de-negocios/" class="btn-arrow mt-20-mob">
-          Conoce a quienes ya confiaron en nosotros
+          Meet the clients who trust us
         </a>
       </div>
       
@@ -299,7 +299,7 @@ get_header();
 
   <!-- ========================================= -->
 
-  <!-- Bloque: Nuestra experiencia internacional -->
+  <!-- Block: Our international experience -->
   <?php get_template_part('template-parts/blocks/bloque-experiencia-internacional'); ?>
 
 
