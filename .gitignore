@@ -18,6 +18,9 @@ wp-content/uploads/
 wp-content/upgrade-temp-backup/
 wp-content/cache/
 
+# Backups locales de deploy (verificaciones FTP, no versionar)
+raiz/backup-previo-deploy/
+
 # Sistema
 .DS_Store
 Thumbs.db
