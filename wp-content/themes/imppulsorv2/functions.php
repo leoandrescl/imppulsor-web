@@ -3,6 +3,19 @@
  * Funciones principales del tema Imppulsor v2
  */
 
+// Idioma del FRONT en inglés americano (html lang, Yoast, detección de GTranslate).
+// El admin y wp-login quedan en español: no se toca WPLANG en BD.
+add_filter('locale', function ($locale) {
+  if (is_admin()) {
+    return $locale;
+  }
+  global $pagenow;
+  if (isset($pagenow) && $pagenow === 'wp-login.php') {
+    return $locale;
+  }
+  return 'en_US';
+});
+
 // Cargar módulos del directorio /inc/
 require_once get_stylesheet_directory() . '/inc/setup.php';
 require_once get_stylesheet_directory() . '/inc/enqueue.php';
