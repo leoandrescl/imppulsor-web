@@ -403,7 +403,7 @@ function impulsor_print_buttons($prefix)
               alt="Team collaborating">
 
 
-            <div class="mt-40 btn-links"><a href="https://imppulsor.com/contacto/" class="btn-arrow mt-20-mob"
+            <div class="mt-40 btn-links"><a href="https://imppulsor.com/contact/" class="btn-arrow mt-20-mob"
                 target="_self">Request a meeting with our specialists</a>
 
               <br>

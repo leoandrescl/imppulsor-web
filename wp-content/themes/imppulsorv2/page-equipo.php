@@ -222,7 +222,7 @@ get_header();
               sustainable decisions with tangible, lasting impact.
             </p>
 
-            <a href="/casos-de-exito/" class="btn-arrow mt-20-mob">Explore our success stories</a>
+            <a href="/success-stories/" class="btn-arrow mt-20-mob">Explore our success stories</a>
           </div>
 
         </div>

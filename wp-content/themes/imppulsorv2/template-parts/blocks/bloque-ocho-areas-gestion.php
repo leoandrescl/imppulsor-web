@@ -13,15 +13,15 @@
         </p>
 
         <div class="mt-20 btn-links hidden-mobile">
-          <a href="/soluciones-para-estrategia-y-gobierno/" class="btn-arrow mt-20-mob">Strategy and governance</a><br>
-          <a href="/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth, marketing and sales
+          <a href="/strategy-and-governance/" class="btn-arrow mt-20-mob">Strategy and governance</a><br>
+          <a href="/growth-marketing-and-sales-productivity/" class="btn-arrow">Growth, marketing and sales
             productivity</a><br>
-          <a href="/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a><br>
-          <a href="/soluciones-para-innovacion-y-modelo-de-negocio/" class="btn-arrow">Innovation and business model</a><br>
-          <a href="/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and transformation</a><br>
-          <a href="/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a><br>
-          <a href="/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and processes</a><br>
-          <a href="/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and data</a>
+          <a href="/finance-and-control/" class="btn-arrow">Finance and control</a><br>
+          <a href="/innovation-and-business-model/" class="btn-arrow">Innovation and business model</a><br>
+          <a href="/change-and-transformation/" class="btn-arrow">Change and transformation</a><br>
+          <a href="/people-and-culture/" class="btn-arrow">People and culture</a><br>
+          <a href="/operations-and-processes/" class="btn-arrow">Operations and processes</a><br>
+          <a href="/technology-and-data/" class="btn-arrow">Technology and data</a>
         </div>
 
         <p class="mt-20 mt-0-mob">
@@ -34,15 +34,15 @@
       </div>
 
       <div class="btn-links visible-mobile">
-        <a href="/soluciones-para-estrategia-y-gobierno/" class="btn-arrow mt-20-mob">Strategy and governance</a><br>
-        <a href="/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth, marketing and sales
+        <a href="/strategy-and-governance/" class="btn-arrow mt-20-mob">Strategy and governance</a><br>
+        <a href="/growth-marketing-and-sales-productivity/" class="btn-arrow">Growth, marketing and sales
           productivity</a><br>
-        <a href="/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a><br>
-        <a href="/soluciones-para-innovacion-y-modelo-de-negocio/" class="btn-arrow">Innovation and business model</a><br>
-        <a href="/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and transformation</a><br>
-        <a href="/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a><br>
-        <a href="/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and processes</a><br>
-        <a href="/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and data</a>
+        <a href="/finance-and-control/" class="btn-arrow">Finance and control</a><br>
+        <a href="/innovation-and-business-model/" class="btn-arrow">Innovation and business model</a><br>
+        <a href="/change-and-transformation/" class="btn-arrow">Change and transformation</a><br>
+        <a href="/people-and-culture/" class="btn-arrow">People and culture</a><br>
+        <a href="/operations-and-processes/" class="btn-arrow">Operations and processes</a><br>
+        <a href="/technology-and-data/" class="btn-arrow">Technology and data</a>
       </div>
 
     </div>

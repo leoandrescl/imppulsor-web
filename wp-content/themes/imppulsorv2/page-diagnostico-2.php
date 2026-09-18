@@ -302,7 +302,7 @@ function impulsor_render_buttons($prefix, $count = 3)
                 The model drills down to the finest level of detail, showing the development level achieved in each subdimension of the commercial function. This view clearly reveals where the levers driving growth are—and where the factors holding it back persist. By connecting both levels, you get a practical lens to prioritize interventions, focus resources, and guide decisions with greater precision.
               </p>
               <div class="mt-20 btn-links">
-                <a href="https://imppulsor.com/contacto/" class="btn-arrow mt-20-mob" target="_self">Request a meeting with our specialists</a>
+                <a href="https://imppulsor.com/contact/" class="btn-arrow mt-20-mob" target="_self">Request a meeting with our specialists</a>
               </div>
               <div class="mt-20 btn-links">
                 <button type="button" class="btn-brochure-dmc btn-brochure-dmc-open">Download the DMC brochure</button>
@@ -523,7 +523,7 @@ function impulsor_render_buttons($prefix, $count = 3)
         </div>
 
         <div class="mt-40 btn-links">
-          <a href="https://imppulsor.com/contacto/" class="btn-arrow mt-20-mob" target="_self">Request a meeting with our specialists</a>
+          <a href="https://imppulsor.com/contact/" class="btn-arrow mt-20-mob" target="_self">Request a meeting with our specialists</a>
         </div>
 
         <?php if ($mostrar_boton_brochure): ?>

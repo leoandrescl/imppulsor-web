@@ -59,7 +59,7 @@ if (!defined('ABSPATH')) exit;
 
     <!-- BUTTONS -->
     <div class="header-buttons">
-      <a href="/contacto" class="btn btn-terciario">Contact</a>
+      <a href="/contact" class="btn btn-terciario">Contact</a>
     </div>
 
     <!-- GOOGLE TRANSLATE -->

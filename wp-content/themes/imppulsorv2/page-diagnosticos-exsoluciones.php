@@ -139,7 +139,7 @@ get_header();
           into a controlled, measurable process.
         </p>
 
-        <a href="/contacto/" class="btn-arrow  mt-20-mob mb-0-mob">Request a meeting with our specialists</a>
+        <a href="/contact/" class="btn-arrow  mt-20-mob mb-0-mob">Request a meeting with our specialists</a>
 
           
       </div>
@@ -262,7 +262,7 @@ get_header();
         <p>What defines our clients is not their industry, but their willingness to look at themselves with clarity, benchmark
           against demanding standards, and act accordingly. </p>
 
-          <a href="/clientes-y-socios-de-negocios/" class="btn-arrow mt-20-mob">
+          <a href="/clients/" class="btn-arrow mt-20-mob">
           Meet the clients who already trust us
         </a>
       </div>

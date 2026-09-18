@@ -67,8 +67,8 @@ $border_class = $is_contact_page ? 'border-top-000' : 'border-top-fff';
     <div class="footer-col navigation">
       <h4 class="footer-heading mb-20 mb-0-mob">Legal Compliance</h4>
       <ul class="footer-menu mt-0-mob">
-        <li class="mb-0-mob"><a href="/politica-de-cookies/">Cookie Policy</a></li>
-        <li><a href="/politica-de-privacidad/">Privacy Policy</a></li>
+        <li class="mb-0-mob"><a href="/cookie-policy/">Cookie Policy</a></li>
+        <li><a href="/privacy-policy/">Privacy Policy</a></li>
       </ul>
     </div>
 

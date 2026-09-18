@@ -200,7 +200,7 @@ get_header();
               heroic efforts.</li>
           </ul>
 
-          <a href="/contacto/" class="btn-arrow mt-20-mob">Request a meeting about your transformation challenge</a>
+          <a href="/contact/" class="btn-arrow mt-20-mob">Request a meeting about your transformation challenge</a>
 
         </div>
       </div>
@@ -268,15 +268,15 @@ get_header();
         </p>
 
         <ul class="mt-20 hidden-mobile">
-          <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and governance</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a></li>
+          <li><a href="https://imppulsor.com/strategy-and-governance/" class="btn-arrow">Strategy and governance</a></li>
+          <li><a href="https://imppulsor.com/finance-and-control/" class="btn-arrow">Finance and control</a></li>
           <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and business
               model</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and transformation</a>
+          <li><a href="https://imppulsor.com/change-and-transformation/" class="btn-arrow">Change and transformation</a>
           </li>
-          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and processes</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
+          <li><a href="https://imppulsor.com/people-and-culture/" class="btn-arrow">People and culture</a></li>
+          <li><a href="https://imppulsor.com/operations-and-processes/" class="btn-arrow">Operations and processes</a></li>
+          <li><a href="https://imppulsor.com/technology-and-data/" class="btn-arrow">Technology and Data</a></li>
         </ul>
       </div>
 
@@ -284,15 +284,15 @@ get_header();
         class="w-100 h-100">
 
       <ul class="visible-mobile">
-        <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and governance</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a></li>
+        <li><a href="https://imppulsor.com/strategy-and-governance/" class="btn-arrow">Strategy and governance</a></li>
+        <li><a href="https://imppulsor.com/finance-and-control/" class="btn-arrow">Finance and control</a></li>
         <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and business
             model</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and transformation</a>
+        <li><a href="https://imppulsor.com/change-and-transformation/" class="btn-arrow">Change and transformation</a>
         </li>
-        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and processes</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
+        <li><a href="https://imppulsor.com/people-and-culture/" class="btn-arrow">People and culture</a></li>
+        <li><a href="https://imppulsor.com/operations-and-processes/" class="btn-arrow">Operations and processes</a></li>
+        <li><a href="https://imppulsor.com/technology-and-data/" class="btn-arrow">Technology and Data</a></li>
       </ul>
 
     </div>

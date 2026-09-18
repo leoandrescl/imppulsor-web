@@ -61,7 +61,7 @@ get_header();
         <p class="text-sm  ">
           We protect your information under strict principles of confidentiality, legality, and respect for your personal data.
         </p>
-        <a href="/politica-de-privacidad/" class="btn-arrow  mt-20-mob">Read more</a>
+        <a href="/privacy-policy/" class="btn-arrow  mt-20-mob">Read more</a>
       </div>
       <!-- end row 1 -->
        <div class="separator-40y"></div> 
@@ -71,7 +71,7 @@ get_header();
         <p class="text-sm  ">
           See how we use cookies to improve your experience and keep our website running properly.
         </p>
-        <a href="/politica-de-cookies/" class="btn-arrow  mt-20-mob">Read more</a>
+        <a href="/cookie-policy/" class="btn-arrow  mt-20-mob">Read more</a>
       </div>
       <!-- end row 2 -->
        <div class="separator-40y"></div> 

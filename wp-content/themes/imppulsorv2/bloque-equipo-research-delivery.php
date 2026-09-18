@@ -29,8 +29,8 @@ if (!defined('ABSPATH')) {
         </p>
 
         <ul class="mt-40">
-          <li><a href="/equipo/" class="btn-arrow">Meet the team behind every transformation</a></li>
-          <li><a href="/nosotros/" class="btn-arrow">Learn more about us</a></li>
+          <li><a href="/team/" class="btn-arrow">Meet the team behind every transformation</a></li>
+          <li><a href="/about/" class="btn-arrow">Learn more about us</a></li>
         </ul>
       </div>
     </div>
@@ -47,8 +47,8 @@ if (!defined('ABSPATH')) {
           and take action where impact matters most.
         </p>
         <ul>
-          <li><a href="/contacto/" class="btn-arrow">Request a meeting with our specialists</a></li>
-          <li><a href="/clientes-y-socios-de-negocios/" class="btn-arrow">Hear from our clients</a></li>
+          <li><a href="/contact/" class="btn-arrow">Request a meeting with our specialists</a></li>
+          <li><a href="/clients/" class="btn-arrow">Hear from our clients</a></li>
         </ul>
       </div>
     </div>

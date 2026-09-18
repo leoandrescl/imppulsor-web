@@ -271,7 +271,7 @@
             ]);
 
             $page_casos = get_page_by_path('casos-de-exito');
-            $base_url = $page_casos ? get_permalink($page_casos->ID) : home_url('/casos-de-exito/');
+            $base_url = $page_casos ? get_permalink($page_casos->ID) : home_url('/success-stories/');
 
             if ($tags):
               foreach ($tags as $tag):

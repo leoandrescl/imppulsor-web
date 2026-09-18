@@ -134,9 +134,9 @@ get_header();
         Organizations that work with our solutions turn specific challenges into concrete interventions, tailored to their operational reality, maturity level, and implementation capacity.
         </p>
 
-        <a href="/contacto/" class="btn-arrow  mobile-only-cta mt-20-mob">Request a meeting with our specialists</a>
+        <a href="/contact/" class="btn-arrow  mobile-only-cta mt-20-mob">Request a meeting with our specialists</a>
 
-        <a href="/contacto/" class="btn-arrow  desktop-only-cta">Request a meeting with our
+        <a href="/contact/" class="btn-arrow  desktop-only-cta">Request a meeting with our
           specialists</a>
           
       </div>
@@ -286,7 +286,7 @@ get_header();
           against demanding standards, and act accordingly. </p>
         
 
-          <a href="/clientes-y-socios-de-negocios/" class="btn-arrow mt-20-mob">
+          <a href="/clients/" class="btn-arrow mt-20-mob">
           Meet the clients who trust us
         </a>
       </div>

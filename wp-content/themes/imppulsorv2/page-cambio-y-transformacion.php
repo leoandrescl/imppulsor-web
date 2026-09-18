@@ -211,7 +211,7 @@ get_header();
 </li>
           </ul>
 
-          <a href="/contacto/" class="btn-arrow">Request a meeting about your transformation challenge</a>
+          <a href="/contact/" class="btn-arrow">Request a meeting about your transformation challenge</a>
 
         </div>
       </div>
@@ -261,29 +261,29 @@ get_header();
           See how we can support other key functions:
         </p>
         <ul class="mt-20 hidden-mobile">
-          <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and governance</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+          <li><a href="https://imppulsor.com/strategy-and-governance/" class="btn-arrow">Strategy and governance</a></li>
+          <li><a href="https://imppulsor.com/finance-and-control/" class="btn-arrow">Finance and control</a></li>
+          <li><a href="https://imppulsor.com/growth-marketing-and-sales-productivity/" class="btn-arrow">Growth,
               Marketing and sales productivity</a></li>
           <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and business
               model</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and processes</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
+          <li><a href="https://imppulsor.com/people-and-culture/" class="btn-arrow">People and culture</a></li>
+          <li><a href="https://imppulsor.com/operations-and-processes/" class="btn-arrow">Operations and processes</a></li>
+          <li><a href="https://imppulsor.com/technology-and-data/" class="btn-arrow">Technology and Data</a></li>
         </ul>
       </div>
       <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore other critical management areas"
         class="w-100 h-100">
       <ul class="visible-mobile">
-        <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and governance</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+        <li><a href="https://imppulsor.com/strategy-and-governance/" class="btn-arrow">Strategy and governance</a></li>
+        <li><a href="https://imppulsor.com/finance-and-control/" class="btn-arrow">Finance and control</a></li>
+        <li><a href="https://imppulsor.com/growth-marketing-and-sales-productivity/" class="btn-arrow">Growth,
             Marketing and sales productivity</a></li>
         <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and business
             model</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and processes</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
+        <li><a href="https://imppulsor.com/people-and-culture/" class="btn-arrow">People and culture</a></li>
+        <li><a href="https://imppulsor.com/operations-and-processes/" class="btn-arrow">Operations and processes</a></li>
+        <li><a href="https://imppulsor.com/technology-and-data/" class="btn-arrow">Technology and Data</a></li>
       </ul>
     </div>
   </section>

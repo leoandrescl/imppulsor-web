@@ -74,7 +74,7 @@
             We safeguard your information under strict principles of confidentiality, lawfulness, and respect for
             your personal data.
           </p>
-          <a href="/politica-de-privacidad/" class="btn-arrow  mt-20-mob">View</a>
+          <a href="/privacy-policy/" class="btn-arrow  mt-20-mob">View</a>
         </div>
         <!-- end row 1 -->
         <div class="separator-40y"></div>
@@ -85,7 +85,7 @@
             Learn how we use cookies to improve your experience and ensure our website
             works properly.
           </p>
-          <a href="/politica-de-cookies/" class="btn-arrow  mt-20-mob">View</a>
+          <a href="/cookie-policy/" class="btn-arrow  mt-20-mob">View</a>
         </div>
         <!-- end row 2 -->
         <div class="separator-40y"></div>

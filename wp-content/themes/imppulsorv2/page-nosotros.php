@@ -46,7 +46,7 @@ get_header();
 
           </p>
 
-          <a href="/equipo/" class="btn-arrow mt-20-mob">
+          <a href="/team/" class="btn-arrow mt-20-mob">
             Meet the team behind every transformation
           </a>
 
@@ -182,8 +182,8 @@ get_header();
  
           </p>
 
-          <a href="/soluciones/" class="btn-arrow mt-20-mob">Explore our solutions</a>
-          <a href="/contacto/" class="btn-arrow">Request a meeting with our specialists</a>
+          <a href="/solutions/" class="btn-arrow mt-20-mob">Explore our solutions</a>
+          <a href="/contact/" class="btn-arrow">Request a meeting with our specialists</a>
         </div>
       </div>
 
@@ -301,8 +301,8 @@ get_header();
             benchmark against demanding standards, and act accordingly.
           </p>
 
-          <a href="/casos-de-exito/" class="btn-arrow ">Explore our success stories</a>
-          <a href="/clientes-y-socios-de-negocios/" class="btn-arrow ">Meet the organizations that already trust
+          <a href="/success-stories/" class="btn-arrow ">Explore our success stories</a>
+          <a href="/clients/" class="btn-arrow ">Meet the organizations that already trust
             us</a>
         </div>
       </div>

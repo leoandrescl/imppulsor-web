@@ -37,7 +37,7 @@ get_header();
 
           
           <div class="desktop-only-cta">
-              <a href="/casos-de-exito/" class="btn-arrow mt-20-mob">Explore our success stories</a>
+              <a href="/success-stories/" class="btn-arrow mt-20-mob">Explore our success stories</a>
             </div>
         </div>
 
@@ -132,7 +132,7 @@ get_header();
           </p>
 
           <div class="mt-30 mt-0-mob btn-links">
-            <a href="/contacto/" class="btn-arrow mt-20-mob">Interested in becoming our partner?</a>
+            <a href="/contact/" class="btn-arrow mt-20-mob">Interested in becoming our partner?</a>
           </div>
         </div>
 

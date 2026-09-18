@@ -23,7 +23,7 @@ if (!defined('ABSPATH')) {
         </p>
 
         <a href="#" class="texto-expandible__toggle mt-10 d-block text-white">Read more …</a>
-        <a href="/contacto/" class="btn-arrow mt-20 mt-20-mob">Request a meeting with our specialists</a>
+        <a href="/contact/" class="btn-arrow mt-20 mt-20-mob">Request a meeting with our specialists</a>
       </div>
 
       <div class="bloque-experiencia__image">

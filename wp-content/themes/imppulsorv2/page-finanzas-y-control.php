@@ -199,9 +199,9 @@ get_header();
 </li>
           </ul>
 
-          <a href="/contacto/" class="btn-arrow mobile-only-cta mt-20-mob">Request a meeting about your transformation challenge</a>
+          <a href="/contact/" class="btn-arrow mobile-only-cta mt-20-mob">Request a meeting about your transformation challenge</a>
 
-          <a href="/contacto/" class="btn-arrow desktop-only-cta">Request a meeting about your transformation challenge</a>
+          <a href="/contact/" class="btn-arrow desktop-only-cta">Request a meeting about your transformation challenge</a>
         </div>
       </div>
     </div>
@@ -254,32 +254,32 @@ get_header();
           Discover how we can support other key functions:
         </p>
         <ul class="mt-20 hidden-mobile">
-          <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and Governance</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+          <li><a href="https://imppulsor.com/strategy-and-governance/" class="btn-arrow">Strategy and Governance</a></li>
+          <li><a href="https://imppulsor.com/growth-marketing-and-sales-productivity/" class="btn-arrow">Growth,
               Marketing and Commercial Productivity</a></li>
           <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and Business
               Model</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and Transformation</a>
+          <li><a href="https://imppulsor.com/change-and-transformation/" class="btn-arrow">Change and Transformation</a>
           </li>
-          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and Culture</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and Processes</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
+          <li><a href="https://imppulsor.com/people-and-culture/" class="btn-arrow">People and Culture</a></li>
+          <li><a href="https://imppulsor.com/operations-and-processes/" class="btn-arrow">Operations and Processes</a></li>
+          <li><a href="https://imppulsor.com/technology-and-data/" class="btn-arrow">Technology and Data</a></li>
 
         </ul>
       </div>
       <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore other critical management areas"
         class="w-100 h-100">
       <ul class="visible-mobile">
-        <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and Governance</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+        <li><a href="https://imppulsor.com/strategy-and-governance/" class="btn-arrow">Strategy and Governance</a></li>
+        <li><a href="https://imppulsor.com/growth-marketing-and-sales-productivity/" class="btn-arrow">Growth,
             Marketing and Commercial Productivity</a></li>
         <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and Business
             Model</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and Transformation</a>
+        <li><a href="https://imppulsor.com/change-and-transformation/" class="btn-arrow">Change and Transformation</a>
         </li>
-        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and Culture</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and Processes</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
+        <li><a href="https://imppulsor.com/people-and-culture/" class="btn-arrow">People and Culture</a></li>
+        <li><a href="https://imppulsor.com/operations-and-processes/" class="btn-arrow">Operations and Processes</a></li>
+        <li><a href="https://imppulsor.com/technology-and-data/" class="btn-arrow">Technology and Data</a></li>
 
       </ul>
     </div>

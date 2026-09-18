@@ -176,7 +176,7 @@ get_header();
 
           <a href="#" class="texto-expandible__toggle mt-10 d-block">Read more …</a>
 
-          <a href="/clientes-y-socios-de-negocios/" class="btn-arrow mt-20-mob">Meet the clients who trust
+          <a href="/clients/" class="btn-arrow mt-20-mob">Meet the clients who trust
             us</a>
         </div>
       </div>

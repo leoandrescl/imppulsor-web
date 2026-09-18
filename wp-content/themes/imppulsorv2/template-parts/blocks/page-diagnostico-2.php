@@ -542,10 +542,10 @@ function impulsor_render_buttons($prefix, $count = 3)
 
             <div class="image-grid">
 
-              <div class="mt-40 btn-links"><a href="https://imppulsor.com/contacto/" class="btn-arrow"
+              <div class="mt-40 btn-links"><a href="https://imppulsor.com/contact/" class="btn-arrow"
                   target="_self">Request a meeting with our specialists</a>
                 <br>
-                <a href="https://imppulsor.com/casos-de-exito/" class="btn-arrow" target="_self">Explore our success
+                <a href="https://imppulsor.com/success-stories/" class="btn-arrow" target="_self">Explore our success
                   stories</a><br>
               </div>
 

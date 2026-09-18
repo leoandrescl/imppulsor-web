@@ -124,7 +124,7 @@ get_header();
             strategic, tactical, and operational levels.</p>
 
           
-          <a href="/contacto/" class="btn-arrow  mt-20-mob">Request a meeting with our specialists</a>
+          <a href="/contact/" class="btn-arrow  mt-20-mob">Request a meeting with our specialists</a>
         </div>
       </div>
     </div>
@@ -207,7 +207,7 @@ get_header();
             controlled, measurable process.</li>
         </ul>
 
-        <a href="/contacto/" class="btn-arrow mt-0-mob mb-0-mob">Request a meeting with our
+        <a href="/contact/" class="btn-arrow mt-0-mob mb-0-mob">Request a meeting with our
           specialists</a>
           
       </div>

@@ -26,9 +26,9 @@ $productos_destacados = [
     'cta_primario_label' => 'Learn more about the DMC',
     'cta_primario_url' => '/diagnostico-de-madurez-comercial/',
     'cta_secundario_1_label' => 'Contact an expert',
-    'cta_secundario_1_url' => '/contacto/',
+    'cta_secundario_1_url' => '/contact/',
     'cta_secundario_2_label' => 'Explore our success stories',
-    'cta_secundario_2_url' => '/casos-de-exito/',
+    'cta_secundario_2_url' => '/success-stories/',
   ],
 ];
 
