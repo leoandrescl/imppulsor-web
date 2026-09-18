@@ -16,11 +16,15 @@ add_filter('locale', function ($locale) {
   return 'en_US';
 });
 
-// CF7: primera opción vacía de los selects en inglés (el string por defecto
-// del plugin sale en español por el locale es_CL del sitio).
-add_filter('wpcf7_select_blank_option', function () {
-  return '—Please choose an option—';
-});
+// CF7: primera opción vacía de los selects en inglés (CF7 6.x la genera con
+// __('—Please choose an option—') traducido al es_CL del sitio; no hay filtro
+// dedicado, se intercepta vía gettext del dominio contact-form-7).
+add_filter('gettext_contact-form-7', function ($translation, $text) {
+  if ($text === '&#8212;Please choose an option&#8212;') {
+    return '—Please choose an option—';
+  }
+  return $translation;
+}, 10, 2);
 
 // Cargar módulos del directorio /inc/
 require_once get_stylesheet_directory() . '/inc/setup.php';
