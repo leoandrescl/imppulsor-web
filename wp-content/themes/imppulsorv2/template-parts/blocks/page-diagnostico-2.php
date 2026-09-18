@@ -4,10 +4,10 @@
  */
 
 // ==============================================================
-// URLs DE BROCHURE DMC
-// Ingresa la URL del PDF o documento correspondiente.
-// Si dejas la URL vacía (''), no aparecerá el botón para ese idioma.
-// Si todas están vacías, no aparecerá el botón "Descarga el Brochure del DMC".
+// DMC BROCHURE URLs
+// Enter the URL of the corresponding PDF or document.
+// If you leave the URL empty (''), no button will appear for that language.
+// If all are empty, the "Download the DMC Brochure" button will not appear.
 // ==============================================================
 $url_brochure_dmc_es = 'https://imppulsor.com/wp-content/uploads/Brochure-Diagnostico-de-Madurez-Comercial_2026_v2.pdf';
 $url_brochure_dmc_en = '';
@@ -18,7 +18,7 @@ $mostrar_boton_brochure = (!empty($url_brochure_dmc_es) || !empty($url_brochure_
 get_header();
 
 /**
- * Helper para imprimir botones de forma consistente y validada
+ * Helper to render buttons consistently and with validation
  */
 function impulsor_render_buttons($prefix, $count = 3)
 {
@@ -47,7 +47,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 ?>
 
 <style>
-  /* Estilos específicos de la página */
+  /* Page-specific styles */
   .diag-block-margin {}
 
   /* Separator Line Logic */
@@ -64,7 +64,7 @@ function impulsor_render_buttons($prefix, $count = 3)
     border-bottom: 1px solid #000;
   }
 
-  /* Ajuste para que el último elemento dentro de un separator no duplique márgenes */
+  /* Adjustment so the last element inside a separator does not duplicate margins */
   /* .separator:last-child::after {
     display: none;
     border-bottom: none;
@@ -87,11 +87,11 @@ function impulsor_render_buttons($prefix, $count = 3)
     }
   }
 
-  /* Utilidad para asegurar que las secciones no se colapsen */
+  /* Utility to ensure sections do not collapse */
   .section {
     position: relative;
     overflow: hidden;
-    /* Evita que flotantes salgan del contenedor */
+    /* Prevents floats from escaping the container */
   }
 </style>
 
@@ -101,7 +101,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 1 - Madurez comercial
+     BLOCK 1 - Commercial maturity
      ========================================= */
   if (get_field('bloque_1_titulo')): ?>
     <section class="section mt-60 mb-0-mob section-madurez-comercial diag-block-margin reveal">
@@ -109,17 +109,17 @@ function impulsor_render_buttons($prefix, $count = 3)
         <div class="grid-2">
           <div class="text">
             <h2 class="heading-lg">
-            Qué es el Diagnóstico de Madurez Comercial (DMC)
+            What is the Commercial Maturity Diagnostic (DMC)
             </h2>
             <p>
-            El DMC es una herramienta desarrollada para evaluar con profundidad el nivel de desarrollo estructural, técnico y operativo de la función comercial de una organización. A través del análisis de 12 dimensiones clave, permite identificar brechas críticas, dependencias ocultas y oportunidades de mejora que impactan directamente en la capacidad de adquirir, retener y rentabilizar clientes, así como en el desarrollo de capacidades para escalar la operación comercial o elevar la efectividad y productividad comercial. 
+            The DMC is a diagnostic tool built to rigorously assess the structural, technical, and operational maturity of an organization's commercial function. Across 12 core dimensions, it uncovers critical gaps, hidden dependencies, and improvement opportunities that directly affect the ability to acquire, retain, and profitably grow customers — as well as the capabilities needed to scale the commercial operation and strengthen sales effectiveness and productivity.
             </p>
           </div>
           <div class="image-grid text-center h-100 w-100">
             <?php
             $img_1 = get_field('bloque_1_imagen');
             if ($img_1): ?>
-              <img src="<?php echo esc_url($img_1); ?>" class="rounded-diagonal w-100 h-100 h-420" alt="Madurez comercial">
+              <img src="<?php echo esc_url($img_1); ?>" class="rounded-diagonal w-100 h-100 h-420" alt="Commercial maturity">
             <?php endif; ?>
           </div>
         </div>
@@ -131,10 +131,10 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 3 - Niveles de madurez
+     BLOCK 3 - Maturity levels
      ========================================= */
   if (get_field('bloque_3_titulo')): ?>
-    <!-- Parte Inferior: Grafico Niveles + Texto + Botones -->
+    <!-- Lower Section: Levels Chart + Text + Buttons -->
     <section class="section section-niveles-madurez diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -145,10 +145,10 @@ function impulsor_render_buttons($prefix, $count = 3)
 
             <div class="grid-right">
               <h2 class="heading-md line-left mb-30">
-                Niveles de madurez comercial
+                Commercial maturity levels
               </h2>
               <p>
-              El DMC clasifica la madurez comercial en cuatro niveles que reflejan el grado de formalización, integración y capacidad adaptativa de una organización. Cada nivel refleja un conjunto específico de capacidades estructurales, técnicas y humanas que condicionan el desempeño comercial e indican qué tan preparada está la operación para elevar su productividad comercial o apoyar la escalación empresarial del negocio.
+              The DMC groups commercial maturity into four levels that reflect an organization's degree of formalization, integration, and adaptive capacity. Each level captures a distinct set of structural, technical, and people capabilities that shape sales performance — and signals how ready the operation is to lift productivity or support business-scale growth.
               </p>
 
             </div>
@@ -163,12 +163,12 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 4 - Revele lo que los números no muestran
+     BLOCK 4 - Reveal what the numbers do not show
      ========================================= */
   if (get_field('bloque_4_titulo')): ?>
 
 
-    <!-- Parte Inferior: Grafico Silueta + Texto + Botones -->
+    <!-- Lower Section: Silhouette Chart + Text + Buttons -->
     <section class="section section-conozca-su-punto-de-partida diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -178,7 +178,7 @@ function impulsor_render_buttons($prefix, $count = 3)
                 <?php the_field('bloque_3_titulo'); ?>
               </h2>
               <p>
-              Conozca el nivel de desarrollo de su operación comercial y conviértalo en una herramienta de gestión. El DMC revela el perfil único de cada organización, mostrando con claridad qué dimensiones están consolidadas, cuáles requieren mayor desarrollo y cómo se comparan frente a referentes de su industria. Esta visión integra percepciones dispersas en un marco de análisis estructurado y comparable, permitiendo tomar decisiones con mayor precisión, focalizar recursos y trazar una hoja de ruta de mejora con coherencia estratégica y operativa.
+              Understand how mature your commercial operation is — and turn that insight into a management tool. The DMC reveals each organization's unique profile, showing clearly which dimensions are well established, which need further development, and how you compare against industry benchmarks. This view consolidates scattered perceptions into a structured, comparable framework, so you can decide with greater precision, focus resources, and chart an improvement roadmap with strategic and operational coherence.
  
               </p>
             </div>
@@ -197,7 +197,7 @@ function impulsor_render_buttons($prefix, $count = 3)
     <section class="section section-revele-lo-que-los-numeros-no-muestran diag-block-margin reveal">
       <div class="container section--light pt-0">
 
-        <!-- Parte Superior: Texto + Grafico Nube -->
+        <!-- Upper Section: Text + Word Cloud Chart -->
 
           <div class="grid-2 mobile-reverse-col">
 
@@ -207,7 +207,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 
             <div class="grid-right">
               <h2 class="heading-md line-left mb-30">
-              Revele lo que los números no muestran y vaya al fondo de las percepciones y disonancias de su organización
+              Reveal what the numbers do not show — and get to the root of your organization's perceptions and misalignments
               </h2>
               <p>
                 <?php the_field('bloque_4_texto'); ?>
@@ -249,7 +249,7 @@ function impulsor_render_buttons($prefix, $count = 3)
     }
   </style>
 
-  <!-- SECCIÓN 3: Cómo ayudamos -->
+  <!-- SECTION 3: How we help -->
   <section class="section section-3 section-3-how-ayudamos reveal reveal-up spp-section">
     <div class="spp-bg-container">
       <img src="/wp-content/uploads/section-9-parallax.jpg" alt="" class="spp-bg-image">
@@ -257,11 +257,11 @@ function impulsor_render_buttons($prefix, $count = 3)
     <div class="container py-40 px-60 rounded-diagonal section-3-how-ayudamos__panel">
       <div class="grid-2 p-40 text-white align-center">
         <div>
-          <h2 class="heading-lg mb-20">El eslabón estructural que muchas empresas no están viendo</h2>
+          <h2 class="heading-lg mb-20">The structural link many companies are overlooking</h2>
         </div>
         <div>
           <p>
-          La madurez comercial es el nivel de desarrollo estructural, técnico y operativo que ha alcanzado una organización en su función comercial. Permite entender cómo se articulan capacidades clave como la estrategia, la planificación, la tecnología, el liderazgo o la gestión del talento para generar ingresos de forma sostenible. Evaluarla ayuda a identificar limitaciones estructurales, anticipar riesgos y tomar mejores decisiones sobre cómo escalar el desempeño comercial en contextos de alta complejidad.
+          Commercial maturity is the structural, technical, and operational maturity an organization has built across its commercial function. It reveals how capabilities such as strategy, planning, technology, leadership, and talent management work together to drive sustainable revenue. Assessing it helps surface structural constraints, anticipate risk, and make better decisions on how to scale sales performance in highly complex environments.
           </p>
         </div>
       </div>
@@ -271,10 +271,10 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 5 - Compare el nivel de madurez
+     BLOCK 5 - Compare the maturity level
      ========================================= */
   if (get_field('bloque_5_titulo_1')): ?>
-    <!-- Fila 1: Titulo + Grafico Barras -->
+    <!-- Row 1: Title + Bar Chart -->
     <section class="section pt-60 section-compare-1 diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -284,7 +284,7 @@ function impulsor_render_buttons($prefix, $count = 3)
                 <?php the_field('bloque_5_titulo_1'); ?>
               </h2>
               <p>
-              Con base en el Índice Global de Madurez Comercial (IGMC) obtenido, podrá ubicar su operación dentro de uno de los cuatro niveles definidos por nuestro modelo y compararla frente al benchmark. Esta visualización permite dimensionar con claridad qué tan avanzada o rezagada se encuentra su organización, cuál es la brecha respecto del estándar de referencia y qué tan cerca está del siguiente umbral de madurez. Entender esta posición relativa no solo clarifica la situación actual, sino que también orienta la priorización de transformaciones necesarias para desarrollar ventajas competitivas.
+              Using your Global Commercial Maturity Index (IGMC) score, you can place your operation within one of the four levels in our model and benchmark it against peers. This view makes it clear how advanced — or behind — your organization is, how large the gap is to the reference standard, and how close you are to the next maturity threshold. Understanding this relative position not only clarifies where you stand, but also guides which transformations to prioritize to build competitive advantage.
  
               </p>
             </div>
@@ -296,7 +296,7 @@ function impulsor_render_buttons($prefix, $count = 3)
       </div>
     </section>
 
-    <!-- Fila 2: Grafico Barras 2 + Titulo 2 -->
+    <!-- Row 2: Bar Chart 2 + Title 2 -->
     <section class="section section-compare-2 diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -309,7 +309,7 @@ function impulsor_render_buttons($prefix, $count = 3)
                 <?php the_field('bloque_5_titulo_2'); ?>
               </h2>
               <p>
-              El DMC está diseñado para ir más allá de una lectura superficial. Cada una de sus doce dimensiones de análisis se descompone en tres subdimensiones específicas que permiten analizar con precisión los factores estructurales que explican las capacidades competitivas del área. Este enfoque garantiza un equilibrio riguroso entre amplitud y profundidad, facilitando la identificación de causas raíz y no solo de síntomas. Usted obtendrá una visión clara de los factores que hoy habilitan o restringen el desempeño, la productividad y la evolución de su operación comercial.
+              The DMC is designed to go beyond a surface-level read. Each of its twelve dimensions breaks down into three specific subdimensions, so you can precisely analyze the structural factors behind the area's competitive capabilities. This approach strikes a rigorous balance between breadth and depth, making it easier to identify root causes — not just symptoms. You will gain a clear view of the factors currently enabling or constraining your commercial operation's performance, productivity, and evolution.
               </p>
             </div>
           </div>
@@ -317,7 +317,7 @@ function impulsor_render_buttons($prefix, $count = 3)
       </div>
     </section>
 
-    <!-- Fila 3: Heatmap -->
+    <!-- Row 3: Heatmap -->
     <section class="section section-heatmap diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -325,7 +325,7 @@ function impulsor_render_buttons($prefix, $count = 3)
           <!-- Heatmap Intro -->
           <div>
             <h2 class="heading-md line-left mb-30">
-              Vaya a la causa raíz de sus zonas de dolor
+              Get to the root cause of your pain points
             </h2>
             <p class="mb-40">
               <?php the_field('bloque_5_texto_final'); ?>

@@ -1,24 +1,24 @@
 <?php
 /**
- * Bloque: Productos destacados
- * - Slider de 2 columnas (fondo azul / fondo blanco)
- * - Basado en swiper.js
- * - Solución Parallax Universal (Desktop + Android + iPhone)
+ * Block: Featured products
+ * - 2-column slider (blue background / white background)
+ * - Based on swiper.js
+ * - Universal Parallax Solution (Desktop + Android + iPhone)
  */
 
 if (!defined('ABSPATH'))
   exit;
 
-// Datos de productos
+// Products data
 $productos = [
   [
-    'titulo' => 'Diagnóstico de Madurez Comercial',
-    'texto_intro' => '¿Está tu operación comercial preparada para escalar con foco, eficiencia y sostenibilidad? 
+    'titulo' => 'Commercial Maturity Diagnostic',
+    'texto_intro' => 'Is your sales operation ready to scale with focus, efficiency, and sustainability? 
       <br> <br>
-      ¿Estás enfrentando los mismos cuellos de botella, fricciones internas o resultados impredecibles año tras año, sin lograr resolverlos de raíz? ',
-    'texto_completo' => 'Este diagnóstico permite conocer con precisión el nivel de desarrollo operacional de tu función comercial, identificando brechas críticas y oportunidades viables de mejora. 
-A través de una base de información cuali-cuantitativa y un marco de análisis estructurado, brinda el insumo necesario para tomar decisiones accionables, sólidas y alineadas con la etapa actual de tu negocio.',
-    'boton_label' => 'Saber más',
+      Are you facing the same bottlenecks, internal friction, or unpredictable results year after year without resolving them at the root? ',
+    'texto_completo' => 'This diagnostic pinpoints the operational maturity of your sales function, surfacing critical gaps and viable opportunities for improvement. 
+Through a quali-quantitative evidence base and a structured analytical framework, it provides the input you need to make actionable, sound decisions aligned with your business’s current stage.',
+    'boton_label' => 'Learn more',
     'boton_url' => '/diagnostico-de-madurez-comercial/',
     'imagen' => '/wp-content/uploads/Que-es-el-diagnostico-de-madurez-comercial.png',
   ],
@@ -50,12 +50,12 @@ if (empty($productos))
         <?php foreach ($productos as $p): ?>
           <div class="swiper-slide">
 
-            <!-- Fila superior: Texto y Contenido -->
+            <!-- Top row: Text and Content -->
             <div class="producto-header-row grid-2 mb-60">
               <div class="header-left">
                 <div class="tag-title mb-20">
                   <span class="blue-line"></span>
-                  <p class="fs-24 text-white uppercase">Productos destacados</p>
+                  <p class="fs-24 text-white uppercase">Featured products</p>
                 </div>
                 <h2 class="heading-lg text-white text-left mb-0"><?php echo esc_html($p['titulo']); ?></h2>
 
@@ -70,12 +70,12 @@ if (empty($productos))
                     <?php echo wp_kses_post($p['texto_completo']); ?>
                   </div>
 
-                  <a href="#" class="producto-leer-mas">Leer más …</a>
+                  <a href="#" class="producto-leer-mas">Read more …</a>
                 </div>
               </div>
             </div>
 
-            <!-- Fila inferior: Tabla -->
+            <!-- Bottom row: Table -->
             <div class="producto-table-row">
               <div class="table-white-bg">
                 <?php get_template_part('template-parts/blocks/bloque-grafico-dmc-tabla-nueva'); ?>
@@ -99,7 +99,7 @@ if (empty($productos))
 
 <style>
   /* ==========================================================
-     BLOQUE PRODUCTOS DESTACADOS - NEW REDESIGN
+     FEATURED PRODUCTS BLOCK - NEW REDESIGN
      ========================================================== */
   section.bloque-productos {
     background: #000B18 !important;
@@ -189,7 +189,7 @@ if (empty($productos))
     flex-shrink: 0;
   }
 
-  /* Nav Arrows Styling - EXACTLY as Casos de Éxito */
+  /* Nav Arrows Styling - EXACTLY as Success Stories */
   .nav-btns-group .swiper-button-prev,
   .nav-btns-group .swiper-button-next {
     position: static;
@@ -276,18 +276,18 @@ if (empty($productos))
       btn.addEventListener('click', function (e) {
         e.preventDefault();
 
-        // Buscamos el texto oculto anterior
+        // Find the previous hidden text
         const wrapper = btn.closest('.intro-text-limited');
         const hiddenText = wrapper.querySelector('.producto-texto--oculto');
 
         if (hiddenText) {
           hiddenText.classList.toggle('visible');
 
-          // Opcional: cambiar texto del botón
+          // Optional: update the button label
           if (hiddenText.classList.contains('visible')) {
-            btn.textContent = 'Leer menos';
+            btn.textContent = 'Read less';
           } else {
-            btn.textContent = 'Leer más …';
+            btn.textContent = 'Read more …';
           }
         }
       });

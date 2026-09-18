@@ -16,39 +16,39 @@
   <section class="section reveal reveal-up">
     <div class="container grid-2 grid-2--2fr-1fr">
 
-      <!-- Columna izquierda -->
+      <!-- Left column -->
       <div class="contacto__formulario text-dark">
-        <h2 class="heading-lg mb-10">Referidos</h2>
+        <h2 class="heading-lg mb-10">Referrals</h2>
         <div class="footer-middle__social mb-40">
           <a href="https://www.linkedin.com/company/imppulsor/" target="_blank" rel="noopener"
-            aria-label="Compartir en LinkedIn" class="hero-social__link">
+            aria-label="Share on LinkedIn" class="hero-social__link">
             <img src="/wp-content/uploads/icon-in.png" alt="LinkedIn" width="24" height="24" style="">
           </a>
-          <a href="https://x.com/imppulsor" target="_blank" rel="noopener" aria-label="Compartir en X"
+          <a href="https://x.com/imppulsor" target="_blank" rel="noopener" aria-label="Share on X"
             class="hero-social__link">
             <img src="/wp-content/uploads/icon-x.png" alt="X (Twitter)" width="24" height="24" style="">
           </a>
         </div>
 
         <p class=" ">
-          En Imppulsor creemos en el poder del boca a boca y de la recomendación personal como una forma efectiva de
-          hacer negocios y expandir nuestra base de clientes. Por ello hemos desarrollado este programa para reclutar,
-          capacitar, reconocer y recompensar tú recomendación personal frente a una oportunidad de ventas alineada con
-          el alcance de nuestros servicios y experiencia.
+          At Imppulsor, we believe in the power of word of mouth and personal recommendations as an effective way to
+          grow our business and expand our client base. That is why we built this program to recruit,
+          equip, recognize, and reward your personal referrals for sales opportunities aligned with
+          our services and expertise.
         </p>
 
         <p class=" ">
-          Nuestro programa de referidos a través del pago de una comisión busca incentivar tu recomendación personal e
-          influencia como cliente, colaborador o profesional miembro de nuestra red de negocios frente a tu propia red
-          de contactos. A cambio pagamos altas recompensas en USD por cada referencia exitosa.
+          Our commission-based referral program is designed to reward your personal advocacy and
+          influence as a client, collaborator, or member of our business network within your own
+          network of contacts. In return, we pay generous rewards in USD for every successful referral.
         </p>
 
         <p class=" ">
-          Si quieres conocer este programa y darnos tu primer referido, contáctanos. Completa el formulario y uno de
-          nuestros especialistas se pondrá en contacto para explorar cuál podría ser tu punto de partida
+          If you would like to learn more about this program and submit your first referral, contact us. Complete the form and one of
+          our specialists will reach out to explore the best starting point for you.
         </p>
 
-        <!-- Formulario principal -->
+        <!-- Main form -->
         <div class="formulario-contacto cf7-clean mt-40">
           <?php echo do_shortcode('[contact-form-7 id="75046de" title="Formulario de contacto pagina referidos"]'); ?>
         </div>
@@ -56,61 +56,61 @@
         <div class="separator-40y"></div>
         <!--  -->
         <p class="text-sm ">
-          Imppulsor Limited se compromete a proteger tu información. Tus datos serán tratados conforme a la legislación
-          aplicable en materia de privacidad, nuestras políticas internas y nuestra política de protección de datos. Al
-          ser una organización con presencia internacional, tu información podrá ser almacenada y procesada fuera de tu
-          país de residencia, siempre bajo estrictos estándares de seguridad, confidencialidad y respeto por tu
-          privacidad.
+          Imppulsor Limited is committed to protecting your information. Your data will be handled in accordance with applicable
+          privacy laws, our internal policies, and our data protection policy. As
+          an organization with an international presence, your information may be stored and processed outside your
+          country of residence, always under strict standards of security, confidentiality, and respect for your
+          privacy.
         </p>
       </div>
 
 
-      <!-- Columna derecha -->
+      <!-- Right column -->
       <aside class="contacto__sidebar text-white bg-gradient-light-blue py-60 px-40">
 
         <div class=" ">
-          <h3 class="heading-sm  ">Política de privacidad</h3>
+          <h3 class="heading-sm  ">Privacy policy</h3>
           <p class="text-sm  ">
-            Protegemos tu información de acuerdo con estrictos principios de confidencialidad, legalidad y respeto por
-            tus datos personales.
+            We safeguard your information under strict principles of confidentiality, lawfulness, and respect for
+            your personal data.
           </p>
-          <a href="/politica-de-privacidad/" class="btn-arrow  mt-20-mob">Acceder</a>
+          <a href="/politica-de-privacidad/" class="btn-arrow  mt-20-mob">View</a>
         </div>
-        <!-- fin fila 1 -->
+        <!-- end row 1 -->
         <div class="separator-40y"></div>
         <!--  -->
         <div class=" ">
-          <h3 class="heading-sm  ">Política de cookies</h3>
+          <h3 class="heading-sm  ">Cookie policy</h3>
           <p class="text-sm  ">
-            Consulta cómo usamos cookies para mejorar tu experiencia y asegurar el funcionamiento adecuado de nuestro
-            sitio web.
+            Learn how we use cookies to improve your experience and ensure our website
+            works properly.
           </p>
-          <a href="/politica-de-cookies/" class="btn-arrow  mt-20-mob">Acceder</a>
+          <a href="/politica-de-cookies/" class="btn-arrow  mt-20-mob">View</a>
         </div>
-        <!-- fin fila 2 -->
+        <!-- end row 2 -->
         <div class="separator-40y"></div>
         <!--  -->
         <div class=" ">
-          <h3 class="heading-sm  ">Reproducciones</h3>
+          <h3 class="heading-sm  ">Reprints</h3>
           <p class="text-sm  ">
-            Si deseas citar o republicar contenido de nuestro blog o casos de éxito, contáctanos para conocer
-            condiciones de uso y autorizaciones.
+            To quote or republish content from our blog or success stories, contact us to learn about
+            usage terms and permissions.
           </p>
         </div>
-        <!-- fin fila 3 -->
+        <!-- end row 3 -->
         <div class="separator-40y"></div>
         <!--  -->
         <div>
-          <h3 class="heading-sm  ">Trabaja con nosotros</h3>
+          <h3 class="heading-sm  ">Work with us</h3>
           <p class="text-sm  ">
-            En Imppulsor trabajamos con líderes que enfrentan decisiones complejas y buscan generar impacto real. Si te
-            apasiona transformar organizaciones desde la raíz, queremos conocerte.
+            At Imppulsor, we work with leaders facing complex decisions who want to create real impact. If you
+            are passionate about transforming organizations from the ground up, we would like to meet you.
           </p>
           <div class="contacto-profesional__form cf7-clean">
             <?php echo do_shortcode('[contact-form-7 id="eae9bc5" title="Formulario de contacto trabaja con nosotros"]'); ?>
           </div>
         </div>
-        <!-- fin fila 4 -->
+        <!-- end row 4 -->
         <div class="separator-40y"></div>
         <!--  -->
         <div class=""><img src="/wp-content/uploads/aside-contacto.jpg" alt=""></div>
@@ -216,12 +216,12 @@
     background: #000;
   }
 
-  /* 4. Estilo de los enlaces del Nivel 3 */
+  /* 4. Level 3 link styling */
   .header-white .mega__col--menu .mega__menu .sub-menu a {
     color: #000 !important;
   }
 
-  /* Hover en los enlaces del nivel 3 */
+  /* Hover on level 3 links */
   .header-white .mega__col--menu .mega__menu .sub-menu a:hover {
     color: #000 !important;
   }

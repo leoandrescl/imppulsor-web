@@ -1,29 +1,29 @@
 <?php
 /**
- * Bloque 6 – Slider de Testimonios (Hardcoded con Swiper)
+ * Block 6 – Testimonials Slider (Hardcoded with Swiper)
  */
 if (!defined('ABSPATH'))
   exit;
 
-// Estructura de datos hardcoded
+// Hardcoded data structure
 $testimonios = [
-  // TESTIMONIO 1: Andrés Carey (Con Logo, sin empresa en el texto del cargo)
+  // TESTIMONIAL 1: Andrés Carey (With Logo, no company in the job-title text)
   [
-    'titulo' => 'Todo comenzó con la necesidad de escalar',
-    'texto' => 'Ya habíamos validado nuestra propuesta de valor en un mercado exigente, con demanda creciente y espacio para innovación financiera y tecnológica. Con señales claras de product market fit, el desafío dejó de ser convencer y pasó a ser escalar el negocio. El equipo entendió que la siguiente etapa exigía fortalecer la operación comercial. Aplicamos el Diagnóstico de Madurez Comercial de Imppulsor porque calzaba con precisión con nuestro momento, velocidad y necesidad de claridad. Este aportó un marco estructurado para analizar nuestra operación, junto con criterios comparables de evaluación y una agenda priorizada de acciones habilitantes para mejoras estructurales y operativas posteriores.',
+    'titulo' => 'It all started with the need to scale',
+    'texto' => 'We had already validated our value proposition in a demanding market, with growing demand and room for financial and technological innovation. With clear signs of product-market fit, the challenge shifted from convincing to scaling the business. The team understood that the next stage required strengthening the sales operation. We engaged Imppulsor’s Commercial Maturity Diagnostic because it matched our moment, pace, and need for clarity with precision. It provided a structured framework to analyze our operation, along with comparable evaluation criteria and a prioritized agenda of enabling actions for subsequent structural and operational improvements.',
     'autor' => 'Andrés Carey',
     'cargo' => 'Co-Founder, Chief Legal Officer',
-    'imagen' => '/wp-content/uploads/andres-carey.jpg', /* <-- REEMPLAZA CON LA RUTA DE LA FOTO DE ANDRES */
-    'logo_empresa' => '/wp-content/uploads/logo-wbuild.png',  /* <-- REEMPLAZA CON LA RUTA DEL LOGO WBUILD */
+    'imagen' => '/wp-content/uploads/andres-carey.jpg', /* <-- REPLACE WITH ANDRES'S PHOTO PATH */
+    'logo_empresa' => '/wp-content/uploads/logo-wbuild.png',  /* <-- REPLACE WITH THE WBUILD LOGO PATH */
   ],
-  // TESTIMONIO 2: Cristian Arriagada (Sin logo, con empresa en el texto del cargo)
+  // TESTIMONIAL 2: Cristian Arriagada (No logo, company included in the job-title text)
   [
-    'titulo' => 'Todo comenzó con un diagnóstico',
-    'texto' => 'Teníamos un equipo talentoso, pero sabíamos que estábamos lejos de alcanzar nuestro verdadero potencial. El diagnóstico no solo nos entregó datos: nos mostró con precisión dónde estábamos perdiendo eficiencia, qué perfiles necesitaban acompañamiento y qué prácticas debíamos reforzar para crecer con estructura. A partir de ahí rediseñamos nuestros modelos de trabajo, alineamos al equipo regional y mejoramos los indicadores clave de desempeño en varios países. Hoy operamos con más claridad, foco y consistencia, y elevamos con consistencia la efectividad y productividad promedio de nuestro equipo comercial.',
+    'titulo' => 'It all started with a diagnostic',
+    'texto' => 'We had a talented team, but we knew we were far from reaching our true potential. The diagnostic gave us more than data: it showed us precisely where we were losing efficiency, which profiles needed support, and which practices we had to strengthen to grow with structure. From there we redesigned our ways of working, aligned the regional team, and improved key performance indicators across several countries. Today we operate with greater clarity, focus, and consistency, and we steadily raise the average effectiveness and productivity of our sales team.',
     'autor' => 'Cristian Arriagada',
     'cargo' => 'Regional Sales Director',
-    'imagen' => '/wp-content/uploads/cristian-arriagada.jpg', /* <-- REEMPLAZA CON LA RUTA DE LA FOTO DE CRISTIAN */
-    'logo_empresa' => '/wp-content/uploads/logo-hco2.png', /* <-- DEJADO EN BLANCO PARA QUE NO MUESTRE LOGO */
+    'imagen' => '/wp-content/uploads/cristian-arriagada.jpg', /* <-- REPLACE WITH CRISTIAN'S PHOTO PATH */
+    'logo_empresa' => '/wp-content/uploads/logo-hco2.png', /* <-- LEFT BLANK SO NO LOGO IS SHOWN */
   ]
 ];
 
@@ -70,17 +70,17 @@ if (empty($testimonios))
                   </div>
                 </div>
 
-                <!-- Paginador dentro del Slide -->
+                <!-- Paginator inside the Slide -->
                 <div class="logos-pagination d-flex justify-between mt-40 logos-pagination-absolute-bottom">
                   <div class="pagination testimonio-nav">
-                    <span class="pagination-btn btn-prev-custom">Anterior</span>
+                    <span class="pagination-btn btn-prev-custom">Previous</span>
                     <div class="swiper-pagination-custom position-static w-auto d-flex align-center gap-10">
                       <?php foreach ($testimonios as $p_index => $p_t): ?>
                         <span class="pagination-number custom-bullet <?php echo $p_index === 0 ? 'active' : ''; ?>"
                           data-slide-index="<?php echo $p_index; ?>"><?php echo $p_index + 1; ?></span>
                       <?php endforeach; ?>
                     </div>
-                    <span class="pagination-btn btn-next-custom">Siguiente</span>
+                    <span class="pagination-btn btn-next-custom">Next</span>
                   </div>
                 </div>
 
@@ -117,12 +117,12 @@ if (empty($testimonios))
     height: 100%;
   }
 
-  /* Slider Testimonios */
+  /* Testimonials Slider */
   .testimonio-swiper {
     overflow: hidden;
   }
 
-  /* Transición Fade */
+  /* Fade Transition */
   .testimonio-swiper .swiper-slide {
     opacity: 0 !important;
     transition: opacity 0.6s ease-in-out;
@@ -134,13 +134,13 @@ if (empty($testimonios))
     z-index: 2;
   }
 
-  /* Imagen del logo */
+  /* Logo image */
   .testimonio-logo img {
     display: block;
     max-width: 200px;
   }
 
-  /* Navegación y Paginación */
+  /* Navigation and Pagination */
   .logos-pagination {
     width: 100%;
   }

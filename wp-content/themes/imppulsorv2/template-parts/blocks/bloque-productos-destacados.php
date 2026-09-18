@@ -1,59 +1,59 @@
 <?php
 /**
- * Bloque: Productos destacados (DMC, barra de beneficios) en container estándar (sin padding extra de section--light).
- * Slider Swiper preparado para varios productos; hoy un slide DMC. Columna visual: tres focos con corte en punta (SVG).
+ * Block: Featured products (DMC, benefits bar) in a standard container (no extra section--light padding).
+ * Swiper slider ready for multiple products; today one DMC slide. Visual column: three focus areas with pointed cut (SVG).
  */
 if (!defined('ABSPATH')) {
   exit;
 }
 
-/** URL de archivo en wp-content/uploads (iconos del bloque). */
+/** File URL in wp-content/uploads (block icons). */
 $bpd_upload = static function ( string $file ): string {
   return esc_url( content_url( 'uploads/' . ltrim( $file, '/' ) ) );
 };
 
 $productos_destacados = [
   [
-    'titulo_seccion' => 'Diagnóstico de Madurez Comercial',
-    'producto_titulo' => '¿Sabe qué está limitando realmente su operación comercial?',
-    'producto_texto' => 'El DMC evalúa con rigor el nivel de madurez de su función comercial a partir de un marco de 12 dimensiones, con evidencia cualitativa y cuantitativa para priorizar mejoras con impacto real.',
-    'lista_titulo' => 'Le permite:',
+    'titulo_seccion' => 'Commercial Maturity Diagnostic',
+    'producto_titulo' => 'Do you know what is really holding back your sales operation?',
+    'producto_texto' => 'The DMC rigorously assesses the maturity of your sales function using a 12-dimension framework, with qualitative and quantitative evidence to prioritize improvements with real impact.',
+    'lista_titulo' => 'It enables you to:',
     'lista_items' => [
-      'Visualizar de forma sistémica cómo se articulan procesos, estructura, tecnología, talento y liderazgo en la generación de ingresos.',
-      'Identificar brechas y focos críticos de intervención con trazabilidad hasta la decisión.',
-      'Comparar su posición frente a referentes sectoriales y regionales.',
+      'See systemically how processes, structure, technology, talent, and leadership come together to generate revenue.',
+      'Identify gaps and critical areas for intervention with traceability to the decision.',
+      'Benchmark your position against sector and regional peers.',
     ],
-    'cta_primario_label' => 'Conozca más sobre el DMC',
+    'cta_primario_label' => 'Learn more about the DMC',
     'cta_primario_url' => '/diagnostico-de-madurez-comercial/',
-    'cta_secundario_1_label' => 'Contacte con un experto',
+    'cta_secundario_1_label' => 'Contact an expert',
     'cta_secundario_1_url' => '/contacto/',
-    'cta_secundario_2_label' => 'Conozca nuestros casos de éxito',
+    'cta_secundario_2_label' => 'Explore our success stories',
     'cta_secundario_2_url' => '/casos-de-exito/',
   ],
 ];
 
 $barra_beneficios = [
   [
-    'texto' => 'Respaldo metodológico de clase mundial.',
+    'texto' => 'World-class methodological rigor.',
     'icon' => 'icono-respaldo2.svg',
   ],
   [
-    'texto' => 'Proyecto cerrado en 6 semanas.',
+    'texto' => 'Fixed-scope project delivered in 6 weeks.',
     'icon' => 'icono-proyecto2.svg',
   ],
   [
-    'texto' => 'Acompañamiento experto y visión independiente.',
+    'texto' => 'Expert guidance and an independent perspective.',
     'icon' => 'icono-acompanamiento2.svg',
   ],
   [
-    'texto' => 'Confidencialidad protegida en todo el proceso.',
+    'texto' => 'Confidentiality protected throughout the process.',
     'icon' => 'icono-confidencialidad2.svg',
   ],
 ];
 
 $bpd_icon_default = 'icono-respaldo2.svg';
 
-/** URL de la página con `section-dimensiones-analisis-dmc-v2` (template Diagnóstico 2). */
+/** URL of the page with `section-dimensiones-analisis-dmc-v2` (Diagnostics 2 template). */
 $bpd_dmc_v2_page_url = home_url( '/diagnostico-de-madurez-comercial-2/' );
 if ( function_exists( 'get_pages' ) ) {
   $bpd_v2_pages = get_pages(
@@ -69,39 +69,39 @@ if ( function_exists( 'get_pages' ) ) {
 }
 $bpd_dmc_v2_page_url = untrailingslashit( (string) $bpd_dmc_v2_page_url );
 
-/** Tres focos DMC; cada fila enlaza a las 4 dimensiones del acordeón v2 (#dimension-v2-N). */
+/** Three DMC focus areas; each row links to the 4 dimensions of the v2 accordion (#dimension-v2-N). */
 $bpd_focos_dmc = [
   [
-    'titulo'      => 'Dirección y Gobierno',
+    'titulo'      => 'Leadership and Governance',
     'modificador' => 'bpd-focos__row--navy',
     'icono'       => 'icono-direccion.svg',
     'dimensiones' => array(
-      array( 'num' => 1, 'etiqueta' => 'Estrategia' ),
-      array( 'num' => 2, 'etiqueta' => 'Gobernanza' ),
-      array( 'num' => 10, 'etiqueta' => 'Organización' ),
-      array( 'num' => 11, 'etiqueta' => 'Liderazgo' ),
+      array( 'num' => 1, 'etiqueta' => 'Strategy' ),
+      array( 'num' => 2, 'etiqueta' => 'Governance' ),
+      array( 'num' => 10, 'etiqueta' => 'Organization' ),
+      array( 'num' => 11, 'etiqueta' => 'Leadership' ),
     ),
   ],
   array(
-    'titulo'      => 'Ejecución Comercial',
+    'titulo'      => 'Commercial Execution',
     'modificador' => 'bpd-focos__row--royal',
     'icono'       => 'icono-ejecucion.svg',
     'dimensiones' => array(
       array( 'num' => 5, 'etiqueta' => 'Marketing' ),
-      array( 'num' => 6, 'etiqueta' => 'Metodología' ),
-      array( 'num' => 4, 'etiqueta' => 'Experiencia' ),
-      array( 'num' => 9, 'etiqueta' => 'Eficiencia' ),
+      array( 'num' => 6, 'etiqueta' => 'Methodology' ),
+      array( 'num' => 4, 'etiqueta' => 'Experience' ),
+      array( 'num' => 9, 'etiqueta' => 'Efficiency' ),
     ),
   ),
   array(
-    'titulo'      => 'Capacidades Habilitantes',
+    'titulo'      => 'Enabling Capabilities',
     'modificador' => 'bpd-focos__row--azure',
     'icono'       => 'icono-capacidades.svg',
     'dimensiones' => array(
-      array( 'num' => 7, 'etiqueta' => 'Automatización e IA' ),
-      array( 'num' => 8, 'etiqueta' => 'Datos' ),
-      array( 'num' => 3, 'etiqueta' => 'Innovación' ),
-      array( 'num' => 12, 'etiqueta' => 'Talento' ),
+      array( 'num' => 7, 'etiqueta' => 'Automation & AI' ),
+      array( 'num' => 8, 'etiqueta' => 'Data' ),
+      array( 'num' => 3, 'etiqueta' => 'Innovation' ),
+      array( 'num' => 12, 'etiqueta' => 'Talent' ),
     ),
   ),
 ];
@@ -123,10 +123,10 @@ $bpd_total_slides = count( $productos_destacados );
 <section class="bloque-productos-destacados bg-light section fade-in diag-block-margin" id="bloque-productos-destacados" data-fade-in-manual="bpd">
   <div class="container bg-light text-dark">
     <div class="bpd-card__header btvc-header">
-      <div class="badge bg-light-blue px-40 text-bold">Producto destacado</div>
-      <div class="btvc-header__nav" aria-label="<?php esc_attr_e( 'Navegación del carrusel de productos destacados', 'imppulsorv2' ); ?>">
-        <div class="swiper-button-prev btvc-nav-btn btvc-nav-btn--prev" role="button" tabindex="0" aria-label="<?php esc_attr_e( 'Anterior', 'imppulsorv2' ); ?>"></div>
-        <div class="swiper-button-next btvc-nav-btn btvc-nav-btn--next" role="button" tabindex="0" aria-label="<?php esc_attr_e( 'Siguiente', 'imppulsorv2' ); ?>"></div>
+      <div class="badge bg-light-blue px-40 text-bold">Featured product</div>
+      <div class="btvc-header__nav" aria-label="<?php esc_attr_e( 'Featured products carousel navigation', 'imppulsorv2' ); ?>">
+        <div class="swiper-button-prev btvc-nav-btn btvc-nav-btn--prev" role="button" tabindex="0" aria-label="<?php esc_attr_e( 'Previous', 'imppulsorv2' ); ?>"></div>
+        <div class="swiper-button-next btvc-nav-btn btvc-nav-btn--next" role="button" tabindex="0" aria-label="<?php esc_attr_e( 'Next', 'imppulsorv2' ); ?>"></div>
       </div>
     </div>
 
@@ -169,9 +169,9 @@ $bpd_total_slides = count( $productos_destacados );
                 </div>
 
                 <div class="bpd-col bpd-col--visual">
-                  <h3 class="heading-sm bpd-producto__titulo bpd-visual__titulo">12 Dimensiones de Gestión Evaluadas</h3>
+                  <h3 class="heading-sm bpd-producto__titulo bpd-visual__titulo">12 Management Dimensions Assessed</h3>
 
-                  <div class="bpd-focos" role="group" aria-label="<?php echo esc_attr( 'Tres focos del DMC: dirección y gobierno, ejecución comercial y capacidades habilitantes.' ); ?>">
+                  <div class="bpd-focos" role="group" aria-label="<?php echo esc_attr( 'Three DMC focus areas: leadership and governance, commercial execution, and enabling capabilities.' ); ?>">
                     <?php foreach ( $bpd_focos_dmc as $foco ) : ?>
                       <div class="bpd-focos__row <?php echo esc_attr( $foco['modificador'] ); ?>">
                         <div class="bpd-focos__wing" aria-hidden="true">
@@ -195,7 +195,7 @@ $bpd_total_slides = count( $productos_destacados );
                             $bpd_dims = $foco['dimensiones'];
                             $bpd_dim_last = count( $bpd_dims ) - 1;
                             ?>
-                            <p class="bpd-focos__dims" role="group" aria-label="<?php echo esc_attr( 'Dimensiones de análisis: ' . $foco['titulo'] ); ?>">
+                            <p class="bpd-focos__dims" role="group" aria-label="<?php echo esc_attr( 'Analysis dimensions: ' . $foco['titulo'] ); ?>">
                               <?php
                               foreach ( $bpd_dims as $bpd_di => $dim ) :
                                 $num = isset( $dim['num'] ) ? (int) $dim['num'] : 0;
@@ -204,11 +204,11 @@ $bpd_total_slides = count( $productos_destacados );
                                 }
                                 $hash      = '#dimension-v2-' . $num;
                                 $dim_href  = esc_url( $bpd_dmc_v2_page_url . $hash );
-                                $dim_label = isset( $dim['etiqueta'] ) ? (string) $dim['etiqueta'] : ( 'Dimensión ' . $num );
+                                $dim_label = isset( $dim['etiqueta'] ) ? (string) $dim['etiqueta'] : ( 'Dimension ' . $num );
                                 ?>
                                 <a class="bpd-focos__dim-link" href="<?php echo $dim_href; ?>"><?php echo esc_html( $dim_label ); ?></a><?php
                                 if ( $bpd_di < $bpd_dim_last ) :
-                                  ?><span class="bpd-focos__dims-sep" aria-hidden="true"><?php echo $bpd_di === $bpd_dim_last - 1 ? ' y ' : ', '; ?></span><?php
+                                  ?><span class="bpd-focos__dims-sep" aria-hidden="true"><?php echo $bpd_di === $bpd_dim_last - 1 ? ' and ' : ', '; ?></span><?php
                                 endif;
                               endforeach;
                               ?>
@@ -224,8 +224,8 @@ $bpd_total_slides = count( $productos_destacados );
                       <img src="<?php echo $bpd_upload( 'icono-compare.svg' ); ?>" alt="" width="22" height="22" loading="lazy" decoding="async" />
                     </div>
                     <div>
-                      <p class="bpd-callout__title">Compare su madurez frente a referentes sectoriales y regionales.</p>
-                      <p class="bpd-callout__text">El DMC permite entender qué tan avanzada o rezagada está su operación comercial frente a empresas comparables.</p>
+                      <p class="bpd-callout__title">Benchmark your maturity against sector and regional peers.</p>
+                      <p class="bpd-callout__text">The DMC shows how advanced or delayed your sales operation is compared with similar companies.</p>
                     </div>
                   </div>
                 </div>

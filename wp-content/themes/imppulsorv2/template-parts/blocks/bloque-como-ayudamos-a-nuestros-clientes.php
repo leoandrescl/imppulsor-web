@@ -1,7 +1,7 @@
 <?php
 /**
- * Bloque: Cómo ayudamos a nuestros clientes
- * Tipo: Bloque Reutilizable ACF
+ * Block: How we help our clients
+ * Type: Reusable ACF Block
  */
 if (!defined('ABSPATH')) {
     exit;
@@ -25,12 +25,12 @@ $img = get_field('bloque_2_imagen', $ID);
 
       <div class="px-0 bloque-como-ayudamos__content">
         <h2 class="heading-lg"><?php the_field('bloque_2_titulo', $ID); ?></h2>
-        <p>Aplicamos diagnósticos de madurez empresarial orientados revelar patrones ocultos entre sus problemas operacionales más complejos y sus causas raíz, identificando zonas prioritarias de intervención con base en evidencia.</p>
+        <p>We apply business maturity diagnostics designed to reveal hidden patterns between your most complex operational challenges and their root causes, identifying priority areas for intervention based on evidence.</p>
 
-        <p>Complementamos esta mirada con benchmarking de capacidades empresariales y marcos de ejecución estratégica, para priorizar decisiones, orientar recursos críticos y convertir hallazgos diagnósticos en avances operacionales medibles.
+        <p>We complement this perspective with business capability benchmarking and strategic execution frameworks to prioritize decisions, direct critical resources, and turn diagnostic findings into measurable operational progress.
         </p>
         <a href="https://imppulsor.com/diagnosticos/" class="btn-arrow btn-arrow-dark mt-20-mob">
-          Saber más sobre diagnósticos
+          Learn more about diagnostics
         </a>
       </div>
  

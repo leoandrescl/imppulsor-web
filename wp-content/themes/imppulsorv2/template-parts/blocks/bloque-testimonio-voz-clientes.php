@@ -1,7 +1,7 @@
 <?php
 /**
- * Bloque testimonio (2 hardcoded) — mismo diseño que bloque-testimonios-voz-clientes.
- * Página Clientes y socios; no modifica bloque-testimonio.php.
+ * Testimonial block (2 hardcoded) — same design as bloque-testimonios-voz-clientes.
+ * Clients and partners page; does not modify bloque-testimonio.php.
  */
 
 if (!defined('ABSPATH')) {
@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) {
 
 if (!function_exists('imppulsor_btvc_resolve_autor_id')) {
   /**
-   * ID del CPT autores por título o ID numérico (misma fuente que bloque-testimonios-voz-clientes).
+   * Authors CPT ID by title or numeric ID (same source as bloque-testimonios-voz-clientes).
    */
   function imppulsor_btvc_resolve_autor_id($autor_ref) {
     if (is_numeric($autor_ref) && (int) $autor_ref > 0) {
@@ -36,8 +36,8 @@ if (!function_exists('imppulsor_btvc_resolve_autor_id')) {
 
 $testimonios = [
   [
-    'titulo' => 'Todo comenzó con la necesidad de escalar',
-    'texto' => 'Ya habíamos validado nuestra propuesta de valor en un mercado exigente, con demanda creciente y espacio para innovación financiera y tecnológica. Con señales claras de product market fit, el desafío dejó de ser convencer y pasó a ser escalar el negocio. El equipo entendió que la siguiente etapa exigía fortalecer la operación comercial. Aplicamos el Diagnóstico de Madurez Comercial de Imppulsor porque calzaba con precisión con nuestro momento, velocidad y necesidad de claridad. Este aportó un marco estructurado para analizar nuestra operación, junto con criterios comparables de evaluación y una agenda priorizada de acciones habilitantes para mejoras estructurales y operativas posteriores.',
+    'titulo' => 'It all started with the need to scale',
+    'texto' => 'We had already validated our value proposition in a demanding market, with growing demand and room for financial and technological innovation. With clear signs of product-market fit, the challenge shifted from convincing to scaling the business. The team understood that the next stage required strengthening the sales operation. We engaged Imppulsor’s Commercial Maturity Diagnostic because it matched our moment, pace, and need for clarity with precision. It provided a structured framework to analyze our operation, along with comparable evaluation criteria and a prioritized agenda of enabling actions for subsequent structural and operational improvements.',
     'autor' => 'Andrés Carey',
     'cargo' => 'Co-Founder & Chief Legal Officer',
     'empresa' => '',
@@ -47,14 +47,14 @@ $testimonios = [
     'linkedin' => '',
   ],
   [
-    'titulo' => 'Todo comenzó con un diagnóstico',
-    'texto' => 'Teníamos un equipo talentoso, pero sabíamos que estábamos lejos de alcanzar nuestro verdadero potencial. El diagnóstico no solo nos entregó datos: nos mostró con precisión dónde estábamos perdiendo eficiencia, qué perfiles necesitaban acompañamiento y qué prácticas debíamos reforzar para crecer con estructura. A partir de ahí rediseñamos nuestros modelos de trabajo, alineamos al equipo regional y mejoramos los indicadores clave de desempeño en varios países. Hoy operamos con más claridad, foco y consistencia, y elevamos con consistencia la efectividad y productividad promedio de nuestro equipo comercial.',
+    'titulo' => 'It all started with a diagnostic',
+    'texto' => 'We had a talented team, but we knew we were far from reaching our true potential. The diagnostic gave us more than data: it showed us precisely where we were losing efficiency, which profiles needed support, and which practices we had to strengthen to grow with structure. From there we redesigned our ways of working, aligned the regional team, and improved key performance indicators across several countries. Today we operate with greater clarity, focus, and consistency, and we steadily raise the average effectiveness and productivity of our sales team.',
     'autor' => 'Cristian Arriagada',
     'cargo' => 'Regional Sales Director',
     'empresa' => 'H&CO Tech',
     'imagen' => '/wp-content/uploads/cristian-arriagada.jpg',
     'logo_empresa' => '/wp-content/uploads/logo-hco2.png',
-    'ubicacion' => 'América Latina y el Caribe',
+    'ubicacion' => 'Latin America and the Caribbean',
     'linkedin' => '',
   ],
 ];
@@ -71,15 +71,15 @@ $total_slides = count($testimonios);
 
     <div class="btvc-header">
       <div class="btvc-header__text">
-        <div class="badge bg-light-blue px-40 text-bold mb-20">Testimonios</div>
-        <h2 class="heading-lg btvc-title text-dark mb-10">La voz de nuestros <br> clientes</h2>
+        <div class="badge bg-light-blue px-40 text-bold mb-20">Testimonials</div>
+        <h2 class="heading-lg btvc-title text-dark mb-10">The voice of our <br> clients</h2>
         <p class="btvc-subtitle text-dark mb-0">
-          Organizaciones que han diagnosticado sus operaciones junto a nosotros.
+          Organizations that have assessed their operations with us.
         </p>
       </div>
       <div class="btvc-header__nav" aria-hidden="<?php echo $total_slides <= 1 ? 'true' : 'false'; ?>">
-        <div class="swiper-button-prev btvc-nav-btn btvc-nav-btn--prev" role="button" tabindex="0" aria-label="<?php esc_attr_e('Anterior', 'imppulsorv2'); ?>"></div>
-        <div class="swiper-button-next btvc-nav-btn btvc-nav-btn--next" role="button" tabindex="0" aria-label="<?php esc_attr_e('Siguiente', 'imppulsorv2'); ?>"></div>
+        <div class="swiper-button-prev btvc-nav-btn btvc-nav-btn--prev" role="button" tabindex="0" aria-label="<?php esc_attr_e('Previous', 'imppulsorv2'); ?>"></div>
+        <div class="swiper-button-next btvc-nav-btn btvc-nav-btn--next" role="button" tabindex="0" aria-label="<?php esc_attr_e('Next', 'imppulsorv2'); ?>"></div>
       </div>
     </div>
 
@@ -162,7 +162,7 @@ $total_slides = count($testimonios);
                         <span class="btvc-slide__loc"><?php echo esc_html($ubicacion_autor); ?></span>
                       <?php endif; ?>
                       <?php if ($linkedin_autor) : ?>
-                        <a class="btvc-slide__linkedin" href="<?php echo esc_url($linkedin_autor); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr(sprintf(__('LinkedIn de %s', 'imppulsorv2'), $nombre_autor)); ?>">in</a>
+                        <a class="btvc-slide__linkedin" href="<?php echo esc_url($linkedin_autor); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr(sprintf(__('%s on LinkedIn', 'imppulsorv2'), $nombre_autor)); ?>">in</a>
                       <?php endif; ?>
                     </div>
                   <?php endif; ?>
@@ -177,10 +177,10 @@ $total_slides = count($testimonios);
 
       <?php if ($total_slides > 1) : ?>
         <div class="btvc-pagination-outer">
-          <nav class="insights-pagination btvc-insights-pagination" aria-label="<?php esc_attr_e('Paginación testimonio', 'imppulsorv2'); ?>">
-            <span class="insights-pagination__bullet insights-pagination__bullet--nav btvc-pag-prev" style="display: none;">anterior</span>
+          <nav class="insights-pagination btvc-insights-pagination" aria-label="<?php esc_attr_e('Testimonial pagination', 'imppulsorv2'); ?>">
+            <span class="insights-pagination__bullet insights-pagination__bullet--nav btvc-pag-prev" style="display: none;">previous</span>
             <span class="btvc-pag-mid"></span>
-            <span class="insights-pagination__bullet insights-pagination__bullet--nav btvc-pag-next">siguiente</span>
+            <span class="insights-pagination__bullet insights-pagination__bullet--nav btvc-pag-next">next</span>
           </nav>
         </div>
       <?php endif; ?>

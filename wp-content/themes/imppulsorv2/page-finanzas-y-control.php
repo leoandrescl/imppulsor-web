@@ -10,7 +10,7 @@ get_header();
 
 <main class="page-areas-gestion page-finanzas-y-control">
 
-  <!-- HERO DEFAULT -->
+  <!-- DEFAULT HERO -->
   <div class="hero-slider__bloque-1">
     <?php imppulsor_render_page_hero('default'); ?>
 
@@ -24,24 +24,24 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-        <h2 class="heading-lg mb-20">Donde se conecta la estrategia con la sostenibilidad del negocio</h2>
+        <h2 class="heading-lg mb-20">Where strategy meets business sustainability</h2>
         <p>
-          La función financiera no se limita a reportar resultados. Es el sistema que traduce la estrategia en
-          decisiones de asignación de recursos,
-          anticipa desequilibrios, estructura el crecimiento y vela por la sostenibilidad del negocio.
-          En este dominio funcional ayudamos a las organizaciones a transformar sus capacidades financieras en una
-          plataforma que articula control,
-          gobernanza y creación de valor.
+          The finance function goes far beyond reporting results. It is the system that translates strategy into
+          resource-allocation decisions,
+          anticipates imbalances, structures growth, and safeguards business sustainability.
+          In this functional domain, we help organizations turn their finance capabilities into a
+          platform that connects control,
+          governance, and value creation.
         </p>
         <p>
-          Cuando la gestión financiera opera con claridad de propósito, rigor técnico y visión estratégica,
-          se convierte en una palanca para la toma de decisiones, la mitigación de riesgos,
-          la disciplina organizacional y la resiliencia empresarial.
+          When finance operates with clear purpose, technical rigor, and strategic vision,
+          it becomes a lever for decision-making, risk mitigation,
+          organizational discipline, and business resilience.
         </p>
         </div>
 
         <div class="h-100 w-100">
-          <img src="/wp-content/uploads/Finanzas y Control.webp" alt="Finanzas y Control" class="w-100">
+          <img src="/wp-content/uploads/Finanzas y Control.webp" alt="Finance and Control" class="w-100">
         </div>
       </div>
 
@@ -52,10 +52,10 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-          <h2 class="heading-lg mb-20">Los desafíos estructurales que enfrentamos </h2>
+          <h2 class="heading-lg mb-20">The structural challenges we address</h2>
           <div>
             <p>
-            Acompañamos a empresas que enfrentan retos que limitan la efectividad y el rol estratégico de su función financiera. Entre los principales desafíos se encuentran:
+            We support companies facing challenges that limit the effectiveness and strategic role of their finance function. Key challenges include:
             </p>
           </div>
           
@@ -64,16 +64,15 @@ get_header();
         <div class="h-100 w-100">
         <div class="">
             <ul class="list-check">
-            <li>Estructuras financieras mal diseñadas</li>
-              <li>Baja capacidad de análisis económico-financiero</li>
-              <li>Procesos presupuestarios débiles</li>
-              <li>Mecanismos de control fragmentados</li>
-              <li>Reportes poco relevantes o desconectados de la estrategia</li>
-              <li>Dificultades para modelar escenarios y anticipar desequilibrios</li>
-              <li>Falta de alineación entre la función financiera y el resto de la organización</li>
-          <li>Ausencia de una arquitectura de control integral</li>
-          <li>Necesidad de madurar el rol del área financiera, pasando de función operativa a socio estratégico del
-            negocio</li>
+            <li>Poorly designed finance structures</li>
+              <li>Limited financial and economic analysis capabilities</li>
+              <li>Weak budgeting processes</li>
+              <li>Fragmented control mechanisms</li>
+              <li>Reports that lack relevance or are disconnected from strategy</li>
+              <li>Difficulty modeling scenarios and anticipating imbalances</li>
+              <li>Misalignment between the finance function and the rest of the organization</li>
+          <li>Lack of an integrated control architecture</li>
+          <li>The need to mature the finance role — from operational function to strategic business partner</li>
             </ul>
           </div>
         </div>
@@ -105,15 +104,15 @@ get_header();
   <section class="section section-8 bg-light text-dark pb-0 fade-in">
     <div class="container">
 
-      <h2 class="heading-lg mb-20" style="max-width: 600px;">Soluciones de consultoría para esta función empresarial</h2>
+      <h2 class="heading-lg mb-20" style="max-width: 600px;">Consulting solutions for this business function</h2>
 
       <div class="grid-2 ">
         <p>
-        Diseñamos y fortalecemos capacidades en Finanzas y Control para mejorar la calidad de la gestión económica y la toma de decisiones. Podemos apoyar el diseño de modelos de control de gestión, sistemas de planificación y presupuesto, y estructuras de reporting con foco estratégico.
+        We design and strengthen Finance and Control capabilities to improve financial management quality and decision-making. We can support the design of management control models, planning and budgeting systems, and strategically focused reporting structures.
         </p>
 
         <p>
-        También desarrollamos modelos de rentabilidad por unidad de negocio, tableros financieros, procesos de control interno y mecanismos de rendición de cuentas. Según el contexto, contribuimos a estructurar funciones como la planificación financiera, el control de costos, la gestión de inversiones, el pricing y el monitoreo de resultados. Integramos inteligencia financiera, tecnología y talento especializado para escalar capacidades.</p>
+        We also develop profitability models by business unit, financial dashboards, internal control processes, and accountability mechanisms. Depending on the context, we help structure functions such as financial planning, cost control, investment management, pricing, and results monitoring. We integrate financial intelligence, technology, and specialized talent to scale capabilities.</p>
 
 
 
@@ -122,21 +121,21 @@ get_header();
 
       <div class="separator mb-40"></div>
 
-      <h2 class="heading-lg mb-20 text-dark mb-40">Cómo trabajamos</h2>
+      <h2 class="heading-lg mb-20 text-dark mb-40">How we work</h2>
 
 <div class="grid-2">
 
   <div class="  pb-20">
-    <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Discovery empresarial</h3>
+    <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Business Discovery</h3>
     <p class="mt-30">
-    Diagnosticamos el estado actual de la función finanzas y control, evaluando la arquitectura financiera, los modelos de control de gestión, la planificación y el presupuesto, así como la relevancia y calidad del reporting estratégico.
+    We assess the current state of the Finance and Control function, evaluating the financial architecture, management control models, planning and budgeting, and the relevance and quality of strategic reporting.
 </p>
   </div>
 
   <div class="  pb-20">
-    <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Adherencia organizacional</h3>
+    <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Organizational Fit</h3>
     <p class="mt-30">
-    Diseñamos soluciones a medida que incluyen sistemas de control interno, estructuras de planificación y monitoreo financiero, modelos de rentabilidad por unidad de negocio y mecanismos de accountability económico adaptados a la realidad de la organización.
+    We design tailored solutions that include internal control systems, financial planning and monitoring structures, business-unit profitability models, and financial accountability mechanisms adapted to the organization's reality.
 
 
     </p>
@@ -144,18 +143,18 @@ get_header();
 
 
   <div class="  pb-20">
-    <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Visión holística</h3>
+    <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Holistic View</h3>
     <p class="mt-30">
-    Integramos herramientas de inteligencia financiera, tecnología y talento especializado para fortalecer capacidades críticas como control de costos, gestión de inversiones, pricing y seguimiento de resultados.
+    We integrate financial intelligence tools, technology, and specialized talent to strengthen critical capabilities such as cost control, investment management, pricing, and results tracking.
 
 
     </p>
   </div>
 
   <div class="  pb-20 pb-0-mob">
-    <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Acompañamiento inicial</h3>
+    <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Early Implementation Support</h3>
     <p class="mt-30">
-    Acompañamos la implementación asegurando continuidad, coherencia y disciplina, con procesos de planificación, seguimiento, accountability y retroalimentación que alinean equipos, recursos y objetivos financieros con la estrategia del negocio.
+    We support implementation to ensure continuity, coherence, and discipline, with planning, monitoring, accountability, and feedback processes that align teams, resources, and financial goals with business strategy.
 
 
     </p>
@@ -175,34 +174,34 @@ get_header();
   </section>
 
 
-  <!-- SECCIÓN 10: El impacto -->
+  <!-- SECTION 10: Impact -->
   <section class="section section-10 pt-0 bg-light text-dark fade-in">
 
     <div class="container">
 
       <div class="grid-2">
         <div>
-          <h2 class="heading-lg mb-20 mb-0-mob">El resultado</h2>
+          <h2 class="heading-lg mb-20 mb-0-mob">The outcome</h2>
         </div>
         <div>
           <p class="mb-20">
-          Convertimos las finanzas en un eje de gobierno corporativo capaz de gestionar riesgo, rentabilidad y liquidez, equilibrar capital y costos y sostener el crecimiento con control y creación de valor.
+          We turn finance into a corporate governance driver capable of managing risk, profitability, and liquidity — balancing capital and costs and sustaining growth with control and value creation.
 
 
           </p>
 
           <ul class="list-check mb-20">
-            <li>Finanzas que dejan de ser un área operativa y se convierten en un verdadero socio estratégico del negocio.</li>
-            <li>Información financiera clara, relevante y accionable para tomar decisiones con certeza y anticipar desequilibrios.</li>
-            <li>Procesos de control y presupuesto sólidos que alinean recursos con prioridades estratégicas.</li>
-            <li>Transformación sostenida de la función financiera, con una cultura de aprendizaje y mejora continua.
+            <li>Finance evolves from an operational area into a true strategic business partner.</li>
+            <li>Clear, relevant, actionable financial information for confident decision-making and early warning of imbalances.</li>
+            <li>Solid control and budgeting processes that align resources with strategic priorities.</li>
+            <li>Sustained transformation of the finance function, with a culture of learning and continuous improvement.
 
 </li>
           </ul>
 
-          <a href="/contacto/" class="btn-arrow mobile-only-cta mt-20-mob">Solicite una reunión sobre su desafío de transformación</a>
+          <a href="/contacto/" class="btn-arrow mobile-only-cta mt-20-mob">Request a meeting about your transformation challenge</a>
 
-          <a href="/contacto/" class="btn-arrow desktop-only-cta">Solicite una reunión sobre su desafío de transformación</a>
+          <a href="/contacto/" class="btn-arrow desktop-only-cta">Request a meeting about your transformation challenge</a>
         </div>
       </div>
     </div>
@@ -212,24 +211,23 @@ get_header();
 
 
 
-  <!-- SECCIÓN 11: Qué cambia -->
+  <!-- SECTION 11: What changes -->
   <section class="section section-11 bg-light-blue text-white fade-in py-60">
     <div class="container grid-2 align-center area-que-cambia px-0-mob">
       <div class="area-que-cambia__content">
-        <h2 class="heading-lg mb-20">¿Qué cambia cuando se gestiona bien este dominio?</h2>
+        <h2 class="heading-lg mb-20">What changes when this domain is managed well?</h2>
         <p>
-          Cuando la función financiera actúa como un socio estratégico, la organización gana visibilidad, disciplina y
-          capacidad de anticipación.
-          Mejora la calidad de sus decisiones, reduce los riesgos de desequilibrio y maximiza la eficiencia en el uso de
-          los recursos.
-          Un sistema financiero sólido protege la viabilidad del negocio y potencia su capacidad de crecimiento
-          sostenible.
+          When the finance function acts as a strategic partner, the organization gains visibility, discipline, and
+          foresight.
+          It improves decision quality, reduces the risk of imbalance, and maximizes efficiency in the use of
+          resources.
+          A solid financial system protects business viability and powers sustainable growth capacity.
         </p>
       </div>
       <div class="area-que-cambia__media">
         <img
           src="/wp-content/uploads/que-cambia.jpg"
-          alt="Hombre en pizarra"
+          alt="Man at a whiteboard"
           class="area-que-cambia__img w-100 object-cover"
           loading="lazy"
           decoding="async"
@@ -245,43 +243,43 @@ get_header();
 
 
 
-  <!-- SECCIÓN 12: Otras áreas -->
+  <!-- SECTION 12: Other areas -->
   <section class="section section-12 bg-light fade-in">
     <div class="container grid-2 align-center">
       <div>
-        <h2 class="heading-lg mb-20">Explore otras áreas críticas de gestión</h2>
+        <h2 class="heading-lg mb-20">Explore other critical management areas</h2>
         <p>
-          Nuestra propuesta de valor está compuesta por ocho dominios funcionales.
-          Cada uno representa una línea de negocio con desafíos, soluciones y oportunidades específicas.
-          Descubra cómo podemos intervenir en otras funciones clave:
+          Our value proposition spans eight functional domains.
+          Each one represents a business line with its own challenges, solutions, and opportunities.
+          Discover how we can support other key functions:
         </p>
         <ul class="mt-20 hidden-mobile">
-          <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Estrategia y gobierno</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Crecimiento,
-              MK y productividad comercial</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovación y modelo de
-              negocio</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Cambio y transformación</a>
+          <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and Governance</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+              Marketing and Commercial Productivity</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and Business
+              Model</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and Transformation</a>
           </li>
-          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">Personas y cultura</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operaciones y procesos</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Tecnología y datos</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and Culture</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and Processes</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
 
         </ul>
       </div>
-      <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore otras áreas críticas de gestión"
+      <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore other critical management areas"
         class="w-100 h-100">
       <ul class="visible-mobile">
-        <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Estrategia y gobierno</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Crecimiento,
-            MK y productividad comercial</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovación y modelo de
-            negocio</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Cambio y transformación</a>
+        <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and Governance</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+            Marketing and Commercial Productivity</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and Business
+            Model</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and Transformation</a>
         </li>
-        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">Personas y cultura</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operaciones y procesos</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Tecnología y datos</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and Culture</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and Processes</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
 
       </ul>
     </div>
@@ -304,7 +302,7 @@ get_header();
 
         const visible = hiddenText.style.display === 'inline';
         hiddenText.style.display = visible ? 'none' : 'inline';
-        this.textContent = visible ? 'Leer más…' : 'Leer menos…';
+        this.textContent = visible ? 'Read more…' : 'Read less…';
       });
     });
   });

@@ -8,7 +8,7 @@ get_header();
 
 <main class="page-equipo">
 
-  <!-- HERO reutilizable -->
+  <!-- Reusable HERO -->
   <div class="hero-slider__bloque-1">
     <?php imppulsor_render_page_hero('default'); ?>
   </div>
@@ -20,34 +20,34 @@ get_header();
 
 
   <!-- =========================================
-     SECCIÓN 2: Diagnósticos + Cómo funciona
-     ========================================= -->
+      SECTION 2: Diagnostics + How it works
+      ========================================= -->
      <section class="section section-2 pb-0 fade-in">
     <div class="container">
 
-      <!-- Bloque principal -->
+      <!-- Main block -->
       <div class="grid-2">
         <div>
-          <h2 class="heading-lg mb-20 text-dark">Nuestro equipo de<br>research & delivery</h2>
+          <h2 class="heading-lg mb-20 text-dark">Our research & delivery<br>team</h2>
 
           <p>
-          Nuestro equipo está formado por profesionales que no solo entienden las organizaciones, sino que saben
-            conectar los puntos, leer el contexto y traducir información compleja en decisiones estructuradas para
-            acompañar a líderes que enfrentan desafíos reales.
+          Our team brings together professionals who do more than understand organizations — they
+            connect the dots, read the context, and translate complex information into structured decisions to
+            support leaders facing real challenges.
           </p>
 
           <p>
-          Nuestro equipo lo integran especialistas en administración de empresas, tecnologías de gestión empresarial,
-            desarrollo organizacional, ciencia de datos investigación social aplicada. Profesionales, en su mayoría con
-            formación de posgrado a nivel MSc o PhD, que integran rigurosidad académica, experiencia consultiva y
-            práctica empresarial.
+          Our team includes specialists in business administration, enterprise management technologies,
+            organizational development, data science, and applied social research. Most hold
+            MSc- or PhD-level graduate training, combining academic rigor, consulting experience, and
+            business practice.
           </p>
 
           
         </div>
 
         <div class="h-420 mb-40-mob">
-          <img src="/wp-content/uploads/nuestro-equipo.jpg" alt="Diagnósticos de madurez empresarial" class="w-100  object-cover">
+          <img src="/wp-content/uploads/nuestro-equipo.jpg" alt="Business maturity diagnostics" class="w-100  object-cover">
         </div>
       </div>
 
@@ -58,22 +58,22 @@ get_header();
    
 
     <!-- =========================================
-     SECCIÓN: Listado del equipo (Slider 2x2)
+      SECTION: Team listing (2x2 slider)
 ========================================== -->
 <section class="mt-60 mt-0-mob px-0-mob equipo-slider-section equipo-slider-section--gradiente">
   <div class="container">
 
-      <h2 class="heading-lg">Equipo</h2>
+      <h2 class="heading-lg">Team</h2>
 
       <div class="equipo-slider-wrapper">
 
-        <!-- Swiper: los slides se generan vía JS -->
+        <!-- Swiper: slides are generated via JS -->
         <div class="swiper equipo-swiper">
           <div class="swiper-wrapper">
-            <!-- Slides dinámicos -->
+            <!-- Dynamic slides -->
           </div>
 
-          <!-- PAGINACIÓN NUMÉRICA -->
+          <!-- NUMERIC PAGINATION -->
           <div class="swiper-pagination equipo-pagination"></div>
 
 
@@ -81,10 +81,10 @@ get_header();
 
         </div>
 
-        <!-- LISTA PLANA DE MIEMBROS (fuente de datos) -->
+        <!-- FLAT MEMBER LIST (data source) -->
         <div class="equipo-items" style="display:none;">
 
-          <!-- MIEMBRO 1 -->
+          <!-- MEMBER 1 -->
           <div class="equipo-item">
             <h3 class="heading-sm">Mauricio Moltó, PhD</h3>
             <p class="heading-sm text-blue">
@@ -92,70 +92,70 @@ get_header();
             </p>
             <p class="mb-10"><strong>Hub Argentina</strong></p>
             <p>
-              Sociólogo, Magister en Desarrollo y Gestión Territorial, Doctor en Ciencias Sociales. Profesional con
-              una destacada trayectoria en investigación aplicada, análisis de datos y evaluación
-              de políticas públicas, liderando proyectos en organismos públicos, consultoras
-              privadas y universidades.
+              Sociologist with a Master's in Territorial Development and Management and a PhD in Social Sciences. Accomplished
+              professional in applied research, data analysis, and public policy
+              evaluation, leading projects across public agencies, private
+              consultancies, and universities.
             </p>
           </div>
 
-          <!-- MIEMBRO 2 -->
+          <!-- MEMBER 2 -->
           <div class="equipo-item">
             <h3 class="heading-sm">Luis García</h3>
             <p class="heading-sm text-blue">
               Senior Consultant
             </p>
-            <p class="mb-10"><strong>Hub Perú</strong></p>
+            <p class="mb-10"><strong>Hub Peru</strong></p>
             <p>
-              Ingeniero Industrial. Profesional
-              con amplia experiencia en planificación comercial y financiera con una alta expertise
-              en inteligencia de negocios. Desde su rol en Imppulsor se ha especializado en el
-              desarrollo de modelos de gestión para productividad comercial y de experiencia de
-              clientes, como también en el modelado de arquitecturas de negocios.
+              Industrial Engineer. Seasoned
+              professional with extensive experience in commercial and financial planning with deep
+              business intelligence expertise. At Imppulsor, focuses on
+              developing management models for commercial productivity and customer
+              experience, as well as business architecture modeling.
             </p>
           </div>
 
-          <!-- MIEMBRO 3 -->
+          <!-- MEMBER 3 -->
           <div class="equipo-item">
             <h3 class="heading-sm">Marcos Peña, MSc</h3>
             <p class="heading-sm text-blue">
-              Data Cientist
+              Data Scientist
             </p>
             <p class="mb-10"><strong>Hub Chile</strong></p>
             <p>
-              Ingeniero Estadístico, Magister en Matemáticas mención Estadísticas. Científico de Datos con amplia experiencia en docencia y consultoría
-              aplicada a inteligencia de negocios y análisis estadísticos avanzados.
+              Statistical Engineer with a Master's in Mathematics, Statistics concentration. Data scientist with extensive experience in teaching and consulting
+              focused on business intelligence and advanced statistical analysis.
             </p>
           </div>
 
-          <!-- MIEMBRO 4 -->
+          <!-- MEMBER 4 -->
           <div class="equipo-item">
             <h3 class="heading-sm">Emmanuel Ramos, MSc</h3>
             <p class="heading-sm text-blue">
               Senior Researcher
             </p>
-            <p class="mb-10"><strong>Hub México</strong></p>
+            <p class="mb-10"><strong>Hub Mexico</strong></p>
             <p>
-              Sociólogo, Filósofo, Master en Política Criminal, Master en Educación. Profesional con una
-              destacada trayectoria en investigación cualitativa y cuantitativa de mercados,
-              ciencias del comportamiento económico e investigación social y política.
+              Sociologist, Philosopher, Master's in Criminal Policy, Master's in Education. Accomplished professional with
+              a strong track record in qualitative and quantitative market research,
+              behavioral economics, and social and political research.
             </p>
           </div>
 
-          <!-- MIEMBRO 5 -->
+          <!-- MEMBER 5 -->
           <div class="equipo-item">
             <h3 class="heading-sm">Victoria Lupo, MSc</h3>
             <p class="heading-sm text-blue">Senior Researcher</p>
             <p class="mb-10"><strong>Hub Argentina</strong></p>
             <p>
-              Socióloga, Magister en Comunicación Política.
-              Profesional con una destacada trayectoria en análisis e investigación aplicada
-              de mercados y consumer insights en compañías como GfK, Nielsen y Kantar y
-              actividades de docencia en Sociología en la Universidad de Buenos Aires.
+              Sociologist with a Master's in Political Communication.
+              Accomplished professional in applied market
+              analysis and research and consumer insights at firms such as GfK, Nielsen, and Kantar, with
+              teaching experience in Sociology at the University of Buenos Aires.
             </p>
           </div>
 
-          <!-- MIEMBRO 6 -->
+          <!-- MEMBER 6 -->
           <div class="equipo-item">
             <h3 class="heading-sm">Rodrigo Prado</h3>
             <p class="heading-sm text-blue">
@@ -163,25 +163,25 @@ get_header();
             </p>
             <p class="mb-10"><strong>Hub Ireland</strong></p>
             <p>
-              Ingeniero en Finanzas, fundador y Managing Director de Imppulsor. Profesional con una visión
-              integral en el diseño y operación de negocios, involucrando las perspectivas
-              estratégica, táctica y operativa. Amplia experiencia liderando la transformación
-              de negocios, procesos de productividad y buenas prácticas comerciales. Ha asesorado
-              a altos ejecutivos y empresarios en Miami y Latinoamérica, destacándose por su
-              capacidad para liderar proyectos complejos y fomentar el crecimiento sostenible.
+              Finance Engineer, founder and Managing Director of Imppulsor. Brings an
+              integrated vision to business design and operations, spanning strategic,
+              tactical, and operational perspectives. Extensive experience leading business
+              transformation, productivity initiatives, and commercial best practices. Has advised
+              senior executives and business owners in Miami and Latin America, known for
+              leading complex projects and driving sustainable growth.
             </p>
           </div>
 
-          <!-- MIEMBRO 7 -->
+          <!-- MEMBER 7 -->
           <div class="equipo-item">
             <h3 class="heading-sm">Valeria Pozzoli, PhD</h3>
             <p class="heading-sm text-blue">Senior Researcher</p>
             <p class="mb-10"><strong>Hub Argentina</strong></p>
             <p>
-              Licenciada en Químicas, Doctora en Ingeniería con mención en Tecnologías Químicas.
-              Profesional con una destacada trayectoria en
-              investigación, docencia y desarrollo de proyectos científicos en instituciones
-              como la Universidad de Buenos Aires entre otras instituciones.
+              Degree in Chemistry, PhD in Engineering with a concentration in Chemical Technologies.
+              Accomplished professional with
+              a strong track record in research, teaching, and scientific project development at institutions
+              such as the University of Buenos Aires, among others.
             </p>
           </div>
 
@@ -194,7 +194,7 @@ get_header();
 
 
 
-    <!-- Bloque: Contacto profesional -->
+    <!-- Professional contact block -->
   <section class="contacto-profesional-bg-gradiente mt-0 mb-0-mob">
     <?php get_template_part('template-parts/blocks/bloque-contacto-profesional'); ?>
   </section>
@@ -204,25 +204,25 @@ get_header();
 
 
     <!-- =========================================
-       SECCIÓN: Nuestro compromiso
+        SECTION: Our commitment
   ========================================== -->
     <section class="compromiso-gradiente pb-120 py-40-mob">
       <div class="container">
         <div class="grid-2 compromiso-gradiente__content">
 
           <div>
-            <h2 class="heading-lg mb-0-mob">Nuestro compromiso</h2>
+            <h2 class="heading-lg mb-0-mob">Our commitment</h2>
           </div>
 
           <div>
             <p>
-              Cada intervención se guía por nuestra capacidad de conectar os puntos críticos que impulsan el cambio
-              organizacional y de estructurar respuestas adaptadas al contexto de cada cliente. Integramos herramientas
-              avanzadas, visión sistémica y sensibilidad humana para diseñar soluciones que habiliten decisiones viables,
-              sostenibles y generadoras de impacto tangible y duradero.
+              Every engagement is guided by our ability to connect the critical dots that drive organizational
+              change and to structure responses tailored to each client's context. We integrate
+              advanced tools, systems thinking, and human sensitivity to design solutions that enable viable,
+              sustainable decisions with tangible, lasting impact.
             </p>
 
-            <a href="/casos-de-exito/" class="btn-arrow mt-20-mob">Descubre nuestros casos de éxito</a>
+            <a href="/casos-de-exito/" class="btn-arrow mt-20-mob">Explore our success stories</a>
           </div>
 
         </div>
@@ -233,7 +233,7 @@ get_header();
 
 
   <!-- =========================================
-       BLOQUE: INSIGHTS (reutilizado)
+        BLOCK: INSIGHTS (reused)
   ========================================== -->
   <div class="">
     <?php get_template_part('template-parts/blocks/bloque-insights'); ?>
@@ -286,7 +286,7 @@ get_header();
   }
 
 
-  /* === PAGINACIÓN EQUIPO (idéntico a Insights) === */
+  /* === TEAM PAGINATION (same as Insights) === */
 
   .equipo-pagination {
     display: flex !important;
@@ -297,7 +297,7 @@ get_header();
     position: relative;
   }
 
-  /* Base: bullets numerados y botones nav */
+  /* Base: numbered bullets and nav buttons */
   .equipo-pagination .swiper-pagination-bullet,
   .equipo-pagination .equipo-pagination__nav {
     width: 26px;
@@ -318,7 +318,7 @@ get_header();
     margin: 0 !important;
   }
 
-  /* Hover + activo */
+  /* Hover + active */
   .equipo-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active,
   .equipo-pagination .swiper-pagination-bullet:hover,
   .equipo-pagination .equipo-pagination__nav:hover {
@@ -327,7 +327,7 @@ get_header();
     color: #fff;
   }
 
-  /* Botones anterior / siguiente */
+  /* Previous / next buttons */
   .equipo-pagination .equipo-pagination__nav {
     width: max-content;
     padding: 0 8px;
@@ -350,7 +350,7 @@ get_header();
 
     if (!items.length || !swiperWrapper) return;
 
-    // Agrupar en chunks de 4 (2x2)
+    // Group into chunks of 4 (2x2)
     const chunkSize = 4;
     for (let i = 0; i < items.length; i += chunkSize) {
       const chunk = items.slice(i, i + chunkSize);
@@ -367,32 +367,32 @@ get_header();
       swiperWrapper.appendChild(slideEl);
     }
 
-    // Eliminar la lista fuente
+    // Remove the source list
     itemsContainer.remove();
 
-    // Inicializar Swiper
+    // Initialize Swiper
     const swiper = new Swiper('.equipo-swiper', {
       slidesPerView: 1,
       spaceBetween: 40,
       pagination: {
         el: '.equipo-pagination',
-        clickable: false, // manejaremos los clicks manualmente
+        clickable: false, // we handle clicks manually
         type: 'bullets',
         renderBullet: function (index, className) {
-          // Mantenemos la clase interna de Swiper
+          // Keep Swiper's internal class
           return '<span class="' + className + '" data-index="' + index + '">' + (index + 1) + '</span>';
         }
       }
     });
 
-    // Cuando Swiper ya pintó la paginación
+    // Once Swiper has rendered the pagination
     setTimeout(() => {
       const pag = document.querySelector('.equipo-pagination');
       if (!pag) return;
 
       const bullets = pag.querySelectorAll('.swiper-pagination-bullet');
 
-      // Click manual en los números (1, 2, 3, ...)
+      // Manual clicks on the numbers (1, 2, 3, ...)
       bullets.forEach((bullet, index) => {
         bullet.dataset.index = index;
 
@@ -401,37 +401,37 @@ get_header();
         });
       });
 
-      // Crear botones "anterior" y "siguiente"
+      // Create "previous" and "next" buttons
       const prevBtn = document.createElement('span');
       prevBtn.className = 'equipo-pagination__nav equipo-prev';
-      prevBtn.textContent = 'anterior';
+      prevBtn.textContent = 'previous';
 
       const nextBtn = document.createElement('span');
       nextBtn.className = 'equipo-pagination__nav equipo-next';
-      nextBtn.textContent = 'siguiente';
+      nextBtn.textContent = 'next';
 
-      // Insertarlos al inicio y al final del contenedor
+      // Insert them at the start and end of the container
       pag.prepend(prevBtn);
       pag.append(nextBtn);
 
       function updateButtons() {
         const total = swiper.slides.length;
 
-        // Swiper ya gestiona la clase .swiper-pagination-bullet-active
-        // solo controlamos mostrar/ocultar prev/next
+        // Swiper already handles the .swiper-pagination-bullet-active class
+        // we only control showing/hiding prev/next
 
-        // Página 1 -> ocultar "anterior"
+        // Page 1 -> hide "previous"
         prevBtn.style.display = (swiper.activeIndex === 0) ? 'none' : 'flex';
 
-        // Última página -> ocultar "siguiente"
+        // Last page -> hide "next"
         nextBtn.style.display = (swiper.activeIndex === total - 1) ? 'none' : 'flex';
       }
 
-      // Estado inicial
+      // Initial state
       updateButtons();
       swiper.on('slideChange', updateButtons);
 
-      // Eventos de navegación
+      // Navigation events
       prevBtn.addEventListener('click', () => swiper.slidePrev());
       nextBtn.addEventListener('click', () => swiper.slideNext());
 

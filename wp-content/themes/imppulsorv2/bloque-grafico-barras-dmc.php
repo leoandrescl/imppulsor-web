@@ -14,7 +14,7 @@
                 </div>
                 <div class="legend-item">
                     <span class="legend-box box-empresa"></span>
-                    <span class="legend-text">IGMC Empresa</span>
+                    <span class="legend-text">IGMC Company</span>
                 </div>
             </div>
         </div>
@@ -269,7 +269,7 @@
                             hoverBackgroundColor: '#22445D' // High Contrast Dark Blue (Matches Strategy Graph 3.1)
                         },
                         {
-                            label: 'IGMC Empresa',
+                            label: 'IGMC Company',
                             data: [3.2],
                             backgroundColor: '#126CFB',
                             barPercentage: 0.4, // Increased from 0.3

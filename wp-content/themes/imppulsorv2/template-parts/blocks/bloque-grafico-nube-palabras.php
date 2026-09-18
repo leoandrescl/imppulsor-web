@@ -3,13 +3,13 @@
 
 
 
-    <div id="wordcloud-loader" class="wc-loader">Generando nube...</div>
+    <div id="wordcloud-loader" class="wc-loader">Generating word cloud...</div>
     <div id="wordcloud-container" class="wordcloud-container"></div>
 </div>
 
 <style>
     .wordcloud-wrapper.bg-light {
-        /* Eliminamos overflow hidden para que el tooltip no se corte en los bordes */
+        /* We remove overflow hidden so the tooltip is not clipped at the edges */
         /* overflow: hidden; */
         display: flex;
         flex-direction: column;
@@ -44,7 +44,7 @@
         opacity: 0;
         transition: opacity 0.8s ease;
         z-index: 1;
-        /* Nivel base */
+        /* Base level */
     }
 
     .wordcloud-container.visible {
@@ -52,8 +52,8 @@
         opacity: 1;
     }
 
-    /* --- PALABRAS --- */
-    /* --- PALABRAS --- */
+    /* --- WORDS --- */
+    /* --- WORDS --- */
     .wc-word {
         position: absolute;
         line-height: 1;
@@ -97,7 +97,7 @@
 
     /* --- HIERARCHY (5 Levels) --- */
 
-    /* 1. LIDERAZGO (Special Case) */
+    /* 1. LEADERSHIP (Special Case) */
     .p-1 {
         font-size: 110px;
         /* Much larger as requested */
@@ -107,7 +107,7 @@
         /* Blue by default */
     }
 
-    /* Hover for LIDERAZGO: Turns DARK */
+    /* Hover for LEADERSHIP: Turns DARK */
     .p-1:hover {
         color: #061C2C !important;
     }
@@ -150,31 +150,31 @@
 <script>
     (function () {
         const words = [
-            { text: "LIDERAZGO", cls: "p-1", freq: 100 },
-            { text: "CLIENTES", cls: "p-2", freq: 90 },
-            { text: "CONFIANZA", cls: "p-2", freq: 88 },
-            { text: "AUTONOMÍA", cls: "p-2", freq: 85 },
-            { text: "VENTAS", cls: "p-2", freq: 82 },
-            { text: "DISCIPLINA", cls: "p-3", freq: 78 },
-            { text: "RIESGO", cls: "p-3", freq: 75 },
-            { text: "MOTIVACIÓN", cls: "p-3", freq: 72 },
-            { text: "CAPACITACIÓN", cls: "p-3", freq: 70 },
-            { text: "PROCESOS", cls: "p-3", freq: 68 },
-            { text: "REASEGURAMIENTO", cls: "p-4", freq: 65 },
-            { text: "ESTANDARIZACIÓN", cls: "p-4", freq: 62 },
-            { text: "EFICIENCIA", cls: "p-4", freq: 60 },
-            { text: "CRECIMIENTO", cls: "p-4", freq: 58 },
-            { text: "CLARIDAD", cls: "p-4", freq: 55 },
-            { text: "PROPUESTA", cls: "p-4", freq: 52 },
-            { text: "ESCALABILIDAD", cls: "p-4", freq: 50 },
-            { text: "SEGUIMIENTO", cls: "p-5", freq: 45 },
-            { text: "INDICADORES", cls: "p-5", freq: 42 },
-            { text: "PROFESIONAL", cls: "p-5", freq: 40 },
-            { text: "LIQUIDEZ", cls: "p-5", freq: 38 },
-            { text: "CULTURA", cls: "p-5", freq: 35 },
-            { text: "NUBE", cls: "p-5", freq: 32 },
-            { text: "INTEGRACIÓN", cls: "p-5", freq: 30 },
-            { text: "TRANSPARENCIA", cls: "p-5", freq: 28 }
+            { text: "LEADERSHIP", cls: "p-1", freq: 100 },
+            { text: "CUSTOMERS", cls: "p-2", freq: 90 },
+            { text: "TRUST", cls: "p-2", freq: 88 },
+            { text: "AUTONOMY", cls: "p-2", freq: 85 },
+            { text: "SALES", cls: "p-2", freq: 82 },
+            { text: "DISCIPLINE", cls: "p-3", freq: 78 },
+            { text: "RISK", cls: "p-3", freq: 75 },
+            { text: "MOTIVATION", cls: "p-3", freq: 72 },
+            { text: "TRAINING", cls: "p-3", freq: 70 },
+            { text: "PROCESSES", cls: "p-3", freq: 68 },
+            { text: "REASSURANCE", cls: "p-4", freq: 65 },
+            { text: "STANDARDIZATION", cls: "p-4", freq: 62 },
+            { text: "EFFICIENCY", cls: "p-4", freq: 60 },
+            { text: "GROWTH", cls: "p-4", freq: 58 },
+            { text: "CLARITY", cls: "p-4", freq: 55 },
+            { text: "PROPOSAL", cls: "p-4", freq: 52 },
+            { text: "SCALABILITY", cls: "p-4", freq: 50 },
+            { text: "FOLLOW-UP", cls: "p-5", freq: 45 },
+            { text: "METRICS", cls: "p-5", freq: 42 },
+            { text: "PROFESSIONAL", cls: "p-5", freq: 40 },
+            { text: "LIQUIDITY", cls: "p-5", freq: 38 },
+            { text: "CULTURE", cls: "p-5", freq: 35 },
+            { text: "CLOUD", cls: "p-5", freq: 32 },
+            { text: "INTEGRATION", cls: "p-5", freq: 30 },
+            { text: "TRANSPARENCY", cls: "p-5", freq: 28 }
         ];
 
         const wrapper = document.getElementById('wc-wrapper-unique');
@@ -311,8 +311,8 @@
             // We use a small delay between each word to create the "streaming" effect
             elements.forEach((item, index) => {
                 if (item.el.style.display !== 'none') {
-                    // Mas rápido para las primeras (grandes), un poco más lento si hay muchas?
-                    // Flat delay works well usually.
+                    // Faster for the first (large) words; slightly slower when there are many?
+                    // Flat delay usually works well.
                     setTimeout(() => {
                         item.el.classList.add('visible');
                     }, 50 + (index * 60));

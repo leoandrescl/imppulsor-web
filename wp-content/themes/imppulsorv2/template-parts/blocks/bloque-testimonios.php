@@ -1,14 +1,14 @@
 <?php
 /**
- * Bloque: Testimonios (Lógica de Variedad + Repetidos al final)
+ * Block: Testimonials (Variety Logic + Duplicates at the end)
  */
 
 if (!defined('ABSPATH')) exit;
 
-// 1. Obtenemos TODOS los testimonios
+// 1. Get ALL testimonials
 $query = new WP_Query([
   'post_type'      => 'testimonios',
-  'posts_per_page' => -1, // Traemos todos para poder ordenarlos
+  'posts_per_page' => -1, // Get all so we can sort them
   'post_status'    => 'publish',
 ]);
 
@@ -18,11 +18,11 @@ $all_posts = $query->posts;
 $grupos_por_empresa = [];
 $sin_empresa = [];
 
-// 2. Clasificamos los posts según la empresa (ACF)
+// 2. Classify posts by company (ACF)
 foreach ($all_posts as $p) {
     $empresa_nombre = '';
     
-    // Lógica para obtener el nombre de la empresa sin imprimirlo aún
+    // Logic to get the company name without printing it yet
     $autor_rel = get_field('autor_relacionado', $p->ID);
     if (is_array($autor_rel) && !empty($autor_rel)) {
         $first = $autor_rel[0];
@@ -32,43 +32,43 @@ foreach ($all_posts as $p) {
         }
     }
 
-    // Limpiamos espacios y si no tiene empresa, va a un grupo aparte
+    // Trim whitespace; if it has no company, it goes to a separate group
     $empresa_nombre = trim((string)$empresa_nombre);
 
     if (!empty($empresa_nombre)) {
         $grupos_por_empresa[$empresa_nombre][] = $p;
     } else {
-        $sin_empresa[] = $p; // Testimonios sin empresa asignada
+        $sin_empresa[] = $p; // Testimonials with no assigned company
     }
 }
 
-// 3. Creamos las listas de orden
-$lista_principal = []; // Aquí va el primero de cada empresa
-$lista_sobrante  = []; // Aquí van los repetidos
+// 3. Build the ordered lists
+$lista_principal = []; // First one from each company goes here
+$lista_sobrante  = []; // Duplicates go here
 
-// Barajamos el orden de las empresas para que sea random qué empresa sale primero
+// Shuffle the company order so which company appears first is random
 $nombres_de_empresas = array_keys($grupos_por_empresa);
 shuffle($nombres_de_empresas);
 
 foreach ($nombres_de_empresas as $empresa) {
-    // Barajamos los testimonios DENTRO de esa empresa (para que no salga siempre el mismo empleado)
+    // Shuffle testimonials WITHIN each company (so the same employee does not always appear)
     shuffle($grupos_por_empresa[$empresa]);
     
-    // Tomamos el primero para la lista principal
+    // Take the first one for the main list
     $lista_principal[] = array_shift($grupos_por_empresa[$empresa]);
     
-    // Si quedan más, van a la lista de sobrantes (al final)
+    // Remaining ones go to the overflow list (at the end)
     if (!empty($grupos_por_empresa[$empresa])) {
         $lista_sobrante = array_merge($lista_sobrante, $grupos_por_empresa[$empresa]);
     }
 }
 
-// Barajamos también los sobrantes y los sin empresa para que el final no sea monótono
+// Shuffle overflow items and those without a company so the ending is not monotonous
 shuffle($lista_sobrante);
 shuffle($sin_empresa);
 
-// 4. Fusionamos todo: 
-// [1 de cada empresa] + [Los que no tienen empresa] + [Los repetidos al final]
+// 4. Merge everything: 
+// [1 from each company] + [those without a company] + [duplicates at the end]
 $posts_ordenados = array_merge($lista_principal, $sin_empresa, $lista_sobrante);
 
 ?>
@@ -76,7 +76,7 @@ $posts_ordenados = array_merge($lista_principal, $sin_empresa, $lista_sobrante);
 <section class="bloque-testimonios reveal reveal-up bg-dark text-white">
   <div class="container py-60">
 
-    <h2 class="heading-lg mb-20">La voz de nuestros <br> clientes</h2>
+    <h2 class="heading-lg mb-20">The voice of our <br> clients</h2>
 
     <div class="testimonios-slider-wrapper">
 
@@ -89,13 +89,13 @@ $posts_ordenados = array_merge($lista_principal, $sin_empresa, $lista_sobrante);
         <div class="swiper-wrapper">
           
           <?php 
-          // IMPORTANTE: Usamos foreach sobre nuestro array ordenado, no el while standard
+          // IMPORTANT: We loop over our sorted array, not the standard while loop
           foreach ($posts_ordenados as $post) : 
             setup_postdata($post); 
           ?>
 
             <?php
-              // --- Tu lógica original de visualización ---
+              // --- Your original display logic ---
               $subtitulo = get_field('subtitulo_testimonio');
               $autor_rel = get_field('autor_relacionado');
               $autor_id = null;

@@ -1,6 +1,6 @@
 <?php
 /**
- * Hero global: slider de banners (layout tipo Insights, imagen a pantalla completa).
+ * Global hero: banner slider (Insights-style layout, full-screen image).
  */
 if (!defined('ABSPATH')) {
     exit;

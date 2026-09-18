@@ -1,16 +1,16 @@
 <div class="heatmap-container">
-    <!-- JS Injected Matrix -->
+    <!-- JS-injected matrix -->
     <div class="heatmap-matrix" id="heatmapMatrix"></div>
 
-    <!-- Mobile Toggle Button -->
+    <!-- Mobile toggle button -->
     <div class="heatmap-mobile-toggle">
         <a href="#" class="texto-expandible__toggle mt-10 d-block text-dark" id="heatmapToggleBtn"
-            style="text-align: center; text-decoration: underline;">Ver más...</a>
+            style="text-align: center; text-decoration: underline;">View more...</a>
     </div>
 
     <!-- Legend scale -->
     <div class="heatmap-scale-wrapper">
-        <span class="scale-label-text">Nivel de Madurez</span>
+        <span class="scale-label-text">Maturity Level</span>
         <div class="scale-container">
             <div class="scale-gradient-bar"></div>
             <div class="scale-markers">
@@ -315,99 +315,99 @@
     (function () {
         const data = [
             {
-                dim: "Estrategia y Planificación",
+                dim: "Strategy and Planning",
                 subs: [
-                    { name: "Dirección Estratégica", score: 2.7 },
-                    { name: "Planificación Comercial", score: 3.8 },
-                    { name: "Enfoque a Resultados", score: 2.6 }
+                    { name: "Strategic Direction", score: 2.7 },
+                    { name: "Sales Planning", score: 3.8 },
+                    { name: "Results Orientation", score: 2.6 }
                 ]
             },
             {
-                dim: "Gobernanza Empresarial",
+                dim: "Corporate Governance",
                 subs: [
-                    { name: "Roles y Estructura", score: 2.6 },
-                    { name: "Mecanismos de Gestión", score: 4.2 },
-                    { name: "Accountability y Control", score: 3.3 }
+                    { name: "Roles and Structure", score: 2.6 },
+                    { name: "Management Mechanisms", score: 4.2 },
+                    { name: "Accountability and Control", score: 3.3 }
                 ]
             },
             {
-                dim: "Innovación y Adaptabilidad",
+                dim: "Innovation and Adaptability",
                 subs: [
-                    { name: "Adaptabilidad del Área", score: 3.0 },
-                    { name: "Experimentación", score: 2.2 },
-                    { name: "Aprendizaje Continuo", score: 2.7 }
+                    { name: "Department Adaptability", score: 3.0 },
+                    { name: "Experimentation", score: 2.2 },
+                    { name: "Continuous Learning", score: 2.7 }
                 ]
             },
             {
-                dim: "Experiencia del Cliente",
+                dim: "Customer Experience",
                 subs: [
-                    { name: "Comprensión del Cliente", score: 2.4 },
-                    { name: "Procesos de Atención", score: 2.3 },
-                    { name: "Voz del Cliente", score: 2.9 }
+                    { name: "Customer Understanding", score: 2.4 },
+                    { name: "Service Processes", score: 2.3 },
+                    { name: "Voice of the Customer", score: 2.9 }
                 ]
             },
             {
-                dim: "Marketing y Generación de Demanda",
+                dim: "Marketing and Demand Generation",
                 subs: [
-                    { name: "Posicionamiento y Mensaje", score: 2.2 },
-                    { name: "Canales y Tácticas", score: 3.8 },
-                    { name: "Gestión de Leads", score: 2.8 }
+                    { name: "Positioning and Messaging", score: 2.2 },
+                    { name: "Channels and Tactics", score: 3.8 },
+                    { name: "Lead Management", score: 2.8 }
                 ]
             },
             {
-                dim: "Metodología Comercial",
+                dim: "Sales Methodology",
                 subs: [
-                    { name: "Proceso de Ventas", score: 2.8 },
-                    { name: "Técnicas y Enfoque", score: 3.0 },
-                    { name: "Estandarización", score: 3.9 }
+                    { name: "Sales Process", score: 2.8 },
+                    { name: "Techniques and Approach", score: 3.0 },
+                    { name: "Standardization", score: 3.9 }
                 ]
             },
             {
-                dim: "Digitalización, Automatización e IA",
+                dim: "Digitalization, Automation and AI",
                 subs: [
-                    { name: "Tecnología Comercial", score: 3.6 },
-                    { name: "Automatización", score: 3.6 },
-                    { name: "Uso de IA", score: 2.1 }
+                    { name: "Sales Technology", score: 3.6 },
+                    { name: "Automation", score: 3.6 },
+                    { name: "AI Adoption", score: 2.1 }
                 ]
             },
             {
-                dim: "Monitoreo y Análisis de datos",
+                dim: "Monitoring and Data Analysis",
                 subs: [
-                    { name: "Métricas Comerciales", score: 4.3 },
-                    { name: "Análisis e Insights", score: 2.9 },
-                    { name: "Toma de Decisiones", score: 4.0 }
+                    { name: "Sales Metrics", score: 4.3 },
+                    { name: "Analysis and Insights", score: 2.9 },
+                    { name: "Decision-Making", score: 4.0 }
                 ]
             },
             {
-                dim: "Eficiencia Operativa",
+                dim: "Operational Efficiency",
                 subs: [
-                    { name: "Flujos y Procesos", score: 4.3 },
-                    { name: "Productividad Comercial", score: 3.2 },
-                    { name: "Soporte Interno", score: 1.9 }
+                    { name: "Workflows and Processes", score: 4.3 },
+                    { name: "Sales Productivity", score: 3.2 },
+                    { name: "Internal Support", score: 1.9 }
                 ]
             },
             {
-                dim: "Organización",
+                dim: "Organization",
                 subs: [
-                    { name: "Diseño Estructural", score: 3.3 },
-                    { name: "Coordinación y Colaboración", score: 3.2 },
-                    { name: "Escalabilidad", score: 3.2 }
+                    { name: "Structural Design", score: 3.3 },
+                    { name: "Coordination and Collaboration", score: 3.2 },
+                    { name: "Scalability", score: 3.2 }
                 ]
             },
             {
-                dim: "Liderazgo",
+                dim: "Leadership",
                 subs: [
-                    { name: "Cultura, Clientes y Resultados", score: 3.0 },
-                    { name: "Liderazgo y Coaching", score: 4.0 },
-                    { name: "Propósito y Pertenencia", score: 3.5 }
+                    { name: "Culture, Customers and Results", score: 3.0 },
+                    { name: "Leadership and Coaching", score: 4.0 },
+                    { name: "Purpose and Belonging", score: 3.5 }
                 ]
             },
             {
-                dim: "Gestión del Talento",
+                dim: "Talent Management",
                 subs: [
-                    { name: "Atracción y Reclutamiento", score: 3.1 },
-                    { name: "Desarrollo y Capacitación", score: 3.5 },
-                    { name: "Evaluación y Retención", score: 2.7 }
+                    { name: "Attraction and Recruitment", score: 3.1 },
+                    { name: "Development and Training", score: 3.5 },
+                    { name: "Evaluation and Retention", score: 2.7 }
                 ]
             }
         ];
@@ -468,9 +468,9 @@
                     container.classList.toggle('mobile-collapsed');
 
                     if (container.classList.contains('mobile-collapsed')) {
-                        toggleBtn.textContent = "Ver más...";
+                        toggleBtn.textContent = "View more...";
                     } else {
-                        toggleBtn.textContent = "Ver menos...";
+                        toggleBtn.textContent = "View less...";
                     }
                 });
             }

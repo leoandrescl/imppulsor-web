@@ -15,34 +15,34 @@ get_header();
     <?php imppulsor_render_page_hero('default'); ?>
 
     <!-- ========================================= -->
-    <!-- BLOQUE: Confianza que transforma -->
+    <!-- BLOCK: Trust that drives results -->
     <!-- ========================================= -->
 
 
   </div>
-  <!-- fin div de hero + primer bloque -->
+  <!-- end hero + first block div -->
 
   <section class="section bg-white text-dark pb-0 section-2 reveal reveal-up">
     <div class="container">
 
-      <!-- Bloque principal -->
+      <!-- Main block -->
       <div class="grid-2">
         <div>
-          <h2 class="heading-lg mb-20 text-dark">Confianza que impulsa resultados
+          <h2 class="heading-lg mb-20 text-dark">Trust that drives results
           </h2>
           <p>
-          Cada cliente es un punto de partida único. En Imppulsor trabajamos junto a empresas que enfrentan desafíos reales y complejos, acompañándolos a clarificar su rumbo, fortalecer sus capacidades y transformar su desempeño.</p>
+          Every client is a unique starting point. At Imppulsor, we work alongside companies facing real, complex challenges — helping them clarify direction, strengthen capabilities, and transform performance.</p>
 
-          <p>Nos eligen quienes valoran el análisis estructurado de sus problemas, la comprensión sistémica de su operación y la capacidad de traducir visión en ideas accionables, con objetivos medibles y resultados cuantificables.</p>
+          <p>Clients choose us when they value structured analysis of their problems, a systemic understanding of their operations, and the ability to turn vision into actionable ideas with measurable goals and quantifiable results.</p>
 
-         
+          
           <div class="desktop-only-cta">
-              <a href="/casos-de-exito/" class="btn-arrow mt-20-mob">Descubra nuestros casos de éxito</a>
+              <a href="/casos-de-exito/" class="btn-arrow mt-20-mob">Explore our success stories</a>
             </div>
         </div>
 
         <div class="grid-img-ratio">
-          <img src="/wp-content/uploads/clientes-y-socios.jpg" alt="Diagnósticos de madurez empresarial" class="w-100 object-cover">
+          <img src="/wp-content/uploads/clientes-y-socios.jpg" alt="Business maturity diagnostics" class="w-100 object-cover">
         </div>
       </div>
       
@@ -57,12 +57,12 @@ get_header();
         
         <div class="grid-2 ">
 
-          <!-- Texto -->
+          <!-- Text -->
           <div>
-            <h2 class="heading-lg">Nuestros clientes</h2>
+            <h2 class="heading-lg">Our clients</h2>
           </div>
 
-          <!-- Grid de logos -->
+          <!-- Logo grid -->
           <div id="logos-container">
             <div class="logos-grid">
               <div class="logo-cell"><img src="/wp-content/uploads/logo-wbuild.png" alt="W Build"></div>
@@ -85,7 +85,7 @@ get_header();
           </div>
 
         </div>
-        <!-- fin segundo container -->
+        <!-- end second container -->
 </div>
 
     </section>
@@ -98,7 +98,7 @@ get_header();
     </div>
   </section>
 
-  <!-- bloque testimonios — diseño La voz de nuestros clientes (nuevo) -->
+  <!-- testimonials block — Our clients' voice design (new) -->
   <div id="testimonios-voz-clientes">
     <?php get_template_part('template-parts/blocks/bloque-testimonios-voz-clientes'); ?>
   </div>
@@ -117,28 +117,28 @@ get_header();
   <section class="section bg-white text-dark pb-0 reveal reveal-up">
     <div class="container">
       <!-- ============================== -->
-      <!-- GRID PRINCIPAL (imagen izquierda / texto derecha) -->
+      <!-- MAIN GRID (image left / text right) -->
       <!-- ============================== -->
       <div class="grid-2">
 
-        <!-- Texto -->
+        <!-- Text -->
         <div>
-          <h2 class="heading-lg">Alianzas que expanden nuestro propósito</h2>
+          <h2 class="heading-lg">Partnerships that extend our purpose</h2>
           <p>
-          Creemos en alianzas que complementan nuestra capacidad de ayudar a las organizaciones a comprender sus desafíos y activar mejores decisiones. Por eso colaboramos con cámaras empresariales, universidades, centros de investigación, medios y sponsors.
+          We believe in partnerships that strengthen our ability to help organizations understand their challenges and activate better decisions. That is why we collaborate with business chambers, universities, research centers, media outlets, and sponsors.
           </p>
           <p class="mt-10">
-          Estas relaciones amplían nuestro alcance, fortalecen nuestra propuesta de valor y nos permiten generar mayor impacto en nuestros clientes desde múltiples frentes.
+          These relationships expand our reach, strengthen our value proposition, and enable us to create greater impact for our clients on multiple fronts.
           </p>
 
           <div class="mt-30 mt-0-mob btn-links">
-            <a href="/contacto/" class="btn-arrow mt-20-mob">¿Le interesa ser nuestro partner?</a>
+            <a href="/contacto/" class="btn-arrow mt-20-mob">Interested in becoming our partner?</a>
           </div>
         </div>
 
-        <!-- Imagen -->
+        <!-- Image -->
         <div class="grid-img-ratio">
-          <img src="/wp-content/uploads/alianzas2.jpg" alt="Alianza estratégica"
+          <img src="/wp-content/uploads/alianzas2.jpg" alt="Strategic partnership"
             class="w-100 object-cover">
         </div>
       </div>
@@ -146,19 +146,19 @@ get_header();
   </section>
 
   <!-- ============================== -->
-  <!-- GRID DE LOGOS CON PAGINACIÓN -->
+  <!-- LOGO GRID WITH PAGINATION -->
   <!-- ============================== -->
   <section class="section bg-white pt-0 text-dark reveal reveal-up">
     <div class="container">
       <div class="separator pb-60 pb-40-mob separator-clientes"></div>
 
       <div class="grid-2 align-start">
-        <!-- Texto lateral -->
+        <!-- Side text -->
         <div>
-          <h2 class="heading-lg">Nuestros socios de negocios</h2>
+          <h2 class="heading-lg">Our business partners</h2>
         </div>
 
-        <!-- Grid de logos -->
+        <!-- Logo grid -->
         <div id="logos-container-2" class="logos-container">
           <div class="logos-grid">
             <div class="logo-cell"><img src="/wp-content/uploads/logo-wbuild.png" alt="W Build"></div>
@@ -184,11 +184,11 @@ get_header();
 
 
 
-  <!-- Bloque: Nuestra experiencia internacional -->
+  <!-- Block: Our international experience -->
   <?php get_template_part('template-parts/blocks/bloque-experiencia-internacional'); ?>
  
 
-  <!-- Bloque: Ingishts -->
+  <!-- Block: Insights -->
   <?php get_template_part('template-parts/blocks/bloque-insights'); ?>
 
 </main>
@@ -197,7 +197,7 @@ get_header();
 
 
 <!-- ========================================= -->
-<!-- ESTILOS -->
+<!-- STYLES -->
 <!-- ========================================= -->
 <style>
   .page-clientes-y-socios-de-negocios .grid-img-ratio {
@@ -256,7 +256,7 @@ get_header();
   }
 
   /* ========================================================= */
-  /* PAGINADOR ESTILO PROFESIONAL (igual al que hicimos antes) */
+  /* PROFESSIONAL-STYLE PAGINATOR (same as the one we built before) */
   /* ========================================================= */
 
   .logos-pagination {
@@ -271,7 +271,7 @@ get_header();
     gap: 8px;
   }
 
-  /* Numeración */
+  /* Numbering */
   .pagination-number {
     width: 26px;
     height: 26px;
@@ -287,7 +287,7 @@ get_header();
     transition: all .3s ease;
   }
 
-  /* Hover y activo */
+  /* Hover and active */
   .pagination-number:hover,
   .pagination-number.active {
     background: #006EFF;
@@ -295,7 +295,7 @@ get_header();
     color: #fff !important;
   }
 
-  /* Flechas (si las usas en futuro) */
+  /* Arrows (if used in the future) */
   .pagination-btn {
     border: 1px solid #000;
     padding: 4px 12px;
@@ -314,7 +314,7 @@ get_header();
     color: #fff !important;
   }
 
-  /* Línea negra entre secciones (mismo ancho que .container del sitio) */
+  /* Black line between sections (same width as the site .container) */
   .page-clientes-y-socios-de-negocios .clientes-voz-separator-strip .container {
     width: 100%;
     max-width: 1200px;
@@ -339,7 +339,7 @@ get_header();
 
 
 <!-- ========================================= -->
-<!-- SCRIPT SWIPER -->
+<!-- SWIPER SCRIPT -->
 <!-- ========================================= -->
 <script>
   document.addEventListener("DOMContentLoaded", () => {
@@ -352,7 +352,7 @@ get_header();
       const perPage = 9;
       const totalPages = Math.ceil(cells.length / perPage);
 
-      // Ocultar si no hace falta paginar
+      // Hide if pagination is not needed
       if (totalPages <= 1) {
         pagination.style.display = "none";
         return;
@@ -363,18 +363,18 @@ get_header();
       function renderPage(page) {
         currentPage = page;
 
-        // Mostrar/ocultar logos
+        // Show/hide logos
         cells.forEach((cell, i) => {
           cell.style.display =
             i >= (page - 1) * perPage && i < page * perPage ? "flex" : "none";
         });
 
-        // Actualizar activo
+        // Update active
         pagination.querySelectorAll(".pagination-number").forEach((btn) =>
           btn.classList.toggle("active", Number(btn.dataset.page) === page)
         );
 
-        // Mostrar/Ocultar botones
+        // Show/hide buttons
         const btnPrev = pagination.querySelector(".pagination-prev");
         const btnNext = pagination.querySelector(".pagination-next");
 
@@ -383,18 +383,18 @@ get_header();
       }
 
       // ---------------------------
-      // Construcción del paginador
+      // Building the paginator
       // ---------------------------
       pagination.innerHTML = "";
 
-      // Botón anterior
+      // Previous button
       const prev = document.createElement("span");
       prev.classList.add("pagination-btn", "pagination-prev");
-      prev.textContent = "Anterior";
+      prev.textContent = "Previous";
       prev.addEventListener("click", () => renderPage(currentPage - 1));
       pagination.appendChild(prev);
 
-      // Números
+      // Numbers
       for (let i = 1; i <= totalPages; i++) {
         const num = document.createElement("span");
         num.classList.add("pagination-number");
@@ -404,10 +404,10 @@ get_header();
         pagination.appendChild(num);
       }
 
-      // Botón siguiente
+      // Next button
       const next = document.createElement("span");
       next.classList.add("pagination-btn", "pagination-next");
-      next.textContent = "Siguiente";
+      next.textContent = "Next";
       next.addEventListener("click", () => renderPage(currentPage + 1));
       pagination.appendChild(next);
 

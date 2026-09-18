@@ -1,7 +1,7 @@
 <?php
 /**
- * Bloque: Introducción – Conectar los puntos (Home)
- * Tipo: Bloque Reutilizable ACF
+ * Block: Introduction – Connect the dots (Home)
+ * Type: Reusable ACF Block
  */
 if (!defined('ABSPATH'))
   exit;
@@ -16,18 +16,18 @@ if (get_field('bloque_1_titulo', $ID)): ?>
   <section class="section bloque-home bloque-1 bg-white reveal reveal-up bloque-intro-home">
     <div class="container bloque-intro-home__grid text-dark">
       <div>
-        <h2 class="heading-lg mb-0-mob">Conectar los puntos es lo que hacemos        </h2>
+        <h2 class="heading-lg mb-0-mob">Connecting the dots is what we do        </h2>
         
       </div>
       <div>
       <p>
-      Las organizaciones no se estancan necesariamente por escasez de ideas, conocimientos o falta de acción, sino por la dificultad de traducir esas fortalezas en ejecución efectiva. El estancamiento suele estar en la falta de orquestación entre visión y acción, entre lo que el entorno exige y lo que la empresa es capaz de desplegar con consistencia, velocidad y sentido práctico. Sin esa conexión sistémica entre pensamiento estratégico y operación disciplinada, el crecimiento se vuelve frágil y las ventajas potenciales permanecen latentes.
+      Organizations rarely stall because they lack ideas, knowledge, or action. They stall because turning those strengths into effective execution is hard. The bottleneck is usually the lack of orchestration between vision and action — between what the market demands and what the company can consistently deliver with speed and practical focus. Without that systemic link between strategic thinking and disciplined operations, growth becomes fragile and potential advantages stay dormant.
 
 
       </p>
       
      
-        <p>Imppulsor surge para enfrentar ese desafío: conectar los puntos críticos del desempeño organizacional, traducir información fragmentada en decisiones consistentes y transformar la complejidad en claridad operativa. Somos una consultora boutique especializada en gestión y transformación empresarial y acompañamos a quienes entienden que crecer no es solo hacer más, sino hacer lo correcto, con foco, método y sentido estratégico.</p>
+        <p>Imppulsor exists to solve that challenge: connecting the critical dots of organizational performance, turning fragmented information into consistent decisions, and translating complexity into operational clarity. We are a boutique consulting firm specializing in business management and transformation, partnering with leaders who understand that growth is not about doing more — it is about doing what matters, with focus, method, and strategic intent.</p>
 
       </div>
     </div>

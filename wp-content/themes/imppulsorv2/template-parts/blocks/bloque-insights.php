@@ -1,7 +1,7 @@
 <?php
 /**
- * Bloque: Insights (Carrusel + Destacado)
- * - Lógica de año unificada: Específico > Autor > Fecha Post
+ * Block: Insights (Carousel + Featured)
+ * - Unified year logic: Specific > Author > Post Date
  */
 
 if (!defined('ABSPATH'))
@@ -18,7 +18,7 @@ $query = new WP_Query([
 if (!$query->have_posts())
   return;
 
-// Extraer el primero como destacado
+// Extract the first one as featured
 $destacado = null;
 if ($query->have_posts()) {
   $query->the_post();
@@ -45,7 +45,7 @@ if ($query->have_posts()) {
             <?php while ($query->have_posts()):
               $query->the_post(); ?>
               <?php
-              // 1. Obtener Autor ID y Nombre
+              // 1. Get Author ID and Name
               $autor_rel = get_field('autor_relacionado');
               $autor_id = null;
               $nombre_autor = '';
@@ -58,7 +58,7 @@ if ($query->have_posts()) {
                 $nombre_autor = get_the_author();
               }
 
-              // 2. Lógica de AÑO (Específico > Autor > Fecha)
+              // 2. YEAR logic (Specific > Author > Date)
               $anio_especifico = get_field('anio_especifico_insight');
               $anio_autor = $autor_id ? get_field('anio_autor', $autor_id) : '';
 
@@ -66,7 +66,7 @@ if ($query->have_posts()) {
               $anio = $anio_especifico ?: ($anio_autor ?: get_the_date('Y'));
 
 
-              // 3. Tag (taxonomía personalizada)
+              // 3. Tag (custom taxonomy)
               $tags = get_the_terms(get_the_ID(), 'tags_insight');
               $tag_name = ($tags && !is_wp_error($tags)) ? esc_html($tags[0]->name) : '';
               ?>
@@ -107,7 +107,7 @@ if ($query->have_posts()) {
                         <p class="mb-20 insight-author"><?php echo esc_html($nombre_autor); ?></p>
                       <?php endif; ?>
 
-                      <span class="btn-outline--black">Leer artículo</span>
+                      <span class="btn-outline--black">Read article</span>
                     </div>
                   </div>
                 </a>
@@ -120,7 +120,7 @@ if ($query->have_posts()) {
 
       <?php if ($destacado): ?>
         <?php
-        // 1. Obtener Autor ID y Nombre Destacado
+        // 1. Get Featured Author ID and Name
         $autor_rel_d = get_field('autor_relacionado', $destacado->ID);
         $autor_id_d = null;
         $nombre_autor_d = '';
@@ -133,7 +133,7 @@ if ($query->have_posts()) {
           $nombre_autor_d = get_the_author_meta('display_name', $destacado->post_author);
         }
 
-        // 2. Lógica de AÑO Destacado (Específico > Autor > Fecha)
+        // 2. Featured YEAR logic (Specific > Author > Date)
         $anio_especifico_d = get_field('anio_especifico_insight', $destacado->ID);
         $anio_autor_d = $autor_id_d ? get_field('anio_autor', $autor_id_d) : '';
 
@@ -145,7 +145,7 @@ if ($query->have_posts()) {
         $tags_d = get_the_terms($destacado->ID, 'tags_insight');
         $tag_name_d = ($tags_d && !is_wp_error($tags_d)) ? esc_html($tags_d[0]->name) : '';
 
-        // 4. Resumen
+        // 4. Excerpt
         $resumen_d = get_field('resumen_insight', $destacado->ID);
         if (!$resumen_d) {
           $resumen_d = wp_trim_words(get_the_excerpt($destacado->ID), 25, '…');
@@ -190,7 +190,7 @@ if ($query->have_posts()) {
                   </div>
                 <?php endif; ?>
 
-                <span class="btn-outline--black">Leer artículo</span>
+                <span class="btn-outline--black">Read article</span>
               </div>
             </div>
           </a>

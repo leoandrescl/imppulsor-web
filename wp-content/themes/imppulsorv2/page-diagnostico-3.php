@@ -5,7 +5,7 @@
 get_header();
 
 /**
- * Helper para imprimir botones de forma consistente y validada
+ * Helper to render buttons consistently and safely
  */
 function impulsor_render_buttons($prefix, $count = 3)
 {
@@ -34,7 +34,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 ?>
 
 <style>
-  /* Estilos específicos de la página */
+  /* Page-specific styles */
   .diag-block-margin {}
 
   /* Separator Line Logic */
@@ -51,7 +51,7 @@ function impulsor_render_buttons($prefix, $count = 3)
     border-bottom: 1px solid #000;
   }
 
-  /* Ajuste para que el último elemento dentro de un separator no duplique márgenes */
+  /* Adjust so the last element inside a separator does not duplicate margins */
   /* .separator:last-child::after {
     display: none;
     border-bottom: none;
@@ -74,11 +74,11 @@ function impulsor_render_buttons($prefix, $count = 3)
     }
   }
 
-  /* Utilidad para asegurar que las secciones no se colapsen */
+  /* Utility to ensure sections do not collapse */
   .section {
     position: relative;
     overflow: hidden;
-    /* Evita que flotantes salgan del contenedor */
+    /* Prevent floats from escaping the container */
   }
 </style>
 
@@ -88,7 +88,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 1 - Madurez comercial
+     BLOCK 1 - Commercial maturity
      ========================================= */
   if (get_field('bloque_1_titulo')): ?>
     <section class="section mt-60 section-madurez-comercial diag-block-margin reveal">
@@ -106,7 +106,7 @@ function impulsor_render_buttons($prefix, $count = 3)
             <?php
             $img_1 = get_field('bloque_1_imagen');
             if ($img_1): ?>
-              <img src="<?php echo esc_url($img_1); ?>" class="rounded-diagonal w-100 h-100 h-420" alt="Madurez comercial">
+              <img src="<?php echo esc_url($img_1); ?>" class="rounded-diagonal w-100 h-100 h-420" alt="Commercial maturity">
             <?php endif; ?>
           </div>
         </div>
@@ -116,7 +116,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 2 – Qué es el diagnóstico
+     BLOCK 2 - What the diagnostic is
      ========================================= */
   if (get_field('bloque_2_titulo')): ?>
     <section class="section section-que-es-el-diagnostico diag-block-margin reveal">
@@ -142,10 +142,10 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 3 - Niveles de madurez
+     BLOCK 3 - Maturity levels
      ========================================= */
   if (get_field('bloque_3_titulo')): ?>
-    <!-- Parte Inferior: Grafico Niveles + Texto + Botones -->
+    <!-- Lower section: Levels Chart + Text + Buttons -->
     <section class="section section-niveles-madurez diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -156,14 +156,14 @@ function impulsor_render_buttons($prefix, $count = 3)
 
             <div class="grid-right">
               <h2 class="heading-md line-left mb-30">
-                Niveles de Madurez Comercial
+                Commercial Maturity Levels
               </h2>
               <p>
                 <?php the_field('bloque_4_texto_inferior'); ?>
               </p>
 
               <?php
-              // Renderizado de botones Bloque 4
+              // Block 4 buttons rendering
               impulsor_render_buttons('bloque_4', 2);
               ?>
             </div>
@@ -178,12 +178,12 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 4 - Revele lo que los números no muestran
+     BLOCK 4 - Reveal what the numbers don't show
      ========================================= */
   if (get_field('bloque_4_titulo')): ?>
 
 
-    <!-- Parte Inferior: Grafico Silueta + Texto + Botones -->
+    <!-- Lower section: Silhouette Chart + Text + Buttons -->
     <section class="section section-conozca-su-punto-de-partida diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -211,7 +211,7 @@ function impulsor_render_buttons($prefix, $count = 3)
     <section class="section section-revele-lo-que-los-numeros-no-muestran diag-block-margin reveal">
       <div class="container section--light pt-0">
 
-        <!-- Parte Superior: Texto + Grafico Nube -->
+        <!-- Upper section: Text + Word Cloud Chart -->
         <div class="separator">
           <div class="grid-2 mobile-reverse-col">
             <div class="grid-left">
@@ -238,10 +238,10 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 5 - Compare el nivel de madurez
+     BLOCK 5 - Compare the maturity level
      ========================================= */
   if (get_field('bloque_5_titulo_1')): ?>
-    <!-- Fila 1: Titulo + Grafico Barras -->
+    <!-- Row 1: Title + Bar Chart -->
     <section class="section section-compare-1 diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -262,7 +262,7 @@ function impulsor_render_buttons($prefix, $count = 3)
       </div>
     </section>
 
-    <!-- Fila 2: Grafico Barras 2 + Titulo 2 -->
+    <!-- Row 2: Bar Chart 2 + Title 2 -->
     <section class="section section-compare-2 diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -283,7 +283,7 @@ function impulsor_render_buttons($prefix, $count = 3)
       </div>
     </section>
 
-    <!-- Fila 3: Heatmap -->
+    <!-- Row 3: Heatmap -->
     <section class="section section-heatmap diag-block-margin reveal">
       <div class="container section--light pt-0">
         <div class="separator">
@@ -291,7 +291,7 @@ function impulsor_render_buttons($prefix, $count = 3)
           <!-- Heatmap Intro -->
           <div>
             <h2 class="heading-md line-left mb-30">
-              Vaya a la causa raíz de sus zonas de dolor
+              Get to the root cause of your pain points
             </h2>
             <p class="mb-40">
               <?php the_field('bloque_5_texto_final'); ?>
@@ -302,22 +302,22 @@ function impulsor_render_buttons($prefix, $count = 3)
             <?php get_template_part('template-parts/blocks/bloque-grafico-heatmap-fadein'); ?>
           </div>
 
-          <!-- Botones Finales -->
+          <!-- Final Buttons -->
           <div class="text-left mt-40">
             <?php
-            // Renderizado de botones Bloque 5
+            // Block 5 buttons rendering
             impulsor_render_buttons('bloque_5', 3);
             ?>
           </div>
 
         </div>
-      </div> <!-- Fin Container -->
+      </div> <!-- End Container -->
     </section>
   <?php endif; ?>
 
   <?php
   /* =========================================
-     BLOQUE 6 - Testimonios
+     BLOCK 6 - Testimonials
      ========================================= */
   ?>
   <section class="section section-testimonios diag-block-margin">
@@ -329,7 +329,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 7 - ¿Para qué sirve?
+     BLOCK 7 - What is it for?
      ========================================= */
   if (get_field('bloque_7_titulo')): ?>
     <section class="section section-para-que-sirve-este-diagnostico diag-block-margin reveal">
@@ -349,7 +349,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 8 - Información Adicional (2 columnas)
+     BLOCK 8 - Additional Information (2 columns)
      ========================================= */
   if (get_field('bloque_8_titulo_1')): ?>
     <section class="section diag-block-margin reveal">
@@ -378,7 +378,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 9 – DIMENSIONES DE ANÁLISIS
+     BLOCK 9 - ANALYSIS DIMENSIONS
      ========================================= */
   if (get_field('bloque_9_titulo')): ?>
     <section class="section section-dimensiones-de-analisis diag-block-margin reveal">
@@ -396,26 +396,26 @@ function impulsor_render_buttons($prefix, $count = 3)
 
         <div class="mt-60">
           <?php
-          // Definimos las dimensiones manualmente como se solicitó, para mantener el contenido original.
+          // We define the dimensions manually as requested, to keep the original content.
           $dimensiones = [
-            ['titulo' => 'Dimensión 1', 'subtitulo' => 'Estrategia y planificación', 'contenido' => 'Analizar si la organización cuenta con una estrategia comercial clara, compartida y activa, que oriente la toma de decisiones, estructure las prioridades operativas y habilite una ejecución coherente, rentable y sostenible en los mercados objetivo.'],
-            ['titulo' => 'Dimensión 2', 'subtitulo' => 'Gobernanza empresarial', 'contenido' => 'Evaluar si la estructura de gobierno y liderazgo promueve la toma de decisiones ágil, transparente y alineada con los objetivos estratégicos.'],
-            ['titulo' => 'Dimensión 3', 'subtitulo' => 'Innovación y adaptabilidad', 'contenido' => 'Determinar la capacidad de la organización para incorporar innovación continua, adaptarse a entornos cambiantes y sostener ventajas competitivas.'],
-            ['titulo' => 'Dimensión 4', 'subtitulo' => 'Experiencia de cliente', 'contenido' => 'Analizar si la empresa gestiona la experiencia de cliente de forma integral, coherente y centrada en el valor.'],
-            ['titulo' => 'Dimensión 5', 'subtitulo' => 'Marketing y generación de demanda', 'contenido' => 'Revisar la efectividad de las acciones de marketing y generación de demanda como motor del crecimiento comercial.'],
-            ['titulo' => 'Dimensión 6', 'subtitulo' => 'Metodología comercial', 'contenido' => 'Evaluar la madurez de los procesos comerciales y la estandarización de prácticas que aseguren eficiencia y consistencia.'],
-            ['titulo' => 'Dimensión 7', 'subtitulo' => 'Digitalización, automatización e IA', 'contenido' => 'Analizar el nivel de integración tecnológica y el uso de herramientas de IA en la gestión comercial y de clientes.'],
-            ['titulo' => 'Dimensión 8', 'subtitulo' => 'Monitoreo y análisis de datos', 'contenido' => 'Determinar la capacidad de la organización para medir, analizar y tomar decisiones basadas en información confiable y oportuna.'],
-            ['titulo' => 'Dimensión 9', 'subtitulo' => 'Eficiencia operativa', 'contenido' => 'Evaluar el uso eficiente de recursos, la gestión del tiempo y la productividad del equipo comercial.'],
-            ['titulo' => 'Dimensión 10', 'subtitulo' => 'Organización', 'contenido' => 'Analizar la estructura organizacional y su grado de alineación con los objetivos y estrategias comerciales.'],
-            ['titulo' => 'Dimensión 11', 'subtitulo' => 'Liderazgo', 'contenido' => 'Evaluar la calidad del liderazgo, el empoderamiento del equipo y la capacidad de inspirar resultados sostenibles.'],
-            ['titulo' => 'Dimensión 12', 'subtitulo' => 'Gestión del talento', 'contenido' => 'Analizar la capacidad de la organización para atraer, desarrollar y retener talento comercial de alto rendimiento.']
+            ['titulo' => 'Dimension 1', 'subtitulo' => 'Strategy and planning', 'contenido' => 'Assess whether the organization has a clear, shared, and active commercial strategy that guides decision-making, structures operating priorities, and enables consistent, profitable, and sustainable execution in target markets.'],
+            ['titulo' => 'Dimension 2', 'subtitulo' => 'Corporate governance', 'contenido' => 'Evaluate whether the governance and leadership structure enables agile, transparent decision-making aligned with strategic objectives.'],
+            ['titulo' => 'Dimension 3', 'subtitulo' => 'Innovation and adaptability', 'contenido' => 'Assess the organization’s ability to embed continuous innovation, adapt to changing environments, and sustain competitive advantage.'],
+            ['titulo' => 'Dimension 4', 'subtitulo' => 'Customer experience', 'contenido' => 'Assess whether the company manages the customer experience in an integrated, consistent, and value-centered way.'],
+            ['titulo' => 'Dimension 5', 'subtitulo' => 'Marketing and demand generation', 'contenido' => 'Review how effective marketing and demand-generation efforts are as a driver of commercial growth.'],
+            ['titulo' => 'Dimension 6', 'subtitulo' => 'Sales methodology', 'contenido' => 'Evaluate the maturity of sales processes and the standardization of practices that ensure efficiency and consistency.'],
+            ['titulo' => 'Dimension 7', 'subtitulo' => 'Digitalization, automation, and AI', 'contenido' => 'Assess the level of technology integration and the use of AI tools in sales and customer management.'],
+            ['titulo' => 'Dimension 8', 'subtitulo' => 'Data monitoring and analytics', 'contenido' => 'Assess the organization’s ability to measure, analyze, and make decisions based on reliable, timely information.'],
+            ['titulo' => 'Dimension 9', 'subtitulo' => 'Operational efficiency', 'contenido' => 'Evaluate efficient resource use, time management, and sales team productivity.'],
+            ['titulo' => 'Dimension 10', 'subtitulo' => 'Organization', 'contenido' => 'Assess the organizational structure and how well it aligns with commercial objectives and strategies.'],
+            ['titulo' => 'Dimension 11', 'subtitulo' => 'Leadership', 'contenido' => 'Evaluate leadership quality, team empowerment, and the ability to inspire sustainable results.'],
+            ['titulo' => 'Dimension 12', 'subtitulo' => 'Talent management', 'contenido' => 'Assess the organization’s ability to attract, develop, and retain high-performing commercial talent.']
           ];
 
           $col1 = array_slice($dimensiones, 0, 6);
           $col2 = array_slice($dimensiones, 6);
 
-          // Helper para renderizar acordeón
+          // Helper to render accordion
           function impulsor_msg_render_accordion($items)
           {
             foreach ($items as $item): ?>
@@ -456,7 +456,7 @@ function impulsor_render_buttons($prefix, $count = 3)
 
   <?php
   /* =========================================
-     BLOQUE 10 – ¿Por qué tomar el diagnóstico?
+     BLOCK 10 - Why take the diagnostic?
      ========================================= */
   if (get_field('bloque_10_titulo')): ?>
     <section class="section section-por-que-tomar-el-diagnostico diag-block-margin reveal">
@@ -474,31 +474,31 @@ function impulsor_render_buttons($prefix, $count = 3)
           <div class="grid-left">
             <ul class="diagnostico-list">
               <li><span class="num">1</span>
-                <p>Visualización sistémica de la función comercial, permitiendo entender cómo se articulan procesos,
-                  estructura, tecnología, talento y liderazgo, y cómo impactan en la capacidad de generar ingresos
-                  sostenibles y escalables.</p>
+                <p>Systemic view of the commercial function, showing how processes,
+                  structure, technology, talent, and leadership connect, and how they affect the ability to generate
+                  sustainable, scalable revenue.</p>
               </li>
               <li><span class="num">2</span>
-                <p>Identificación de brechas estructurales y focos críticos de intervención, que limitan la eficiencia
-                  operativa, generan dependencias indeseadas o reducen el control directivo sobre el desempeño comercial.
+                <p>Identification of structural gaps and critical areas for intervention that limit operating
+                  efficiency, create unwanted dependencies, or reduce executive control over commercial performance.
                 </p>
               </li>
               <li><span class="num">3</span>
-                <p>Medición objetiva del nivel de madurez comercial a partir de un modelo de 12 dimensiones clave, con
-                  indicadores cualitativos y cuantitativos que permiten priorizar mejoras con base en evidencia.</p>
+                <p>Objective measurement of commercial maturity based on a 12-dimension model, with
+                  qualitative and quantitative indicators to prioritize evidence-based improvements.</p>
               </li>
               <li><span class="num">4</span>
-                <p>Comparación frente a un benchmark regional y sectorial, para contextualizar resultados y definir
-                  trayectorias de evolución realistas en función de referentes comparables.</p>
+                <p>Benchmarking against regional and industry peers to contextualize results and define
+                  realistic evolution paths based on comparable references.</p>
               </li>
               <li><span class="num">5</span>
-                <p>Generación de insumos estratégicos para la toma de decisiones, incluyendo rediseño organizacional,
-                  definición de inversiones, desarrollo de capacidades, reorganización del modelo comercial o ajustes en
-                  roles clave.</p>
+                <p>Strategic inputs for decision-making, including organizational redesign,
+                  investment planning, capability building, sales model restructuring, or key-role
+                  adjustments.</p>
               </li>
               <li><span class="num">6</span>
-                <p>Reducción del riesgo en decisiones comerciales estructurales, al contar con un marco de análisis
-                  robusto que alinea visión, acción y resultados con foco en eficiencia, autonomía y sostenibilidad.</p>
+                <p>Reduced risk in structural commercial decisions through a robust analytical
+                  framework that aligns vision, action, and results around efficiency, autonomy, and sustainability.</p>
               </li>
             </ul>
           </div>
@@ -507,11 +507,11 @@ function impulsor_render_buttons($prefix, $count = 3)
             <?php
             $img_10 = get_field('bloque_10_imagen');
             if ($img_10): ?>
-              <img src="<?php echo esc_url($img_10); ?>" class="rounded-diagonal w-100 h-420" alt="Equipo de trabajo">
+              <img src="<?php echo esc_url($img_10); ?>" class="rounded-diagonal w-100 h-420" alt="Work team">
             <?php endif; ?>
 
             <?php
-            // Botones Bloque 10
+            // Block 10 Buttons
             impulsor_render_buttons('bloque_10', 3);
             ?>
           </div>
@@ -520,22 +520,22 @@ function impulsor_render_buttons($prefix, $count = 3)
     </section>
   <?php endif; ?>
 
-  <!-- Bloque Casos de Éxito -->
+  <!-- Success Stories Block -->
   <section class="section bg-ellipse diag-block-margin">
     <?php get_template_part('template-parts/blocks/bloque-casos-exito'); ?>
   </section>
 
-  <!-- Bloque Ocho Áreas -->
+  <!-- Eight Areas Block -->
   <section class="section diag-block-margin">
     <?php get_template_part('template-parts/blocks/bloque-ocho-areas'); ?>
   </section>
 
-  <!-- Bloque Experiencia Internacional -->
+  <!-- International Experience Block -->
   <section class="section diag-block-margin">
     <?php get_template_part('template-parts/blocks/bloque-experiencia-internacional'); ?>
   </section>
 
-  <!-- Bloque Insights -->
+  <!-- Insights Block -->
   <section class="section">
     <?php get_template_part('template-parts/blocks/bloque-insights'); ?>
   </section>
@@ -551,8 +551,8 @@ function impulsor_render_buttons($prefix, $count = 3)
       header.addEventListener('click', () => {
         const isActive = header.classList.contains('active');
 
-        // Cerrar otros
-        /* Opcional: Si se desea comportamiento de acordeón estricto (uno abierto a la vez), descomentar:
+        // Close others
+        /* Optional: For strict accordion behavior (one open at a time), uncomment:
         headers.forEach(h => {
            if(h !== header) {
               h.classList.remove('active');

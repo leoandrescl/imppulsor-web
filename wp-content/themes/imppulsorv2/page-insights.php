@@ -2,7 +2,7 @@
 /**
  * Template Name: Insights
  * Descripción: Página principal de Insights (slider + grid + sidebar)
- * - Actualizado: Lógica de año unificada (Específico > Autor > Fecha Post)
+ * - Updated: Unified year logic (Specific > Author > Post Date)
  */
 if (!defined('ABSPATH'))
     exit;
@@ -16,18 +16,18 @@ get_header();
     <div class="container section--light px-0  grid-2 grid-2--2fr-1fr ">
 
         <div>
-            <h2 class="heading-lg mb-40">Insights recientes</h2>
+            <h2 class="heading-lg mb-40">Recent insights</h2>
 
             <?php
-            // Detectar tag seleccionado
+            // Detect selected tag
             $current_tag = isset($_GET['tag']) ? sanitize_text_field($_GET['tag']) : '';
 
-            // ✅ Forzar detección solo por querystring (?paged=2), ignorando /page/2/
+            // ✅ Force detection via query string only (?paged=2), ignoring /page/2/
             $paged = isset($_GET['paged']) ? max(1, intval($_GET['paged'])) : 1;
             set_query_var('paged', $paged);
 
 
-            // Definir argumentos base
+            // Define base query args
             $args = [
                 'post_type' => 'insights',
                 'posts_per_page' => 6,
@@ -36,7 +36,7 @@ get_header();
                 'tax_query' => [],
             ];
 
-            // Si hay tag, filtrar por taxonomía
+            // If a tag is set, filter by taxonomy
             if ($current_tag) {
                 $args['tax_query'][] = [
                     'taxonomy' => 'tags_insight',
@@ -53,10 +53,10 @@ get_header();
                     <?php while ($insights->have_posts()):
                         $insights->the_post(); ?>
                         <?php
-                        // 1. Autor relacionado (ACF) y obtención de ID para el año
+                        // 1. Related author (ACF) and ID retrieval for the year
                         $autor_rel = get_field('autor_relacionado');
                         $nombre_autor = '';
-                        $autor_id = null; // Inicializamos
+                        $autor_id = null; // Initialize
 
                         if (is_array($autor_rel) && !empty($autor_rel)) {
                             $first = $autor_rel[0];
@@ -66,15 +66,15 @@ get_header();
                             $nombre_autor = get_field('autor_nombre') ?: get_the_author();
                         }
 
-                        // 2. Lógica de AÑO (Específico > Autor > Fecha)
+                        // 2. YEAR logic (Specific > Author > Date)
                         $anio_especifico = get_field('anio_especifico_insight');
                         $anio_autor      = $autor_id ? get_field('anio_autor', $autor_id) : '';
                         
-                        // Fallback final
+                        // Final fallback
                         $anio = $anio_especifico ?: ($anio_autor ?: get_the_date('Y'));
 
 
-                        // 3. Tag (taxonomía personalizada)
+                        // 3. Tag (custom taxonomy)
                         $tags = get_the_terms(get_the_ID(), 'tags_insight');
                         $tag_name = ($tags && !is_wp_error($tags)) ? esc_html($tags[0]->name) : '';
                         ?>
@@ -114,7 +114,7 @@ get_header();
                                             <p class="mb-20 insight-author"><?php echo esc_html($nombre_autor); ?></p>
                                         <?php endif; ?>
 
-                                        <span class="btn-outline--black">Leer artículo</span>
+                                        <span class="btn-outline--black">Read article</span>
                                     </div>
                                 </div>
                             </a>
@@ -122,7 +122,7 @@ get_header();
                     <?php endwhile;
                     wp_reset_postdata(); ?>
                 <?php else: ?>
-                    <p>No hay insights disponibles por ahora.</p>
+                    <p>No insights available at this time.</p>
                 <?php endif; ?>
             </div>
 
@@ -143,22 +143,22 @@ get_header();
                     'current' => max(1, $paged),
                     'total' => $insights->max_num_pages,
                     'type' => 'array',
-                    'prev_text' => 'anterior',
-                    'next_text' => 'siguiente',
+                    'prev_text' => 'previous',
+                    'next_text' => 'next',
                 ]);
 
                 if (!empty($pagination_links)) {
                     foreach ($pagination_links as $link) {
-                        // Reemplazar clases de WP por las del tema
+                        // Replace WP classes with the theme's classes
                         $link = str_replace('page-numbers', 'insights-pagination__bullet', $link);
                         $link = str_replace('current', 'insights-pagination__bullet--active', $link);
 
-                        // Ajustes específicos para prev/next
-                        if (strpos($link, 'anterior') !== false || strpos($link, 'siguiente') !== false) {
+                        // Specific adjustments for prev/next
+                        if (strpos($link, 'previous') !== false || strpos($link, 'next') !== false) {
                             $link = str_replace('insights-pagination__bullet', 'insights-pagination__bullet insights-pagination__bullet--nav', $link);
                         }
 
-                        // Manejo de 'dots'
+                        // 'dots' handling
                         if (strpos($link, 'dots') !== false) {
                             $link = str_replace('insights-pagination__bullet', 'insights-pagination__bullet border-0', $link);
                         }
@@ -181,15 +181,15 @@ get_header();
 <aside class="sidebar reveal reveal-left">
 
     <div class="sidebar-block bg-light-gray mb-20 py-20 px-30">
-        <h3 class="heading-sm mb-15">Buscador</h3>
+        <h3 class="heading-sm mb-15">Search</h3>
         <form method="get" action="<?php echo esc_url(home_url('/')); ?>" class="search-form">
             <input type="hidden" name="post_type" value="insights">
-            <input type="search" name="s" placeholder="Ingrese palabra clave…" class="w-100">
+            <input type="search" name="s" placeholder="Enter a keyword…" class="w-100">
         </form>
     </div>
 
     <div class="sidebar-block bg-light-gray mb-20 py-20 px-30">
-        <h3 class="heading-sm mb-15">Áreas de gestión</h3>
+        <h3 class="heading-sm mb-15">Management areas</h3>
         <ul class="list-unstyled">
 
             <?php
@@ -207,7 +207,7 @@ get_header();
 
                     $is_active = ($current_tag === $tag->slug);
                     
-                    // si está activa → vuelve al listado general
+                    // if active → back to the full listing
                     $link = $is_active ? $base_url : add_query_arg('tag', $tag->slug, $base_url);
             ?>
 
@@ -227,7 +227,7 @@ get_header();
     </div>
 
     <div class="sidebar-block bg-light-gray py-20 px-30">
-        <h3 class="heading-sm mb-20">Autores recientes</h3>
+        <h3 class="heading-sm mb-20">Recent authors</h3>
 
         <?php
         $autores = [];
@@ -284,7 +284,7 @@ get_header();
 
             <?php if (!empty($data['linkedin'])): ?>
                 <a href="<?php echo esc_url($data['linkedin']); ?>" target="_blank" rel="noopener"
-                   aria-label="LinkedIn del autor"
+                   aria-label="Author's LinkedIn"
                    class="text-bold fs-18 px-10">in</a>
             <?php endif; ?>
 
@@ -292,7 +292,7 @@ get_header();
 
         <?php endforeach; else: ?>
 
-        <p>No hay autores recientes.</p>
+        <p>No recent authors.</p>
 
         <?php endif; ?>
 
@@ -304,7 +304,7 @@ get_header();
 </section>
 
 <?php
-// ✅ Importante: restaurar el contexto global para ACF
+// ✅ Important: restore global context for ACF
 wp_reset_postdata();
 ?>
 
@@ -318,14 +318,14 @@ wp_reset_postdata();
 <style>
 
 /* ========================================
-   FALLBACK PARA LISTADO DE INSIGHTS (GRID)
+   FALLBACK FOR INSIGHTS LISTING (GRID)
    ======================================== */
 .insight-thumb-fallback--grid {
     width: 100%;
-    height: 420px; /* Puedes ajustar */
+    height: 420px; /* You can adjust */
     max-height: 100%;
     background: var(--azul-corporativo);
-    border-radius: inherit; /* respeta rounded-diagonal */
+    border-radius: inherit; /* respects rounded-diagonal */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -344,7 +344,7 @@ wp_reset_postdata();
 }
 
 
-    /* ===== Paginación exclusiva para listado de Insights ===== */
+    /* ===== Pagination for the Insights listing only ===== */
     .insights-pagination {
         display: flex;
         justify-content: start;

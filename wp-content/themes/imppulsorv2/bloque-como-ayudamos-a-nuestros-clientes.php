@@ -1,28 +1,28 @@
 <?php
 /**
- * Bloque: Cómo ayudamos a nuestros clientes
- * Tipo: Bloque Reutilizable ACF
+ * Block: How we help our clients
+ * Type: Reusable ACF Block
  */
 if (!defined('ABSPATH'))
   exit;
 
-// Obtiene el bloque global por su slug (usa el slug del bloque reutilizable)
+// Gets the global block by its slug (uses the reusable block slug)
 $bloque = get_page_by_path('bloque-como-ayudamos-a-nuestros-clientes', OBJECT, 'bloques_globales');
 if (!$bloque)
   return;
 
 $ID = $bloque->ID;
 
-// Mostrar solo si tiene contenido
+// Render only if it has content
 if (get_field('bloque_2_titulo', $ID)): ?>
   <section class="bloque-como-ayudamos bloque-home bloque-2 text-white bg-light-blue reveal reveal-up">
     <div class="container grid-2 align-center">
 
       <div class="py-60 px-0">
         <h2 class="heading-lg"><?php the_field('bloque_2_titulo', $ID); ?></h2>
-        <p>Aplicamos diagnósticos de madurez empresarial orientados revelar patrones ocultos entre sus problemas operacionales más complejos y sus causas raíz, identificando zonas prioritarias de intervención con base en evidencia.</p>
+        <p>We apply business maturity diagnostics designed to reveal hidden patterns between your most complex operational challenges and their root causes, identifying priority areas for intervention based on evidence.</p>
 
-        <p>Complementamos esta mirada con benchmarking de capacidades empresariales y marcos de ejecución estratégica, para priorizar decisiones, orientar recursos críticos y convertir hallazgos diagnósticos en avances operacionales medibles.
+        <p>We complement this perspective with business capability benchmarking and strategic execution frameworks to prioritize decisions, direct critical resources, and turn diagnostic findings into measurable operational progress.
         </p>
         <!-- Desktop Button -->
         <a href="<?php the_field('bloque_2_boton_url', $ID); ?>" class="btn-arrow btn-arrow-dark desktop-only-cta">

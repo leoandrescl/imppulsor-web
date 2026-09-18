@@ -10,7 +10,7 @@ get_header();
 
 <main class="page-areas-gestion page-operaciones-y-procesos">
 
-  <!-- HERO DEFAULT -->
+  <!-- DEFAULT HERO -->
   <div class="hero-slider__bloque-1">
     <?php imppulsor_render_page_hero('default'); ?>
 
@@ -24,20 +24,20 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-        <h2 class="heading-lg mb-20">Donde se genera valor de forma sistemática
+        <h2 class="heading-lg mb-20">Where value is created systematically
         </h2>
         <p>
-        Las operaciones son el corazón del modelo de negocio. Allí donde se combina eficiencia con consistencia, productividad con calidad, y estructura con adaptabilidad. En este dominio funcional ayudamos a las organizaciones a rediseñar y optimizar sus sistemas operativos, sus procesos clave y su arquitectura organizacional, alineando la ejecución diaria con los objetivos estratégicos. 
+        Operations are the heart of the business model—where efficiency meets consistency, productivity meets quality, and structure meets adaptability. In this functional domain, we help organizations redesign and optimize their operating systems, key processes, and organizational architecture, aligning day-to-day execution with strategic objectives. 
 
 
         </p>
-        <p>Cuando las operaciones están bien diseñadas, cada función sabe qué hacer, cómo hacerlo, con qué recursos, bajo qué estándares y para qué propósito. Aquí se orquesta el desempeño desde la base: con procesos que fluyen, equipos bien coordinados y estructuras que habilitan más que obstaculizan. 
+        <p>When operations are well designed, every function knows what to do, how to do it, with what resources, under which standards, and for what purpose. Performance is orchestrated from the ground up: with processes that flow, well-coordinated teams, and structures that enable rather than obstruct. 
 
 </p>
         </div>
 
         <div class="h-100 w-100">
-        <img src="/wp-content/uploads/Operaciones y Procesos.webp" alt="Operaciones y Procesos" class="w-100">
+        <img src="/wp-content/uploads/Operaciones y Procesos.webp" alt="Operations and Processes" class="w-100">
         </div>
       </div>
 
@@ -48,10 +48,10 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-          <h2 class="heading-lg mb-20">Los desafíos estructurales que enfrentamos </h2>
+          <h2 class="heading-lg mb-20">The structural challenges we address</h2>
           <div>
             <p>
-            En este ámbito, las organizaciones suelen enfrentar una serie de desafíos que limitan la eficiencia y la escalabilidad de sus operaciones:
+            In this area, organizations typically face a series of challenges that limit operational efficiency and scalability:
 
 
             </p>
@@ -62,16 +62,16 @@ get_header();
         <div class="h-100 w-100">
         <div class="">
             <ul class="list-check">
-            <li>Procesos fragmentados y flujos ineficientes</li>
-              <li>Superposición de tareas y responsabilidades</li>
-              <li>Falta de estándares y métricas desalineadas</li>
-              <li>Estructuras operacionales sobredimensionadas o desactualizadas</li>
-              <li>Sistemas de coordinación débiles</li>
-              <li>Dificultades para escalar operaciones y mantener la calidad</li>
-          <li>Falta de control de costos y uso ineficiente de recursos</li>
-          <li>Procesos poco adaptables al crecimiento del negocio</li>
-          <li>Pérdida de productividad por falta de método y estandarización</li>
-          <li>Ejecución ralentizada y expuesta a errores recurrentes</li>
+            <li>Fragmented processes and inefficient flows</li>
+              <li>Overlapping tasks and responsibilities</li>
+              <li>Lack of standards and misaligned metrics</li>
+              <li>Oversized or outdated operating structures</li>
+              <li>Weak coordination systems</li>
+              <li>Difficulty scaling operations while maintaining quality</li>
+          <li>Lack of cost control and inefficient use of resources</li>
+          <li>Processes poorly adaptable to business growth</li>
+          <li>Lost productivity from lack of method and standardization</li>
+          <li>Slowed execution exposed to recurring errors</li>
             </ul>
           </div>
         </div>
@@ -98,17 +98,17 @@ get_header();
   <section class="section section-8 bg-light text-dark pb-0 fade-in">
     <div class="container">
 
-      <h2 class="heading-lg mb-20" style="max-width: 600px;">Soluciones de consultoría para esta función empresarial</h2>
+      <h2 class="heading-lg mb-20" style="max-width: 600px;">Consulting solutions for this business function</h2>
 
       <div class="grid-2 ">
         <p>
-        Diseñamos y fortalecemos capacidades para que la operación funcione con mayor claridad, control y consistencia. Podemos apoyar el rediseño de procesos clave, la definición de roles, puntos de control y criterios de estandarización para mitigar quiebres internos de servicios entre áreas, retrabajo y dependencia de decisiones improvisadas.
+        We design and strengthen capabilities so operations run with greater clarity, control, and consistency. We can support redesign of key processes and the definition of roles, control points, and standardization criteria to mitigate internal service breakdowns across areas, rework, and dependence on improvised decisions.
 
 
         </p>
 
         <p>
-        También estructuramos mecanismos de coordinación, seguimiento y mejora continua para elevar productividad y calidad. Acompañamos la implementación con planificación, priorización de iniciativas, gestión del cambio, rendición de cuentas y soporte a líderes y equipos para consolidar una ejecución más eficiente y escalable.
+        We also put in place coordination, monitoring, and continuous improvement mechanisms to raise productivity and quality. We support implementation with planning, initiative prioritization, change management, accountability, and coaching for leaders and teams to consolidate more efficient, scalable execution.
 
 
 
@@ -121,14 +121,14 @@ get_header();
 
       <div class="separator mb-40"></div>
 
-      <h2 class="heading-lg mb-20 text-dark mb-40">Cómo trabajamos</h2>
+      <h2 class="heading-lg mb-20 text-dark mb-40">How we work</h2>
 
 <div class="grid-2">
 
   <div class="  pb-20">
-    <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Discovery empresarial</h3>
+    <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Business Discovery</h3>
     <p class="mt-30">
-    Diagnosticamos la arquitectura operativa de la organización, evaluando la eficiencia de procesos, la calidad de sus estándares, el nivel de automatización y la capacidad de control y mejora continua.
+    We diagnose the organization's operating architecture, assessing process efficiency, standard quality, automation levels, and control and continuous improvement capacity.
 
 
 
@@ -136,9 +136,9 @@ get_header();
   </div>
 
   <div class="  pb-20">
-    <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Adherencia organizacional</h3>
+    <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Organizational Fit</h3>
     <p class="mt-30">
-    Diseñamos sistemas operativos integrados, modelos de procesos, estándares de calidad, indicadores clave de desempeño y estructuras organizativas eficientes alineadas con la estrategia y las capacidades del negocio.
+    We design integrated operating systems, process models, quality standards, key performance indicators, and efficient organizational structures aligned with business strategy and capabilities.
 
 
 
@@ -148,9 +148,9 @@ get_header();
 
 
   <div class="  pb-20">
-    <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Visión holística</h3>
+    <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Holistic View</h3>
     <p class="mt-30">
-    Incorporamos herramientas de gestión operativa, tecnología, automatización y metodologías de excelencia operacional para lograr resultados sostenibles y escalables.
+    We embed operations management tools, technology, automation, and operational excellence methodologies to deliver sustainable, scalable results.
 
 
 
@@ -159,9 +159,9 @@ get_header();
   </div>
 
   <div class="  pb-20 pb-0-mob">
-    <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Acompañamiento inicial</h3>
+    <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Initial Implementation Support</h3>
     <p class="mt-30">
-    Acompañamos la implementación con continuidad, coherencia y disciplina, estableciendo planificación, seguimiento, accountability y retroalimentación que mantienen alineados equipos, recursos y objetivos para asegurar una operación sólida y adaptable.
+    We support implementation with continuity, coherence, and discipline, establishing planning, monitoring, accountability, and feedback that keep teams, resources, and objectives aligned to ensure a solid, adaptable operation.
 
 
     </p>
@@ -181,38 +181,38 @@ get_header();
   </section>
 
 
-  <!-- SECCIÓN 10: El impacto -->
+  <!-- SECTION 10: Impact -->
   <section class="section section-10 pt-0 bg-light text-dark fade-in">
 
     <div class="container">
 
       <div class="grid-2">
         <div>
-          <h2 class="heading-lg mb-20 mb-0-mob">El resultado</h2>
+          <h2 class="heading-lg mb-20 mb-0-mob">The outcome</h2>
         </div>
         <div>
           <p class="mb-20">
-          Transformamos la operación en una plataforma eficiente y adaptable, reduciendo fricción y riesgo para sostener la competitividad y habilitar la evolución organizacional de manera sostenible.
+          We turn operations into an efficient, adaptable platform, reducing friction and risk to sustain competitiveness and enable organizational evolution over time.
 
 
           </p>
 
           <ul class="list-check mb-20">
-            <li>Procesos que dejan de ser burocracia y se convierten en motores de velocidad y eficiencia.
+            <li>Processes that stop being bureaucracy and become engines of speed and efficiency.
 
 </li>
-            <li>Operaciones escalables que permiten crecer sin aumentar proporcionalmente la complejidad o el costo.
+            <li>Scalable operations that support growth without proportionally increasing complexity or cost.
 
 </li>
-            <li>Equipos con claridad de roles, estándares definidos y capacidad de ejecución autónoma.
+            <li>Teams with role clarity, defined standards, and autonomous execution capability.
 
 </li>
-            <li>Una cadena de valor optimizada, donde cada actividad suma y la fricción se reduce al mínimo.
+            <li>An optimized value chain, where every activity adds value and friction is kept to a minimum.
 
 </li>
           </ul>
 
-          <a href="/contacto/" class="btn-arrow">Solicite una reunión sobre su desafío de transformación</a>
+          <a href="/contacto/" class="btn-arrow">Request a meeting about your transformation challenge</a>
 
         </div>
       </div>
@@ -222,22 +222,22 @@ get_header();
 
 
 
-  <!-- SECCIÓN 11: Qué cambia -->
+  <!-- SECTION 11: What changes -->
   <section class="section section-11 bg-light-blue text-white fade-in py-60">
     <div class="container grid-2 align-center area-que-cambia px-0-mob">
       <div class="area-que-cambia__content">
-        <h2 class="heading-lg mb-20">¿Qué cambia cuando se gestiona bien este dominio?</h2>
+        <h2 class="heading-lg mb-20">What changes when this domain is managed well?</h2>
         <p>
-          Una organización que domina sus operaciones y procesos ejecuta con mayor eficiencia, consistencia y control.
-          Reduce fricciones, mejora tiempos de respuesta, estabiliza la calidad y coordina mejor sus recursos. La
-          operación deja de depender de improvisaciones y pasa a sostener el crecimiento con mayor productividad, orden
-          y previsibilidad.
+          An organization that masters its operations and processes executes with greater efficiency, consistency, and control.
+          It reduces friction, improves response times, stabilizes quality, and better coordinates resources. The
+          operation stops depending on improvisation and starts sustaining growth with greater productivity, order,
+          and predictability.
         </p>
       </div>
       <div class="area-que-cambia__media">
         <img
           src="/wp-content/uploads/que-cambia.jpg"
-          alt="Hombre en pizarra"
+          alt="Man at whiteboard"
           class="area-que-cambia__img w-100 object-cover"
           loading="lazy"
           decoding="async"
@@ -257,42 +257,42 @@ get_header();
 
 
 
-  <!-- SECCIÓN 12: Otras áreas -->
+  <!-- SECTION 12: Other areas -->
   <section class="section section-12 bg-light fade-in">
     <div class="container grid-2 align-center">
       <div>
-        <h2 class="heading-lg mb-20">Explore otras áreas críticas de gestión</h2>
+        <h2 class="heading-lg mb-20">Explore other critical management areas</h2>
         <p>
-          Nuestra propuesta de valor está compuesta por ocho dominios funcionales.
-          Cada uno representa una línea de negocio con desafíos, soluciones y oportunidades específicas.
-          Descubra cómo podemos intervenir en otras funciones clave:
+          Our value proposition comprises eight functional domains.
+          Each represents a business line with specific challenges, solutions, and opportunities.
+          See how we can support other key functions:
         </p>
         <ul class="mt-20 hidden-mobile">
-          <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Estrategia y gobierno</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finanzas y control</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Crecimiento,
-              MK y productividad comercial</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovación y modelo de
-              negocio</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Cambio y transformación</a>
+          <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and governance</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+              Marketing and sales productivity</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and business
+              model</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and transformation</a>
           </li>
-          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">Personas y cultura</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Tecnología y Datos</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
         </ul>
       </div>
-      <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore otras áreas críticas de gestión"
+      <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore other critical management areas"
         class="w-100 h-100">
       <ul class="visible-mobile">
-        <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Estrategia y gobierno</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finanzas y control</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Crecimiento,
-            MK y productividad comercial</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovación y modelo de
-            negocio</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Cambio y transformación</a>
+        <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and governance</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+            Marketing and sales productivity</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and business
+            model</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and transformation</a>
         </li>
-        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">Personas y cultura</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Tecnología y Datos</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
       </ul>
     </div>
   </section>
@@ -316,7 +316,7 @@ get_header();
 
         const visible = hiddenText.style.display === 'inline';
         hiddenText.style.display = visible ? 'none' : 'inline';
-        this.textContent = visible ? 'Leer más…' : 'Leer menos…';
+        this.textContent = visible ? 'Read more…' : 'Read less…';
       });
     });
   });

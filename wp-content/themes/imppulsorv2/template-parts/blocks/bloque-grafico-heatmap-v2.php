@@ -1,26 +1,26 @@
 <div class="heatmap-v2-wrapper bg-light">
     <div class="heatmap-v2-container">
         <div class="block-header">
-            <h2>Matriz Subdimensional de Impulsores e Inhibidores de Madurez Comercial</h2>
-            <h3>Diagnóstico de Madurez Comercial</h3>
+            <h2>Subdimensional Matrix of Commercial Maturity Drivers and Inhibitors</h2>
+            <h3>Commercial Maturity Diagnostic</h3>
         </div>
 
         <div class="heatmap-v2-grid" id="heatmapMatrixV2">
             <!-- Headers -->
-            <div class="grid-header">Dimensión</div>
-            <div class="grid-header">Subdimensiones</div>
-            <div class="grid-header">Puntaje</div>
-            <div class="grid-header">Subdimensiones</div>
-            <div class="grid-header">Puntaje</div>
-            <div class="grid-header">Subdimensiones</div>
-            <div class="grid-header">Puntaje</div>
+            <div class="grid-header">Dimension</div>
+            <div class="grid-header">Subdimensions</div>
+            <div class="grid-header">Score</div>
+            <div class="grid-header">Subdimensions</div>
+            <div class="grid-header">Score</div>
+            <div class="grid-header">Subdimensions</div>
+            <div class="grid-header">Score</div>
 
             <!-- JavaScript will render rows here -->
         </div>
 
         <!-- Legend scale -->
         <div class="heatmap-scale-wrapper">
-            <span class="scale-label-text">Nivel</span>
+            <span class="scale-label-text">Level</span>
             <div class="scale-container">
                 <div class="scale-gradient-bar"></div>
                 <div class="scale-markers">
@@ -211,18 +211,18 @@
 <script>
     (function () {
         const data = [
-            { dim: "Estrategia y Planificación", subs: [{ name: "Dirección Estratégica", score: 2.7 }, { name: "Planificación Comercial", score: 3.8 }, { name: "Enfoque a Resultados", score: 2.6 }] },
-            { dim: "Gobernanza Empresarial", subs: [{ name: "Roles y Estructura", score: 2.6 }, { name: "Mecanismos de Gestión", score: 4.2 }, { name: "Accountability y Control", score: 3.3 }] },
-            { dim: "Innovación y Adaptabilidad", subs: [{ name: "Adaptabilidad del Área", score: 3.0 }, { name: "Experimentación", score: 2.2 }, { name: "Aprendizaje Continuo", score: 2.7 }] },
-            { dim: "Experiencia del Cliente", subs: [{ name: "Comprensión del Cliente", score: 2.4 }, { name: "Procesos de Atención", score: 2.3 }, { name: "Voz del Cliente", score: 2.9 }] },
-            { dim: "Marketing y Generación de Demanda", subs: [{ name: "Posicionamiento y Mensaje", score: 2.2 }, { name: "Canales y Tácticas", score: 3.8 }, { name: "Gestión de Leads", score: 2.8 }] },
-            { dim: "Metodología Comercial", subs: [{ name: "Proceso de Ventas", score: 2.8 }, { name: "Técnicas y Enfoque", score: 3.0 }, { name: "Estandarización", score: 3.9 }] },
-            { dim: "Digitalización, Automatización e IA", subs: [{ name: "Tecnología Comercial", score: 3.6 }, { name: "Automatización", score: 3.6 }, { name: "Uso de IA", score: 2.1 }] },
-            { dim: "Monitoreo y Análisis de datos", subs: [{ name: "Métricas Comerciales", score: 4.3 }, { name: "Análisis e Insights", score: 2.9 }, { name: "Toma de Decisiones", score: 4.0 }] },
-            { dim: "Eficiencia Operativa", subs: [{ name: "Flujos y Procesos", score: 4.3 }, { name: "Productividad Comercial", score: 3.2 }, { name: "Soporte Interno", score: 1.9 }] },
-            { dim: "Organización", subs: [{ name: "Diseño Estructural", score: 3.3 }, { name: "Coordinación y Colaboración", score: 3.2 }, { name: "Escalabilidad", score: 3.2 }] },
-            { dim: "Liderazgo", subs: [{ name: "Cultura, Clientes y Resultados", score: 3.0 }, { name: "Liderazgo y Coaching", score: 4.0 }, { name: "Propósito y Pertenencia", score: 3.5 }] },
-            { dim: "Gestión del Talento", subs: [{ name: "Atracción y Reclutamiento", score: 3.1 }, { name: "Desarrollo y Capacitación", score: 3.5 }, { name: "Evaluación y Retención", score: 2.7 }] }
+            { dim: "Strategy & Planning", subs: [{ name: "Strategic Direction", score: 2.7 }, { name: "Sales Planning", score: 3.8 }, { name: "Results Orientation", score: 2.6 }] },
+            { dim: "Corporate Governance", subs: [{ name: "Roles & Structure", score: 2.6 }, { name: "Management Mechanisms", score: 4.2 }, { name: "Accountability & Control", score: 3.3 }] },
+            { dim: "Innovation & Adaptability", subs: [{ name: "Team Adaptability", score: 3.0 }, { name: "Experimentation", score: 2.2 }, { name: "Continuous Learning", score: 2.7 }] },
+            { dim: "Customer Experience", subs: [{ name: "Customer Understanding", score: 2.4 }, { name: "Service Processes", score: 2.3 }, { name: "Voice of the Customer", score: 2.9 }] },
+            { dim: "Marketing & Demand Generation", subs: [{ name: "Positioning & Messaging", score: 2.2 }, { name: "Channels & Tactics", score: 3.8 }, { name: "Lead Management", score: 2.8 }] },
+            { dim: "Sales Methodology", subs: [{ name: "Sales Process", score: 2.8 }, { name: "Techniques & Approach", score: 3.0 }, { name: "Standardization", score: 3.9 }] },
+            { dim: "Digitalization, Automation & AI", subs: [{ name: "Sales Technology", score: 3.6 }, { name: "Automation", score: 3.6 }, { name: "AI Adoption", score: 2.1 }] },
+            { dim: "Monitoring & Data Analytics", subs: [{ name: "Sales Metrics", score: 4.3 }, { name: "Analysis & Insights", score: 2.9 }, { name: "Decision-Making", score: 4.0 }] },
+            { dim: "Operational Efficiency", subs: [{ name: "Workflows & Processes", score: 4.3 }, { name: "Sales Productivity", score: 3.2 }, { name: "Internal Support", score: 1.9 }] },
+            { dim: "Organization", subs: [{ name: "Structural Design", score: 3.3 }, { name: "Coordination & Collaboration", score: 3.2 }, { name: "Scalability", score: 3.2 }] },
+            { dim: "Leadership", subs: [{ name: "Culture, Customers & Results", score: 3.0 }, { name: "Leadership & Coaching", score: 4.0 }, { name: "Purpose & Belonging", score: 3.5 }] },
+            { dim: "Talent Management", subs: [{ name: "Attraction & Recruitment", score: 3.1 }, { name: "Development & Training", score: 3.5 }, { name: "Evaluation & Retention", score: 2.7 }] }
         ];
 
         function getClassForScore(score) {

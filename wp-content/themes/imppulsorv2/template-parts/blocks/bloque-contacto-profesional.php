@@ -1,8 +1,8 @@
 <?php
 /**
- * Bloque: Contacto Profesional
- * - Reutilizable en distintas secciones
- * - Diseño: 2 columnas (imagen izquierda / formulario derecha) dentro de .container
+ * Block: Professional Contact
+ * - Reusable across sections
+ * - Layout: 2 columns (image left / form right) inside .container
  */
 if (!defined('ABSPATH')) {
     exit;

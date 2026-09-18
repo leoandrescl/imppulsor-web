@@ -4,10 +4,10 @@
  */
 
 // ==============================================================
-// URLs DE BROCHURE DMC
-// Ingresa la URL del PDF o documento correspondiente.
-// Si dejas la URL vacía (''), no aparecerá el botón para ese idioma.
-// Si todas están vacías, no aparecerá el botón "Descarga el Brochure del DMC".
+// DMC BROCHURE URLs
+// Enter the URL of the corresponding PDF or document.
+// If you leave the URL empty (''), the button for that language will not appear.
+// If all are empty, the "Download the DMC Brochure" button will not appear.
 // ==============================================================
 $url_brochure_dmc_es = '';
 $url_brochure_dmc_en = '';
@@ -18,7 +18,7 @@ $mostrar_boton_brochure = (!empty($url_brochure_dmc_es) || !empty($url_brochure_
 get_header();
 
 /**
- * Helper para imprimir botones de bloques
+ * Helper to render block buttons
  */
 function impulsor_print_buttons($prefix)
 {
@@ -45,7 +45,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 1 - Madurez comercial 
+  // BLOCK 1 - Commercial maturity 
   if (get_field('bloque_1_titulo')): ?>
     <section class="section section-madurez-comercial mt-60 reveal">
       <div class="container section--light separator">
@@ -56,7 +56,7 @@ function impulsor_print_buttons($prefix)
           </div>
           <div class="image-grid text-center h-100 w-100">
             <img src="<?php the_field('bloque_1_imagen'); ?>" class="rounded-diagonal w-100 h-100 h-420"
-              alt="Madurez comercial, el eslabón estructural que muchas empresas no están viendo.">
+              alt="Commercial maturity, the structural link many companies are overlooking.">
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 2 – Qué es el diagnóstico de madurez comercial
+  // BLOCK 2 - What the commercial maturity diagnostic is
   if (get_field('bloque_2_titulo')): ?>
     <section class="section section-que-es-el-diagnostico reveal">
       <div class="container section--light separator pt-0">
@@ -79,7 +79,7 @@ function impulsor_print_buttons($prefix)
         </div>
 
         <div class="image-grid text-center mt-40">
-          <img src="<?php the_field('bloque_2_imagen'); ?>" alt="Diagrama diagnóstico de madurez comercial">
+          <img src="<?php the_field('bloque_2_imagen'); ?>" alt="Commercial maturity diagnostic diagram">
           <?php
           //  get_template_part( 'template-parts/blocks/bloque-grafico-dmc' ); 
           ?>
@@ -90,7 +90,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 3 - Conozca su punto de partida
+  // BLOCK 3 - Know your starting point
   if (get_field('bloque_3_titulo')): ?>
     <section class="section section-conozca-su-punto-de-partida reveal">
       <div class="container section--light separator pt-0">
@@ -113,7 +113,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 4 - Revele lo que los números no muestran
+  // BLOCK 4 - Reveal what the numbers don't show
   if (get_field('bloque_4_titulo')): ?>
     <section class="section section-revele-lo-que-los-numeros-no-muestran reveal">
       <div class="container section--light separator pt-0">
@@ -137,7 +137,7 @@ function impulsor_print_buttons($prefix)
         </div>
 
         <?php
-        // Botones dinámicos desde ACF
+        // Dynamic buttons from ACF
         $boton1 = get_field('bloque_4_boton_1');
         $boton2 = get_field('bloque_4_boton_2');
 
@@ -147,13 +147,13 @@ function impulsor_print_buttons($prefix)
             $boton1 = get_field('bloque_4_boton_1');
             $boton2 = get_field('bloque_4_boton_2');
 
-            // Función auxiliar para imprimir cada botón
+            // Helper function to render each button
             function render_acf_link($boton)
             {
               if (is_array($boton) && isset($boton['url']) && isset($boton['title'])) {
                 echo '<a href="' . esc_url($boton['url']) . '" class="btn-arrow">' . esc_html($boton['title']) . '</a><br>';
               } elseif (is_string($boton) && !empty($boton)) {
-                echo '<a href="' . esc_url($boton) . '" class="btn-arrow">Ver más</a><br>';
+                echo '<a href="' . esc_url($boton) . '" class="btn-arrow">Read more</a><br>';
               }
             }
 
@@ -171,7 +171,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 5 - Compare el nivel de madurez
+  // BLOCK 5 - Compare the maturity level
   if (get_field('bloque_5_titulo_1')): ?>
     <section class="section section-compare-el-nivel-de-madurez reveal">
       <div class="container section--light separator pt-0">
@@ -205,7 +205,7 @@ function impulsor_print_buttons($prefix)
 
         <div class="text-left mt-40">
           <?php
-          // Botones dinámicos desde ACF
+          // Dynamic buttons from ACF
           $boton1 = get_field('bloque_5_boton_1');
           $boton2 = get_field('bloque_5_boton_2');
           $boton3 = get_field('bloque_5_boton_3');
@@ -233,7 +233,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 6 - Testimonio 
+  // BLOCK 6 - Testimonial 
   ?>
   <div class="my-60">
     <?php get_template_part('template-parts/blocks/bloque', 'testimonio'); ?>
@@ -243,7 +243,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 7 - ¿Para qué sirve este diagnóstico?
+  // BLOCK 7 - What is this diagnostic for?
   if (get_field('bloque_7_titulo')): ?>
     <section class="section section-para-que-sirve-este-diagnostico reveal">
       <div class="container section--light">
@@ -256,7 +256,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 8
+  // BLOCK 8
   if (get_field('bloque_8_titulo_1')): ?>
     <section class="section reveal">
       <div class="container section--light">
@@ -276,7 +276,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 9 – DIMENSIONES DE ANÁLISIS
+  // BLOCK 9 - ANALYSIS DIMENSIONS
   if (get_field('bloque_9_titulo')): ?>
     <section class="section section-dimensiones-de-analisis reveal">
       <div class="container section--light pt-0">
@@ -292,18 +292,18 @@ function impulsor_print_buttons($prefix)
         <div class="mt-60">
           <?php
           $dimensiones = [
-            ['titulo' => 'Dimensión 1', 'subtitulo' => 'Estrategia y planificación', 'contenido' => 'Analizar si la organización cuenta con una estrategia comercial clara, compartida y activa, que oriente la toma de decisiones, estructure las prioridades operativas y habilite una ejecución coherente, rentable y sostenible en los mercados objetivo.'],
-            ['titulo' => 'Dimensión 2', 'subtitulo' => 'Gobernanza empresarial', 'contenido' => 'Evaluar si la estructura de gobierno y liderazgo promueve la toma de decisiones ágil, transparente y alineada con los objetivos estratégicos.'],
-            ['titulo' => 'Dimensión 3', 'subtitulo' => 'Innovación y adaptabilidad', 'contenido' => 'Determinar la capacidad de la organización para incorporar innovación continua, adaptarse a entornos cambiantes y sostener ventajas competitivas.'],
-            ['titulo' => 'Dimensión 4', 'subtitulo' => 'Experiencia de cliente', 'contenido' => 'Analizar si la empresa gestiona la experiencia de cliente de forma integral, coherente y centrada en el valor.'],
-            ['titulo' => 'Dimensión 5', 'subtitulo' => 'Marketing y generación de demanda', 'contenido' => 'Revisar la efectividad de las acciones de marketing y generación de demanda como motor del crecimiento comercial.'],
-            ['titulo' => 'Dimensión 6', 'subtitulo' => 'Metodología comercial', 'contenido' => 'Evaluar la madurez de los procesos comerciales y la estandarización de prácticas que aseguren eficiencia y consistencia.'],
-            ['titulo' => 'Dimensión 7', 'subtitulo' => 'Digitalización, automatización e IA', 'contenido' => 'Analizar el nivel de integración tecnológica y el uso de herramientas de IA en la gestión comercial y de clientes.'],
-            ['titulo' => 'Dimensión 8', 'subtitulo' => 'Monitoreo y análisis de datos', 'contenido' => 'Determinar la capacidad de la organización para medir, analizar y tomar decisiones basadas en información confiable y oportuna.'],
-            ['titulo' => 'Dimensión 9', 'subtitulo' => 'Eficiencia operativa', 'contenido' => 'Evaluar el uso eficiente de recursos, la gestión del tiempo y la productividad del equipo comercial.'],
-            ['titulo' => 'Dimensión 10', 'subtitulo' => 'Organización', 'contenido' => 'Analizar la estructura organizacional y su grado de alineación con los objetivos y estrategias comerciales.'],
-            ['titulo' => 'Dimensión 11', 'subtitulo' => 'Liderazgo', 'contenido' => 'Evaluar la calidad del liderazgo, el empoderamiento del equipo y la capacidad de inspirar resultados sostenibles.'],
-            ['titulo' => 'Dimensión 12', 'subtitulo' => 'Gestión del talento', 'contenido' => 'Analizar la capacidad de la organización para atraer, desarrollar y retener talento comercial de alto rendimiento.']
+            ['titulo' => 'Dimension 1', 'subtitulo' => 'Strategy and planning', 'contenido' => 'Assess whether the organization has a clear, shared, and active commercial strategy that guides decision-making, structures operating priorities, and enables consistent, profitable, and sustainable execution in target markets.'],
+            ['titulo' => 'Dimension 2', 'subtitulo' => 'Corporate governance', 'contenido' => 'Evaluate whether the governance and leadership structure enables agile, transparent decision-making aligned with strategic objectives.'],
+            ['titulo' => 'Dimension 3', 'subtitulo' => 'Innovation and adaptability', 'contenido' => 'Assess the organization’s ability to embed continuous innovation, adapt to changing environments, and sustain competitive advantage.'],
+            ['titulo' => 'Dimension 4', 'subtitulo' => 'Customer experience', 'contenido' => 'Assess whether the company manages the customer experience in an integrated, consistent, and value-centered way.'],
+            ['titulo' => 'Dimension 5', 'subtitulo' => 'Marketing and demand generation', 'contenido' => 'Review how effective marketing and demand-generation efforts are as a driver of commercial growth.'],
+            ['titulo' => 'Dimension 6', 'subtitulo' => 'Sales methodology', 'contenido' => 'Evaluate the maturity of sales processes and the standardization of practices that ensure efficiency and consistency.'],
+            ['titulo' => 'Dimension 7', 'subtitulo' => 'Digitalization, automation, and AI', 'contenido' => 'Assess the level of technology integration and the use of AI tools in sales and customer management.'],
+            ['titulo' => 'Dimension 8', 'subtitulo' => 'Data monitoring and analytics', 'contenido' => 'Assess the organization’s ability to measure, analyze, and make decisions based on reliable, timely information.'],
+            ['titulo' => 'Dimension 9', 'subtitulo' => 'Operational efficiency', 'contenido' => 'Evaluate efficient resource use, time management, and sales team productivity.'],
+            ['titulo' => 'Dimension 10', 'subtitulo' => 'Organization', 'contenido' => 'Assess the organizational structure and how well it aligns with commercial objectives and strategies.'],
+            ['titulo' => 'Dimension 11', 'subtitulo' => 'Leadership', 'contenido' => 'Evaluate leadership quality, team empowerment, and the ability to inspire sustainable results.'],
+            ['titulo' => 'Dimension 12', 'subtitulo' => 'Talent management', 'contenido' => 'Assess the organization’s ability to attract, develop, and retain high-performing commercial talent.']
           ];
 
 
@@ -356,7 +356,7 @@ function impulsor_print_buttons($prefix)
 
 
   <?php
-  // BLOQUE 10 – ¿Por qué tomar el diagnóstico?
+  // BLOCK 10 - Why take the diagnostic?
   if (get_field('bloque_10_titulo')): ?>
     <section class="section section-por-que-tomar-el-diagnostico reveal">
       <div class="container section--light">
@@ -369,47 +369,47 @@ function impulsor_print_buttons($prefix)
           <div class="grid-left">
             <ul class="diagnostico-list">
               <li><span class="num">1</span>
-                <p>Visualización sistémica de la función comercial, permitiendo entender cómo se articulan procesos,
-                  estructura, tecnología, talento y liderazgo, y cómo impactan en la capacidad de generar ingresos
-                  sostenibles y escalables.</p>
+                <p>Systemic view of the commercial function, showing how processes,
+                  structure, technology, talent, and leadership connect, and how they affect the ability to generate
+                  sustainable, scalable revenue.</p>
               </li>
               <li><span class="num">2</span>
-                <p>Identificación de brechas estructurales y focos críticos de intervención, que limitan la eficiencia
-                  operativa, generan dependencias indeseadas o reducen el control directivo sobre el desempeño comercial.
+                <p>Identification of structural gaps and critical areas for intervention that limit operating
+                  efficiency, create unwanted dependencies, or reduce executive control over commercial performance.
                 </p>
               </li>
               <li><span class="num">3</span>
-                <p>Medición objetiva del nivel de madurez comercial a partir de un modelo de 12 dimensiones clave, con
-                  indicadores cualitativos y cuantitativos que permiten priorizar mejoras con base en evidencia.</p>
+                <p>Objective measurement of commercial maturity based on a 12-dimension model, with
+                  qualitative and quantitative indicators to prioritize evidence-based improvements.</p>
               </li>
               <li><span class="num">4</span>
-                <p>Comparación frente a un benchmark regional y sectorial, para contextualizar resultados y definir
-                  trayectorias de evolución realistas en función de referentes comparables.</p>
+                <p>Benchmarking against regional and industry peers to contextualize results and define
+                  realistic evolution paths based on comparable references.</p>
               </li>
               <li><span class="num">5</span>
-                <p>Generación de insumos estratégicos para la toma de decisiones, incluyendo rediseño organizacional,
-                  definición de inversiones, desarrollo de capacidades, reorganización del modelo comercial o ajustes en
-                  roles clave.</p>
+                <p>Strategic inputs for decision-making, including organizational redesign,
+                  investment planning, capability building, sales model restructuring, or key-role
+                  adjustments.</p>
               </li>
               <li><span class="num">6</span>
-                <p>Reducción del riesgo en decisiones comerciales estructurales, al contar con un marco de análisis
-                  robusto que alinea visión, acción y resultados con foco en eficiencia, autonomía y sostenibilidad.</p>
+                <p>Reduced risk in structural commercial decisions through a robust analytical
+                  framework that aligns vision, action, and results around efficiency, autonomy, and sustainability.</p>
               </li>
             </ul>
           </div>
 
           <div class="image-grid teeest">
             <img src="<?php the_field('bloque_10_imagen'); ?>" class="rounded-diagonal w-100 h-420"
-              alt="Equipo de trabajo colaborando">
+              alt="Team collaborating">
 
 
             <div class="mt-40 btn-links"><a href="https://imppulsor.com/contacto/" class="btn-arrow mt-20-mob"
-                target="_self">Solicite una reunión con nuestros especialistas</a>
+                target="_self">Request a meeting with our specialists</a>
 
               <br>
               <?php if ($mostrar_boton_brochure): ?>
-                <!-- aca debe ir el boton de descarga de la presentacion -->
-                <button class="btn-brochure-dmc btn-brochure-dmc-open mt-20">Descarga el Brochure del DMC</button>
+                <!-- brochure download button goes here -->
+                <button class="btn-brochure-dmc btn-brochure-dmc-open mt-20">Download the DMC Brochure</button>
               <?php endif; ?>
             </div>
 
@@ -419,19 +419,19 @@ function impulsor_print_buttons($prefix)
     </section>
   <?php endif; ?>
 
-  <!-- bloque carousel casos de exito  -->
+  <!-- success stories carousel block  -->
   <div class="bg-ellipse">
     <?php get_template_part('template-parts/blocks/bloque-casos-exito'); ?>
   </div>
-  <!-- bloque ocho areas -->
+  <!-- eight areas block -->
   <?php get_template_part('template-parts/blocks/bloque-ocho-areas'); ?>
 
   <div class="mt-60">
-    <!-- bloque experiencia internacional -->
+    <!-- international experience block -->
     <?php get_template_part('template-parts/blocks/bloque-experiencia-internacional'); ?>
   </div>
 
-  <!-- bloque carousel insights -->
+  <!-- insights carousel block -->
   <?php get_template_part('template-parts/blocks/bloque-insights'); ?>
 
 
@@ -475,12 +475,12 @@ function impulsor_print_buttons($prefix)
 </script>
 
 <?php if ($mostrar_boton_brochure): ?>
-  <!-- Modales de Brochure DMC -->
+  <!-- DMC Brochure Modals -->
   <div id="brochure-popup" class="brochure-popup-overlay">
     <div class="brochure-popup-content">
       <button id="close-brochure-popup" class="brochure-popup-close">&times;</button>
-      <h3 class="heading-md mb-20 text-dark">Descargar brochure DMC</h3>
-      <p class="mb-30 text-dark">Por favor, selecciona el idioma del brochure que deseas descargar:</p>
+      <h3 class="heading-md mb-20 text-dark">Download DMC brochure</h3>
+      <p class="mb-30 text-dark">Please select the brochure language you would like to download:</p>
 
       <div class="brochure-langs">
         <?php if (!empty($url_brochure_dmc_es)): ?>

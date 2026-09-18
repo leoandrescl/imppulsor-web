@@ -10,7 +10,7 @@ get_header();
 
 <main class="page-areas-gestion page-cambio-y-transformacion">
 
-  <!-- HERO DEFAULT -->
+  <!-- DEFAULT HERO -->
   <div class="hero-slider__bloque-1">
     <?php imppulsor_render_page_hero('default'); ?>
 
@@ -24,20 +24,20 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-        <h2 class="heading-lg mb-20">Donde la estrategia cobra vida y la cultura se moviliza
+        <h2 class="heading-lg mb-20">Where strategy comes to life and culture gets mobilized
         </h2>
         <p>
-        Transformar una organización no es solo diseñar el cambio, es liderarlo, sostenerlo y convertirlo en una nueva forma de operar. En este dominio funcional ayudamos a las empresas a estructurar, gestionar y consolidar procesos de cambio complejos, asegurando coherencia estratégica, alineación cultural, agilidad operativa y continuidad del impacto en el tiempo. 
+        Transforming an organization is not just about designing change—it is about leading it, sustaining it, and turning it into a new way of operating. In this functional domain, we help companies structure, manage, and consolidate complex change processes, ensuring strategic coherence, cultural alignment, operational agility, and sustained impact over time. 
 
 
         </p>
-        <p>Una arquitectura robusta de cambio y transformación permite movilizar capacidades, involucrar personas, rediseñar estructuras y modificar comportamientos sin perder foco ni tracción. Aquí se define cómo una empresa ejecuta el futuro que ha decidido construir. 
+        <p>A robust change and transformation architecture mobilizes capabilities, engages people, redesigns structures, and shifts behaviors without losing focus or traction. This is where a company defines how it executes the future it has chosen to build. 
 
 </p>
         </div>
 
         <div class="h-100 w-100">
-        <img src="/wp-content/uploads/Cambio y transformación.webp" alt="Cambio y transformación" class="w-100">
+        <img src="/wp-content/uploads/Cambio y transformación.webp" alt="Change and transformation" class="w-100">
         </div>
       </div>
 
@@ -48,12 +48,12 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-          <h2 class="heading-lg mb-20">Los desafíos estructurales que enfrentamos en este dominio
+          <h2 class="heading-lg mb-20">The structural challenges we address in this domain
           </h2>
           <div>
             <p>
-              En este ámbito, las organizaciones suelen enfrentar una serie de desafíos
-              que limitan su efectividad comercial y su capacidad de crecimiento sostenible:
+              In this area, organizations typically face a series of challenges
+              that limit commercial effectiveness and sustainable growth:
             </p>
           </div>
           
@@ -62,16 +62,16 @@ get_header();
         <div class="h-100 w-100">
         <div class="">
             <ul class="list-check">
-            <li>Fatiga de cambio y pérdida de impulso en la implementación</li>
-              <li>Iniciativas que se diluyen o quedan inconclusas</li>
-              <li>Fricciones entre cultura y estrategia</li>
-              <li>Dificultad para sostener nuevos comportamientos en el tiempo</li>
-              <li>Exceso de iniciativas simultáneas sin coordinación transversal</li>
-              <li>Ausencia de mecanismos de alineación y gobernanza del cambio</li>
-          <li>Liderazgo inestable frente a procesos transformacionales</li>
-          <li>Falta de capacidades internas para facilitar y gestionar el cambio</li>
-          <li>Desconexión entre intención y realidad de los planes de transformación</li>
-          <li>Estrategias que no logran adopción ni ownership en la organización</li>
+            <li>Change fatigue and loss of implementation momentum</li>
+              <li>Initiatives that fade out or remain unfinished</li>
+              <li>Friction between culture and strategy</li>
+              <li>Difficulty sustaining new behaviors over time</li>
+              <li>Too many simultaneous initiatives without cross-functional coordination</li>
+              <li>Lack of change alignment and governance mechanisms</li>
+          <li>Unsteady leadership through transformational processes</li>
+          <li>Lack of internal capabilities to facilitate and manage change</li>
+          <li>Disconnect between transformation plan intent and reality</li>
+          <li>Strategies that fail to gain adoption and ownership across the organization</li>
             </ul>
           </div>
         </div>
@@ -101,17 +101,17 @@ get_header();
   <section class="section section-8 bg-light text-dark pb-0 fade-in">
     <div class="container">
 
-      <h2 class="heading-lg mb-20" style="max-width: 600px;">Soluciones de consultoría para esta función empresarial</h2>
+      <h2 class="heading-lg mb-20" style="max-width: 600px;">Consulting solutions for this business function</h2>
 
       <div class="grid-2 ">
         <p>
-        Diseñamos y fortalecemos capacidades de Cambio y Transformación para habilitar implementaciones consistentes y sostenibles. Podemos apoyar el diseño de arquitecturas de cambio, estrategias de implementación y modelos de gestión del cambio, junto con procesos de alineación transversal, sistemas de comunicación interna y desarrollo de capacidades transformacionales.
+        We design and strengthen Change and Transformation capabilities to enable consistent, sustainable implementation. We can support the design of change architectures, implementation strategies, and change management models, along with cross-functional alignment processes, internal communication systems, and transformational capability building.
 
 
         </p>
 
         <p>
-        Integramos mecanismos de acompañamiento al liderazgo y marcos de gobernanza que sostienen la disciplina de ejecución, con planificación, seguimiento, rendición de cuentas y retroalimentación. Nuestra intervención conecta la dimensión técnica del cambio con sus componentes emocionales, culturales y políticos, manteniendo alineados equipos, recursos y objetivos para lograr impacto en el tiempo.
+        We integrate leadership coaching mechanisms and governance frameworks that sustain execution discipline, with planning, monitoring, accountability, and feedback. Our intervention connects the technical dimension of change with its emotional, cultural, and political components, keeping teams, resources, and objectives aligned to deliver lasting impact.
 
 
 
@@ -124,14 +124,14 @@ get_header();
 
       <div class="separator mb-40"></div>
 
-      <h2 class="heading-lg mb-20 text-dark mb-40">Cómo trabajamos</h2>
+      <h2 class="heading-lg mb-20 text-dark mb-40">How we work</h2>
 
 <div class="grid-2">
 
   <div class="  pb-20">
-    <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Discovery empresarial</h3>
+    <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Business Discovery</h3>
     <p class="mt-30">
-    Diagnosticamos la capacidad real de la organización para gestionar el cambio, evaluando la alineación transversal, la fortaleza del liderazgo, la cultura organizacional y los mecanismos existentes de control y seguimiento.
+    We diagnose the organization's real capacity to manage change, assessing cross-functional alignment, leadership strength, organizational culture, and existing control and monitoring mechanisms.
 
 
 
@@ -139,9 +139,9 @@ get_header();
   </div>
 
   <div class="  pb-20">
-    <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Adherencia organizacional</h3>
+    <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Organizational Fit</h3>
     <p class="mt-30">
-    Diseñamos arquitecturas de cambio, estrategias de implementación y modelos de gestión que integran tanto la dimensión técnica como la emocional, cultural y política del proceso transformacional.
+    We design change architectures, implementation strategies, and management models that integrate both the technical and the emotional, cultural, and political dimensions of the transformation process.
 
 
     </p>
@@ -149,18 +149,18 @@ get_header();
 
 
   <div class="  pb-20">
-    <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Visión holística</h3>
+    <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Holistic View</h3>
     <p class="mt-30">
-    Desarrollamos capacidades clave mediante sistemas de comunicación interna, procesos de alineación, formación de líderes y mecanismos de acompañamiento que sostienen la adopción de nuevos comportamientos.
+    We build key capabilities through internal communication systems, alignment processes, leader development, and coaching mechanisms that sustain adoption of new behaviors.
 
 
     </p>
   </div>
 
   <div class="  pb-20 pb-0-mob">
-    <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Acompañamiento inicial</h3>
+    <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Initial Implementation Support</h3>
     <p class="mt-30">
-    Acompañamos la ejecución con continuidad, coherencia y disciplina, estableciendo planificación, seguimiento, accountability y retroalimentación que mantienen alineados equipos, recursos y objetivos durante toda la transformación.
+    We support execution with continuity, coherence, and discipline, establishing planning, monitoring, accountability, and feedback that keep teams, resources, and objectives aligned throughout the transformation.
 
 
     </p>
@@ -180,38 +180,38 @@ get_header();
   </section>
 
 
-  <!-- SECCIÓN 10: El impacto -->
+  <!-- SECTION 10: Impact -->
   <section class="section section-10 pt-0 bg-light text-dark fade-in">
 
     <div class="container">
 
       <div class="grid-2">
         <div>
-          <h2 class="heading-lg mb-20 mb-0-mob">El resultado</h2>
+          <h2 class="heading-lg mb-20 mb-0-mob">The outcome</h2>
         </div>
         <div>
           <p class="mb-20">
-          Hacemos del cambio un proceso estructurado y medible que fortalece liderazgo, moviliza cultura y consolida nuevas formas de trabajar para sostener la evolución y asegurar resultados duraderos.
+          We make change a structured, measurable process that strengthens leadership, mobilizes culture, and embeds new ways of working to sustain evolution and deliver lasting results.
 
 
           </p>
 
           <ul class="list-check mb-20">
-            <li>La organización recupera la agilidad, eliminando la resistencia que frena la innovación.
+            <li>The organization regains agility, removing the resistance that holds back innovation.
 
 </li>
-            <li>Líderes preparados para guiar en la incertidumbre y movilizar equipos hacia nuevos objetivos.
+            <li>Leaders prepared to guide through uncertainty and mobilize teams toward new goals.
 
 </li>
-            <li>Culturas adaptativas donde el cambio es visto como oportunidad y no como amenaza.
+            <li>Adaptive cultures where change is seen as opportunity, not threat.
 
 </li>
-            <li>Resultados sostenibles porque la transformación se ancla en las personas, no solo en los procesos.
+            <li>Sustainable results because transformation is anchored in people, not just processes.
 
 </li>
           </ul>
 
-          <a href="/contacto/" class="btn-arrow">Solicite una reunión sobre su desafío de transformación</a>
+          <a href="/contacto/" class="btn-arrow">Request a meeting about your transformation challenge</a>
 
         </div>
       </div>
@@ -219,21 +219,21 @@ get_header();
   </section>
 
 
-  <!-- SECCIÓN 11: Qué cambia -->
+  <!-- SECTION 11: What changes -->
   <section class="section section-11 bg-light-blue text-white fade-in py-60">
     <div class="container grid-2 align-center area-que-cambia px-0-mob">
       <div class="area-que-cambia__content">
-        <h2 class="heading-lg mb-20">¿Qué cambia cuando se gestiona bien este dominio?</h2>
+        <h2 class="heading-lg mb-20">What changes when this domain is managed well?</h2>
         <p>
-          Una organización que gestiona bien el cambio no solo implementa proyectos, sino que transforma su forma de
-          aprender, adaptarse y evolucionar. Gana agilidad estratégica, alineación cultural y capacidad colectiva para
-          sostener nuevos estados de desempeño. Cambiar no es solo llegar a un lugar distinto, es ser distinto.
+          An organization that manages change well doesn't just deliver projects—it transforms how it
+          learns, adapts, and evolves. It gains strategic agility, cultural alignment, and collective capacity to
+          sustain new levels of performance. Changing is not just arriving somewhere different—it is becoming different.
         </p>
       </div>
       <div class="area-que-cambia__media">
         <img
           src="/wp-content/uploads/que-cambia.jpg"
-          alt="Hombre en pizarra"
+          alt="Man at whiteboard"
           class="area-que-cambia__img w-100 object-cover"
           loading="lazy"
           decoding="async"
@@ -250,40 +250,40 @@ get_header();
 
 
 
-  <!-- SECCIÓN 12: Otras áreas -->
+  <!-- SECTION 12: Other areas -->
   <section class="section section-12 bg-light fade-in">
     <div class="container grid-2 align-center">
       <div>
-        <h2 class="heading-lg mb-20">Explore otras áreas críticas de gestión</h2>
+        <h2 class="heading-lg mb-20">Explore other critical management areas</h2>
         <p>
-          Nuestra propuesta de valor está compuesta por ocho dominios funcionales.
-          Cada uno representa una línea de negocio con desafíos, soluciones y oportunidades específicas.
-          Descubra cómo podemos intervenir en otras funciones clave:
+          Our value proposition comprises eight functional domains.
+          Each represents a business line with specific challenges, solutions, and opportunities.
+          See how we can support other key functions:
         </p>
         <ul class="mt-20 hidden-mobile">
-          <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Estrategia y gobierno</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finanzas y control</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Crecimiento,
-              MK y productividad comercial</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovación y modelo de
-              negocio</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">Personas y cultura</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operaciones y procesos</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Tecnología y datos</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and governance</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+              Marketing and sales productivity</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and business
+              model</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and processes</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
         </ul>
       </div>
-      <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore otras áreas críticas de gestión"
+      <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore other critical management areas"
         class="w-100 h-100">
       <ul class="visible-mobile">
-        <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Estrategia y gobierno</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finanzas y control</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Crecimiento,
-            MK y productividad comercial</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovación y modelo de
-            negocio</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">Personas y cultura</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operaciones y procesos</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Tecnología y datos</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-estrategia-y-gobierno/" class="btn-arrow">Strategy and governance</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and control</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+            Marketing and sales productivity</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and business
+            model</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and culture</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and processes</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
       </ul>
     </div>
   </section>
@@ -305,7 +305,7 @@ get_header();
 
         const visible = hiddenText.style.display === 'inline';
         hiddenText.style.display = visible ? 'none' : 'inline';
-        this.textContent = visible ? 'Leer más…' : 'Leer menos…';
+        this.textContent = visible ? 'Read more…' : 'Read less…';
       });
     });
   });

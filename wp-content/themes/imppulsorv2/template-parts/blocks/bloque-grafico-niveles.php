@@ -27,7 +27,7 @@
                                 <svg class="label-bg-shape" viewBox="0 0 300 64" preserveAspectRatio="none">
                                     <path d="M0,0 L270,0 L300,32 L270,64 L0,64 Z" vector-effect="non-scaling-stroke" />
                                 </svg>
-                                <span class="label-text">Nivel Excelencia</span>
+                                <span class="label-text">Excellence Level</span>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
                                 <svg class="label-bg-shape" viewBox="0 0 300 64" preserveAspectRatio="none">
                                     <path d="M0,0 L270,0 L300,32 L270,64 L0,64 Z" vector-effect="non-scaling-stroke" />
                                 </svg>
-                                <span class="label-text">Nivel Avanzado</span>
+                                <span class="label-text">Advanced Level</span>
                             </div>
                         </div>
                     </div>
@@ -70,7 +70,7 @@
                                 <svg class="label-bg-shape" viewBox="0 0 300 64" preserveAspectRatio="none">
                                     <path d="M0,0 L270,0 L300,32 L270,64 L0,64 Z" vector-effect="non-scaling-stroke" />
                                 </svg>
-                                <span class="label-text">Nivel Intermedio</span>
+                                <span class="label-text">Intermediate Level</span>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                                 <svg class="label-bg-shape" viewBox="0 0 300 64" preserveAspectRatio="none">
                                     <path d="M0,0 L270,0 L300,32 L270,64 L0,64 Z" vector-effect="non-scaling-stroke" />
                                 </svg>
-                                <span class="label-text">Nivel Inicial</span>
+                                <span class="label-text">Foundational Level</span>
                             </div>
                         </div>
                     </div>
@@ -106,13 +106,13 @@
 </div>
 
 <style>
-    /* --- Variables Globales --- */
+    /* --- Global Variables --- */
     :root {
-        /* SOLO LOS DOS COLORES CORPORATIVOS */
+        /* ONLY THE TWO BRAND COLORS */
         --pyr-blue-light: #126CFB;
-        /* Azul Claro */
+        /* Light Blue */
         --pyr-blue-dark: #061c2c;
-        /* Azul Oscuro */
+        /* Dark Blue */
     }
 
     .niveles-wrapper {
@@ -157,7 +157,7 @@
         overflow: visible;
     }
 
-    /* Triángulo Borde Exterior */
+    /* Outer Border Triangle */
     .pyramid-border-svg {
         position: absolute;
         top: 0;
@@ -170,7 +170,7 @@
         animation: fadeInPyramid 1.5s ease-out forwards;
     }
 
-    /* Fondo Oscuro de la Pirámide + Lineas Divisoras */
+    /* Dark Pyramid Background + Divider Lines */
     .pyramid-bg {
         position: absolute;
         top: 24px;
@@ -178,11 +178,11 @@
         width: calc(100% - 60px);
         height: calc(100% - 40px);
 
-        /* 1. Fondo base Azul Oscuro Sólido */
+        /* 1. Solid Dark Blue base background */
         background-color: var(--pyr-blue-dark);
 
-        /* 2. Líneas divisoras blancas dibujadas con gradiente */
-        /* Esto crea líneas de 2px en el 25%, 50% y 75% de la altura */
+        /* 2. White divider lines drawn with gradient */
+        /* This creates 2px lines at 25%, 50% and 75% of the height */
         background-image: linear-gradient(to bottom,
                 transparent 25%,
                 #ffffff 25%,
@@ -199,7 +199,7 @@
                 #ffffff calc(75% + 2px),
                 transparent calc(75% + 2px));
 
-        /* Recorte en forma de triángulo (cortará las líneas perfectamente) */
+        /* Triangle clip (will crop the lines perfectly) */
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
         z-index: 1;
         opacity: 0;
@@ -212,7 +212,7 @@
         }
     }
 
-    /* Contenedor de Niveles */
+    /* Levels Container */
     .levels-stack {
         position: absolute;
         top: 24px;
@@ -224,7 +224,7 @@
         flex-direction: column;
     }
 
-    /* FILA INDIVIDUAL */
+    /* INDIVIDUAL ROW */
     .level-row {
         flex: 1;
         width: 100%;
@@ -261,13 +261,13 @@
         }
     }
 
-    /* ESTADO HOVER DE LA FILA */
+    /* ROW HOVER STATE */
     .level-row:hover {
         z-index: 100;
         transform: scale(1.02);
     }
 
-    /* Columnas Layout */
+    /* Layout Columns */
     .level-icon-col {
         width: 50%;
         display: flex;
@@ -284,7 +284,7 @@
         position: relative;
     }
 
-    /* --- ICONO (CIRCULO) --- */
+    /* --- ICON (CIRCLE) --- */
     .level-icon {
         width: 64px;
         height: 64px;
@@ -297,7 +297,7 @@
         z-index: 20;
         transform: translateX(50%);
         margin-right: 0;
-        /* Borde inicial: Azul Oscuro 1px */
+        /* Initial border: 1px Dark Blue */
         border: 1px solid var(--pyr-blue-dark);
         color: var(--pyr-blue-dark);
         transition: all 0.3s ease;
@@ -308,17 +308,17 @@
         height: 30px;
     }
 
-    /* Hover Effect en Icono */
+    /* Icon Hover Effect */
     .level-row:hover .level-icon {
-        /* Borde hover: Azul Claro 1px */
+        /* Hover border: 1px Light Blue */
         border-color: var(--pyr-blue-light);
-        /* Color del icono: Azul Claro */
+        /* Icon color: Light Blue */
         color: var(--pyr-blue-light);
-        /* Sombra sutil del mismo azul claro para realzar */
+        /* Subtle light-blue shadow for emphasis */
         box-shadow: 0 0 10px rgba(18, 108, 251, 0.3);
     }
 
-    /* --- ETIQUETA (FLECHA) --- */
+    /* --- LABEL (ARROW) --- */
     .level-label {
         position: relative;
         height: 64px;
@@ -331,7 +331,7 @@
         z-index: 10;
     }
 
-    /* El fondo SVG de la etiqueta */
+    /* Label SVG background */
     .label-bg-shape {
         position: absolute;
         top: 0;
@@ -344,7 +344,7 @@
 
     .label-bg-shape path {
         fill: var(--pyr-blue-light);
-        /* Color normal: Azul Claro */
+        /* Normal color: Light Blue */
         stroke: transparent;
         stroke-width: 0;
         transition: all 0.3s ease;
@@ -359,14 +359,14 @@
         pointer-events: none;
     }
 
-    /* Hover Effect en Etiqueta */
+    /* Label Hover Effect */
     .level-row:hover .label-bg-shape path {
         fill: var(--pyr-blue-dark);
-        /* Fondo cambia a Azul Oscuro */
+        /* Background switches to Dark Blue */
         stroke: var(--pyr-blue-light);
-        /* Borde se vuelve Azul Claro */
+        /* Border becomes Light Blue */
         stroke-width: 1px;
-        /* Grosor EXACTO de 1px */
+        /* EXACT 1px weight */
     }
 
 

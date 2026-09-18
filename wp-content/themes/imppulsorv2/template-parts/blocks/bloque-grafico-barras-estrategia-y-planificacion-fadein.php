@@ -13,20 +13,20 @@
                     <span class="legend-box box-idmc"></span>
                     <span class="legend-text">IDMC</span>
                 </div>
-                <!-- 2. Dirección Estratégica -->
+                <!-- 2. Strategic Direction -->
                 <div class="legend-item">
                     <span class="legend-box box-dir"></span>
-                    <span class="legend-text">D. Estratégica</span>
+                    <span class="legend-text">Strategic Dir.</span>
                 </div>
-                <!-- 3. Planificación Comercial -->
+                <!-- 3. Sales Planning -->
                 <div class="legend-item">
                     <span class="legend-box box-plan"></span>
-                    <span class="legend-text">P. Comercial</span>
+                    <span class="legend-text">Sales Planning</span>
                 </div>
-                <!-- 4. Enfoque a Resultados -->
+                <!-- 4. Results Focus -->
                 <div class="legend-item">
                     <span class="legend-box box-enfoque"></span>
-                    <span class="legend-text">E. Resultados</span>
+                    <span class="legend-text">Results Focus</span>
                 </div>
             </div>
         </div>
@@ -252,7 +252,7 @@
                             hoverBackgroundColor: '#22445D' // High Contrast Dark Blue
                         },
                         {
-                            label: 'D. Estratégica', // 3.6
+                            label: 'Strategic Dir.', // 3.6
                             data: [3.6],
                             backgroundColor: '#9CDEFA',
                             barPercentage: 0.75,
@@ -264,7 +264,7 @@
                             hoverBackgroundColor: '#CDF0FF' // High Contrast Pale Blue
                         },
                         {
-                            label: 'P. Comercial', // 3.4
+                            label: 'Sales Planning', // 3.4
                             data: [3.4],
                             backgroundColor: '#54C4F5',
                             barPercentage: 0.75,
@@ -276,7 +276,7 @@
                             hoverBackgroundColor: '#A6E1FB' // High Contrast Sky Blue
                         },
                         {
-                            label: 'E. Resultados', // 2.3
+                            label: 'Results Focus', // 2.3
                             data: [2.3],
                             backgroundColor: '#1CABF1',
                             barPercentage: 0.75,

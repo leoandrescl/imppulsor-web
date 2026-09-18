@@ -16,21 +16,21 @@ get_header();
     <div class="container section--light pt-60 px-0 grid-2 grid-2--2fr-1fr ">
 
         <!-- ============================================================
-     GRID PRINCIPAL
+      MAIN GRID
 ============================================================ -->
         <div>
-            <h2 class="heading-lg mb-40">Casos de éxito recientes</h2>
+            <h2 class="heading-lg mb-40">Recent success stories</h2>
 
             <?php
             /* --------------------------
-               PARÁMETROS GET
+                GET PARAMETERS
             --------------------------- */
             $current_tag = isset($_GET['tag']) ? sanitize_text_field($_GET['tag']) : '';
             $pais_actual = isset($_GET['pais']) ? sanitize_text_field($_GET['pais']) : '';
             $paged = isset($_GET['paged']) ? max(1, intval($_GET['paged'])) : 1;
 
             /* ============================================================
-               1) OBTENER TODOS LOS CASOS (respetando TAG)
+                1) FETCH ALL CASES (respecting TAG)
             ============================================================ */
             $all_args = [
                 'post_type' => 'casos_exito',
@@ -49,7 +49,7 @@ get_header();
             $all_cases = get_posts($all_args);
 
             /* ============================================================
-               2) FILTRAR POR PAÍS
+                2) FILTER BY COUNTRY
             ============================================================ */
             if ($pais_actual) {
                 $all_cases = array_filter($all_cases, function ($post) use ($pais_actual) {
@@ -64,14 +64,14 @@ get_header();
                 });
             }
 
-            /* Si no quedan casos */
+            /* If no cases remain */
             if (empty($all_cases)) {
                 $ordenados = [];
                 $total_pages = 1;
             } else {
 
                 /* ============================================================
-                   3) AGRUPAR POR EMPRESA (caso > autor)
+                    3) GROUP BY COMPANY (case > author)
                 ============================================================ */
                 $empresa_map = [];
 
@@ -97,14 +97,14 @@ get_header();
                 }
 
                 /* ============================================================
-                   4) ORDENAR EMPRESAS: menos repetidas → más repetidas
+                    4) SORT COMPANIES: least frequent → most frequent
                 ============================================================ */
                 uasort($empresa_map, function ($a, $b) {
                     return count($a) <=> count($b);
                 });
 
                 /* ============================================================
-                   5) INTERCALAR PARA MÁXIMA VARIEDAD
+                    5) INTERLEAVE FOR MAXIMUM VARIETY
                 ============================================================ */
                 $ordenados = [];
                 $max_items = max(array_map('count', $empresa_map));
@@ -118,7 +118,7 @@ get_header();
                 }
 
                 /* ============================================================
-                   6) PAGINACIÓN MANUAL
+                    6) MANUAL PAGINATION
                 ============================================================ */
                 $posts_per_page = 6;
                 $total_posts = count($ordenados);
@@ -138,14 +138,14 @@ get_header();
 
                         <?php
                         /* --------------------------
-                           CAMPOS DEL CASO
+                            CASE FIELDS
                         --------------------------- */
                         $empresa_case = get_field('empresa_especifico_caso', $post->ID);
                         $anio_case = get_field('anio_especifico_caso', $post->ID);
                         $rol_case = get_field('rol_autor_especifico_caso', $post->ID);
 
                         /* --------------------------
-                           AUTOR
+                            AUTHOR
                         --------------------------- */
                         $autor_field = get_field('autor_relacionado', $post->ID);
                         $autor_obj = null;
@@ -165,7 +165,7 @@ get_header();
                         }
 
                         /* --------------------------
-                           VALORES FINALES
+                            FINAL VALUES
                         --------------------------- */
                         $empresa_final = $empresa_case ?: $empresa_autor;
                         $anio_final = $anio_case ?: $anio_autor ?: get_the_date('Y');
@@ -205,7 +205,7 @@ get_header();
                                             <p class="mb-20 caso-author"><?php echo esc_html($nombre_autor); ?></p>
                                         <?php endif; ?>
 
-                                        <span class="btn-outline--black">Leer más</span>
+                                        <span class="btn-outline--black">Read more</span>
                                     </div>
 
                                 </div>
@@ -216,12 +216,12 @@ get_header();
                     wp_reset_postdata(); ?>
 
                 <?php else: ?>
-                    <p>No hay casos de éxito disponibles por ahora.</p>
+                    <p>No success stories available at this time.</p>
                 <?php endif; ?>
             </div>
 
             <!-- ============================================================
-     PAGINACIÓN
+      PAGINATION
 ============================================================ -->
             <div class="casos-pagination mt-60">
                 <?php
@@ -243,8 +243,8 @@ get_header();
                         'current' => $paged,
                         'total' => $total_pages,
                         'type' => 'array',
-                        'prev_text' => 'anterior',
-                        'next_text' => 'siguiente',
+                        'prev_text' => 'previous',
+                        'next_text' => 'next',
                     ]);
 
                     if (!empty($pagination_links)) {
@@ -253,7 +253,7 @@ get_header();
                             $link = str_replace('page-numbers', 'casos-pagination__bullet', $link);
                             $link = str_replace('current', 'casos-pagination__bullet--active', $link);
 
-                            if (strpos($link, 'anterior') !== false || strpos($link, 'siguiente') !== false)
+                            if (strpos($link, 'previous') !== false || strpos($link, 'next') !== false)
                                 $link = str_replace('casos-pagination__bullet', 'casos-pagination__bullet casos-pagination__bullet--nav', $link);
 
                             echo $link;
@@ -271,15 +271,15 @@ get_header();
         <aside class="sidebar reveal reveal-left">
 
             <div class="sidebar-block bg-light-gray mb-20 py-20 px-30">
-                <h3 class="heading-sm mb-15">Buscador</h3>
+                <h3 class="heading-sm mb-15">Search</h3>
                 <form method="get" action="<?php echo esc_url(home_url('/')); ?>">
                     <input type="hidden" name="post_type" value="casos_exito">
-                    <input type="search" name="s" placeholder="Ingrese palabra clave…" class="w-100">
+                    <input type="search" name="s" placeholder="Enter a keyword…" class="w-100">
                 </form>
             </div>
 
             <div class="sidebar-block bg-light-gray mb-20 py-20 px-30">
-                <h3 class="heading-sm mb-15">Áreas de gestión</h3>
+                <h3 class="heading-sm mb-15">Management areas</h3>
                 <ul class="list-unstyled">
 
                     <?php
@@ -313,7 +313,7 @@ get_header();
             </div>
 
             <div class="sidebar-block bg-light-gray py-30 px-30">
-                <h3 class="heading-sm mb-15">Territorios recientes</h3>
+                <h3 class="heading-sm mb-15">Recent territories</h3>
                 <ul class="list-unstyled">
 
                     <?php
@@ -371,7 +371,7 @@ get_footer();
 
 <style>
     /* ===========================================================
-   PAGINACIÓN CASOS DE ÉXITO — IGUAL A INSIGHTS
+    SUCCESS STORIES PAGINATION — SAME AS INSIGHTS
 =========================================================== */
 
     .casos-pagination {

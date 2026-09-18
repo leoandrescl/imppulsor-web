@@ -1,7 +1,7 @@
 <?php
 /**
- * Bloque: Testimonios — diseño "La voz de nuestros clientes" (Clientes y socios).
- * Misma lógica de orden que bloque-testimonios.php; estilos y maqueta propios.
+ * Block: Testimonials — "Our clients' voice" design (Clients and partners).
+ * Same ordering logic as bloque-testimonios.php; own styles and layout.
  */
 
 if (!defined('ABSPATH')) {
@@ -65,15 +65,15 @@ $btvc_imagen_compartida = content_url('uploads/imagen-voz-para-todos.jpg');
 
     <div class="btvc-header">
       <div class="btvc-header__text">
-        <div class="badge bg-light-blue px-40 text-bold mb-20">Testimonios</div>
-        <h2 class="heading-lg btvc-title text-dark mb-10">La voz de nuestros <br> clientes</h2>
+        <div class="badge bg-light-blue px-40 text-bold mb-20">Testimonials</div>
+        <h2 class="heading-lg btvc-title text-dark mb-10">The voice of our <br> clients</h2>
         <p class="btvc-subtitle text-dark mb-0">
-          Organizaciones que han transformado sus operaciones junto a nosotros.
+          Organizations that have transformed their operations with us.
         </p>
       </div>
       <div class="btvc-header__nav" aria-hidden="<?php echo $total_slides <= 1 ? 'true' : 'false'; ?>">
-        <div class="swiper-button-prev btvc-nav-btn btvc-nav-btn--prev" role="button" tabindex="0" aria-label="<?php esc_attr_e('Anterior', 'imppulsorv2'); ?>"></div>
-        <div class="swiper-button-next btvc-nav-btn btvc-nav-btn--next" role="button" tabindex="0" aria-label="<?php esc_attr_e('Siguiente', 'imppulsorv2'); ?>"></div>
+        <div class="swiper-button-prev btvc-nav-btn btvc-nav-btn--prev" role="button" tabindex="0" aria-label="<?php esc_attr_e('Previous', 'imppulsorv2'); ?>"></div>
+        <div class="swiper-button-next btvc-nav-btn btvc-nav-btn--next" role="button" tabindex="0" aria-label="<?php esc_attr_e('Next', 'imppulsorv2'); ?>"></div>
       </div>
     </div>
 
@@ -84,7 +84,7 @@ $btvc_imagen_compartida = content_url('uploads/imagen-voz-para-todos.jpg');
             <img
               src="<?php echo esc_url($btvc_imagen_compartida); ?>"
               class="btvc-slide__img"
-              alt="<?php esc_attr_e('La voz de nuestros clientes', 'imppulsorv2'); ?>"
+              alt="<?php esc_attr_e('The voice of our clients', 'imppulsorv2'); ?>"
               width="660"
               height="660"
               decoding="async"
@@ -146,7 +146,7 @@ $btvc_imagen_compartida = content_url('uploads/imagen-voz-para-todos.jpg');
                     <span class="btvc-slide__loc"><?php echo esc_html($ubicacion_autor); ?></span>
                   <?php endif; ?>
                   <?php if ($linkedin_autor) : ?>
-                    <a class="btvc-slide__linkedin" href="<?php echo esc_url($linkedin_autor); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr(sprintf(__('LinkedIn de %s', 'imppulsorv2'), $nombre_autor)); ?>">in</a>
+                    <a class="btvc-slide__linkedin" href="<?php echo esc_url($linkedin_autor); ?>" target="_blank" rel="noopener noreferrer" aria-label="<?php echo esc_attr(sprintf(__('%s on LinkedIn', 'imppulsorv2'), $nombre_autor)); ?>">in</a>
                   <?php endif; ?>
                 </template>
               <?php endif; ?>
@@ -167,10 +167,10 @@ $btvc_imagen_compartida = content_url('uploads/imagen-voz-para-todos.jpg');
 
       <?php if ($total_slides > 1) : ?>
         <div class="btvc-pagination-outer">
-          <nav class="insights-pagination btvc-insights-pagination" aria-label="<?php esc_attr_e('Paginación testimonios', 'imppulsorv2'); ?>">
-            <span class="insights-pagination__bullet insights-pagination__bullet--nav btvc-pag-prev" style="display: none;">anterior</span>
+          <nav class="insights-pagination btvc-insights-pagination" aria-label="<?php esc_attr_e('Testimonials pagination', 'imppulsorv2'); ?>">
+            <span class="insights-pagination__bullet insights-pagination__bullet--nav btvc-pag-prev" style="display: none;">previous</span>
             <span class="btvc-pag-mid"></span>
-            <span class="insights-pagination__bullet insights-pagination__bullet--nav btvc-pag-next">siguiente</span>
+            <span class="insights-pagination__bullet insights-pagination__bullet--nav btvc-pag-next">next</span>
           </nav>
         </div>
       <?php endif; ?>

@@ -1,133 +1,133 @@
 <div class="dmc-new-table-wrapper">
 
-  <!-- CONTENEDOR ESCRITORIO (Visible > 992px) -->
+  <!-- DESKTOP CONTAINER (Visible > 992px) -->
   <div class="dmc-new-table dmc-desktop-only">
     <!-- Top Header -->
     <div class="dmc-table-main-title">
-      Dimensiones y Subdimensiones de Análisis de Madurez Comercial
+      Dimensions and Subdimensions for Commercial Maturity Analysis
     </div>
 
     <!-- Category 1 -->
-    <div class="dmc-table-category-title">Dirección y Gobierno</div>
+    <div class="dmc-table-category-title">Direction & Governance</div>
     <div class="dmc-table-grid">
       <div class="dmc-col">
-        <div class="dmc-col-header">Estrategia y Planificación</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Dirección Estratégica</a>
+        <div class="dmc-col-header">Strategy & Planning</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Strategic Direction</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Planificación Comercial</a>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Sales Planning</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Enfoque a Resultados</a>
-        </div>
-      </div>
-      <div class="dmc-col">
-        <div class="dmc-col-header">Gobernanza Empresarial</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Roles y Estructura</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Mecanismos de Gestión</a>
-        </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Accountability y Control</a>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Results Orientation</a>
         </div>
       </div>
       <div class="dmc-col">
-        <div class="dmc-col-header">Liderazgo</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Cultura, Clientes y
-            Resultados</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Liderazgo y Coaching</a>
+        <div class="dmc-col-header">Corporate Governance</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Roles & Structure</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Management Mechanisms</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Propósito y Pertenencia</a>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Accountability & Control</a>
         </div>
       </div>
       <div class="dmc-col">
-        <div class="dmc-col-header">Organización</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Diseño Estructural</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Coordinación y
-            Colaboración</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Escalabilidad</a></div>
+        <div class="dmc-col-header">Leadership</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Culture, Customers &
+            Results</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Leadership & Coaching</a>
+        </div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Purpose & Belonging</a>
+        </div>
+      </div>
+      <div class="dmc-col">
+        <div class="dmc-col-header">Organization</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Structural Design</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Coordination &
+            Collaboration</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Scalability</a></div>
       </div>
     </div>
 
     <!-- Category 2 -->
-    <div class="dmc-table-category-title">Ejecución Comercial</div>
+    <div class="dmc-table-category-title">Commercial Execution</div>
     <div class="dmc-table-grid">
       <div class="dmc-col">
-        <div class="dmc-col-header">MK y Generación de Demanda</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Posicionamiento y Mensaje</a>
+        <div class="dmc-col-header">Marketing & Demand Generation</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Positioning & Messaging</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Canales y Tácticas</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Gestión de Leads</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Channels & Tactics</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Lead Management</a></div>
       </div>
       <div class="dmc-col">
-        <div class="dmc-col-header">Metodología Comercial</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Proceso de Ventas</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Técnicas y Enfoque</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Estandarización</a></div>
+        <div class="dmc-col-header">Sales Methodology</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Sales Process</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Techniques & Approach</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Standardization</a></div>
       </div>
       <div class="dmc-col">
-        <div class="dmc-col-header">Experiencia de Cliente</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Comprensión del Cliente</a>
+        <div class="dmc-col-header">Customer Experience</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Customer Understanding</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Procesos de Atención</a>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Service Processes</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Voz del Cliente</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Voice of the Customer</a></div>
       </div>
       <div class="dmc-col">
-        <div class="dmc-col-header">Eficiencia Operativa</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Flujos y Procesos</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Productividad Comercial</a>
+        <div class="dmc-col-header">Operational Efficiency</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Workflows & Processes</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Sales Productivity</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Soporte Interno</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Internal Support</a></div>
       </div>
     </div>
 
     <!-- Category 3 -->
-    <div class="dmc-table-category-title">Capacidades Habilitantes</div>
+    <div class="dmc-table-category-title">Enabling Capabilities</div>
     <div class="dmc-table-grid">
       <div class="dmc-col">
-        <div class="dmc-col-header">Digitalización, Automatización e IA</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Tecnología Comercial</a>
+        <div class="dmc-col-header">Digitalization, Automation & AI</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Sales Technology</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Automatización</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Uso de IA Agéntica</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Automation</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Agentic AI Adoption</a></div>
       </div>
       <div class="dmc-col">
-        <div class="dmc-col-header">Monitoreo y Análisis de Datos</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Métricas Comerciales</a>
+        <div class="dmc-col-header">Monitoring & Data Analytics</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Sales Metrics</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Análisis e Insights</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Toma de decisiones</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Analysis & Insights</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Decision-Making</a></div>
       </div>
       <div class="dmc-col">
-        <div class="dmc-col-header">Innovación y Adaptabilidad</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Adaptabilidad del Área</a>
+        <div class="dmc-col-header">Innovation & Adaptability</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Team Adaptability</a>
         </div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Experimentación</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Aprendizaje Contínuo</a>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Experimentation</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Continuous Learning</a>
         </div>
       </div>
       <div class="dmc-col">
-        <div class="dmc-col-header">Gestión de Talento</div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Atracción y
-            Reclutamiento</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Desarrollo y
-            Capacitación</a></div>
-        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Evaluación y Retención</a>
+        <div class="dmc-col-header">Talent Management</div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Attraction &
+            Recruitment</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Development &
+            Training</a></div>
+        <div class="dmc-col-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Evaluation & Retention</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- CONTENEDOR MÓVIL (Acordeón, visible <= 992px) -->
+  <!-- MOBILE CONTAINER (Accordion, visible <= 992px) -->
   <div class="dmc-mobile-only">
-    <div class="dmc-mobile-main-header">Dimensiones de Análisis</div>
+    <div class="dmc-mobile-main-header">Analysis Dimensions</div>
 
-    <!-- CATEGORÍA 1 -->
+    <!-- CATEGORY 1 -->
     <div class="dmc-mob-cat-section">
-      <div class="dmc-mob-cat-title">Dirección y Gobierno</div>
+      <div class="dmc-mob-cat-title">Direction & Governance</div>
 
-      <!-- Acordeón Sub 1 -->
+      <!-- Accordion Sub 1 -->
       <div class="dmc-mob-acc-item">
         <button class="dmc-mob-acc-trigger">
           <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Estrategia y Planificación</span>
+          <span class="dmc-mob-acc-label">Strategy & Planning</span>
           <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -135,20 +135,20 @@
         </button>
         <div class="dmc-mob-acc-content">
           <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Dirección Estratégica</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Strategic Direction</a>
             </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Planificación
-                Comercial</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Enfoque a Resultados</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Sales
+                Planning</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-1">Results Orientation</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- Acordeón Sub 2 -->
+      <!-- Accordion Sub 2 -->
       <div class="dmc-mob-acc-item">
         <button class="dmc-mob-acc-trigger">
           <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Gobernanza Empresarial</span>
+          <span class="dmc-mob-acc-label">Corporate Governance</span>
           <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -156,20 +156,20 @@
         </button>
         <div class="dmc-mob-acc-content">
           <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Roles y Estructura</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Roles & Structure</a>
             </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Mecanismos de Gestión</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Management Mechanisms</a>
             </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Accountability y
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-2">Accountability &
                 Control</a></div>
           </div>
         </div>
       </div>
-      <!-- Acordeón Sub 3 -->
+      <!-- Accordion Sub 3 -->
       <div class="dmc-mob-acc-item">
         <button class="dmc-mob-acc-trigger">
           <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Liderazgo</span>
+          <span class="dmc-mob-acc-label">Leadership</span>
           <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -177,20 +177,20 @@
         </button>
         <div class="dmc-mob-acc-content">
           <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Cultura, Clientes y
-                Resultados</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Liderazgo y Coaching</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Culture, Customers &
+                Results</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Leadership & Coaching</a>
             </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Propósito y
-                Pertenencia</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-11">Purpose &
+                Belonging</a></div>
           </div>
         </div>
       </div>
-      <!-- Acordeón Sub 4 -->
+      <!-- Accordion Sub 4 -->
       <div class="dmc-mob-acc-item">
         <button class="dmc-mob-acc-trigger">
           <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Organización</span>
+          <span class="dmc-mob-acc-label">Organization</span>
           <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -198,112 +198,25 @@
         </button>
         <div class="dmc-mob-acc-content">
           <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Diseño Estructural</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Structural Design</a>
             </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Coordinación y
-                Colaboración</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Escalabilidad</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- CATEGORÍA 2 -->
-    <div class="dmc-mob-cat-section">
-      <div class="dmc-mob-cat-title">Ejecución Comercial</div>
-
-      <!-- Acordeón Sub 1 -->
-      <div class="dmc-mob-acc-item">
-        <button class="dmc-mob-acc-trigger">
-          <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">MK y Generación de Demanda</span>
-          <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            </svg></span>
-        </button>
-        <div class="dmc-mob-acc-content">
-          <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Posicionamiento y
-                Mensaje</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Canales y Tácticas</a>
-            </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Gestión de Leads</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Acordeón Sub 2 -->
-      <div class="dmc-mob-acc-item">
-        <button class="dmc-mob-acc-trigger">
-          <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Metodología Comercial</span>
-          <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            </svg></span>
-        </button>
-        <div class="dmc-mob-acc-content">
-          <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Proceso de Ventas</a>
-            </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Técnicas y Enfoque</a>
-            </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Estandarización</a></div>
-          </div>
-        </div>
-      </div>
-      <!-- Acordeón Sub 3 -->
-      <div class="dmc-mob-acc-item">
-        <button class="dmc-mob-acc-trigger">
-          <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Experiencia de Cliente</span>
-          <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            </svg></span>
-        </button>
-        <div class="dmc-mob-acc-content">
-          <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Comprensión del
-                Cliente</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Procesos de Atención</a>
-            </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Voz del Cliente</a></div>
-          </div>
-        </div>
-      </div>
-      <!-- Acordeón Sub 4 -->
-      <div class="dmc-mob-acc-item">
-        <button class="dmc-mob-acc-trigger">
-          <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Eficiencia Operativa</span>
-          <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-            </svg></span>
-        </button>
-        <div class="dmc-mob-acc-content">
-          <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Flujos y Procesos</a>
-            </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Productividad
-                Comercial</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Soporte Interno</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Coordination &
+                Collaboration</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-10">Scalability</a></div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- CATEGORÍA 3 -->
+    <!-- CATEGORY 2 -->
     <div class="dmc-mob-cat-section">
-      <div class="dmc-mob-cat-title">Capacidades Habilitantes</div>
+      <div class="dmc-mob-cat-title">Commercial Execution</div>
 
-      <!-- Acordeón Sub 1 -->
+      <!-- Accordion Sub 1 -->
       <div class="dmc-mob-acc-item">
         <button class="dmc-mob-acc-trigger">
           <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Digitalización, Automatización e IA</span>
+          <span class="dmc-mob-acc-label">Marketing & Demand Generation</span>
           <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -311,19 +224,20 @@
         </button>
         <div class="dmc-mob-acc-content">
           <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Tecnología Comercial</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Positioning &
+                Messaging</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Channels & Tactics</a>
             </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Automatización</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Uso de IA Agéntica</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-5">Lead Management</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- Acordeón Sub 2 -->
+      <!-- Accordion Sub 2 -->
       <div class="dmc-mob-acc-item">
         <button class="dmc-mob-acc-trigger">
           <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Monitoreo y Análisis de Datos</span>
+          <span class="dmc-mob-acc-label">Sales Methodology</span>
           <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -331,20 +245,84 @@
         </button>
         <div class="dmc-mob-acc-content">
           <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Métricas Comerciales</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Sales Process</a>
             </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Análisis e Insights</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Techniques & Approach</a>
             </div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Toma de decisiones</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-6">Standardization</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Sub 3 -->
+      <div class="dmc-mob-acc-item">
+        <button class="dmc-mob-acc-trigger">
+          <span class="dmc-mob-acc-spacer"></span>
+          <span class="dmc-mob-acc-label">Customer Experience</span>
+          <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg></span>
+        </button>
+        <div class="dmc-mob-acc-content">
+          <div class="dmc-mob-acc-inner">
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Customer Understanding</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Service Processes</a>
+            </div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-4">Voice of the Customer</a></div>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Sub 4 -->
+      <div class="dmc-mob-acc-item">
+        <button class="dmc-mob-acc-trigger">
+          <span class="dmc-mob-acc-spacer"></span>
+          <span class="dmc-mob-acc-label">Operational Efficiency</span>
+          <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg></span>
+        </button>
+        <div class="dmc-mob-acc-content">
+          <div class="dmc-mob-acc-inner">
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Workflows & Processes</a>
+            </div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Sales
+                Productivity</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-9">Internal Support</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CATEGORY 3 -->
+    <div class="dmc-mob-cat-section">
+      <div class="dmc-mob-cat-title">Enabling Capabilities</div>
+
+      <!-- Accordion Sub 1 -->
+      <div class="dmc-mob-acc-item">
+        <button class="dmc-mob-acc-trigger">
+          <span class="dmc-mob-acc-spacer"></span>
+          <span class="dmc-mob-acc-label">Digitalization, Automation & AI</span>
+          <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg></span>
+        </button>
+        <div class="dmc-mob-acc-content">
+          <div class="dmc-mob-acc-inner">
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Sales Technology</a>
+            </div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Automation</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-7">Agentic AI Adoption</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- Acordeón Sub 3 -->
+      <!-- Accordion Sub 2 -->
       <div class="dmc-mob-acc-item">
         <button class="dmc-mob-acc-trigger">
           <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Innovación y Adaptabilidad</span>
+          <span class="dmc-mob-acc-label">Monitoring & Data Analytics</span>
           <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -352,19 +330,20 @@
         </button>
         <div class="dmc-mob-acc-content">
           <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Adaptabilidad del
-                Área</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Experimentación</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Aprendizaje Contínuo</a>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Sales Metrics</a>
+            </div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Analysis & Insights</a>
+            </div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-8">Decision-Making</a>
             </div>
           </div>
         </div>
       </div>
-      <!-- Acordeón Sub 4 -->
+      <!-- Accordion Sub 3 -->
       <div class="dmc-mob-acc-item">
         <button class="dmc-mob-acc-trigger">
           <span class="dmc-mob-acc-spacer"></span>
-          <span class="dmc-mob-acc-label">Gestión de Talento</span>
+          <span class="dmc-mob-acc-label">Innovation & Adaptability</span>
           <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
@@ -372,12 +351,31 @@
         </button>
         <div class="dmc-mob-acc-content">
           <div class="dmc-mob-acc-inner">
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Atracción y
-                Reclutamiento</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Desarrollo y
-                Capacitación</a></div>
-            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Evaluación y
-                Retención</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Team Adaptability</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Experimentation</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-3">Continuous Learning</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Sub 4 -->
+      <div class="dmc-mob-acc-item">
+        <button class="dmc-mob-acc-trigger">
+          <span class="dmc-mob-acc-spacer"></span>
+          <span class="dmc-mob-acc-label">Talent Management</span>
+          <span class="dmc-arrow-circle"><svg width="12" height="8" viewBox="0 0 12 8" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg></span>
+        </button>
+        <div class="dmc-mob-acc-content">
+          <div class="dmc-mob-acc-inner">
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Attraction &
+                Recruitment</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Development &
+                Training</a></div>
+            <div class="dmc-mob-item"><a href="/diagnostico-de-madurez-comercial/#dimension-12">Evaluation &
+                Retention</a></div>
           </div>
         </div>
       </div>
@@ -673,14 +671,14 @@
         const parent = this.parentElement;
         const isActive = parent.classList.contains('active');
 
-        // Cerrar otros (Single-Open behavior)
+        // Close others (Single-Open behavior)
         document.querySelectorAll('.dmc-mob-acc-item').forEach(item => {
           if (item !== parent) {
             item.classList.remove('active');
           }
         });
 
-        // Toggle actual
+        // Current toggle
         if (isActive) {
           parent.classList.remove('active');
         } else {

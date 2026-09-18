@@ -11,69 +11,69 @@
                 <path d="m21 21-4.34-4.34"></path>
                 <circle cx="11" cy="11" r="8"></circle>
             </svg>
-            <h3>Dimensiones de Análisis</h3>
+            <h3>Analysis Dimensions</h3>
         </div>
 
         <!-- Grid -->
         <div class="dmc-grid-matrix">
-            <!-- 1. Estrategia y Planificación -->
+            <!-- 1. Strategy & Planning -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Estrategia y<br>Planificación</span>
+                <span class="dmc-card-text">Strategy &<br>Planning</span>
             </div>
 
-            <!-- 2. Gobernanza Empresarial -->
+            <!-- 2. Corporate Governance -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Gobernanza<br>Empresarial</span>
+                <span class="dmc-card-text">Corporate<br>Governance</span>
             </div>
 
-            <!-- 3. Innovación y Adaptabilidad -->
+            <!-- 3. Innovation & Adaptability -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Innovación y<br>Adaptabilidad</span>
+                <span class="dmc-card-text">Innovation &<br>Adaptability</span>
             </div>
 
-            <!-- 4. Experiencia de Cliente -->
+            <!-- 4. Customer Experience -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Experiencia de Cliente</span>
+                <span class="dmc-card-text">Customer Experience</span>
             </div>
 
-            <!-- 5. Marketing y Generación de Demanda -->
+            <!-- 5. Marketing & Demand Generation -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Marketing y Gen.<br>de Demanda</span>
+                <span class="dmc-card-text">Marketing &<br>Demand Generation</span>
             </div>
 
-            <!-- 6. Metodología Comercial -->
+            <!-- 6. Sales Methodology -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Metodología Comercial</span>
+                <span class="dmc-card-text">Sales Methodology</span>
             </div>
 
-            <!-- 7. Digitalización e IA -->
+            <!-- 7. Digitalization & AI -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Digitalización e IA</span>
+                <span class="dmc-card-text">Digitalization & AI</span>
             </div>
 
-            <!-- 8. Monitoreo y Análisis -->
+            <!-- 8. Monitoring & Analytics -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Monitoreo y Análisis</span>
+                <span class="dmc-card-text">Monitoring & Analytics</span>
             </div>
 
-            <!-- 9. Eficiencia Operativa -->
+            <!-- 9. Operational Efficiency -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Eficiencia Operativa</span>
+                <span class="dmc-card-text">Operational Efficiency</span>
             </div>
 
-            <!-- 10. Estructura Organizacional -->
+            <!-- 10. Organizational Structure -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Estructura<br>Organizacional</span>
+                <span class="dmc-card-text">Organizational<br>Structure</span>
             </div>
 
-            <!-- 11. Liderazgo Ejecutivo -->
+            <!-- 11. Executive Leadership -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Liderazgo Ejecutivo</span>
+                <span class="dmc-card-text">Executive Leadership</span>
             </div>
 
-            <!-- 12. Gestión del Talento -->
+            <!-- 12. Talent Management -->
             <div class="dmc-grid-card">
-                <span class="dmc-card-text">Gestión del Talento</span>
+                <span class="dmc-card-text">Talent Management</span>
             </div>
         </div>
 

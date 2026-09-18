@@ -9,18 +9,18 @@
 
             <div id="radar-tooltip" class="radar-tooltip-custom">
                 <div class="tooltip-val"></div>
-                <div class="tooltip-label">PUNTAJE</div>
+                <div class="tooltip-label">SCORE</div>
             </div>
         </div>
 
         <div class="radar-legend">
             <div class="radar-legend-item">
                 <span class="radar-legend-box box-empresa"></span>
-                <span class="radar-legend-text">Silueta Empresa</span>
+                <span class="radar-legend-text">Company Profile</span>
             </div>
             <div class="radar-legend-item">
                 <span class="radar-legend-box box-benchmark"></span>
-                <span class="radar-legend-text">Silueta Benchmark</span>
+                <span class="radar-legend-text">Benchmark Profile</span>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
         z-index: 1;
     }
 
-    /* --- POPUP ESTABILIZADO (Custom Scoped) --- */
+    /* --- STABILIZED POPUP (Custom Scoped) --- */
     .radar-tooltip-custom {
         position: absolute;
         padding: 10px 18px;
@@ -345,26 +345,26 @@
             const isMobile = window.innerWidth <= 768;
             const chartPadding = isMobile ? 35 : 45; // Increased slightly to show labels
 
-            // data for modal
+            // Company profile and benchmark data for modal
             const dimensions = [
-                { full: "Estrategia y Planificación", acro: "EP" },
-                { full: "Gobernanza Empresarial", acro: "GE" },
-                { full: "Innovación y Adaptabilidad", acro: "IA" },
-                { full: "Experiencia de Cliente", acro: "EC" },
-                { full: "MK y Gen. de Demanda", acro: "MGD" },
-                { full: "Metodología Comercial", acro: "MC" },
-                { full: "Digitalización e Inteligencia Artificial", acro: "DIA" },
-                { full: "Monitoreo y Análisis", acro: "MA" },
-                { full: "Eficiencia Operativa", acro: "EO" },
-                { full: "Estructura Organizacional​", acro: "ORG" },
-                { full: "Liderazgo Ejecutivo", acro: "LID" },
-                { full: "Gestión del Talento", acro: "GT" }
+                { full: "Strategy & Planning", acro: "EP" },
+                { full: "Corporate Governance", acro: "GE" },
+                { full: "Innovation & Adaptability", acro: "IA" },
+                { full: "Customer Experience", acro: "EC" },
+                { full: "Marketing & Demand Generation", acro: "MGD" },
+                { full: "Sales Methodology", acro: "MC" },
+                { full: "Digitalization & Artificial Intelligence", acro: "DIA" },
+                { full: "Monitoring & Analytics", acro: "MA" },
+                { full: "Operational Efficiency", acro: "EO" },
+                { full: "Organizational Structure", acro: "ORG" },
+                { full: "Executive Leadership", acro: "LID" },
+                { full: "Talent Management", acro: "GT" }
             ];
 
             const tooltipVal = tooltip.querySelector('.tooltip-val');
             const ctx = canvas.getContext('2d');
 
-            // Empresa (Light Blue): slightly lower
+            // Company (Light Blue): slightly lower
             const valuesEmpresa = [3.0, 2.9, 3.2, 3.2, 3.1, 3.2, 3.2, 3.5, 3.3, 3.3, 3.4, 3.2];
             // Benchmark (Dark Blue): slightly higher
             const valuesBenchmark = [4.0, 4.2, 3.8, 3.5, 3.6, 3.9, 3.8, 4.2, 4.0, 4.1, 4.3, 4.0];
@@ -378,7 +378,7 @@
                     labels: labels,
                     datasets: [
                         {
-                            label: 'Silueta Benchmark',
+                            label: 'Benchmark Profile',
                             data: valuesBenchmark,
                             backgroundColor: 'rgba(18, 33, 124, 0.15)', // Dark Blue transparent
                             borderColor: '#12217C',
@@ -393,7 +393,7 @@
                             pointHoverBackgroundColor: '#12217C',
                         },
                         {
-                            label: 'Silueta Empresa',
+                            label: 'Company Profile',
                             data: valuesEmpresa,
                             backgroundColor: 'rgba(18, 108, 251, 0.15)', // Light Blue transparent
                             borderColor: '#126CFB',
@@ -432,10 +432,10 @@
                                 delay = 500 + (context.dataIndex * 300);
 
                                 // Benchmark (Dark Blue) is now Index 0.
-                                // Empresa (Light Blue) is now Index 1.
-                                // We want Benchmark first, THEN Empresa.
+                                // Company (Light Blue) is now Index 1.
+                                // We want Benchmark first, THEN Company.
                                 if (context.datasetIndex === 1) {
-                                    // Make 'Empresa' wait until 'Benchmark' is fully done
+                                    // Make 'Company' wait until 'Benchmark' is fully done
                                     // 12 points * 300ms = 3600ms. Add buffer -> 4000ms
                                     delay += 4000;
                                 }
@@ -547,7 +547,7 @@
                             const yCenter = r.yCenter;
 
                             chart.data.datasets.forEach((dataset, i) => {
-                                // Only draw values for "Silueta Empresa" (Which is now Index 1)
+                                // Only draw values for "Company Profile" (Which is now Index 1)
                                 if (i !== 1) return;
 
                                 const meta = chart.getDatasetMeta(i);

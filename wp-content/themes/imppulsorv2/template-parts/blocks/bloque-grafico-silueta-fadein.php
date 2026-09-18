@@ -6,18 +6,18 @@
 
             <div id="radar-tooltip" class="radar-tooltip-custom">
                 <div class="tooltip-val"></div>
-                <div class="tooltip-label">PUNTAJE</div>
+                <div class="tooltip-label">SCORE</div>
             </div>
         </div>
 
         <div class="radar-legend">
             <div class="radar-legend-item">
                 <span class="radar-legend-box box-empresa"></span>
-                <span class="radar-legend-text">Silueta Empresa</span>
+                <span class="radar-legend-text">Company Profile</span>
             </div>
             <div class="radar-legend-item">
                 <span class="radar-legend-box box-benchmark"></span>
-                <span class="radar-legend-text">Silueta Benchmark</span>
+                <span class="radar-legend-text">Benchmark Profile</span>
             </div>
         </div>
     </div>
@@ -46,7 +46,7 @@
         opacity: 0;
     }
 
-    /* SOLO ANIMACIÓN FADE IN DEL CONTENEDOR */
+    /* ONLY CONTAINER FADE-IN ANIMATION */
     .radar-container.visible {
         animation: fadeIn 0.8s ease-out forwards;
     }
@@ -66,7 +66,7 @@
         z-index: 1;
     }
 
-    /* --- POPUP ESTABILIZADO --- */
+    /* --- STABILIZED POPUP --- */
     .radar-tooltip-custom {
         position: absolute;
         padding: 10px 18px;
@@ -136,7 +136,7 @@
         margin-right: 0;
         opacity: 0;
         animation: fadeIn 0.8s ease 0.5s forwards;
-        /* Pequeño delay para que aparezca suave después del chart */
+        /* Small delay so it appears smoothly after the chart */
     }
 
     .radar-legend-item {
@@ -276,20 +276,20 @@
             const isMobile = window.innerWidth <= 768;
             const chartPadding = isMobile ? 35 : 45;
 
-            // Datos
+            // Data for modal
             const dimensions = [
-                { full: "Estrategia y Planificación", acro: "EP" },
-                { full: "Gobernanza Empresarial", acro: "GE" },
-                { full: "Innovación y Adaptabilidad", acro: "IA" },
-                { full: "Experiencia de Cliente", acro: "EC" },
-                { full: "MK y Gen. de Demanda", acro: "MGD" },
-                { full: "Metodología Comercial", acro: "MC" },
-                { full: "Digitalización e Inteligencia Artificial", acro: "DIA" },
-                { full: "Monitoreo y Análisis", acro: "MA" },
-                { full: "Eficiencia Operativa", acro: "EO" },
-                { full: "Estructura Organizacional​", acro: "ORG" },
-                { full: "Liderazgo Ejecutivo", acro: "LID" },
-                { full: "Gestión del Talento", acro: "GT" }
+                { full: "Strategy & Planning", acro: "EP" },
+                { full: "Corporate Governance", acro: "GE" },
+                { full: "Innovation & Adaptability", acro: "IA" },
+                { full: "Customer Experience", acro: "EC" },
+                { full: "Marketing & Demand Generation", acro: "MGD" },
+                { full: "Sales Methodology", acro: "MC" },
+                { full: "Digitalization & Artificial Intelligence", acro: "DIA" },
+                { full: "Monitoring & Analytics", acro: "MA" },
+                { full: "Operational Efficiency", acro: "EO" },
+                { full: "Organizational Structure", acro: "ORG" },
+                { full: "Executive Leadership", acro: "LID" },
+                { full: "Talent Management", acro: "GT" }
             ];
 
             const tooltipVal = tooltip.querySelector('.tooltip-val');
@@ -306,7 +306,7 @@
                     labels: labels,
                     datasets: [
                         {
-                            label: 'Silueta Benchmark', // Index 0
+                            label: 'Benchmark Profile', // Index 0
                             data: valuesBenchmark,
                             backgroundColor: 'rgba(18, 33, 124, 0.15)',
                             borderColor: '#12217C',
@@ -320,7 +320,7 @@
                             pointHoverBackgroundColor: '#12217C',
                         },
                         {
-                            label: 'Silueta Empresa', // Index 1
+                            label: 'Company Profile', // Index 1
                             data: valuesEmpresa,
                             backgroundColor: 'rgba(18, 108, 251, 0.15)',
                             borderColor: '#126CFB',
@@ -344,7 +344,7 @@
                             top: 20, bottom: 20, left: chartPadding, right: chartPadding
                         }
                     },
-                    // --- ANIMACIÓN DESACTIVADA ---
+                    // --- ANIMATION DISABLED ---
                     animation: false,
                     plugins: {
                         legend: { display: false },
@@ -372,10 +372,10 @@
                             const mouseX = event.x;
                             const mouseY = event.y;
 
-                            // MEJORA DE EXACTITUD DE HOVER (Mantenida)
+                            // HOVER ACCURACY IMPROVEMENT (Kept)
                             let closestIndex = -1;
                             let minDistance = Infinity;
-                            const hitRadius = 30; // 30px exactos
+                            const hitRadius = 30; // Exactly 30px
 
                             for (let i = 0; i < labels.length; i++) {
                                 const angle = rScale.getIndexAngle(i) - (Math.PI / 2);
@@ -426,7 +426,7 @@
                 },
                 plugins: [
                     {
-                        // DIBUJAR VALORES (Sin animación)
+                        // DRAW VALUES (No animation)
                         id: 'drawValues',
                         afterDatasetsDraw(chart) {
                             const { ctx, scales: { r } } = chart;
@@ -460,7 +460,7 @@
                         }
                     },
                     {
-                        // DIBUJAR ETIQUETAS (Sin animación)
+                        // DRAW LABELS (No animation)
                         id: 'labelsPlugin',
                         afterDraw(chart) {
                             const { ctx, scales: { r } } = chart;

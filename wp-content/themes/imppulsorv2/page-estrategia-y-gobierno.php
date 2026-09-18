@@ -10,7 +10,7 @@ get_header();
 
 <main class="page-areas-gestion page-estrategia-y-gobierno">
 
-  <!-- HERO DEFAULT -->
+  <!-- DEFAULT HERO -->
   <div class="hero-slider__bloque-1">
     <?php imppulsor_render_page_hero('default'); ?>
 
@@ -24,28 +24,28 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-        <h2 class="heading-lg mb-20">El punto de partida: dirección, foco y orquestación del negocio
+        <h2 class="heading-lg mb-20">The starting point: direction, focus, and business orchestration
         </h2>
         <p>
-          La estrategia no es un plan estático, es una capacidad dinámica que conecta visión, análisis, decisiones y
-          acción.
-          En este dominio funcional trabajamos junto a empresas que buscan clarificar su rumbo, redefinir su modelo de
-          crecimiento
-          o fortalecer su arquitectura institucional para actuar con mayor coherencia, foco y capacidad adaptativa.
+          Strategy is not a static plan — it is a dynamic capability that connects vision, analysis, decisions, and
+          action.
+          In this functional domain, we partner with companies seeking to clarify their direction, redefine their growth
+          model,
+          or strengthen their institutional architecture to operate with greater coherence, focus, and adaptive capacity.
         </p>
         <p>
-          Una arquitectura robusta de estrategia y gobierno define prioridades, alinea recursos, estructura decisiones y
-          crea condiciones
-          para operar con claridad en entornos inciertos. Cuando se gestiona con sistemas efectivos de control, balances
-          y contrapesos,
-          no solo se fortalece la capacidad de ejecución, sino que también se mitigan riesgos críticos, se eleva la
-          calidad del liderazgo
-          y se mejora la resiliencia organizacional.
+          A robust strategy and governance architecture sets priorities, aligns resources, structures decision-making, and
+          creates the conditions
+          to operate with clarity in uncertain environments. When managed with effective systems of control and checks
+          and balances,
+          it not only strengthens execution capacity, but also mitigates critical risks, elevates
+          leadership quality,
+          and improves organizational resilience.
         </p>
         </div>
 
         <div class="h-100 w-100">
-          <img src="/wp-content/uploads/Estrategia y Gobierno.webp" alt="Comercial y clientes" class="w-100">
+          <img src="/wp-content/uploads/Estrategia y Gobierno.webp" alt="Strategy and governance" class="w-100">
         </div>
       </div>
 
@@ -56,10 +56,10 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-          <h2 class="heading-lg mb-20">Los desafíos estructurales que enfrentamos </h2>
+          <h2 class="heading-lg mb-20">The structural challenges we address</h2>
           <div>
             <p>
-            Acompañamos a organizaciones que enfrentan dificultades para transformar su visión en una hoja de ruta clara y ejecutable. Estas problemáticas suelen incluir:
+            We support organizations struggling to turn their vision into a clear, actionable roadmap. These challenges typically include:
 
 
             </p>
@@ -70,16 +70,16 @@ get_header();
         <div class="h-100 w-100">
         <div class="">
             <ul class="list-check">
-            <li>Estructuras de gobernanza inefectivas</li>
-              <li>Debilidad en la planificación</li>
-              <li>Elección de prioridades y desconexión entre estrategia, cultura y operación</li>
-              <li>Problemas de agilidad organizacional</li>
-              <li>Supervisión ejecutiva débil</li>
-              <li>Roles mal definidos en la toma de decisiones</li>
-              <li>Carencia de mecanismos efectivos de control y accountability</li>
-              <li>Dispersión de esfuerzos</li>
-          <li>Dificultad para medir lo que importa</li>
-          <li>Proliferación de iniciativas sin foco</li>
+            <li>Ineffective governance structures</li>
+              <li>Weak planning capabilities</li>
+              <li>Poor prioritization and disconnects between strategy, culture, and operations</li>
+              <li>Limited organizational agility</li>
+              <li>Weak executive oversight</li>
+              <li>Poorly defined decision-making roles</li>
+              <li>Lack of effective control and accountability mechanisms</li>
+              <li>Scattered efforts</li>
+          <li>Difficulty measuring what matters</li>
+          <li>Proliferation of unfocused initiatives</li>
             </ul>
           </div>
         </div>
@@ -94,7 +94,7 @@ get_header();
 
 
 
-  <!-- SECCIÓN 3: Parallax (solo imagen, ratio 1200×274) -->
+  <!-- SECTION 3: Parallax (image only, 1200×274 ratio) -->
   <section class="section section-3 fade-in spp-section py-0"
     style="aspect-ratio: 1728 / 503; width: 100%;">
     <div class="spp-bg-container">
@@ -109,17 +109,17 @@ get_header();
   <section class="section section-8 bg-light text-dark pb-0 fade-in">
     <div class="container">
 
-      <h2 class="heading-lg mb-20" style="max-width: 600px;">Soluciones de consultoría para esta función empresarial</h2>
+      <h2 class="heading-lg mb-20" style="max-width: 600px;">Consulting solutions for this business function</h2>
 
       <div class="grid-2 ">
         <p>
-        Acompañamos a las organizaciones en el fortalecimiento de su función de Estrategia y Gobierno mediante soluciones de consultoría que clarifican la dirección, ordenan prioridades y traducen la visión en decisiones ejecutables.
+        We help organizations strengthen their Strategy and Governance function with consulting solutions that clarify direction, prioritize effectively, and translate vision into actionable decisions.
 
 
         </p>
 
         <p>
-          Diseñamos modelos de gobierno corporativo, sistemas de planificación de corto y largo plazo, marcos de gestión de portafolios estratégicos, y estructuras de seguimiento, rendición de cuentas y retroalimentación. También apoyamos la definición de objetivos e indicadores estratégicos y operativos, y la integración entre estrategia, cultura y operación, facilitando una implementación coherente, disciplinada y sostenible.
+          We design corporate governance models, short- and long-term planning systems, strategic portfolio management frameworks, and monitoring, accountability, and feedback structures. We also support the definition of strategic and operational goals and KPIs, and the integration of strategy, culture, and operations — enabling coherent, disciplined, and sustainable implementation.
 
 
 
@@ -132,36 +132,36 @@ get_header();
 
       <div class="separator mb-40"></div>
 
-      <h2 class="heading-lg mb-20 text-dark mb-40">Cómo trabajamos</h2>
+      <h2 class="heading-lg mb-20 text-dark mb-40">How we work</h2>
 
 <div class="grid-2">
 
   <div class="  pb-20">
-    <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Discovery empresarial</h3>
+    <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Business Discovery</h3>
     <p class="mt-30">
-    Investigamos su modelo de negocio, desafíos prioritarios, restricciones operativas y capacidades clave para definir el alcance correcto de intervención y evitar soluciones mal enfocadas.
+    We examine your business model, priority challenges, operational constraints, and key capabilities to define the right scope of engagement and avoid misaligned solutions.
 
     </p>
   </div>
 
   <div class="  pb-20">
-    <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Adherencia organizacional</h3>
+    <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Organizational Fit</h3>
     <p class="mt-30">
-    Diseñamos soluciones con fit organizacional, alineadas a la estrategia y ajustadas a las capacidades, restricciones y condiciones reales de implementación de cada empresa.
+    We design solutions with organizational fit — aligned to strategy and tailored to each company's capabilities, constraints, and real-world implementation conditions.
     </p>
   </div>
 
   <div class="  pb-20">
-    <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Visión holística</h3>
+    <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Holistic View</h3>
     <p class="mt-30">
-    Integramos una mirada sistémica sobre funciones, procesos, personas, tecnología y datos para conectar los puntos críticos que condicionan el desempeño empresarial.
+    We apply a systemic lens across functions, processes, people, technology, and data to connect the dots on the critical factors driving business performance.
     </p>
   </div>
 
   <div class="  pb-20 pb-0-mob">
-    <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Acompañamiento inicial</h3>
+    <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Early Implementation Support</h3>
     <p class="mt-30">
-    Acompañamos la ejecución inicial para transformar decisiones en acciones concretas, instalando planificación, seguimiento y retroalimentación que sostengan avances visibles y medibles.
+    We support early execution to turn decisions into concrete action, embedding planning, monitoring, and feedback that sustain visible, measurable progress.
     </p>
   </div>
 
@@ -179,54 +179,54 @@ get_header();
   </section>
 
 
-  <!-- SECCIÓN 10: El impacto -->
+  <!-- SECTION 10: Impact -->
   <section class="section section-10 pt-0 bg-light text-dark fade-in">
 
     <div class="container">
 
       <div class="grid-2">
         <div>
-          <h2 class="heading-lg mb-20 mb-0-mob">El resultado</h2>
+          <h2 class="heading-lg mb-20 mb-0-mob">The outcome</h2>
         </div>
         <div>
           <p class="mb-20">
-          Hacemos que la estrategia cobre vida convirtiéndola en decisiones, estructuras y mecanismos de gobierno que
-          equilibran visión y ejecución, aseguran control y generan resultados sostenibles con impacto real.
+          We bring strategy to life by turning it into decisions, structures, and governance mechanisms that
+          balance vision with execution, ensure control, and deliver sustainable results with real impact.
           </p>
 
           <ul class="list-check mb-20">
-            <li>Estrategias que dejan de ser aspiraciones y se convierten en decisiones operativas claras y sostenibles.</li>
-            <li>Gobierno corporativo que garantiza alineación entre estrategia, cultura y operación.</li>
-            <li>Planificación y seguimiento de objetivos estratégicos y operativos con métricas claras y accionables.</li>
-            <li>Estrategias que avanzan con ritmo y control, priorizando lo que genera mayor impacto y retorno.</li>
-            <li>Equipos directivos alineados y con información confiable para tomar decisiones valientes y fundamentadas.</li>
+            <li>Strategies that move beyond aspiration to become clear, sustainable operational decisions.</li>
+            <li>Corporate governance that ensures alignment across strategy, culture, and operations.</li>
+            <li>Strategic and operational goal planning and tracking with clear, actionable metrics.</li>
+            <li>Strategies that advance with pace and control, prioritizing what drives the greatest impact and return.</li>
+            <li>Aligned leadership teams with reliable information to make bold, well-grounded decisions.</li>
           </ul>
 
-          <a href="/contacto/" class="btn-arrow mobile-only-cta mt-20-mob">Solicite una reunión sobre su desafío de transformación</a>
+          <a href="/contacto/" class="btn-arrow mobile-only-cta mt-20-mob">Request a meeting about your transformation challenge</a>
 
-          <a href="/contacto/" class="btn-arrow desktop-only-cta">Solicite una reunión sobre su desafío de transformación</a>
+          <a href="/contacto/" class="btn-arrow desktop-only-cta">Request a meeting about your transformation challenge</a>
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- SECCIÓN 11: Qué cambia -->
+  <!-- SECTION 11: What changes -->
   <section class="section section-11 bg-light-blue text-white fade-in py-60">
     <div class="container grid-2 align-center area-que-cambia px-0-mob">
       <div class="area-que-cambia__content">
-        <h2 class="heading-lg mb-20">¿Qué cambia cuando se gestiona bien este dominio?</h2>
+        <h2 class="heading-lg mb-20">What changes when this domain is managed well?</h2>
         <p>
-          Una organización con claridad estratégica y una arquitectura de gobierno funcional decide mejor, asigna mejor,
-          ejecuta con foco y aprende más rápido. Disminuye la dispersión, aumenta la velocidad de reacción
-          y mejora su capacidad para navegar entornos complejos. Elevar la función de estrategia y gobierno es el primer
-          paso para transformar el todo.
+          An organization with strategic clarity and a working governance architecture decides better, allocates better,
+          executes with focus, and learns faster. It reduces fragmentation, increases response speed,
+          and strengthens its ability to navigate complex environments. Elevating the strategy and governance function is the first
+          step toward transforming the whole.
         </p>
       </div>
       <div class="area-que-cambia__media">
         <img
           src="/wp-content/uploads/que-cambia.jpg"
-          alt="Hombre en pizarra"
+          alt="Man at a whiteboard"
           class="area-que-cambia__img w-100 object-cover"
           loading="lazy"
           decoding="async"
@@ -244,42 +244,42 @@ get_header();
 
 
 
-  <!-- SECCIÓN 12: Otras áreas -->
+  <!-- SECTION 12: Other areas -->
   <section class="section section-12 bg-light fade-in">
     <div class="container grid-2 align-center">
       <div>
-        <h2 class="heading-lg mb-20">Explore otras áreas críticas de gestión</h2>
+        <h2 class="heading-lg mb-20">Explore other critical management areas</h2>
         <p>
-          Nuestra propuesta de valor está compuesta por ocho dominios funcionales.
-          Cada uno representa una línea de negocio con desafíos, soluciones y oportunidades específicas.
-          Descubra cómo podemos intervenir en otras funciones clave:
+          Our value proposition spans eight functional domains.
+          Each one represents a business line with its own challenges, solutions, and opportunities.
+          Discover how we can support other key functions:
         </p>
         <ul class="mt-20 hidden-mobile">
-          <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finanzas y control</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Crecimiento,
-              MK y productividad comercial</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovación y modelo de
-              negocio</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Cambio y transformación</a>
+          <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and Control</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+              Marketing and Commercial Productivity</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and Business
+              Model</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and Transformation</a>
           </li>
-          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">Personas y cultura</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operaciones y procesos</a></li>
-          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Tecnología y Datos</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and Culture</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and Processes</a></li>
+          <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
         </ul>
       </div>
-      <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore otras áreas críticas de gestión"
+      <img src="/wp-content/uploads/explore-otras-areas.jpg" alt="Explore other critical management areas"
         class="w-100 h-100 h-420">
       <ul class="visible-mobile">
-        <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finanzas y control</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Crecimiento,
-            MK y productividad comercial</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovación y modelo de
-            negocio</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Cambio y transformación</a>
+        <li><a href="https://imppulsor.com/soluciones-para-finanzas-y-control/" class="btn-arrow">Finance and Control</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-crecimiento-mk-y-productividad-comercial/" class="btn-arrow">Growth,
+            Marketing and Commercial Productivity</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-innovacion-y-modelo-de-negocios/" class="btn-arrow">Innovation and Business
+            Model</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-cambio-y-transformacion/" class="btn-arrow">Change and Transformation</a>
         </li>
-        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">Personas y cultura</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operaciones y procesos</a></li>
-        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Tecnología y Datos</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-personas-y-cultura/" class="btn-arrow">People and Culture</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-operaciones-y-procesos/" class="btn-arrow">Operations and Processes</a></li>
+        <li><a href="https://imppulsor.com/soluciones-para-tecnologia-y-datos/" class="btn-arrow">Technology and Data</a></li>
       </ul>
     </div>
   </section>
@@ -302,7 +302,7 @@ get_header();
 
         const visible = hiddenText.style.display === 'inline';
         hiddenText.style.display = visible ? 'none' : 'inline';
-        this.textContent = visible ? 'Leer más…' : 'Leer menos…';
+        this.textContent = visible ? 'Read more…' : 'Read less…';
       });
     });
   });

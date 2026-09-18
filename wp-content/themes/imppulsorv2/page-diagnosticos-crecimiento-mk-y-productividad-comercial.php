@@ -25,20 +25,20 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-          <h2 class="heading-lg mb-20">Identificar el problema correcto equivale a la mitad de la solución</h2>
+          <h2 class="heading-lg mb-20">Identifying the Right Problem Is Half the Solution</h2>
           <div>
             <p>
-            Toda empresa busca crecer, vender más y llegar mejor a sus clientes. Pero lograrlo y sostenerlo consistentemente en el tiempo no siempre depende de invertir más en marketing, ampliar el equipo de ventas o abrir nuevos canales. Si la operación comercial no está preparada para crecer, este tipo de iniciativas no solo puede fracasar en su objetivo, sino también amplificar los problemas existentes.
+            Every company wants to grow, sell more, and reach customers more effectively. But achieving that—and sustaining it over time—does not always depend on investing more in marketing, expanding the sales team, or opening new channels. If the sales operation is not ready to grow, these initiatives may not only miss their target, but also amplify existing problems.
             </p>
-            <p>Nuestros diagnósticos de madurez empresarial para la función crecimiento, marketing y productividad comercial permiten revelar las causas raíz de sus principales zonas de dolor y comprender, de manera sistémica, qué ajustes son necesarios para elevar la efectividad y productividad del área comercial, según la etapa empresarial en que se encuentra la organización.</p>
-            <p class="texto-expandible texto-expandible--oculto">Diagnosticar esta función permite construir una base más sólida para focalizar recursos, priorizar proyectos de mejora operacional y avanzar sobre los problemas correctos.</p>
+            <p>Our business maturity diagnostics for the growth, marketing, and sales productivity function uncover the root causes behind your key pain points and show, systemically, what adjustments are needed to improve sales effectiveness and productivity, based on your organization’s stage of development.</p>
+            <p class="texto-expandible texto-expandible--oculto">Assessing this function builds a stronger foundation to focus resources, prioritize operational improvement projects, and address the right problems.</p>
 
-            <a href="#" class="texto-expandible__toggle">Leer más …</a>
+            <a href="#" class="texto-expandible__toggle">Read more …</a>
           </div>
         </div>
 
         <div class="h-100 w-100">
-          <img src="/wp-content/uploads/Comercial y clientes.webp" alt="Comercial y clientes" class="w-100">
+          <img src="/wp-content/uploads/Comercial y clientes.webp" alt="Sales and customers" class="w-100">
         </div>
       </div>
 
@@ -57,26 +57,26 @@ get_header();
       <div class="grid-2 mb-0">
 
         <div>
-          <h2 class="heading-lg mb-20">Los desafíos estructurales que enfrentamos</h2>
+          <h2 class="heading-lg mb-20">The Structural Challenges Organizations Face</h2>
           <div>
             <p>
-            En este ámbito, las organizaciones suelen enfrentar una serie de desafíos que limitan su efectividad comercial y su capacidad de crecimiento sostenible:
+            In this area, organizations typically face a set of challenges that limit sales effectiveness and sustainable growth:
             </p>
           </div>
         </div>
 
         <div class="">
             <ul class="list-check">
-              <li>Estancamiento en ventas y baja productividad comercial</li>
-              <li>Desconexión entre estrategia y ejecución</li>
-              <li>Estructuras comerciales rígidas y falta de foco</li>
-              <li>Métricas mal calibradas y diseño de incentivos contraproducentes</li>
-              <li>Escasa visibilidad sobre el ciclo comercial completo</li>
-              <li>Operaciones comerciales fragmentadas</li>
-              <li>Ausencia de planificación formal</li>
-              <li>Debilidad en la estandarización de procesos</li>
-              <li>Insuficiencia de tecnologías de gestión</li>
-              <li>Vacíos en los sistemas de liderazgo y desarrollo del talento comercial</li>
+              <li>Stalled sales and low sales productivity</li>
+              <li>Disconnect between strategy and execution</li>
+              <li>Rigid sales structures and lack of focus</li>
+              <li>Poorly calibrated metrics and counterproductive incentive design</li>
+              <li>Limited visibility across the full sales cycle</li>
+              <li>Fragmented sales operations</li>
+              <li>No formal planning</li>
+              <li>Weak process standardization</li>
+              <li>Insufficient management technology</li>
+              <li>Gaps in sales leadership and talent development systems</li>
             </ul>
           </div>
       </div>
@@ -91,7 +91,7 @@ get_header();
 
 
 
-  <!-- SECCIÓN 9: Imagen parallax -->
+  <!-- SECTION 9: Parallax image -->
   <section class="section section-9 bg-light fade-in spp-section"
     style="aspect-ratio: 1728 / 503; width: 100%;">
     <div class="spp-bg-container">
@@ -100,31 +100,31 @@ get_header();
   </section>
 
 
-  <!-- SECCIÓN 4: Diagnósticos de la función comercial -->
+  <!-- SECTION 4: Diagnostics for the sales function -->
   <section class="section section-4 bg-light pb-0 fade-in ">
     <div class="container text-dark">
       <div class="grid-2 align-start">
         <div>
-          <h2 class="heading-lg mb-20">Diagnósticos de madurez para esta función empresarial</h2>
+          <h2 class="heading-lg mb-20">Maturity diagnostics for this business function</h2>
 
         </div>
         <div>
           <p>
-            Nuestros instrumentos de diagnóstico permiten evaluar, con precisión, la madurez y la efectividad de la
-            operación comercial, en el marco de los desafíos de crecimiento, marketing y productividad. El Diagnóstico
-            de Madurez Comercial (DMC) analiza la estructura, los procesos, la planificación, la gobernanza y las
-            capacidades del área, y determina brechas entre el diseño actual y lo que el negocio exige.  </p>
+            Our diagnostic tools precisely assess the maturity and effectiveness of the
+            sales operation amid growth, marketing, and productivity challenges. The Commercial
+            Maturity Diagnostic (DMC) examines the area’s structure, processes, planning, governance, and
+            capabilities, identifying gaps between the current design and what the business requires.  </p>
             
             
             <p>
-            En paralelo,
-            nuestros análisis de Efectividad Comercial se enfocan en el desempeño del equipo de ventas, a partir de la
-            conversión, la gestión de oportunidades y los indicadores críticos que inciden en los resultados. En
-            conjunto, estas herramientas entregan una visión clara y profunda de la operación comercial en los niveles
-            estratégico, táctico y operativo.</p>
+            In parallel,
+            our Sales Effectiveness analyses focus on sales team performance, based on
+            conversion, opportunity management, and the critical metrics that drive results. Together,
+            these tools deliver a clear, in-depth view of the sales operation at the
+            strategic, tactical, and operational levels.</p>
 
-         
-          <a href="/contacto/" class="btn-arrow  mt-20-mob">Solicite una reunión con nuestros especialistas</a>
+          
+          <a href="/contacto/" class="btn-arrow  mt-20-mob">Request a meeting with our specialists</a>
         </div>
       </div>
     </div>
@@ -135,36 +135,36 @@ get_header();
 
       <div class="text-dark separator mb-40"></div>
 
-      <h2 class="heading-lg mb-20 text-dark mb-40">Cómo trabajamos</h2>
+      <h2 class="heading-lg mb-20 text-dark mb-40">How we work</h2>
 
       <div class="grid-2">
 
         <div class="  pb-20">
-          <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Discovery empresarial</h3>
+          <span class="num text-white">1</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Business discovery</h3>
           <p class="mt-30">
-          Diagnosticamos el punto de partida real de la empresa, evaluando su etapa de desarrollo, contexto competitivo y capacidades clave para comprender dónde están las tensiones que afectan su desempeño
+          We assess the company’s true starting point, evaluating its stage of development, competitive context, and key capabilities to understand where the tensions affecting performance lie
 
           </p>
         </div>
 
         <div class="  pb-20">
-          <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Evaluación estructural</h3>
+          <span class="num text-white">2</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Structural assessment</h3>
           <p class="mt-30">
-          Evaluamos la madurez de las capacidades críticas de gestión, analizando estrategia, estructura, procesos, tecnología, datos y personas para identificar brechas que limitan la ejecución.
+          We evaluate the maturity of critical management capabilities, reviewing strategy, structure, processes, technology, data, and people to identify gaps that constrain execution.
           </p>
         </div>
 
         <div class="  pb-20">
-          <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Análisis causal</h3>
+          <span class="num text-white">3</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Causal analysis</h3>
           <p class="mt-30">
-          Detectamos patrones sistémicos que explican problemas persistentes: desde la falta de alineación estratégica hasta ineficiencias operativas o dificultades para innovar y transformarse.
+          We detect systemic patterns behind persistent problems—from strategic misalignment to operational inefficiencies or difficulty innovating and transforming.
           </p>
         </div>
 
         <div class="  pb-20 pb-0-mob">
-          <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Oportunidades de mejora</h3>
+          <span class="num text-white">4</span><h3 class="heading-sm" style="position: absolute; top: -15px; left: 40px;">Improvement opportunities</h3>
           <p class="mt-30">
-          Entregamos oportunidades de mejora priorizadas para tomar decisiones con mayor seguridad, orientar recursos y concentrar esfuerzos donde puedan generar mayor impacto
+          We deliver prioritized improvement opportunities to support more confident decisions, guide resources, and focus effort where it can generate the greatest impact
           </p>
         </div>
 
@@ -180,66 +180,66 @@ get_header();
   </section>
 
   <!-- =========================================
-     SECCIÓN 4: El resultado
+     SECTION 4: The outcome
      ========================================= -->
      <section class="section bg-white text-dark section-4 pb-60 fade-in">
     <div class="container grid-2">
       
 
-      <!-- Columna izquierda -->
+      <!-- Left column -->
       <div>
-        <h2 class="heading-lg mb-20 mb-0-mob">El resultado</h2>
+        <h2 class="heading-lg mb-20 mb-0-mob">The outcome</h2>
         
       </div>
 
-      <!-- Columna derecha -->
+      <!-- Right column -->
       <div>
         <p class="mb-20">
-        Contar con un mapa de madurez comercial integral que permite a los directivos responder con certeza:
+        A comprehensive commercial maturity map that enables executives to answer with confidence:
         </p>
 
         <ul class="list-check mb-20">
-          <li>¿Dónde están los verdaderos cuellos de botella que frenan el crecimiento y la eficacia comercial?</li>
-          <li>¿Qué capacidades debo fortalecer primero para escalar y adaptarme al cambio?</li>
-          <li>¿Cómo priorizar inversiones para maximizar retorno y minimizar riesgo?</li>
-          <li>Las organizaciones que aplican estos diagnósticos logran alinear estrategia, personas, procesos,
-            tecnología y resultados, reducen la incertidumbre y convierten la transformación en un proceso
-            controlado y medible.</li>
+          <li>Where are the real bottlenecks holding back growth and sales effectiveness?</li>
+          <li>Which capabilities should we strengthen first to scale and adapt to change?</li>
+          <li>How should we prioritize investments to maximize return and minimize risk?</li>
+          <li>Organizations that apply these diagnostics align strategy, people, processes,
+            technology, and results, reduce uncertainty, and turn transformation into a
+            controlled, measurable process.</li>
         </ul>
 
-        <a href="/contacto/" class="btn-arrow mt-0-mob mb-0-mob">Solicite una reunión con nuestros
-          especialistas</a>
+        <a href="/contacto/" class="btn-arrow mt-0-mob mb-0-mob">Request a meeting with our
+          specialists</a>
           
       </div>
 
     </div>
   </section>
   <!-- =========================================
-     SECCIÓN 4: El resultado
+     SECTION 4: The outcome
      ========================================= -->
 
 
   
-  <!-- SECCIÓN 11: ¿Qué cambia cuando se gestiona bien este dominio? -->
+  <!-- SECTION 11: What changes when this domain is managed well? -->
   <section class="section section-11 bg-light-blue text-white fade-in py-60">
     <div class="container grid-2 align-center area-que-cambia px-0-mob">
 
       <div class="area-que-cambia__content">
-        <h2 class="heading-lg mb-20">¿Qué cambia cuando se gestiona bien este dominio?</h2>
+        <h2 class="heading-lg mb-20">What changes when this domain is managed well?</h2>
         <p>
-          Una organización que domina su función comercial no solo vende más, sino que vende mejor. Mejora su
-          rentabilidad, su previsibilidad y su capacidad de conectar con mercados complejos. Reduce la fricción interna
-          entre marketing, ventas y operaciones. Gana foco, alineación y velocidad. Activa el crecimiento desde la
-          comprensión profunda del cliente, no desde la intuición. Crecimiento, Marketing y Productividad Comercial no
-          es solo una función de negocio, es un sistema de operación que cuando se gestiona adecuadamente transforma el
-          desempeño global.
+          An organization that masters its commercial function does more than sell more—it sells better. It improves
+          profitability, predictability, and its ability to engage complex markets. It reduces internal friction
+          between marketing, sales, and operations. It gains focus, alignment, and speed. It drives growth from a
+          deep understanding of the customer, not from intuition. Growth, Marketing, and Sales Productivity is
+          not just a business function; it is an operating system that, when managed well, transforms
+          overall performance.
         </p>
       </div>
 
       <div class="area-que-cambia__media">
         <img
           src="/wp-content/uploads/que-cambia.jpg"
-          alt="Hombre en pizarra"
+          alt="Man at a whiteboard"
           class="area-que-cambia__img w-100 object-cover"
           loading="lazy"
           decoding="async"
@@ -251,46 +251,46 @@ get_header();
 
 
 
-  <!-- SECCIÓN 6: Slider productos (bloque reutilizable) -->
+  <!-- SECTION 6: Products slider (reusable block) -->
   <?php get_template_part('template-parts/blocks/bloque-productos-destacados'); ?>
 
 
 
-  <!-- SECCIÓN 7: Casos de éxito (bloque reutilizable) -->
+  <!-- SECTION 7: Success stories (reusable block) -->
   <div class="bg-dark-blue pb-60 pb-0-mob">
     <?php get_template_part('template-parts/blocks/bloque', 'casos-exito'); ?>
   </div>
 
   
-<!-- Bloque: Tome acción, vaya a la raíz de sus desafíos -->
+<!-- Block: Take action, get to the root of your challenges -->
 <section class="section bg-light pb-60 fade-in">
     <div class="container grid-2">
 
-      <!-- Columna izquierda -->
+      <!-- Left column -->
       <div>
         <h2 class="heading-lg mb-20 text-dark mb-0-mob">
-          Tome acción, vaya a la raíz de sus desafíos
+          Take action, get to the root of your challenges
         </h2>
         
       </div>
 
-      <!-- Columna derecha -->
+      <!-- Right column -->
       <div>
       <p class="mb-20">
-      Nuestros diagnósticos de madurez empresarial permiten comprender con mayor claridad el estado real de sus capacidades de gestión, identificar brechas estructurales y priorizar decisiones de mejora, transformación o escalamiento según la etapa, objetivos y restricciones de su organización.
+      Our business maturity diagnostics provide a clearer view of the true state of your management capabilities, identify structural gaps, and help prioritize improvement, transformation, or scaling decisions based on your organization’s stage, objectives, and constraints.
         </p>
         <ul class="list-check">
           <li>
-          Revelan causas raíz detrás de síntomas visibles, conectando datos, percepciones y evidencia para comprender qué limita realmente el desempeño empresarial.
+          They uncover root causes behind visible symptoms, connecting data, perceptions, and evidence to understand what is truly limiting business performance.
           </li>
           <li>
-          Entregan una lectura estructurada del nivel de madurez de la organización, separando lo crítico de lo accesorio y lo urgente de lo estratégico.
+          They deliver a structured view of the organization’s maturity level, separating the critical from the incidental and the urgent from the strategic.
           </li>
           <li>
-          Orientan decisiones de inversión, rediseño organizacional y desarrollo de capacidades, reduciendo el riesgo de actuar sobre diagnósticos incompletos o intuiciones aisladas.
+          They guide investment, organizational redesign, and capability-building decisions, reducing the risk of acting on incomplete diagnostics or isolated hunches.
           </li>
           <li>
-          Transforman información dispersa en una hoja de ruta accionable, alineada con la realidad operativa, los objetivos estratégicos y la capacidad de ejecución.
+          They turn scattered information into an actionable roadmap, aligned with operational reality, strategic objectives, and execution capacity.
           </li>
         </ul>
       </div>
@@ -304,7 +304,7 @@ get_header();
   
   <?php get_template_part('template-parts/blocks/bloque', 'equipo-research-delivery'); ?>
 
-<!-- SECCIÓN 14: Insights (bloque reutilizable) -->
+<!-- SECTION 14: Insights (reusable block) -->
   <?php get_template_part('template-parts/blocks/bloque', 'insights'); ?>
 
 </main>
@@ -323,7 +323,7 @@ get_header();
 
         const visible = hiddenText.style.display === 'inline';
         hiddenText.style.display = visible ? 'none' : 'inline';
-        this.textContent = visible ? 'Leer más…' : 'Leer menos…';
+        this.textContent = visible ? 'Read more…' : 'Read less…';
       });
     });
   });

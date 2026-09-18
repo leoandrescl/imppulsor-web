@@ -9,7 +9,7 @@
                 <line x1="12" y1="16" x2="12" y2="12"></line>
                 <line x1="12" y1="8" x2="12.01" y2="8"></line>
             </svg>
-            Toca un círculo para ver detalle
+            Tap a circle to view details
         </div>
 
         <svg viewBox="0 0 800 600" class="dmc-svg" id="dmcSvg">
@@ -42,9 +42,9 @@
 
             <g class="center-text-group">
                 <text x="400" y="285" class="center-title fade-text">DMC</text>
-                <text x="400" y="310" class="center-subtitle fade-text">Diagnóstico de</text>
-                <text x="400" y="330" class="center-subtitle fade-text">Madurez
-                    Comercial</text>
+                <text x="400" y="310" class="center-subtitle fade-text">Commercial</text>
+                <text x="400" y="330" class="center-subtitle fade-text">Maturity
+                    Diagnostic</text>
             </g>
 
             <g id="nodesGroup"></g>
@@ -96,7 +96,7 @@
         overflow: visible;
     }
 
-    /* Animación de Carriles */
+    /* Track Animation */
     .track-line {
         fill: none;
         stroke: #001a33;
@@ -117,7 +117,7 @@
         stroke-dashoffset: 0;
     }
 
-    /* Flecha */
+    /* Arrow */
     .arrow-group {
         opacity: 0;
         transition: opacity 0.8s ease;
@@ -142,7 +142,7 @@
         stroke-dashoffset: 0;
     }
 
-    /* Nodos */
+    /* Nodes */
     .node-group {
         cursor: pointer;
         opacity: 0;
@@ -186,7 +186,7 @@
         pointer-events: none;
     }
 
-    /* Texto Negro y Hover */
+    /* Black Text and Hover */
     .label-text {
         fill: #000 !important;
         font-size: 16px;
@@ -383,18 +383,18 @@
     (function () {
         function initDMC() {
             const dimensions = [
-                { full: "Estrategia y Planificación", acro: "EP" },
-                { full: "Gobernanza Empresarial", acro: "GE" },
-                { full: "Innovación y Adaptabilidad", acro: "IA" },
-                { full: "Experiencia de Cliente", acro: "EC" },
-                { full: "MK y Gen. de Demanda", acro: "MGD" },
-                { full: "Metodología Comercial", acro: "MC" },
-                { full: "Digitalización e Inteligencia Artificial", acro: "DIA" },
-                { full: "Monitoreo y Análisis", acro: "MA" },
-                { full: "Eficiencia Operativa", acro: "EO" },
-                { full: "Estructura Organizacional​", acro: "ORG" },
-                { full: "Liderazgo Ejecutivo", acro: "LID" },
-                { full: "Gestión del Talento", acro: "GT" }
+                { full: "Strategy & Planning", acro: "EP" },
+                { full: "Corporate Governance", acro: "GE" },
+                { full: "Innovation & Adaptability", acro: "IA" },
+                { full: "Customer Experience", acro: "EC" },
+                { full: "Marketing & Demand Generation", acro: "MGD" },
+                { full: "Sales Methodology", acro: "MC" },
+                { full: "Digitalization & Artificial Intelligence", acro: "DIA" },
+                { full: "Monitoring & Analytics", acro: "MA" },
+                { full: "Operational Efficiency", acro: "EO" },
+                { full: "Organizational Structure", acro: "ORG" },
+                { full: "Executive Leadership", acro: "LID" },
+                { full: "Talent Management", acro: "GT" }
             ];
             const nodesGroup = document.getElementById('nodesGroup');
             if (!nodesGroup) return;

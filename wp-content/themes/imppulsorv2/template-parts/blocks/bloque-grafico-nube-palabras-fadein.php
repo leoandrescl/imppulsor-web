@@ -1,5 +1,5 @@
 <div id="wc-wrapper-unique" class="wordcloud-wrapper bg-light">
-    <div id="wordcloud-loader" class="wc-loader">Generando nube...</div>
+    <div id="wordcloud-loader" class="wc-loader">Generating word cloud...</div>
     <div id="wordcloud-container" class="wordcloud-container"></div>
 </div>
 
@@ -43,11 +43,11 @@
         opacity: 1;
     }
 
-    /* --- PALABRAS --- */
+    /* --- WORDS --- */
     .wc-word {
         position: absolute;
         line-height: 0.85;
-        /* Altura de línea compacta */
+        /* Compact line height */
         cursor: pointer;
         user-select: none;
         white-space: nowrap;
@@ -56,7 +56,7 @@
         text-align: center;
         z-index: 10;
         transform-origin: center center;
-        /* Inicialmente invisibles pero ocupando espacio para cálculo */
+        /* Initially invisible but taking up space for measurement */
         opacity: 0;
         color: #061C2C;
         will-change: transform, opacity;
@@ -89,13 +89,13 @@
         color: #126CFB !important;
     }
 
-    /* Clases de jerarquía para grosor y color */
+    /* Hierarchy classes for weight and color */
     .p-1 {
         font-weight: 700;
         color: #126CFB !important;
     }
 
-    /* Título azul */
+    /* Blue title */
     .p-1:hover {
         color: #061C2C !important;
     }
@@ -121,31 +121,31 @@
 <script>
     (function () {
         const words = [
-            { text: "LIDERAZGO", cls: "p-1", freq: 100 },
-            { text: "CLIENTES", cls: "p-2", freq: 90 },
-            { text: "CONFIANZA", cls: "p-2", freq: 88 },
-            { text: "AUTONOMÍA", cls: "p-2", freq: 85 },
-            { text: "VENTAS", cls: "p-2", freq: 82 },
-            { text: "DISCIPLINA", cls: "p-3", freq: 78 },
-            { text: "RIESGO", cls: "p-3", freq: 75 },
-            { text: "MOTIVACIÓN", cls: "p-3", freq: 72 },
-            { text: "CAPACITACIÓN", cls: "p-3", freq: 70 },
-            { text: "PROCESOS", cls: "p-3", freq: 68 },
-            { text: "REASEGURAMIENTO", cls: "p-4", freq: 65 },
-            { text: "ESTANDARIZACIÓN", cls: "p-4", freq: 62 },
-            { text: "EFICIENCIA", cls: "p-4", freq: 60 },
-            { text: "CRECIMIENTO", cls: "p-4", freq: 58 },
-            { text: "CLARIDAD", cls: "p-4", freq: 55 },
-            { text: "PROPUESTA", cls: "p-4", freq: 52 },
-            { text: "ESCALABILIDAD", cls: "p-4", freq: 50 },
-            { text: "SEGUIMIENTO", cls: "p-5", freq: 45 },
-            { text: "INDICADORES", cls: "p-5", freq: 42 },
-            { text: "PROFESIONAL", cls: "p-5", freq: 40 },
-            { text: "LIQUIDEZ", cls: "p-5", freq: 38 },
-            { text: "CULTURA", cls: "p-5", freq: 35 },
-            { text: "NUBE", cls: "p-5", freq: 32 },
-            { text: "INTEGRACIÓN", cls: "p-5", freq: 30 },
-            { text: "TRANSPARENCIA", cls: "p-5", freq: 28 }
+            { text: "LEADERSHIP", cls: "p-1", freq: 100 },
+            { text: "CUSTOMERS", cls: "p-2", freq: 90 },
+            { text: "TRUST", cls: "p-2", freq: 88 },
+            { text: "AUTONOMY", cls: "p-2", freq: 85 },
+            { text: "SALES", cls: "p-2", freq: 82 },
+            { text: "DISCIPLINE", cls: "p-3", freq: 78 },
+            { text: "RISK", cls: "p-3", freq: 75 },
+            { text: "MOTIVATION", cls: "p-3", freq: 72 },
+            { text: "TRAINING", cls: "p-3", freq: 70 },
+            { text: "PROCESSES", cls: "p-3", freq: 68 },
+            { text: "REASSURANCE", cls: "p-4", freq: 65 },
+            { text: "STANDARDIZATION", cls: "p-4", freq: 62 },
+            { text: "EFFICIENCY", cls: "p-4", freq: 60 },
+            { text: "GROWTH", cls: "p-4", freq: 58 },
+            { text: "CLARITY", cls: "p-4", freq: 55 },
+            { text: "PROPOSAL", cls: "p-4", freq: 52 },
+            { text: "SCALABILITY", cls: "p-4", freq: 50 },
+            { text: "FOLLOW-UP", cls: "p-5", freq: 45 },
+            { text: "METRICS", cls: "p-5", freq: 42 },
+            { text: "PROFESSIONAL", cls: "p-5", freq: 40 },
+            { text: "LIQUIDITY", cls: "p-5", freq: 38 },
+            { text: "CULTURE", cls: "p-5", freq: 35 },
+            { text: "CLOUD", cls: "p-5", freq: 32 },
+            { text: "INTEGRATION", cls: "p-5", freq: 30 },
+            { text: "TRANSPARENCY", cls: "p-5", freq: 28 }
         ];
 
         const wrapper = document.getElementById('wc-wrapper-unique');
@@ -168,7 +168,7 @@
         async function initCloud() {
             if (!container) return;
 
-            // Intento seguro de carga de fuentes (con timeout para no bloquear)
+            // Safe font-loading attempt (with timeout so it never blocks)
             try {
                 await Promise.race([
                     document.fonts.ready,
@@ -179,21 +179,21 @@
             container.innerHTML = "";
             loader.style.display = "none";
 
-            // 1. Obtener Ancho Real
+            // 1. Get Real Width
             let cw = container.offsetWidth;
-            // Fallback: Si offsetWidth es 0, usar wrapper o ventana (menos padding)
+            // Fallback: If offsetWidth is 0, use wrapper or window (minus padding)
             if (cw <= 0 && wrapper) cw = wrapper.offsetWidth;
-            if (cw <= 0) cw = Math.min(window.innerWidth - 40, 1000); // Fallback final
+            if (cw <= 0) cw = Math.min(window.innerWidth - 40, 1000); // Final fallback
 
-            // Si aun así es muy pequeño (rara vez), forzar mínimo
+            // If still too small (rare), force a minimum
             if (cw < 300) cw = 300;
 
-            // 2. Definir breakpoints
+            // 2. Define breakpoints
             const isMobile = cw < 500;
             const isTablet = cw >= 500 && cw < 900;
 
-            // 3. Altura Dinámica: Más alto en móvil para que quepan las palabras
-            let ch = isMobile ? cw * 1.2 : cw * 0.8; // Menos altura relativa
+            // 3. Dynamic Height: Taller on mobile so words fit
+            let ch = isMobile ? cw * 1.2 : cw * 0.8; // Less relative height
             if (ch < 300) ch = 300;
 
             container.style.height = ch + 'px';
@@ -201,16 +201,16 @@
             const cx = cw / 2;
             const cy = ch / 2;
 
-            // 4. Factor de Escala
-            // 4. Factor de Escala (Aumentado para llenar más espacio)
-            let denominator = 550; // Antes 700 - Fuentes más grandes
-            if (isTablet) denominator = 750; // Antes 900
-            if (isMobile) denominator = 850; // Antes 1000
+            // 4. Scale Factor (Increased to fill more space)
+            // 4. Scale Factor (Increased to fill more space)
+            let denominator = 550; // Previously 700 - Larger fonts
+            if (isTablet) denominator = 750; // Previously 900
+            if (isMobile) denominator = 850; // Previously 1000
 
             let scaleFactor = cw / denominator;
-            if (scaleFactor < 0.3) scaleFactor = 0.3; // Mínimo más permisivo
+            if (scaleFactor < 0.3) scaleFactor = 0.3; // More permissive minimum
 
-            // Tamaños base
+            // Base sizes
             const fontSizes = {
                 'p-1': 100, 'p-2': 60, 'p-3': 45, 'p-4': 32, 'p-5': 24
             };
@@ -221,7 +221,7 @@
             let minX = Infinity, maxX = -Infinity;
             let minY = Infinity, maxY = -Infinity;
 
-            // 5. Crear y Medir Elementos
+            // 5. Create and Measure Elements
             const elements = words.map((item) => {
                 const el = document.createElement('div');
                 el.className = `wc-word ${item.cls}`;
@@ -231,7 +231,7 @@
                 let finalSize = Math.floor(baseSize * scaleFactor);
                 el.style.fontSize = `${finalSize}px`;
 
-                // Solo permitir verticalidad en Desktop
+                // Only allow vertical orientation on Desktop
                 let allowVertical = !isMobile && !isTablet;
                 if (allowVertical && item.cls !== 'p-1' && Math.random() < 0.3) {
                     el.classList.add('vertical');
@@ -239,21 +239,21 @@
 
                 container.appendChild(el);
 
-                // --- AJUSTE DE SEGURIDAD (CRÍTICO) ---
-                // Si la palabra es más ancha que el contenedor (común en móviles),
-                // reducir la fuente hasta que quepa con un margen.
+                // --- SAFETY FIT (CRITICAL) ---
+                // If a word is wider than the container (common on mobile),
+                // shrink the font until it fits with a margin.
                 let width = el.offsetWidth;
-                let safeWidth = cw * 0.95; // 95% del ancho del contenedor
+                let safeWidth = cw * 0.95; // 95% of container width
 
-                // Si es vertical, chequeamos altura contra ancho de contenedor (raro, pero posible)
+                // If vertical, check height against container width (rare, but possible)
                 if (el.classList.contains('vertical')) {
                     if (el.offsetHeight > ch * 0.9) {
-                        el.classList.remove('vertical'); // Forzar horizontal si es muy alta
-                        width = el.offsetWidth; // Recalcular ancho horizontal
+                        el.classList.remove('vertical'); // Force horizontal if too tall
+                        width = el.offsetWidth; // Recalculate horizontal width
                     }
                 }
 
-                // Bucle de reducción de tamaño
+                // Size-reduction loop
                 while (width > safeWidth && finalSize > 10) {
                     finalSize -= 2;
                     el.style.fontSize = `${finalSize}px`;
@@ -263,16 +263,16 @@
                 return { el, w: el.offsetWidth, h: el.offsetHeight };
             });
 
-            // 6. Algoritmo de Colocación
+            // 6. Placement Algorithm
             for (let i = 0; i < elements.length; i++) {
                 const item = elements[i];
                 let angle = Math.random() * 6.28;
                 let radius = 0;
                 let found = false;
-                let maxIter = 2500; // Intentos
+                let maxIter = 2500; // Attempts
 
                 while (maxIter-- > 0) {
-                    // Espiral elíptica adaptada al ratio del contenedor
+                    // Elliptical spiral adapted to the container ratio
                     const ratio = ch / cw;
                     const x = cx + (radius * Math.cos(angle));
                     const y = cy + (radius * ratio * Math.sin(angle));
@@ -287,14 +287,14 @@
                         bottom: top + item.h + CONFIG.padding
                     };
 
-                    // Chequeo de límites (Bounds Check)
+                    // Bounds Check
                     if (rect.left < 0 || rect.top < 0 || rect.right > cw || rect.bottom > ch) {
                         radius += CONFIG.stepRadius;
                         angle += CONFIG.stepAngle;
                         continue;
                     }
 
-                    // Chequeo de colisiones
+                    // Collision check
                     let collision = false;
                     for (let p of placed) {
                         if (intersect(rect, p)) {
@@ -307,14 +307,14 @@
                         item.el.style.left = (x - item.w / 2) + 'px';
                         item.el.style.top = (y - item.h / 2) + 'px';
 
-                        // Guardar posición real (sin padding extra del algoritmo)
+                        // Save real position (without extra algorithm padding)
                         item.x = x - item.w / 2;
                         item.y = y - item.h / 2;
 
                         placed.push(rect);
                         found = true;
 
-                        // Actualizar Bounding Box global
+                        // Update global Bounding Box
                         if (item.x < minX) minX = item.x;
                         if (item.x + item.w > maxX) maxX = item.x + item.w;
                         if (item.y < minY) minY = item.y;
@@ -328,16 +328,16 @@
                 }
 
                 if (!found) {
-                    // Si falla, intentamos una última vez en el centro absoluto
-                    // Si aún así no cabe, se oculta.
-                    console.warn("No se pudo colocar:", item.el.textContent);
+                    // If placement fails, try one last time at the absolute center
+                    // If it still does not fit, hide it.
+                    console.warn("Could not place:", item.el.textContent);
                     item.el.style.display = 'none';
                 }
-            // Pequeña pausa para no bloquear la UI en arrays grandes
+            // Small pause to avoid blocking the UI on large arrays
                 if (i % 3 === 0) await new Promise(r => setTimeout(r, 0));
             }
 
-            // 7. FIT TO CONTENT & ZOOM TO FILL (Eliminar TODO espacio vacío)
+            // 7. FIT TO CONTENT & ZOOM TO FILL (Remove ALL empty space)
             if (minY !== Infinity && maxY !== -Infinity && minX !== Infinity && maxX !== -Infinity) {
                 const contentWidth = maxX - minX;
                 const contentHeight = maxY - minY;
@@ -379,7 +379,7 @@
             container.classList.add('visible');
             if (wrapper) wrapper.classList.add('charts-loaded');
 
-            // Animación cascada
+            // Cascade animation
             elements.forEach((item, idx) => {
                 if (item.el.style.display !== 'none') {
                     setTimeout(() => {
@@ -389,7 +389,7 @@
             });
         }
 
-        // Observer para iniciar cuando sea visible
+        // Observer to start when visible
         const cloudObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -402,16 +402,16 @@
         if (wrapper) {
             cloudObserver.observe(wrapper);
         } else {
-            // Fallback de seguridad
+            // Safety fallback
             setTimeout(initCloud, 500);
         }
 
-        // Resize eficiente
+        // Efficient resize
         let resizeTimer;
         window.addEventListener('resize', () => {
             clearTimeout(resizeTimer);
             resizeTimer = setTimeout(() => {
-                // Solo recargar si el contenedor es visible para ahorrar recursos
+                // Only reload if the container is visible to save resources
                 if (container && container.classList.contains('visible')) {
                     initCloud();
                 }
