@@ -3,6 +3,31 @@ RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]
 Header always set Content-Security-Policy "upgrade-insecure-requests;"
 
+# 301 ES->EN migration 2026-09-19 (page slugs). Exact matches only.
+RedirectMatch 301 ^/contacto/?$ /contact/
+RedirectMatch 301 ^/soluciones/?$ /solutions/
+RedirectMatch 301 ^/nosotros/?$ /about/
+RedirectMatch 301 ^/clientes-y-socios-de-negocios/?$ /clients/
+RedirectMatch 301 ^/casos-de-exito/?$ /success-stories/
+RedirectMatch 301 ^/diagnosticos/?$ /diagnostics/
+RedirectMatch 301 ^/diagnostico-de-madurez-comercial/?$ /commercial-maturity-diagnostic/
+RedirectMatch 301 ^/diagnostico-de-madurez-comercial-2/?$ /commercial-maturity-diagnostic-2/
+RedirectMatch 301 ^/diagnostico-de-madurez-comercial-3/?$ /commercial-maturity-diagnostic-3/
+RedirectMatch 301 ^/diagnosticos-para-crecimiento-mk-y-productividad-comercial/?$ /growth-marketing-and-sales-productivity/
+RedirectMatch 301 ^/referidos/?$ /referrals/
+RedirectMatch 301 ^/equipo/?$ /team/
+RedirectMatch 301 ^/soluciones-para-estrategia-y-gobierno/?$ /strategy-and-governance/
+RedirectMatch 301 ^/soluciones-para-finanzas-y-control/?$ /finance-and-control/
+RedirectMatch 301 ^/soluciones-para-innovacion-y-modelo-de-negocios/?$ /innovation-and-business-model/
+RedirectMatch 301 ^/soluciones-para-cambio-y-transformacion/?$ /change-and-transformation/
+RedirectMatch 301 ^/soluciones-para-personas-y-cultura/?$ /people-and-culture/
+RedirectMatch 301 ^/soluciones-para-operaciones-y-procesos/?$ /operations-and-processes/
+RedirectMatch 301 ^/soluciones-para-tecnologia-y-datos/?$ /technology-and-data/
+RedirectMatch 301 ^/soluciones-para-crecimiento-mk-y-productividad-comercial/?$ /growth-marketing-and-sales-productivity/
+RedirectMatch 301 ^/politica-de-privacidad/?$ /privacy-policy/
+RedirectMatch 301 ^/politica-de-cookies/?$ /cookie-policy/
+RedirectMatch 301 ^/graficos/?$ /charts/
+
 # BEGIN WordPress
 # Las directivas (líneas) entre "BEGIN WordPress" y "END WordPress" son
 # generados dinámicamente, y sólo deben ser modificados a través de los filtros de WordPress.
