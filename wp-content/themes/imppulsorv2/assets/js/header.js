@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Header search modal
 (function(){
   const modal   = document.getElementById('searchModal');
-  const openBtn = document.querySelector('.mobile-search-toggle');
+  const openBtn = document.querySelector('.header-search-toggle, .mobile-search-toggle');
   if(!modal || !openBtn) return;
 
   const backdrop = modal.querySelector('.searchfs__backdrop');

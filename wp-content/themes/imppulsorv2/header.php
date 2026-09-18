@@ -44,22 +44,15 @@ if (!defined('ABSPATH')) exit;
       ?>
     </nav>
 
-    <!-- MOBILE button (mobile only) -->
-    <button class="mobile-search-toggle" aria-label="Search">
+    <!-- SEARCH (icon only: opens the fullscreen modal) -->
+    <button type="button" class="header-search-toggle" aria-label="Search" aria-controls="searchModal">
       <i data-lucide="search"></i>
     </button>
-
-    <!-- DESKTOP SEARCH -->
-    <div class="header-search">
-      <form role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
-        <input type="search" name="s" placeholder="Search…" value="<?php echo get_search_query(); ?>">
-        <button type="submit" aria-label="Search"><i data-lucide="search"></i></button>
-      </form>
-    </div>
 
     <!-- BUTTONS -->
     <div class="header-buttons">
       <a href="/contact" class="btn btn-terciario">Contact</a>
+      <a href="https://dmc.imppulsor.com/" class="btn btn-secundario" target="_blank" rel="noopener">Dashboard</a>
     </div>
 
     <!-- GOOGLE TRANSLATE -->

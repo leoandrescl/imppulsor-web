@@ -183,18 +183,18 @@
     filter: invert(1);
   }
 
-  .header-white button.mobile-search-toggle,
+  .header-white .header-search-toggle,
   .header-white .main-nav .menu-link,
   .header-white .mega-insight h4 a {
     color: #000 !important;
   }
 
-  .header-white .header-search form {
-    border: 1px solid #000000;
-  }
-
   .header-white .header-inner {
     border-bottom: 1px solid #000;
+  }
+
+  .header-white .header-buttons a.btn.btn-secundario {
+    border: 1px solid #000;
   }
 
   .header-white .mega {
@@ -223,14 +223,6 @@
 
   /* Hover on level 3 links */
   .header-white .mega__col--menu .mega__menu .sub-menu a:hover {
-    color: #000 !important;
-  }
-
-  .header-white .header-search input[type="search"]:focus {
-    color: #000 !important;
-  }
-
-  .header-white .header-search input[type="search"]::placeholder {
     color: #000 !important;
   }
 

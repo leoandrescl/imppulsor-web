@@ -58,54 +58,32 @@
   color: #e6e6e6;
 }
 
-/* === BUSCADOR === */
-.header-search form {
-  display: flex;
+/* === BUSCADOR (icono: abre el modal fullscreen) === */
+.header-search-toggle {
+  display: inline-flex;
   align-items: center;
-  background: transparent;
-  border-radius: 50px;
-  padding: 6px 12px;
-  border: 1px solid #fff;
-  height: 36px;
-  width: 230px;
-  max-width: 100%;
-}
-
-.header-search input {
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
   border: none;
   background: transparent;
-  color: #fff !important;
-  width: 230px;
-  max-width: 100%;
-  outline: none;
-  font-size: 14px;
-}
-
-.header-search input::placeholder {
-  color: #fff !important;
-}
-
-.header-search button {
-  background: none;
-  border: none;
   color: #fff;
   cursor: pointer;
-  padding: 0;
+  transition: color .2s ease, transform .2s ease;
 }
 
-.header-search input[type="search"] {
-  background-color: transparent !important;
-  box-shadow: none !important;
+.header-search-toggle:hover,
+.header-search-toggle:focus {
+  background: transparent;
+  color: #e6e6e6;
+  transform: scale(1.06);
 }
 
-.header-search input[type="search"]:focus {
-  background-color: transparent !important;
-  box-shadow: none !important;
-}
-
-.header-search input[type="search"]::-webkit-search-decoration,
-.header-search input[type="search"]::-webkit-search-cancel-button {
-  background: transparent !important;
+.header-search-toggle svg {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
 }
 
 /* === BOTONES === */
@@ -247,7 +225,6 @@
 @media (max-width: 992px) {
 
   .main-nav,
-  .header-search,
   .header-buttons,
   .header-lang {
     display: none;
@@ -274,18 +251,6 @@
 }
 
 /* === MODAL DE BÚSQUEDA === */
-button.mobile-search-toggle {
-  display: none;
-  background: none;
-}
-
-@media (max-width:992px) {
-  button.mobile-search-toggle {
-    display: block;
-    justify-self: end;
-  }
-}
-
 .search-modal {
   position: fixed;
   inset: 0;
@@ -300,14 +265,10 @@ button.mobile-search-toggle {
   animation: fadeIn 0.3s ease forwards;
 }
 
-/* ====== Toggle visible solo en móvil ====== */
-.mobile-search-toggle {
-  display: none;
-}
-
+/* Icono de búsqueda: visible en desktop y móvil (en móvil, alineado a la derecha) */
 @media (max-width:992px) {
-  .mobile-search-toggle {
-    display: block;
+  .header-search-toggle {
+    justify-self: end;
   }
 }
 

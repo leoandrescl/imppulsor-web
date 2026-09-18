@@ -1007,7 +1007,7 @@ p .text-light-blue {
 }
 
 /*  */
-.header-search svg.lucide.lucide-search {
+.header-search-toggle svg.lucide.lucide-search {
   top: 2px;
   position: relative;
 }
