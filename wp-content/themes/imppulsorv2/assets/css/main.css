@@ -504,9 +504,12 @@ a.wp-block-button__link:not(.has-background):hover {
 
 .header-buttons a.btn {
   border-radius: 50px;
-  padding: 6px 32px;
+  padding: 6px 12px;
   font-size: 14px;
   font-weight: 400;
+  width: 108px;
+  text-align: center;
+  max-width: 100%;
 }
 
 /* ============================================================
